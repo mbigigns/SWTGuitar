@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project basedir="." default="coverage-report" name="SWTRipperTest">
+	
+	<property file="build.properties"/>
+	
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+	
+	<!-- we may want to pull these out into a properties file eventually -->
+	<property name="src.dir" value="src"/>
+	<property name="build.dir" value="bin"/>
+	<property name="lib.dir" value="lib"/>
+	<property name="dist.dir" value="dist"/>
+	<property name="doc.dir" value="doc"/>
+	<property name="swtmodel.jar.name" value="swtmodel.jar"/>
+	<property name="swtmodel.jar" value="${lib.dir}/${swtmodel.jar.name}"/>
+	<property name="swtripper.jar.name" value="swtripper.jar"/>
+	<property name="swtripper.jar" value="${lib.dir}/${swtripper.jar.name}"/>
+	<property name="swtrippertest.jar.name" value="swtrippertest.jar"/>
+	<property name="junit.dir" value="${lib.dir}/junit-4.8.2"/>
+	<property name="junit.jar" value="${junit.dir}/junit.jar"/>
+	<property name="junit.out" value="testresults"/>
+	<property name="findbugs.home" value="${lib.dir}/findbugs-1.3.9"/>
+	<property name="findbugs.out" value="swtguitar-fb.xml"/>
+	<path id="findbugs.classpath">
+		<fileset dir="${findbugs.home}">
+			<!-- this is why you should have something manage dependencies like maven,
+				 it's such a waste to have all that cruft on the classpath -->
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	<property name="coverage.dir" value="coverage"/>
+	<property name="cobertura.dir" value="${lib.dir}/cobertura-1.9.4.1"/>
+	<property name="cob.instrumented.dir" value="${coverage.dir}/instrumented"/>
+	<property name="cobertura.datafile" value="cobertura.ser"/>
+	<path id="cobertura.classpath">
+		<fileset dir="${cobertura.dir}">
+			<include name="cobertura.jar"/>
+			<include name="lib/**/*.jar"/>
+		</fileset>
+	</path>
+	<taskdef classpathref="cobertura.classpath" resource="tasks.properties"/> 
+	
+	<!-- Use correct swt jar depending on operating system and JVM architecture -->
+	<condition property="swt.jar" value="swt-linux.jar">
+		<and>
+		    <os family="unix"/>
+		    <not>
+		      <os family="mac"/>
+		    </not>
+		</and>
+	</condition>
+	<condition property="swt.jar" value="swt-mac.jar">
+		<os family="mac"/>
+	</condition>
+	<condition property="swt.jar" value="swt-windows-x86-64.jar">
+		<and>
+			<os family="windows"/>
+			<!-- this checks JVM architecture, which is all we care about anyway -->
+			<os arch="amd64"/>
+		</and>
+	</condition>
+	<condition property="swt.jar" value="swt-windows.jar">
+		<os family="windows"/>
+	</condition>
+			
+    <path id="SWTRipperTest.classpath">
+    	<!-- TODO can we just specify everything in lib but swt? -->
+        <pathelement location="${build.dir}"/>
+        <pathelement location="${lib.dir}/args4j-2.0.12.jar"/>
+        <pathelement location="${lib.dir}/${swt.jar}"/>
+        <pathelement location="${lib.dir}/log4j-1.2.15.jar"/>
+        <pathelement location="${lib.dir}/GUITARModel-Core.jar"/>
+        <pathelement location="${lib.dir}/GUIRipper-Core.jar"/>
+    	<pathelement location="${lib.dir}/junit.jar"/>
+    	<pathelement location="${lib.dir}/xmlunit-1.3.jar"/>
+    	<pathelement location="${lib.dir}/tuxguitar-1.2-linux-x86/tuxguitar.jar"/>
+    	<pathelement location="${coverage.dir}"/>
+        
+        <!-- these are copied from other jobs by Jenkins before the build
+             or built from source in build-model and build-ripper -->
+    	<pathelement location="${swtmodel.jar}"/>
+    	<pathelement location="${swtripper.jar}"/> 
+    </path>
+    
+    <target name="init">
+    	<echo message="Using SWT jar ${swt.jar}"/>
+    	
+        <mkdir dir="${build.dir}"/>
+        <copy includeemptydirs="false" todir="${build.dir}">
+            <fileset dir="${src.dir}">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+	
+	<target name="doc" description="Generate Javadocs">
+		<mkdir dir="${doc.dir}"/>
+		<javadoc sourcepath="${src.dir}" destdir="${doc.dir}" source="${source}" classpathref="SWTRipperTest.classpath">
+			<link href="http://download.oracle.com/javase/6/docs/api/"/>
+			<!-- No good online SWT javadoc that works :( -->
+		</javadoc>
+	</target>
+        
+	<target name="build" depends="init, build-model, build-ripper">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="${build.dir}" 
+        		source="${source}" target="${target}" includeantruntime="false">
+            <src path="${src.dir}"/>
+            <classpath refid="SWTRipperTest.classpath"/>
+        </javac>
+    </target>
+	
+	<!-- Check if SWTModel is in lib -->
+	<target name="check-model">
+		<!-- set swtmodel.present if swtmodel.jar is in lib, 
+			 this has the effect of checking whether this is a Jenkins build-->
+		<available file="${swtmodel.jar}" property="swtmodel.present"/>
+	</target>
+	
+	<!-- Build and copy swtmodel.jar unless it's already here -->
+	<target name="build-model" depends="check-model" unless="swtmodel.present">
+		<ant antfile="build.xml" dir="${swtmodel.project.dir}" target="dist"/>
+		<copy file="${swtmodel.project.dir}/dist/swtmodel.jar" todir="${lib.dir}"/>
+	</target>
+	
+	<!-- Check if SWTModel is in lib -->
+	<target name="check-ripper">
+		<!-- set swtripper.present if swtripper.jar is in lib, 
+			 this has the effect of checking whether this is a Jenkins build-->
+		<available file="${swtripper.jar}" property="swtripper.present"/>
+	</target>
+		
+	<!-- Build and copy swtripper.jar unless it's already here -->
+	<target name="build-ripper" depends="check-ripper" unless="swtripper.present">
+		<ant antfile="build.xml" dir="${swtripper.project.dir}" target="dist" inheritall="false"/>
+		<copy file="${swtripper.project.dir}/dist/swtripper.jar" todir="${lib.dir}"/>
+	</target>
+	
+	<target name="dist" depends="build" description="Build a JAR of the tests and sample apps">
+		<mkdir dir="${dist.dir}"/>
+		<jar destfile="${dist.dir}/${swtrippertest.jar.name}">
+			<fileset dir="${build.dir}"/>
+		</jar>
+	</target>
+			
+	<target name="test" description="Run JUnit tests" depends="build,instrument">
+		<mkdir dir="${junit.out}"/>
+		
+		<!-- must fork for cobertura, see http://cobertura.sourceforge.net/anttaskreference.html -->
+		<junit fork="yes" forkmode="once" printsummary="withOutAndErr">	
+			<sysproperty key="net.sourceforge.cobertura.datafile" file="${cobertura.datafile}"/>
+			
+			<!-- must specify instrumented classes before original ones! -->
+			<classpath location="${cob.instrumented.dir}"/>
+			<classpath location="${cob.instrumented.dir}/${swtmodel.jar.name}"/>
+			<classpath location="${cob.instrumented.dir}/${swtripper.jar.name}"/>
+			<classpath>
+				<pathelement location="${junit.jar}"/>
+				<path refid="SWTRipperTest.classpath"/>
+				<pathelement path="${test.build.dir}"/>
+			</classpath>
+			<classpath refid="cobertura.classpath"/>
+			
+			<batchtest todir="${junit.out}">
+				<fileset dir="${build.dir}">
+					<include name="**/*Test.class"/>
+				</fileset>
+				<formatter type="xml"/>
+			</batchtest>
+		</junit>
+	</target>
+	
+	<target name="instrument" depends="build">
+		<mkdir dir="${coverage.dir}"/>
+		<mkdir dir="${cob.instrumented.dir}"/>		
+		<cobertura-instrument todir="${cob.instrumented.dir}">
+			<instrumentationclasspath>
+				<pathelement location="${build.dir}"/>
+				<pathelement location="${swtmodel.jar}"/>
+				<pathelement location="${swtripper.jar}"/>
+			</instrumentationclasspath>
+			
+			<includeclasses regex=".*"/>
+			<!-- don't instrument anything in test package -->
+			<excludeclasses regex=".*\.test\..*"/>
+		</cobertura-instrument>
+	</target>
+	
+	<target name="coverage-report" depends="test">
+		<!-- don't bother specifying src of model, that's only used for complexity and html reports -->
+		<cobertura-report format="xml" srcdir="${src.dir}" destdir="${coverage.dir}" datafile="${cobertura.datafile}"/>
+		
+		<!-- Move cobertura.ser to coverage directory. Cobertura fails if
+			 cobertua.ser isn't in base directory (even though they claim it
+			 can handle that) so copy it after it's done reading it -->
+		<move file="${cobertura.datafile}" todir="${coverage.dir}"/>
+	</target>
+	
+	<target name="findbugs" depends="build">
+		<!-- See http://cfunit.sourceforge.net/help-antview.php if you get an Eclipse warning about an unknown taskdef -->
+		<taskdef name="findbugs" classpathref="findbugs.classpath" classname="edu.umd.cs.findbugs.anttask.FindBugsTask"/>
+		<findbugs home="${findbugs.home}" output="xml" outputFile="${findbugs.out}">
+			<sourcePath path="${src.dir}"/>
+			<class location="${build.dir}"/>
+			<auxclasspath refid="SWTRipperTest.classpath"/> 
+		</findbugs>
+	</target>
+				
+	<target name="clean">
+        <delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+		<delete dir="${doc.dir}"/>
+		<delete dir="${junit.out}"/>
+		<delete dir="${coverage.dir}"/>
+		<delete file="${cobertura.datafile}"/> <!-- this sometimes gets left over -->
+		<delete file="${findbugs.out}"/>
+		<delete>
+			<fileset dir="." includes="*.log"/>
+		</delete>
+		<delete>
+			<fileset dir="." includes="testoutput*.xml"/>
+		</delete>
+		<delete file="GUITAR-Default.GUI"/>
+		<delete file="log_widget.xml"/>
+		
+        <!-- remove swtmodel.jar and swtripper.jar so Jenkins can add a potentially newer version -->
+        <delete file="${swtmodel.jar}"/>
+		<delete file="${swtripper.jar}"/>
+    </target>    
+</project>

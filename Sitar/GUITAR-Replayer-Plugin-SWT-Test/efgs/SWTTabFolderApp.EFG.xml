@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EFG>
+	<Events>
+		<Event>
+			<EventId>e3970760168</EventId>
+			<WidgetId>w3970760168</WidgetId>
+			<Type>SYSTEM INTERACTION</Type>
+			<Initial>true</Initial>
+			<Action>edu.umd.cs.guitar.event.SitarDefaultAction</Action>
+		</Event>
+		<Event>
+			<EventId>e849081152</EventId>
+			<WidgetId>w849081152</WidgetId>
+			<Type>SYSTEM INTERACTION</Type>
+			<Initial>true</Initial>
+			<Action>edu.umd.cs.guitar.event.SitarEditableTextAction</Action>
+		</Event>
+	</Events>
+	<EventGraph>
+		<Row>
+			<E>1</E>
+			<E>1</E>
+		</Row>
+		<Row>
+			<E>1</E>
+			<E>1</E>
+		</Row>
+	</EventGraph>
+</EFG>

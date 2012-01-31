@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project basedir="." default="dist" name="SWTModel">
+	<property file="build.properties"/>
+	
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+	
+	<property name="src.dir" value="src"/>
+	<property name="build.dir" value="bin"/>
+	<property name="lib.dir" value="lib"/>
+	<property name="dist.dir" value="dist"/>
+	<property name="doc.dir" value="doc"/>
+	<property name="swtmodel.jar.name" value="swtmodel.jar"/>
+		
+	<!-- Use correct swt jar depending on operating system -->
+	<condition property="swt.jar" value="swt-linux.jar">
+		<and>
+		    <os family="unix"/>
+		    <not>
+		      <os family="mac"/>
+		    </not>
+		</and>
+	</condition>
+	<condition property="swt.jar" value="swt-mac.jar">
+		<os family="mac"/>
+	</condition>
+	<condition property="swt.jar" value="swt-windows.jar">
+		<os family="windows"/>
+	</condition>
+	
+    <path id="SWTModel.classpath">
+        <pathelement location="${build.dir}"/>
+        <pathelement location="${lib.dir}/${swt.jar}"/>
+        <pathelement location="${lib.dir}/GUITARModel-Core.jar"/>
+        <pathelement location="${lib.dir}/log4j-1.2.15.jar"/>
+    </path>
+	
+    <target name="init">
+        <mkdir dir="${build.dir}"/>
+        <copy includeemptydirs="false" todir="${build.dir}">
+            <fileset dir="${src.dir}">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+	
+	<target name="doc" description="Generate Javadocs">
+		<mkdir dir="${doc.dir}"/>
+		<javadoc sourcepath="${src.dir}" destdir="${doc.dir}" source="${source}" classpathref="SWTModel.classpath">
+			<link href="http://download.oracle.com/javase/6/docs/api/"/>
+			<!-- No good online SWT javadoc that works :( -->
+		</javadoc>
+	</target>
+        	
+	<target name="dist" depends="build" description="Build a JAR of this project">
+		<mkdir dir="${dist.dir}"/>
+		<jar destfile="${dist.dir}/${swtmodel.jar.name}">
+			<fileset dir="${build.dir}"/>
+		</jar>
+	</target>
+	
+    <target name="build" depends="init">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="${build.dir}" 
+        		source="${source}" target="${target}" includeantruntime="false">
+            <src path="${src.dir}"/>
+            <classpath refid="SWTModel.classpath"/>
+        </javac>
+    </target>
+		
+	<target name="clean">
+        <delete dir="${build.dir}"/>
+    	<delete dir="${dist.dir}"/>
+		<delete dir="${doc.dir}"/>
+    </target>
+</project>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project basedir="." default="dist" name="SWTReplayer">
+	<property file="build.properties"/>
+
+	<property environment="env"/>
+	<property name="debuglevel" value="source,lines,vars"/>
+	<property name="target" value="1.6"/>
+	<property name="source" value="1.6"/>
+
+	<property name="src.dir" value="src"/>
+	<property name="build.dir" value="bin"/>
+	<property name="lib.dir" value="lib"/>
+	<property name="dist.dir" value="dist"/>
+	<property name="doc.dir" value="doc"/>
+	<property name="swtmodel.jar.name" value="swtmodel.jar"/>
+	<property name="swtmodel.jar" value="${lib.dir}/${swtmodel.jar.name}"/>
+	<property name="swtripper.jar.name" value="swtripper.jar"/>
+	<property name="swtripper.jar" value="${lib.dir}/${swtripper.jar.name}"/>
+	<property name="swtreplayer.jar.name" value="swtreplayer.jar"/>
+
+	<!-- Use correct swt jar depending on operating system -->
+	<condition property="swt.jar" value="swt-linux.jar">
+		<and>
+			<os family="unix"/>
+			<not>
+				<os family="mac"/>
+			</not>
+		</and>
+	</condition>
+	<condition property="swt.jar" value="swt-mac.jar">
+		<os family="mac"/>
+	</condition>
+	<condition property="swt.jar" value="swt-windows.jar">
+		<os family="windows"/>
+	</condition>
+
+	<path id="SWTReplayer.classpath">
+		<pathelement location="${build.dir}"/>
+		<pathelement location="${lib.dir}/args4j-2.0.12.jar"/>
+		<pathelement location="${lib.dir}/GUIReplayer-Core.jar"/>
+		<pathelement location="${lib.dir}/GUITARModel-Core.jar"/>
+		<pathelement location="${lib.dir}/log4j-1.2.15.jar"/>
+		<pathelement location="${lib.dir}/${swt.jar}"/>
+		<pathelement location="${lib.dir}/${swtmodel.jar.name}"/>
+		<pathelement location="${lib.dir}/${swtripper.jar.name}"/>
+	</path>
+
+	<target name="init">
+		<mkdir dir="${build.dir}"/>
+		<copy includeemptydirs="false" todir="${build.dir}">
+			<fileset dir="${src.dir}">
+				<exclude name="**/*.launch"/>
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="doc" description="Generate Javadocs">
+		<mkdir dir="${doc.dir}"/>
+		<javadoc sourcepath="${src.dir}" destdir="${doc.dir}" source="${source}" classpathref="SWTReplayer.classpath">
+			<link href="http://download.oracle.com/javase/6/docs/api/"/>
+			<!-- No good online SWT javadoc that works :( -->
+		</javadoc>
+	</target>
+
+	<target name="dist" depends="build" description="Build a JAR of this project">
+		<mkdir dir="${dist.dir}"/>
+		<jar destfile="${dist.dir}/${swtreplayer.jar.name}">
+			<fileset dir="${build.dir}"/>
+		</jar>
+	</target>
+
+	<!-- set swtmodel.present if swtmodel.jar is in lib -->
+	<target name="check-model">
+		<available file="${swtmodel.jar}" property="swtmodel.present"/>
+	</target>
+
+	<!-- Build and copy swtmodel.jar unless it's already here -->
+	<target name="build-model" depends="check-model" unless="swtmodel.present">
+		<ant antfile="build.xml" dir="${swtmodel.project.dir}" target="dist" inheritall="false"/>
+		<copy file="${swtmodel.project.dir}/dist/swtmodel.jar" todir="${lib.dir}"/>
+	</target>
+
+	<!-- Check if SWTModel is in lib -->
+	<target name="check-ripper">
+		<!-- set swtripper.present if swtripper.jar is in lib -->
+		<available file="${swtripper.jar}" property="swtripper.present" />
+	</target>
+
+	<!-- Build and copy swtripper.jar unless it's already here -->
+	<target name="build-ripper" depends="check-ripper" unless="swtripper.present">
+		<ant antfile="build.xml" dir="${swtripper.project.dir}" target="dist" inheritall="false" />
+		<copy file="${swtripper.project.dir}/dist/swtripper.jar" todir="${lib.dir}" />
+	</target>
+
+	<target name="build" depends="init, build-model, build-ripper" description="build project">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="${build.dir}" 
+				source="${source}" target="${target}" includeantruntime="false">
+			<src path="${src.dir}"/>
+			<classpath refid="SWTReplayer.classpath"/>
+		</javac>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+		<delete dir="${doc.dir}"/>
+		<delete file="${swtmodel.jar}"/>
+		<delete file="${swtripper.jar}"/>
+	</target>
+</project>

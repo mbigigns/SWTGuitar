@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EFG>
+    <Events>
+        <Event>
+            <EventId>e425666984</EventId>
+            <WidgetId>w425666984</WidgetId>
+            <Type>SYSTEM INTERACTION</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarEditableTextAction</Action>
+        </Event>
+    </Events>
+    <EventGraph>
+        <Row>
+            <E>1</E>
+        </Row>
+    </EventGraph>
+</EFG>
