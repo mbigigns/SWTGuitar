@@ -1,22 +1,17 @@
 
 
 import java.io.IOException;
-import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 
+import org.eclipse.swt.graphics.Point;
+import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Display;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -31,6 +26,7 @@ public class DomParserExample {
 	static Document dom;
 	static Document dom2;
 	static VisualizationGenerator a;
+	public static Map<Composite, Point> containerOffsets= new HashMap<Composite, Point>();
 	
 	public static void main(String[] args)
 	{
@@ -48,7 +44,7 @@ public class DomParserExample {
 	}
 
 	public void runExample() {
-
+System.out.println(a.rootWindow.getBounds().x);
 		//parse the xml file and get the dom object
 		parseXmlFile();
 
@@ -84,79 +80,174 @@ public class DomParserExample {
 		}
 	}
 
-
-
-	public 	ArrayList<HashMap<String, String>> eventList = new ArrayList <HashMap <String, String>>();
 	public 	HashMap <HashMap<String, String>, ArrayList<String>> edgeMap = new HashMap <HashMap<String, String>, ArrayList<String>>();
 
 	private void parseDoc(){
 
-		HashMap <String, String> eventMap;
-
-		Element efg = dom.getDocumentElement();
-
+		//TODO: may need to check this for null pointer exception
+		Element gui = (Element)dom.getDocumentElement().getElementsByTagName("GUI").item(0);
+		getShell();
+		
+		//temp code for initializing the default window
+		containerOffsets.put(a.rootWindow, new Point(0,0));
+		parseContainer(gui,a.rootWindow,0);
 		//Element events = (Element)(efg.getElementsByTagName("Attributes").item(0));
+	}
+	private void getShell() {
+		
+	}
 
-		NodeList nodeEventList = efg.getElementsByTagName("Attributes");
+	private Map<String,String> getAttributes(Element eventElement)
+	{
+		Map<String,String> eventMap = new HashMap <String, String>();
+		NodeList properties = eventElement.getElementsByTagName("Property");
+		for(int j=0;j<properties.getLength();j++)
+		{
+			Element property = (Element)(properties.item(j));
+			String propertyName = property.getElementsByTagName("Name").item(0).getChildNodes().item(0).getNodeValue();
 
+			if(propertyName.equals("ID"))
+			{
+				eventMap.put("ID", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("Class"))
+			{
+				eventMap.put("Class", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("X"))
+			{
+				eventMap.put("X", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("Y"))
+			{
+				eventMap.put("Y", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("height"))
+			{
+				eventMap.put("height", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("width"))
+			{
+				eventMap.put("width", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("text"))
+			{
+				//eventMap.put("text", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+/*			if(eventMap.containsKey("Class"))
+			{
+				if(eventMap.get("Class").toString().equals("org.eclipse.swt.widgets.Shell")||eventMap.get("Class").toString().equals("org.eclipse.swt.widgets.Group"))
+				{
+
+				}
+				else if(eventMap.containsKey("X")&&eventMap.containsKey("Y")&&eventMap.containsKey("height")&&eventMap.containsKey("width"))
+				{
+					System.out.println(eventMap);
+					a.addWidget(eventMap.get("Class"), 
+							eventMap.get("ID"), Integer.parseInt(eventMap.get("X")), 
+							Integer.parseInt(eventMap.get("Y")), Integer.parseInt(eventMap.get("width")), 
+							Integer.parseInt(eventMap.get("height")), 0, 
+							a.rootWindow);
+				}
+			}*/
+		}
+		return eventMap;
+	}
+	private void parseContainer(Element parentNode, Composite parent, int n)
+	{
+		NodeList nodeEventList = parentNode.getChildNodes();//.getElementsByTagName("Container");
+		
 		for(int i = 0; i < nodeEventList.getLength(); i++)
 		{
-			eventMap = new HashMap <String, String>();
-			Element eventElement = (Element)(nodeEventList.item(i));
-			NodeList properties = eventElement.getElementsByTagName("Property");
-			for(int j=0;j<properties.getLength();j++)
+			//System.out.println(nodeEventList.item(i).getNodeName());
+			if(nodeEventList.item(i).getNodeName().equals("Container"))
 			{
-				Element property = (Element)(properties.item(j));
-				NodeList nlList = property.getElementsByTagName("Name").item(0).getChildNodes();
-		        Node nValue = (Node) nlList.item(0);
-				String propertyName = property.getElementsByTagName("Name").item(0).getChildNodes().item(0).getNodeValue();
-
-				if(propertyName.equals("ID"))
+				//resets the composite container to parent unless proven otherwise
+				Composite container = parent;
+				for(int a=0;a<n;a++)
+					System.out.print("\t");
+				System.out.println(parent);
+				
+				NodeList childNodes = nodeEventList.item(i).getChildNodes();
+				for(int j=0;j<childNodes.getLength(); j++)
 				{
-					eventMap.put("ID", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("Class"))
-				{
-					eventMap.put("Class", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("X"))
-				{
-					eventMap.put("X", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("Y"))
-				{
-					eventMap.put("Y", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("height"))
-				{
-					eventMap.put("height", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("width"))
-				{
-					eventMap.put("width", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("text"))
-				{
-					//eventMap.put("text", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				if(eventMap.containsKey("Class"))
-				{
-					if(eventMap.get("Class").toString().equals("org.eclipse.swt.widgets.Shell")||eventMap.get("Class").toString().equals("org.eclipse.swt.widgets.Group"))
+					Node childElement = childNodes.item(j);
+					String tagName = childElement.getNodeName();
+					//searches for an Attributes tag for the container
+					if(tagName.equals("Attributes"))
 					{
+						//creates that container based on the correct attributes
+						Map<String,String> containerAttributes = getAttributes((Element)childElement);
 						
+						if(containerAttributes.get("Class").toString().equals("org.eclipse.swt.widgets.Menu"))
+						{
+							parseMenu();
+						}
+						else if(!containerAttributes.get("Class").toString().equals("org.eclipse.swt.widgets.Shell")&&!containerAttributes.get("Class").toString().equals("org.eclipse.swt.widgets.MenuItem"))
+						{
+							int x = Integer.parseInt(containerAttributes.get("X")); 
+							int y =	Integer.parseInt(containerAttributes.get("Y"));
+							container = (Composite)a.addWidget(containerAttributes.get("Class"), 
+							containerAttributes.get("ID"), 
+							x, 
+							y, 
+							Integer.parseInt(containerAttributes.get("width")), 
+							Integer.parseInt(containerAttributes.get("height")), 0, 
+							parent);
+							containerOffsets.put(container, new Point(x,y));
+						}
 					}
-					else if(eventMap.containsKey("X")&&eventMap.containsKey("Y")&&eventMap.containsKey("height")&&eventMap.containsKey("width"))
+					if(tagName.equals("Contents"))
 					{
-						System.out.println(eventMap);
-						a.addWidget(eventMap.get("Class"), 
-								eventMap.get("ID"), Integer.parseInt(eventMap.get("X")), 
-								Integer.parseInt(eventMap.get("Y")), Integer.parseInt(eventMap.get("width")), 
-								Integer.parseInt(eventMap.get("height")), 0, 
-								a.rootWindow);
+						//System.out.println("reached contents, attributes is "+container);
+						//adds the contents of the container (child widgets) to the container
+						NodeList contentList = childNodes.item(j).getChildNodes();
+						for(int k=0;k<contentList.getLength();k++)
+						{
+							String contentTag = contentList.item(k).getNodeName();
+							if(contentTag.equals("Container"))
+							{
+								parseContainer((Element)childElement,container,n+1);
+							}
+							else if(contentTag.equals("Widget"))
+							{
+								parseWidget((Element)contentList.item(k),container);
+							}
+						}
 					}
 				}
 			}
-			eventList.add(eventMap);
+		}
+	}
+
+	private void parseMenu() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void parseWidget(Element element, Composite container) {
+		NodeList childNodes = element.getChildNodes();
+		for(int j=0;j<childNodes.getLength(); j++)
+		{
+			Node childElement = childNodes.item(j);
+			String tagName = childElement.getNodeName();
+			//searches for an Attributes tag for the container
+			if(tagName.equals("Attributes"))
+			{
+				//watch for cast error
+				Map<String,String> containerAttributes = getAttributes((Element)childElement);
+				
+				if(!containerAttributes.get("Class").toString().equals("org.eclipse.swt.widgets.MenuItem"))
+				{
+					System.out.println("Adding widget to "+container+" with "+containerAttributes+" "+container.hashCode());
+					a.addWidget(containerAttributes.get("Class"), 
+					containerAttributes.get("ID"), Integer.parseInt(containerAttributes.get("X")), 
+					Integer.parseInt(containerAttributes.get("Y")), 
+					Integer.parseInt(containerAttributes.get("width")), 
+					Integer.parseInt(containerAttributes.get("height")), 0, 
+					container);
+				}
+			}
 		}
 	}
 

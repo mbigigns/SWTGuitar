@@ -20,9 +20,8 @@ public class VisualizationGenerator {
 	
 	private Shell readWindow()
 	{
-		Shell window = createWindow("",0,0,307,302);
-        window.setSize(307, 302);
-        window.setLocation(300, 300);
+		Shell window = createWindow("",0,0,302,307);
+        window.setSize(302, 307);
         window.open();
         return window;
 	}
@@ -38,21 +37,26 @@ public class VisualizationGenerator {
 		return window;
 	}
 	
-	public void addWidget(String classType, String ID, int x, int y, int width, int height, int style, Composite window)
+	public Control addWidget(String classType, String ID, int x, int y, int width, int height, int style, Composite container)
 	{
 		Class [] classParm = {Composite.class, int.class};
 		Object [] objectParm = {};
-		         
+		Control control = null;         
 		try 
 		{
-		  Class cl = Class.forName(classType);
-		  Constructor co = cl.getConstructor(classParm);
-		  Control control = (Control) co.newInstance(window, style);
-	      control.setBounds(x, y, width, height);
-	      control.setToolTipText(ID);
+			System.out.println(x+" "+container.getBounds().x);
+			int trueX = x-DomParserExample.containerOffsets.get(container).x;
+			int trueY = y-DomParserExample.containerOffsets.get(container).y;
+			System.out.println(trueX+" "+trueY);
+			Class cl = Class.forName(classType);
+			Constructor co = cl.getConstructor(classParm);
+			control = (Control) co.newInstance(container, style);
+			control.setBounds(trueX, trueY, width, height);
+			control.setToolTipText(Integer.toString(control.hashCode()));//ID);
 		}
 		catch (Exception e) {
 		  e.printStackTrace();
 		}
+		return control;
 	}
 }
