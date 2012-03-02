@@ -44,7 +44,6 @@ public class VisualizationGenerator {
 		Control control = null;         
 		try 
 		{
-			System.out.println(x+" "+container.getBounds().x);
 			int trueX = x-DomParserExample.containerOffsets.get(container).x;
 			int trueY = y-DomParserExample.containerOffsets.get(container).y;
 			System.out.println(trueX+" "+trueY);
@@ -52,7 +51,7 @@ public class VisualizationGenerator {
 			Constructor co = cl.getConstructor(classParm);
 			control = (Control) co.newInstance(container, style);
 			control.setBounds(trueX, trueY, width, height);
-			control.setToolTipText(Integer.toString(control.hashCode()));//ID);
+			control.setToolTipText(ID);
 		}
 		catch (Exception e) {
 		  e.printStackTrace();
