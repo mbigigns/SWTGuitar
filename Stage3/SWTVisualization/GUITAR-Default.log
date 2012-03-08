@@ -1,0 +1,519 @@
+0      [main] ERROR - configuration.xml not found!!!
+2      [main] INFO  - No configuration file. Using an empty one...
+16     [main] DEBUG - =============================
+16     [main] DEBUG - Application URLs: 
+16     [main] DEBUG - -----------------------------
+16     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT/lib/log4j-1.2.15.jar
+16     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT-Test/lib/xmlunit-1.3.jar
+16     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Model-Plugin-SWT/lib/GUITARModel-Core.jar
+16     [main] DEBUG - 	/root/Desktop/Sitar/SWTVisualization/bin/
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT/bin/
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT-Test/lib/tuxguitar-1.2-linux-x86/tuxguitar.jar
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT/lib/GUIReplayer-Core.jar
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT/lib/log4j-1.2.15.jar
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT-Test/bin/
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT/lib/GUITARModel-Core.jar
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT-Test/lib/args4j-2.0.12.jar
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT-Test/lib/GUIRipper-Core.jar
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT/lib/GUITARModel-Core.jar
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT-Test/lib/log4j-1.2.15.jar
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT-Test/lib/GUITARModel-Core.jar
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT-Test/bin/
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT-Test/lib/xmlunit-1.3.jar
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT/lib/args4j-2.0.12.jar
+17     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Model-Plugin-SWT/lib/log4j-1.2.15.jar
+18     [main] DEBUG - 	/root/Desktop/eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT-Test/lib/GUIReplayer-Core.jar
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT-Test/lib/GUITARModel-Core.jar
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT/lib/swt-linux.jar
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT/lib/args4j-2.0.12.jar
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Replayer-Plugin-SWT/lib/swt-linux.jar
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT/lib/GUIRipper-Core.jar
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT-Test/lib/log4j-1.2.15.jar
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT-Test/lib/mockito-all-1.8.5.jar
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT/bin/
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Model-Plugin-SWT/lib/swt-linux.jar
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Model-Plugin-SWT/bin/
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT-Test/lib/swt-linux.jar
+18     [main] DEBUG - 	/root/Desktop/Sitar/GUITAR-Ripper-Plugin-SWT-Test/lib/args4j-2.0.12.jar
+18     [main] DEBUG - 	/root/Desktop/eclipse/plugins/org.junit_4.8.2.v4_8_2_v20110321-1705/junit.jar
+19     [main] DEBUG - =============================
+19     [main] DEBUG - Application Parameters: 
+19     [main] DEBUG - -----------------------------
+208    [SitarExecutor] DEBUG - GUI not ready yet
+208    [SitarExecutor] DEBUG - Waiting for GUI to initialize for: 100ms
+540    [main] DEBUG - Display ready
+580    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {}
+582    [SitarExecutor] DEBUG - Root window size: 1
+583    [SitarExecutor] DEBUG - Window title: org.eclipse.swt.widgets.Shell
+584    [SitarExecutor] INFO  - Number of root windows: 1
+584    [SitarExecutor] INFO  - ----------------------------
+584    [SitarExecutor] INFO  - Ripping window: *org.eclipse.swt.widgets.Shell*
+623    [SitarExecutor] INFO  - 
+623    [SitarExecutor] INFO  - ----------------------------------
+623    [SitarExecutor] INFO  - Ripping component: 
+624    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+627    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {A lable}
+627    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Press Me}
+627    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {This is a label}
+627    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+627    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {New Button}
+627    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Spinner {}
+628    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+628    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {This is my group}
+634    [main] DEBUG - Ignoring duplicate property: enabled
+637    [main] DEBUG - Ignoring duplicate property: visible
+651    [main] DEBUG - Notifying Shell {} event type 19
+659    [main] DEBUG - Notifying Shell {} event type 20
+659    [main] DEBUG - Notifying Shell {} event type 21
+659    [main] DEBUG - Notifying Shell {} event type 26
+659    [main] DEBUG - Notifying Shell {} event type 27
+660    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {A lable}
+660    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Press Me}
+660    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {This is a label}
+661    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+661    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {New Button}
+661    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Spinner {}
+661    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+661    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {This is my group}
+663    [main] DEBUG - Ignoring duplicate property: enabled
+664    [main] DEBUG - Ignoring duplicate property: visible
+664    [SitarExecutor] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {*Wrong Thread*}
+665    [SitarExecutor] DEBUG - !!!!! Window closed
+667    [SitarExecutor] DEBUG - 	org.eclipse.swt.widgets.Shell
+670    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {A lable}
+671    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Press Me}
+671    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {This is a label}
+671    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+671    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {New Button}
+672    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Spinner {}
+672    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+672    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {This is my group}
+673    [SitarExecutor] DEBUG - ** in window *org.eclipse.swt.widgets.Shell* has 8 children: [ - org.eclipse.swt.widgets.Label; Press Me - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label; New Button - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Spinner;  - org.eclipse.swt.widgets.Composite;  - org.eclipse.swt.widgets.Group; ]
+673    [SitarExecutor] INFO  - 
+673    [SitarExecutor] INFO  - ----------------------------------
+673    [SitarExecutor] INFO  - Ripping component: 
+673    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+676    [main] DEBUG - Ignoring duplicate property: enabled
+676    [main] DEBUG - Ignoring duplicate property: visible
+678    [main] DEBUG - Ignoring duplicate property: enabled
+678    [main] DEBUG - Ignoring duplicate property: visible
+678    [SitarExecutor] DEBUG - ** in window *org.eclipse.swt.widgets.Shell* has 0 children: []
+679    [SitarExecutor] INFO  - 
+679    [SitarExecutor] INFO  - ----------------------------------
+679    [SitarExecutor] INFO  - Ripping component: 
+679    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Press Me</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+681    [main] DEBUG - Ignoring duplicate property: enabled
+681    [main] DEBUG - Ignoring duplicate property: visible
+685    [main] DEBUG - Ignoring duplicate property: enabled
+685    [main] DEBUG - Ignoring duplicate property: visible
+685    [SitarExecutor] DEBUG - *Press Me* in window *org.eclipse.swt.widgets.Shell* has 0 children: []
+686    [SitarExecutor] INFO  - 
+686    [SitarExecutor] INFO  - ----------------------------------
+686    [SitarExecutor] INFO  - Ripping component: 
+687    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+687    [main] DEBUG - Ignoring duplicate property: enabled
+688    [main] DEBUG - Ignoring duplicate property: visible
+689    [main] DEBUG - Ignoring duplicate property: enabled
+689    [main] DEBUG - Ignoring duplicate property: visible
+689    [SitarExecutor] DEBUG - ** in window *org.eclipse.swt.widgets.Shell* has 0 children: []
+690    [SitarExecutor] INFO  - 
+690    [SitarExecutor] INFO  - ----------------------------------
+690    [SitarExecutor] INFO  - Ripping component: 
+690    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+691    [main] DEBUG - Ignoring duplicate property: enabled
+691    [main] DEBUG - Ignoring duplicate property: visible
+703    [main] DEBUG - Ignoring duplicate property: enabled
+704    [main] DEBUG - Ignoring duplicate property: visible
+704    [SitarExecutor] DEBUG - ** in window *org.eclipse.swt.widgets.Shell* has 0 children: []
+704    [SitarExecutor] INFO  - 
+704    [SitarExecutor] INFO  - ----------------------------------
+704    [SitarExecutor] INFO  - Ripping component: 
+705    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>New Button</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+705    [main] DEBUG - Ignoring duplicate property: enabled
+706    [main] DEBUG - Ignoring duplicate property: visible
+730    [main] DEBUG - Ignoring duplicate property: enabled
+730    [main] DEBUG - Ignoring duplicate property: visible
+731    [SitarExecutor] DEBUG - *New Button* in window *org.eclipse.swt.widgets.Shell* has 0 children: []
+731    [SitarExecutor] INFO  - 
+731    [SitarExecutor] INFO  - ----------------------------------
+731    [SitarExecutor] INFO  - Ripping component: 
+732    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Spinner</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+737    [main] DEBUG - Ignoring duplicate property: enabled
+738    [main] DEBUG - Ignoring duplicate property: visible
+740    [main] DEBUG - Ignoring duplicate property: enabled
+740    [main] DEBUG - Ignoring duplicate property: visible
+740    [SitarExecutor] DEBUG - ** in window *org.eclipse.swt.widgets.Shell* has 0 children: []
+740    [SitarExecutor] INFO  - 
+741    [SitarExecutor] INFO  - ----------------------------------
+741    [SitarExecutor] INFO  - Ripping component: 
+741    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Composite</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+741    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+742    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+742    [main] DEBUG - Ignoring duplicate property: enabled
+742    [main] DEBUG - Ignoring duplicate property: visible
+746    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+746    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+747    [main] DEBUG - Ignoring duplicate property: enabled
+747    [main] DEBUG - Ignoring duplicate property: visible
+748    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+748    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+749    [SitarExecutor] DEBUG - ** in window *org.eclipse.swt.widgets.Shell* has 2 children: [ - org.eclipse.swt.widgets.Text;  - org.eclipse.swt.widgets.Text; ]
+749    [SitarExecutor] INFO  - 
+749    [SitarExecutor] INFO  - ----------------------------------
+749    [SitarExecutor] INFO  - Ripping component: 
+749    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+752    [main] DEBUG - Ignoring duplicate property: enabled
+752    [main] DEBUG - Ignoring duplicate property: visible
+758    [main] DEBUG - Ignoring duplicate property: enabled
+758    [main] DEBUG - Ignoring duplicate property: visible
+758    [SitarExecutor] DEBUG - ** in window *org.eclipse.swt.widgets.Shell* has 0 children: []
+759    [SitarExecutor] INFO  - 
+759    [SitarExecutor] INFO  - ----------------------------------
+759    [SitarExecutor] INFO  - Ripping component: 
+759    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+762    [main] DEBUG - Ignoring duplicate property: enabled
+763    [main] DEBUG - Ignoring duplicate property: visible
+770    [main] DEBUG - Ignoring duplicate property: enabled
+770    [main] DEBUG - Ignoring duplicate property: visible
+771    [SitarExecutor] DEBUG - ** in window *org.eclipse.swt.widgets.Shell* has 0 children: []
+771    [SitarExecutor] INFO  - 
+771    [SitarExecutor] INFO  - ----------------------------------
+771    [SitarExecutor] INFO  - Ripping component: 
+771    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+772    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+773    [main] DEBUG - Ignoring duplicate property: enabled
+773    [main] DEBUG - Ignoring duplicate property: visible
+775    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+776    [main] DEBUG - Ignoring duplicate property: enabled
+779    [main] DEBUG - Ignoring duplicate property: visible
+779    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+779    [SitarExecutor] DEBUG - ** in window *org.eclipse.swt.widgets.Shell* has 1 children: [ - org.eclipse.swt.widgets.Text; ]
+779    [SitarExecutor] INFO  - 
+779    [SitarExecutor] INFO  - ----------------------------------
+779    [SitarExecutor] INFO  - Ripping component: 
+780    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+780    [main] DEBUG - Ignoring duplicate property: enabled
+781    [main] DEBUG - Ignoring duplicate property: visible
+783    [main] DEBUG - Ignoring duplicate property: enabled
+783    [main] DEBUG - Ignoring duplicate property: visible
+783    [SitarExecutor] DEBUG - ** in window *org.eclipse.swt.widgets.Shell* has 0 children: []
+836    [SitarExecutor] INFO  - Display disposed
+1192   [SitarExecutor] INFO  - -----------------------------
+1193   [SitarExecutor] INFO  - OUTPUT SUMARY: 
+1193   [SitarExecutor] INFO  - Number of Windows: 1
+1193   [SitarExecutor] INFO  - GUI file:GUITAR-Default.GUI
+1193   [SitarExecutor] INFO  - Open Component file:log_widget.xml
+1293   [SitarExecutor] INFO  - Time Elapsed: 00 : 00 : 01: 272

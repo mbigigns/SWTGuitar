@@ -1,20 +1,21 @@
 0      [main] ERROR - configuration.xml not found!!!
-92     [main] INFO  - No configuration file. Using an empty one...
-103    [main] DEBUG - =============================
-104    [main] DEBUG - Application URLs: 
-104    [main] DEBUG - -----------------------------
-105    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/Sitar/GUITAR-Ripper-Plugin-SWT/lib/swt-windows.jar
-105    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/Sitar/GUITAR-Ripper-Plugin-SWT/bin/
-105    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/Sitar/GUITAR-Ripper-Plugin-SWT/lib/GUITARModel-Core.jar
-173    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/Sitar/GUITAR-Ripper-Plugin-SWT/lib/GUIRipper-Core.jar
-173    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/Sitar/GUITAR-Ripper-Plugin-SWT/lib/args4j-2.0.12.jar
-173    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/Sitar/GUITAR-Ripper-Plugin-SWT-Test/bin/
-173    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/Sitar/GUITAR-Ripper-Plugin-SWT/lib/swtmodel.jar
-173    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/Sitar/GUITAR-Ripper-Plugin-SWT/lib/log4j-1.2.15.jar
-180    [main] DEBUG - =============================
-180    [main] DEBUG - Application Parameters: 
-181    [main] DEBUG - -----------------------------
-230    [SitarExecutor] ERROR - Uncaught exception
+1      [main] INFO  - No configuration file. Using an empty one...
+87     [main] DEBUG - =============================
+87     [main] DEBUG - Application URLs: 
+87     [main] DEBUG - -----------------------------
+88     [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/args4j-2.0.12.jar
+88     [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/swtmodel.jar
+88     [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/log4j-1.2.15.jar
+88     [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/bin/
+135    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/GUIRipper-Core.jar
+135    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/swt-windows.jar
+135    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT-Test/bin/
+135    [main] DEBUG - 	/C:/Users/Mike/Desktop/CMSC%20435/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/GUITARModel-Core.jar
+135    [main] DEBUG - =============================
+137    [main] DEBUG - Application Parameters: 
+137    [main] DEBUG - -----------------------------
+232    [main] ERROR - edu.umd.cs.guitar.model.SitarApplicationStartException: java.lang.reflect.InvocationTargetException
+233    [SitarExecutor] ERROR - Uncaught exception
 java.lang.UnsatisfiedLinkError: Cannot load 32-bit SWT libraries on 64-bit JVM
 	at org.eclipse.swt.internal.Library.loadLibrary(Unknown Source)
 	at org.eclipse.swt.internal.Library.loadLibrary(Unknown Source)
@@ -27,4 +28,3 @@ java.lang.UnsatisfiedLinkError: Cannot load 32-bit SWT libraries on 64-bit JVM
 	at edu.umd.cs.guitar.ripper.SitarExecutor.execute(SitarExecutor.java:216)
 	at edu.umd.cs.guitar.ripper.SitarRunner$1.run(SitarRunner.java:51)
 	at java.lang.Thread.run(Thread.java:619)
-233    [main] ERROR - edu.umd.cs.guitar.model.SitarApplicationStartException: java.lang.reflect.InvocationTargetException

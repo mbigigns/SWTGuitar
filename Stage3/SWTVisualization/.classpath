@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GUITAR-Model-Plugin-SWT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GUITAR-Replayer-Plugin-SWT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GUITAR-Replayer-Plugin-SWT-Test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GUITAR-Ripper-Plugin-SWT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GUITAR-Ripper-Plugin-SWT-Test"/>
+	<classpathentry kind="lib" path="/GUITAR-Model-Plugin-SWT/lib/swt-linux.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
