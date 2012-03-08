@@ -28,6 +28,10 @@
  */
 package edu.umd.cs.guitar.model.swtwidgets;
 
+import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -50,6 +54,8 @@ import org.eclipse.swt.widgets.Item;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Widget;
+import org.eclipse.swt.widgets.Menu;
+import org.eclipse.swt.widgets.MenuItem;
 
 import edu.umd.cs.guitar.event.GEvent;
 import edu.umd.cs.guitar.event.SitarDefaultAction;
@@ -75,6 +81,9 @@ public abstract class SitarWidget extends GComponent {
 	
 	private final Widget widget;
 	private final SitarWindow window;
+	static int widgetCounter = 0;
+	static ArrayList<Widget> list = new ArrayList<Widget>();
+	//static Widget headWidget = null;
 	
 	private SitarGUIInteraction lastInteraction;
 	
@@ -88,6 +97,70 @@ public abstract class SitarWidget extends GComponent {
 		this.widget = widget;
 		this.window = window;
 		lastInteraction = null;
+		
+		//if(widgetCounter == 0)
+		//{
+		//	headWidget = widget;
+		//}
+		//updateHead();
+		setData();
+	}
+	
+	/*
+	public void updateHead()
+	{	
+		FileOutputStream fos = null;
+		ObjectOutputStream oos = null;
+		
+		try
+		{
+			fos = new FileOutputStream("/root/Sitar/SWTVisualization/source.txt");
+			oos = new ObjectOutputStream(fos);
+		
+			oos.writeObject(headWidget);
+			oos.close();
+			fos.close();
+
+		}
+		catch(IOException ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+	*/
+	
+	
+	public void setData()
+	{
+		widget.getDisplay().syncExec(new Runnable() {
+			public void run() {
+				if(!list.contains(widget)){
+					String data = Integer.toString(widgetCounter);
+					
+					if(widget instanceof org.eclipse.swt.widgets.Control)
+					{
+						if(((Control)widget).getParent() != null)
+								data = data + " " + (String)((Control)widget).getParent().getData();
+					}
+					else if(widget instanceof org.eclipse.swt.widgets.MenuItem)
+					{
+						if(((MenuItem)widget).getParent() != null)
+							data = data + " " + (String)((MenuItem)widget).getParent().getData();
+					}
+					else if(widget instanceof org.eclipse.swt.widgets.Menu)
+					{
+						if(((Menu)widget).getParent() != null)
+						data = data + " " + (String)((Menu)widget).getParent().getData();
+					}
+					
+					widget.setData(data);
+					widgetCounter++;
+
+					list.add(widget);
+					//getParent().get
+				}
+			}
+		});
 	}
 
 	/**
@@ -138,6 +211,8 @@ public abstract class SitarWidget extends GComponent {
 			}
 			
 		});
+		
+	
 				
 		return title.get();
 	}
@@ -201,6 +276,7 @@ public abstract class SitarWidget extends GComponent {
 		
 		return point[0];
 	}
+	
 
 	/**
 	 * {@inheritDoc}
