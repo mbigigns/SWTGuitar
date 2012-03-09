@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EFG>
+    <Events>
+        <Event>
+            <EventId>e469111236</EventId>
+            <WidgetId>w469111236</WidgetId>
+            <Type>SYSTEM INTERACTION</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarDefaultAction</Action>
+        </Event>
+        <Event>
+            <EventId>e2331280120</EventId>
+            <WidgetId>w2331280120</WidgetId>
+            <Type>SYSTEM INTERACTION</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarDefaultAction</Action>
+        </Event>
+        <Event>
+            <EventId>e3043653620</EventId>
+            <WidgetId>w3043653620</WidgetId>
+            <Type>SYSTEM INTERACTION</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarEditableTextAction</Action>
+        </Event>
+        <Event>
+            <EventId>e798098196</EventId>
+            <WidgetId>w798098196</WidgetId>
+            <Type>SYSTEM INTERACTION</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarDefaultAction</Action>
+        </Event>
+        <Event>
+            <EventId>e2660267080</EventId>
+            <WidgetId>w2660267080</WidgetId>
+            <Type>SYSTEM INTERACTION</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarDefaultAction</Action>
+        </Event>
+    </Events>
+    <EventGraph>
+        <Row>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+        </Row>
+        <Row>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+        </Row>
+        <Row>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+        </Row>
+        <Row>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+        </Row>
+        <Row>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+            <E>1</E>
+        </Row>
+    </EventGraph>
+</EFG>
