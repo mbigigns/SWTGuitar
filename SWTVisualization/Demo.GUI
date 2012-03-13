@@ -54,14 +54,6 @@
                             <Value>Radio Button Demo</Value>
                         </Property>
                         <Property>
-                            <Name>height</Name>
-                            <Value>307</Value>
-                        </Property>
-                        <Property>
-                            <Name>width</Name>
-                            <Value>302</Value>
-                        </Property>
-                        <Property>
                             <Name>enabled</Name>
                             <Value>true</Value>
                         </Property>
@@ -100,14 +92,6 @@
 <Property>
     <Name>Title</Name>
     <Value></Value>
-</Property>
-<Property>
-    <Name>height</Name>
-    <Value>49</Value>
-</Property>
-<Property>
-    <Name>width</Name>
-    <Value>150</Value>
 </Property>
 <Property>
     <Name>enabled</Name>
@@ -154,14 +138,6 @@
             <Value>Circle</Value>
         </Property>
         <Property>
-            <Name>height</Name>
-            <Value>24</Value>
-        </Property>
-        <Property>
-            <Name>width</Name>
-            <Value>64</Value>
-        </Property>
-        <Property>
             <Name>enabled</Name>
             <Value>true</Value>
         </Property>
@@ -191,7 +167,7 @@
         </Property>
         <Property>
             <Name>X</Name>
-            <Value>77</Value>
+            <Value>74</Value>
         </Property>
         <Property>
             <Name>Y</Name>
@@ -204,14 +180,6 @@
         <Property>
             <Name>Title</Name>
             <Value>Square</Value>
-        </Property>
-        <Property>
-            <Name>height</Name>
-            <Value>24</Value>
-        </Property>
-        <Property>
-            <Name>width</Name>
-            <Value>73</Value>
         </Property>
         <Property>
             <Name>enabled</Name>
@@ -249,19 +217,11 @@
 </Property>
 <Property>
     <Name>Y</Name>
-    <Value>59</Value>
+    <Value>56</Value>
 </Property>
 <Property>
     <Name>Title</Name>
     <Value></Value>
-</Property>
-<Property>
-    <Name>height</Name>
-    <Value>52</Value>
-</Property>
-<Property>
-    <Name>width</Name>
-    <Value>216</Value>
 </Property>
 <Property>
     <Name>enabled</Name>
@@ -297,19 +257,11 @@
         </Property>
         <Property>
             <Name>Y</Name>
-            <Value>79</Value>
+            <Value>76</Value>
         </Property>
         <Property>
             <Name>Title</Name>
             <Value>Color</Value>
-        </Property>
-        <Property>
-            <Name>height</Name>
-            <Value>24</Value>
-        </Property>
-        <Property>
-            <Name>width</Name>
-            <Value>63</Value>
         </Property>
         <Property>
             <Name>enabled</Name>
@@ -341,23 +293,15 @@
         </Property>
         <Property>
             <Name>X</Name>
-            <Value>76</Value>
+            <Value>72</Value>
         </Property>
         <Property>
             <Name>Y</Name>
-            <Value>79</Value>
+            <Value>76</Value>
         </Property>
         <Property>
             <Name>Title</Name>
             <Value>None</Value>
-        </Property>
-        <Property>
-            <Name>height</Name>
-            <Value>24</Value>
-        </Property>
-        <Property>
-            <Name>width</Name>
-            <Value>62</Value>
         </Property>
         <Property>
             <Name>enabled</Name>
@@ -389,11 +333,11 @@
         </Property>
         <Property>
             <Name>X</Name>
-            <Value>141</Value>
+            <Value>135</Value>
         </Property>
         <Property>
             <Name>Y</Name>
-            <Value>79</Value>
+            <Value>76</Value>
         </Property>
         <Property>
             <Name>ReplayableAction</Name>
@@ -402,14 +346,6 @@
         <Property>
             <Name>Title</Name>
             <Value></Value>
-        </Property>
-        <Property>
-            <Name>height</Name>
-            <Value>27</Value>
-        </Property>
-        <Property>
-            <Name>width</Name>
-            <Value>75</Value>
         </Property>
         <Property>
             <Name>editable</Name>
@@ -451,19 +387,11 @@
 </Property>
 <Property>
     <Name>Y</Name>
-    <Value>116</Value>
+    <Value>111</Value>
 </Property>
 <Property>
     <Name>Title</Name>
     <Value></Value>
-</Property>
-<Property>
-    <Name>height</Name>
-    <Value>83</Value>
-</Property>
-<Property>
-    <Name>width</Name>
-    <Value>119</Value>
 </Property>
 <Property>
     <Name>enabled</Name>
@@ -499,19 +427,11 @@
 </Property>
 <Property>
     <Name>Y</Name>
-    <Value>204</Value>
+    <Value>199</Value>
 </Property>
 <Property>
     <Name>Title</Name>
     <Value>Create Shape</Value>
-</Property>
-<Property>
-    <Name>height</Name>
-    <Value>29</Value>
-</Property>
-<Property>
-    <Name>width</Name>
-    <Value>101</Value>
 </Property>
 <Property>
     <Name>enabled</Name>
@@ -547,19 +467,11 @@
 </Property>
 <Property>
     <Name>Y</Name>
-    <Value>238</Value>
+    <Value>233</Value>
 </Property>
 <Property>
     <Name>Title</Name>
     <Value>Reset</Value>
-</Property>
-<Property>
-    <Name>height</Name>
-    <Value>29</Value>
-</Property>
-<Property>
-    <Name>width</Name>
-    <Value>50</Value>
 </Property>
 <Property>
     <Name>enabled</Name>
