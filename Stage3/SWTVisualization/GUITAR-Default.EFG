@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EFG>
+    <Events>
+        <Event>
+            <EventId>e3843043048</EventId>
+            <WidgetId>w3843043048</WidgetId>
+            <Type>UNRESTRICED FOCUS</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarDefaultAction</Action>
+        </Event>
+        <Event>
+            <EventId>e2635454584</EventId>
+            <WidgetId>w2635454584</WidgetId>
+            <Type>SYSTEM INTERACTION</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarDefaultAction</Action>
+        </Event>
+    </Events>
+    <EventGraph>
+        <Row>
+            <E>1</E>
+            <E>1</E>
+        </Row>
+        <Row>
+            <E>1</E>
+            <E>1</E>
+        </Row>
+    </EventGraph>
+</EFG>
