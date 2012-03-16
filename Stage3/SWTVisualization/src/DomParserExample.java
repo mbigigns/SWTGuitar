@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -17,12 +19,21 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Color;
+import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Widget;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+
+import efg.EFGParser;
+import efg.EventFlowGraph;
+import efg.WidgetId;
+import efg.EventFlowGraph.EdgeType;
 
 public class DomParserExample {
 
@@ -45,6 +56,15 @@ public class DomParserExample {
 
 		//get each employee element and create a Employee object
 		parseDoc();
+
+		try {
+			setEFGVerifiers();
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		VisualizationGenerator.Show();
 		//generateXML();
 
 		//Iterate through the list and print the data
@@ -52,13 +72,11 @@ public class DomParserExample {
 
 	}
 
-
 	private static void parseXmlFile(){
 		//get the factory
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
 		try {
-
 			//Using factory get an instance of document builder
 			DocumentBuilder db = dbf.newDocumentBuilder();
 
@@ -74,8 +92,6 @@ public class DomParserExample {
 			ioe.printStackTrace();
 		}
 	}
-
-
 
 	public 	ArrayList<HashMap<String, String>> eventList = new ArrayList <HashMap <String, String>>();
 	public 	HashMap <HashMap<String, String>, ArrayList<String>> edgeMap = new HashMap <HashMap<String, String>, ArrayList<String>>();
@@ -103,7 +119,6 @@ public class DomParserExample {
 				NodeList nlList = property.getElementsByTagName("Name").item(0).getChildNodes();
 		        Node nValue = (Node) nlList.item(0);
 				String propertyName = property.getElementsByTagName("Name").item(0).getChildNodes().item(0).getNodeValue();
-				//System.out.println(property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
 				
 				if(propertyName.equals("ID"))
 				{
@@ -161,14 +176,46 @@ public class DomParserExample {
 					//System.out.println(property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
 					eventMap.put("style", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
 				}
-		
-				
 			}
-
-			
 			VisualizationGenerator.addWidget(eventMap);
 		}
-		VisualizationGenerator.Show();
 	}
+	
+	public static void setEFGVerifiers() throws SAXException
+	{
+		Display display = Display.getCurrent();
+		Color blue = display.getSystemColor(SWT.COLOR_BLUE);
+		Color red = display.getSystemColor(SWT.COLOR_RED);
 
+		EventFlowGraph parsedGraph = EFGParser.parseFile("GUITAR-Default.EFG");
+		for(Widget widget:VisualizationGenerator.widgetList.keySet())
+		{
+			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
+			
+			boolean hasNeighbors = false;
+			
+			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NONE).isEmpty();
+			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NORMAL).isEmpty();
+			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.REACHING).isEmpty();
+			if(widget instanceof Control && hasNeighbors)
+			{
+				System.out.println(neighbors);
+				Control control = (Control) widget;
+				control.setBackground(red);
+			}
+			widget.addListener(SWT.MouseDoubleClick, new EFGRenderListener(neighbors, blue));
+		}
+/*		for(Widget widget:VisualizationGenerator.widgetList.keySet())
+		{
+			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
+			for(int i=1;i<3;i++)
+			{
+				for(WidgetId neighborId: neighbors.get(i))
+				{
+					Widget neighbor = VisualizationGenerator.widgetIDs.get(neighborId);
+					neighbor.addListener(SWT.MouseDoubleClick, new EFGRenderListener());
+				}
+			}
+		}*/
+	}
 }

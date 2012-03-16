@@ -1,13 +1,120 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <LogWidget>
-    <OpenWindow/>
+    <OpenWindow>
+        <FullComponent>
+            <Window>
+                <Attributes>
+                    <Property>
+                        <Name>Title</Name>
+                        <Value>Window</Value>
+                    </Property>
+                    <Property>
+                        <Name>Modal</Name>
+                        <Value>false</Value>
+                    </Property>
+                    <Property>
+                        <Name>Rootwindow</Name>
+                        <Value>true</Value>
+                    </Property>
+                    <Property>
+                        <Name>bounds</Name>
+                        <Value>Rectangle {25, 25, 250, 250}</Value>
+                    </Property>
+                    <Property>
+                        <Name>data</Name>
+                        <Value>0</Value>
+                    </Property>
+                    <Property>
+                        <Name>size</Name>
+                        <Value>Point {250, 250}</Value>
+                    </Property>
+                    <Property>
+                        <Name>style</Name>
+                        <Value>33555696</Value>
+                    </Property>
+                    <Property>
+                        <Name>visible</Name>
+                        <Value>true</Value>
+                    </Property>
+                </Attributes>
+            </Window>
+            <Component>
+                <Attributes>
+                    <Property>
+                        <Name>ID</Name>
+                        <Value>w3843043048</Value>
+                    </Property>
+                    <Property>
+                        <Name>Class</Name>
+                        <Value>org.eclipse.swt.widgets.Button</Value>
+                    </Property>
+                    <Property>
+                        <Name>Type</Name>
+                        <Value>SYSTEM INTERACTION</Value>
+                    </Property>
+                    <Property>
+                        <Name>X</Name>
+                        <Value>85</Value>
+                    </Property>
+                    <Property>
+                        <Name>Y</Name>
+                        <Value>110</Value>
+                    </Property>
+                    <Property>
+                        <Name>ReplayableAction</Name>
+                        <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                    </Property>
+                    <Property>
+                        <Name>Title</Name>
+                        <Value>Add Window</Value>
+                    </Property>
+                    <Property>
+                        <Name>bounds</Name>
+                        <Value>Rectangle {85, 110, 80, 30}</Value>
+                    </Property>
+                    <Property>
+                        <Name>data</Name>
+                        <Value>1 0</Value>
+                    </Property>
+                    <Property>
+                        <Name>enabled</Name>
+                        <Value>true</Value>
+                    </Property>
+                    <Property>
+                        <Name>parent</Name>
+                        <Value>Shell {Window}</Value>
+                    </Property>
+                    <Property>
+                        <Name>size</Name>
+                        <Value>Point {80, 30}</Value>
+                    </Property>
+                    <Property>
+                        <Name>style</Name>
+                        <Value>50331656</Value>
+                    </Property>
+                    <Property>
+                        <Name>text</Name>
+                        <Value>Add Window</Value>
+                    </Property>
+                    <Property>
+                        <Name>visible</Name>
+                        <Value>true</Value>
+                    </Property>
+                    <Property>
+                        <Name>Invokelist</Name>
+                        <Value>Window 1</Value>
+                    </Property>
+                </Attributes>
+            </Component>
+        </FullComponent>
+    </OpenWindow>
     <CloseWindow>
         <FullComponent>
             <Window>
                 <Attributes>
                     <Property>
                         <Name>Title</Name>
-                        <Value>org.eclipse.swt.widgets.Shell</Value>
+                        <Value>Window</Value>
                     </Property>
                     <Property>
                         <Name>Modal</Name>
@@ -19,23 +126,19 @@
                     </Property>
                     <Property>
                         <Name>bounds</Name>
-                        <Value>Rectangle {0, 25, 143, 271}</Value>
+                        <Value>Rectangle {25, 25, 250, 250}</Value>
                     </Property>
                     <Property>
                         <Name>data</Name>
                         <Value>0</Value>
                     </Property>
                     <Property>
-                        <Name>layout</Name>
-                        <Value>GridLayout {numColumns=2 marginWidth=5 marginHeight=5 horizontalSpacing=5 verticalSpacing=5}</Value>
-                    </Property>
-                    <Property>
                         <Name>size</Name>
-                        <Value>Point {143, 271}</Value>
+                        <Value>Point {250, 250}</Value>
                     </Property>
                     <Property>
                         <Name>style</Name>
-                        <Value>570426608</Value>
+                        <Value>33555696</Value>
                     </Property>
                     <Property>
                         <Name>visible</Name>
@@ -47,7 +150,7 @@
                 <Attributes>
                     <Property>
                         <Name>ID</Name>
-                        <Value>w1311575748</Value>
+                        <Value>w1819273420</Value>
                     </Property>
                     <Property>
                         <Name>Class</Name>
@@ -67,11 +170,11 @@
                     </Property>
                     <Property>
                         <Name>Title</Name>
-                        <Value></Value>
+                        <Value>Window</Value>
                     </Property>
                     <Property>
                         <Name>bounds</Name>
-                        <Value>Rectangle {0, 25, 143, 271}</Value>
+                        <Value>Rectangle {25, 25, 250, 250}</Value>
                     </Property>
                     <Property>
                         <Name>data</Name>
@@ -83,15 +186,15 @@
                     </Property>
                     <Property>
                         <Name>size</Name>
-                        <Value>Point {143, 271}</Value>
+                        <Value>Point {250, 250}</Value>
                     </Property>
                     <Property>
                         <Name>style</Name>
-                        <Value>570426608</Value>
+                        <Value>33555696</Value>
                     </Property>
                     <Property>
                         <Name>text</Name>
-                        <Value></Value>
+                        <Value>Window</Value>
                     </Property>
                     <Property>
                         <Name>visible</Name>
@@ -103,11 +206,11 @@
                         <Attributes>
                             <Property>
 <Name>ID</Name>
-<Value>w682146660</Value>
+<Value>w3843043048</Value>
                             </Property>
                             <Property>
 <Name>Class</Name>
-<Value>org.eclipse.swt.widgets.Label</Value>
+<Value>org.eclipse.swt.widgets.Button</Value>
                             </Property>
                             <Property>
 <Name>Type</Name>
@@ -115,19 +218,23 @@
                             </Property>
                             <Property>
 <Name>X</Name>
-<Value>5</Value>
+<Value>85</Value>
                             </Property>
                             <Property>
 <Name>Y</Name>
-<Value>11</Value>
+<Value>110</Value>
+                            </Property>
+                            <Property>
+<Name>ReplayableAction</Name>
+<Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
                             </Property>
                             <Property>
 <Name>Title</Name>
-<Value></Value>
+<Value>Add Window</Value>
                             </Property>
                             <Property>
 <Name>bounds</Name>
-<Value>Rectangle {5, 11, 45, 17}</Value>
+<Value>Rectangle {85, 110, 80, 30}</Value>
                             </Property>
                             <Property>
 <Name>data</Name>
@@ -139,23 +246,27 @@
                             </Property>
                             <Property>
 <Name>parent</Name>
-<Value>Shell {}</Value>
+<Value>Shell {Window}</Value>
                             </Property>
                             <Property>
 <Name>size</Name>
-<Value>Point {45, 17}</Value>
+<Value>Point {80, 30}</Value>
                             </Property>
                             <Property>
 <Name>style</Name>
-<Value>570966016</Value>
+<Value>50331656</Value>
                             </Property>
                             <Property>
 <Name>text</Name>
-<Value>A lable</Value>
+<Value>Add Window</Value>
                             </Property>
                             <Property>
 <Name>visible</Name>
 <Value>true</Value>
+                            </Property>
+                            <Property>
+<Name>Invokelist</Name>
+<Value>Window 1</Value>
                             </Property>
                         </Attributes>
                     </Widget>
@@ -163,7 +274,7 @@
                         <Attributes>
                             <Property>
 <Name>ID</Name>
-<Value>w2099270238</Value>
+<Value>w2635454584</Value>
                             </Property>
                             <Property>
 <Name>Class</Name>
@@ -175,19 +286,23 @@
                             </Property>
                             <Property>
 <Name>X</Name>
-<Value>55</Value>
+<Value>20</Value>
                             </Property>
                             <Property>
 <Name>Y</Name>
-<Value>5</Value>
+<Value>20</Value>
+                            </Property>
+                            <Property>
+<Name>ReplayableAction</Name>
+<Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
                             </Property>
                             <Property>
 <Name>Title</Name>
-<Value>Press Me</Value>
+<Value>Change Color</Value>
                             </Property>
                             <Property>
 <Name>bounds</Name>
-<Value>Rectangle {55, 5, 71, 29}</Value>
+<Value>Rectangle {20, 20, 80, 30}</Value>
                             </Property>
                             <Property>
 <Name>data</Name>
@@ -199,19 +314,19 @@
                             </Property>
                             <Property>
 <Name>parent</Name>
-<Value>Shell {}</Value>
+<Value>Shell {Window}</Value>
                             </Property>
                             <Property>
 <Name>size</Name>
-<Value>Point {71, 29}</Value>
+<Value>Point {80, 30}</Value>
                             </Property>
                             <Property>
 <Name>style</Name>
-<Value>587202568</Value>
+<Value>50331656</Value>
                             </Property>
                             <Property>
 <Name>text</Name>
-<Value>Press Me</Value>
+<Value>Change Color</Value>
                             </Property>
                             <Property>
 <Name>visible</Name>
@@ -219,567 +334,101 @@
                             </Property>
                         </Attributes>
                     </Widget>
-                    <Widget>
-                        <Attributes>
-                            <Property>
-<Name>ID</Name>
-<Value>w682146784</Value>
-                            </Property>
-                            <Property>
-<Name>Class</Name>
-<Value>org.eclipse.swt.widgets.Label</Value>
-                            </Property>
-                            <Property>
-<Name>Type</Name>
-<Value>SYSTEM INTERACTION</Value>
-                            </Property>
-                            <Property>
-<Name>X</Name>
-<Value>5</Value>
-                            </Property>
-                            <Property>
-<Name>Y</Name>
-<Value>39</Value>
-                            </Property>
-                            <Property>
-<Name>Title</Name>
-<Value></Value>
-                            </Property>
-                            <Property>
-<Name>bounds</Name>
-<Value>Rectangle {5, 39, 121, 19}</Value>
-                            </Property>
-                            <Property>
-<Name>data</Name>
-<Value>3 0</Value>
-                            </Property>
-                            <Property>
-<Name>enabled</Name>
-<Value>true</Value>
-                            </Property>
-                            <Property>
-<Name>parent</Name>
-<Value>Shell {}</Value>
-                            </Property>
-                            <Property>
-<Name>size</Name>
-<Value>Point {121, 19}</Value>
-                            </Property>
-                            <Property>
-<Name>style</Name>
-<Value>570968064</Value>
-                            </Property>
-                            <Property>
-<Name>text</Name>
-<Value>This is a label</Value>
-                            </Property>
-                            <Property>
-<Name>visible</Name>
-<Value>true</Value>
-                            </Property>
-                        </Attributes>
-                    </Widget>
-                    <Widget>
-                        <Attributes>
-                            <Property>
-<Name>ID</Name>
-<Value>w682146846</Value>
-                            </Property>
-                            <Property>
-<Name>Class</Name>
-<Value>org.eclipse.swt.widgets.Label</Value>
-                            </Property>
-                            <Property>
-<Name>Type</Name>
-<Value>SYSTEM INTERACTION</Value>
-                            </Property>
-                            <Property>
-<Name>X</Name>
-<Value>5</Value>
-                            </Property>
-                            <Property>
-<Name>Y</Name>
-<Value>63</Value>
-                            </Property>
-                            <Property>
-<Name>Title</Name>
-<Value></Value>
-                            </Property>
-                            <Property>
-<Name>bounds</Name>
-<Value>Rectangle {5, 63, 121, 2}</Value>
-                            </Property>
-                            <Property>
-<Name>data</Name>
-<Value>4 0</Value>
-                            </Property>
-                            <Property>
-<Name>enabled</Name>
-<Value>true</Value>
-                            </Property>
-                            <Property>
-<Name>parent</Name>
-<Value>Shell {}</Value>
-                            </Property>
-                            <Property>
-<Name>size</Name>
-<Value>Point {121, 2}</Value>
-                            </Property>
-                            <Property>
-<Name>style</Name>
-<Value>570949898</Value>
-                            </Property>
-                            <Property>
-<Name>text</Name>
-<Value></Value>
-                            </Property>
-                            <Property>
-<Name>visible</Name>
-<Value>true</Value>
-                            </Property>
-                        </Attributes>
-                    </Widget>
-                    <Widget>
-                        <Attributes>
-                            <Property>
-<Name>ID</Name>
-<Value>w3396198284</Value>
-                            </Property>
-                            <Property>
-<Name>Class</Name>
-<Value>org.eclipse.swt.widgets.Button</Value>
-                            </Property>
-                            <Property>
-<Name>Type</Name>
-<Value>SYSTEM INTERACTION</Value>
-                            </Property>
-                            <Property>
-<Name>X</Name>
-<Value>38</Value>
-                            </Property>
-                            <Property>
-<Name>Y</Name>
-<Value>70</Value>
-                            </Property>
-                            <Property>
-<Name>Title</Name>
-<Value>New Button</Value>
-                            </Property>
-                            <Property>
-<Name>bounds</Name>
-<Value>Rectangle {38, 70, 88, 29}</Value>
-                            </Property>
-                            <Property>
-<Name>data</Name>
-<Value>5 0</Value>
-                            </Property>
-                            <Property>
-<Name>enabled</Name>
-<Value>true</Value>
-                            </Property>
-                            <Property>
-<Name>parent</Name>
-<Value>Shell {}</Value>
-                            </Property>
-                            <Property>
-<Name>size</Name>
-<Value>Point {88, 29}</Value>
-                            </Property>
-                            <Property>
-<Name>style</Name>
-<Value>587202568</Value>
-                            </Property>
-                            <Property>
-<Name>text</Name>
-<Value>New Button</Value>
-                            </Property>
-                            <Property>
-<Name>visible</Name>
-<Value>true</Value>
-                            </Property>
-                        </Attributes>
-                    </Widget>
-                    <Widget>
-                        <Attributes>
-                            <Property>
-<Name>ID</Name>
-<Value>w215204398</Value>
-                            </Property>
-                            <Property>
-<Name>Class</Name>
-<Value>org.eclipse.swt.widgets.Spinner</Value>
-                            </Property>
-                            <Property>
-<Name>Type</Name>
-<Value>SYSTEM INTERACTION</Value>
-                            </Property>
-                            <Property>
-<Name>X</Name>
-<Value>5</Value>
-                            </Property>
-                            <Property>
-<Name>Y</Name>
-<Value>104</Value>
-                            </Property>
-                            <Property>
-<Name>Title</Name>
-<Value></Value>
-                            </Property>
-                            <Property>
-<Name>bounds</Name>
-<Value>Rectangle {5, 104, 121, 21}</Value>
-                            </Property>
-                            <Property>
-<Name>data</Name>
-<Value>6 0</Value>
-                            </Property>
-                            <Property>
-<Name>enabled</Name>
-<Value>true</Value>
-                            </Property>
-                            <Property>
-<Name>parent</Name>
-<Value>Shell {}</Value>
-                            </Property>
-                            <Property>
-<Name>size</Name>
-<Value>Point {121, 21}</Value>
-                            </Property>
-                            <Property>
-<Name>style</Name>
-<Value>570425352</Value>
-                            </Property>
-                            <Property>
-<Name>text</Name>
-<Value>500</Value>
-                            </Property>
-                            <Property>
-<Name>visible</Name>
-<Value>true</Value>
-                            </Property>
-                        </Attributes>
-                    </Widget>
-                    <Container>
-                        <Attributes>
-                            <Property>
-<Name>ID</Name>
-<Value>w2773009444</Value>
-                            </Property>
-                            <Property>
-<Name>Class</Name>
-<Value>org.eclipse.swt.widgets.Composite</Value>
-                            </Property>
-                            <Property>
-<Name>Type</Name>
-<Value>SYSTEM INTERACTION</Value>
-                            </Property>
-                            <Property>
-<Name>X</Name>
-<Value>5</Value>
-                            </Property>
-                            <Property>
-<Name>Y</Name>
-<Value>130</Value>
-                            </Property>
-                            <Property>
-<Name>Title</Name>
-<Value></Value>
-                            </Property>
-                            <Property>
-<Name>bounds</Name>
-<Value>Rectangle {5, 130, 121, 59}</Value>
-                            </Property>
-                            <Property>
-<Name>data</Name>
-<Value>7 0</Value>
-                            </Property>
-                            <Property>
-<Name>enabled</Name>
-<Value>true</Value>
-                            </Property>
-                            <Property>
-<Name>parent</Name>
-<Value>Shell {}</Value>
-                            </Property>
-                            <Property>
-<Name>size</Name>
-<Value>Point {121, 59}</Value>
-                            </Property>
-                            <Property>
-<Name>style</Name>
-<Value>570427392</Value>
-                            </Property>
-                            <Property>
-<Name>visible</Name>
-<Value>true</Value>
-                            </Property>
-                        </Attributes>
-                        <Contents>
-                            <Widget>
-<Attributes>
-    <Property>
-        <Name>ID</Name>
-        <Value>w382086264</Value>
-    </Property>
-    <Property>
-        <Name>Class</Name>
-        <Value>org.eclipse.swt.widgets.Text</Value>
-    </Property>
-    <Property>
-        <Name>Type</Name>
-        <Value>SYSTEM INTERACTION</Value>
-    </Property>
-    <Property>
-        <Name>X</Name>
-        <Value>10</Value>
-    </Property>
-    <Property>
-        <Name>Y</Name>
-        <Value>135</Value>
-    </Property>
-    <Property>
-        <Name>Title</Name>
-        <Value></Value>
-    </Property>
-    <Property>
-        <Name>bounds</Name>
-        <Value>Rectangle {5, 5, 109, 21}</Value>
-    </Property>
-    <Property>
-        <Name>data</Name>
-        <Value>9 7 0</Value>
-    </Property>
-    <Property>
-        <Name>editable</Name>
-        <Value>false</Value>
-    </Property>
-    <Property>
-        <Name>enabled</Name>
-        <Value>true</Value>
-    </Property>
-    <Property>
-        <Name>parent</Name>
-        <Value>Composite {}</Value>
-    </Property>
-    <Property>
-        <Name>size</Name>
-        <Value>Point {109, 21}</Value>
-    </Property>
-    <Property>
-        <Name>style</Name>
-        <Value>570441740</Value>
-    </Property>
-    <Property>
-        <Name>text</Name>
-        <Value>Read only</Value>
-    </Property>
-    <Property>
-        <Name>visible</Name>
-        <Value>true</Value>
-    </Property>
-</Attributes>
-                            </Widget>
-                            <Widget>
-<Attributes>
-    <Property>
-        <Name>ID</Name>
-        <Value>w382086326</Value>
-    </Property>
-    <Property>
-        <Name>Class</Name>
-        <Value>org.eclipse.swt.widgets.Text</Value>
-    </Property>
-    <Property>
-        <Name>Type</Name>
-        <Value>SYSTEM INTERACTION</Value>
-    </Property>
-    <Property>
-        <Name>X</Name>
-        <Value>10</Value>
-    </Property>
-    <Property>
-        <Name>Y</Name>
-        <Value>161</Value>
-    </Property>
-    <Property>
-        <Name>ReplayableAction</Name>
-        <Value>edu.umd.cs.guitar.event.SitarEditableTextAction</Value>
-    </Property>
-    <Property>
-        <Name>Title</Name>
-        <Value></Value>
-    </Property>
-    <Property>
-        <Name>bounds</Name>
-        <Value>Rectangle {5, 31, 85, 21}</Value>
-    </Property>
-    <Property>
-        <Name>data</Name>
-        <Value>10 7 0</Value>
-    </Property>
-    <Property>
-        <Name>editable</Name>
-        <Value>true</Value>
-    </Property>
-    <Property>
-        <Name>enabled</Name>
-        <Value>true</Value>
-    </Property>
-    <Property>
-        <Name>parent</Name>
-        <Value>Composite {}</Value>
-    </Property>
-    <Property>
-        <Name>size</Name>
-        <Value>Point {85, 21}</Value>
-    </Property>
-    <Property>
-        <Name>style</Name>
-        <Value>570441732</Value>
-    </Property>
-    <Property>
-        <Name>text</Name>
-        <Value>Another test</Value>
-    </Property>
-    <Property>
-        <Name>visible</Name>
-        <Value>true</Value>
-    </Property>
-</Attributes>
-                            </Widget>
-                        </Contents>
-                    </Container>
-                    <Container>
-                        <Attributes>
-                            <Property>
-<Name>ID</Name>
-<Value>w2108670018</Value>
-                            </Property>
-                            <Property>
-<Name>Class</Name>
-<Value>org.eclipse.swt.widgets.Group</Value>
-                            </Property>
-                            <Property>
-<Name>Type</Name>
-<Value>SYSTEM INTERACTION</Value>
-                            </Property>
-                            <Property>
-<Name>X</Name>
-<Value>5</Value>
-                            </Property>
-                            <Property>
-<Name>Y</Name>
-<Value>194</Value>
-                            </Property>
-                            <Property>
-<Name>Title</Name>
-<Value></Value>
-                            </Property>
-                            <Property>
-<Name>bounds</Name>
-<Value>Rectangle {5, 194, 121, 45}</Value>
-                            </Property>
-                            <Property>
-<Name>data</Name>
-<Value>8 0</Value>
-                            </Property>
-                            <Property>
-<Name>enabled</Name>
-<Value>true</Value>
-                            </Property>
-                            <Property>
-<Name>parent</Name>
-<Value>Shell {}</Value>
-                            </Property>
-                            <Property>
-<Name>size</Name>
-<Value>Point {121, 45}</Value>
-                            </Property>
-                            <Property>
-<Name>style</Name>
-<Value>570949632</Value>
-                            </Property>
-                            <Property>
-<Name>text</Name>
-<Value>This is my group</Value>
-                            </Property>
-                            <Property>
-<Name>visible</Name>
-<Value>true</Value>
-                            </Property>
-                        </Attributes>
-                        <Contents>
-                            <Widget>
-<Attributes>
-    <Property>
-        <Name>ID</Name>
-        <Value>w2600871468</Value>
-    </Property>
-    <Property>
-        <Name>Class</Name>
-        <Value>org.eclipse.swt.widgets.Text</Value>
-    </Property>
-    <Property>
-        <Name>Type</Name>
-        <Value>SYSTEM INTERACTION</Value>
-    </Property>
-    <Property>
-        <Name>X</Name>
-        <Value>9</Value>
-    </Property>
-    <Property>
-        <Name>Y</Name>
-        <Value>214</Value>
-    </Property>
-    <Property>
-        <Name>ReplayableAction</Name>
-        <Value>edu.umd.cs.guitar.event.SitarEditableTextAction</Value>
-    </Property>
-    <Property>
-        <Name>Title</Name>
-        <Value></Value>
-    </Property>
-    <Property>
-        <Name>bounds</Name>
-        <Value>Rectangle {4, 20, 85, 21}</Value>
-    </Property>
-    <Property>
-        <Name>data</Name>
-        <Value>11 8 0</Value>
-    </Property>
-    <Property>
-        <Name>editable</Name>
-        <Value>true</Value>
-    </Property>
-    <Property>
-        <Name>enabled</Name>
-        <Value>true</Value>
-    </Property>
-    <Property>
-        <Name>parent</Name>
-        <Value>Group {This is my group}</Value>
-    </Property>
-    <Property>
-        <Name>size</Name>
-        <Value>Point {85, 21}</Value>
-    </Property>
-    <Property>
-        <Name>style</Name>
-        <Value>570441732</Value>
-    </Property>
-    <Property>
-        <Name>text</Name>
-        <Value>Another test</Value>
-    </Property>
-    <Property>
-        <Name>visible</Name>
-        <Value>true</Value>
-    </Property>
-</Attributes>
-                            </Widget>
-                        </Contents>
-                    </Container>
                 </Contents>
+            </Component>
+        </FullComponent>
+        <FullComponent>
+            <Window>
+                <Attributes>
+                    <Property>
+                        <Name>Title</Name>
+                        <Value>Window 1</Value>
+                    </Property>
+                    <Property>
+                        <Name>Modal</Name>
+                        <Value>false</Value>
+                    </Property>
+                    <Property>
+                        <Name>Rootwindow</Name>
+                        <Value>false</Value>
+                    </Property>
+                    <Property>
+                        <Name>bounds</Name>
+                        <Value>Rectangle {50, 50, 250, 250}</Value>
+                    </Property>
+                    <Property>
+                        <Name>data</Name>
+                        <Value>3</Value>
+                    </Property>
+                    <Property>
+                        <Name>size</Name>
+                        <Value>Point {250, 250}</Value>
+                    </Property>
+                    <Property>
+                        <Name>style</Name>
+                        <Value>33555696</Value>
+                    </Property>
+                    <Property>
+                        <Name>visible</Name>
+                        <Value>true</Value>
+                    </Property>
+                </Attributes>
+            </Window>
+            <Component>
+                <Attributes>
+                    <Property>
+                        <Name>ID</Name>
+                        <Value>w3817861452</Value>
+                    </Property>
+                    <Property>
+                        <Name>Class</Name>
+                        <Value>org.eclipse.swt.widgets.Shell</Value>
+                    </Property>
+                    <Property>
+                        <Name>Type</Name>
+                        <Value>TERMINAL</Value>
+                    </Property>
+                    <Property>
+                        <Name>X</Name>
+                        <Value>0</Value>
+                    </Property>
+                    <Property>
+                        <Name>Y</Name>
+                        <Value>0</Value>
+                    </Property>
+                    <Property>
+                        <Name>Title</Name>
+                        <Value>Window 1</Value>
+                    </Property>
+                    <Property>
+                        <Name>bounds</Name>
+                        <Value>Rectangle {50, 50, 250, 250}</Value>
+                    </Property>
+                    <Property>
+                        <Name>data</Name>
+                        <Value>3</Value>
+                    </Property>
+                    <Property>
+                        <Name>enabled</Name>
+                        <Value>true</Value>
+                    </Property>
+                    <Property>
+                        <Name>size</Name>
+                        <Value>Point {250, 250}</Value>
+                    </Property>
+                    <Property>
+                        <Name>style</Name>
+                        <Value>33555696</Value>
+                    </Property>
+                    <Property>
+                        <Name>text</Name>
+                        <Value>Window 1</Value>
+                    </Property>
+                    <Property>
+                        <Name>visible</Name>
+                        <Value>true</Value>
+                    </Property>
+                </Attributes>
             </Component>
         </FullComponent>
     </CloseWindow>

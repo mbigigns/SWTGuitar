@@ -104,6 +104,7 @@ public class EventFlowGraph {
 	public Map<EdgeType, Set<WidgetId>> getFollowingWidgets(WidgetId widgetId) {
 		
 		EnumMap<EdgeType, Set<WidgetId>> followingWidgets = new EnumMap<EdgeType, Set<WidgetId>>(EdgeType.class);
+				
 		// initialize the returned adjacencies
 		for (EdgeType edgeType : EdgeType.values()) {
 			followingWidgets.put(edgeType, new HashSet<WidgetId>());
@@ -111,12 +112,14 @@ public class EventFlowGraph {
 		
 		List<EFGEvent> events = this.widgets.get(widgetId);
 		// for each event, get all adjacencies and add them to the set of return values
-		for (EFGEvent event : events) {
-			for (Adjacency outgoingEdge : this.outgoingEdges.get(event)) {
-				followingWidgets.get(outgoingEdge.edgeType).add(outgoingEdge.event.getWidgetId());
+		if(events!=null)
+		{
+			for (EFGEvent event : events) {
+				for (Adjacency outgoingEdge : this.outgoingEdges.get(event)) {
+					followingWidgets.get(outgoingEdge.edgeType).add(outgoingEdge.event.getWidgetId());
+				}
 			}
 		}
-		
 		return followingWidgets;
 	}
 	

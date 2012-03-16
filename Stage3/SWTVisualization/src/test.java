@@ -14,7 +14,7 @@ public class test {
 	public static void main(String args[])
 	{
 		SitarRipperConfiguration config = new SitarRipperConfiguration();
-		config.setMainClass(SWTBasicApp.class.getName());
+		config.setMainClass(SWTMultiWindowDynamicApp.class.getName());
 		SitarRipper ripper = new SitarRipper(config);
 
 		

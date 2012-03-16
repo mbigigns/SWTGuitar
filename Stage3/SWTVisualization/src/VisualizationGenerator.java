@@ -2,6 +2,7 @@
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Point;
@@ -18,6 +19,8 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Spinner;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Widget;
+
+import efg.WidgetId;
 
 public class VisualizationGenerator {
 	/*	public Shell rootWindow = readWindow();
@@ -55,6 +58,8 @@ public class VisualizationGenerator {
 	 */
 
 	static HashMap<String, Widget> widgets = new HashMap<String, Widget>();
+	static HashMap<WidgetId, Widget> widgetIDs = new HashMap<WidgetId, Widget>();
+	static HashMap<Widget,WidgetId> widgetList = new HashMap<Widget,WidgetId>();
 	static Display display = new Display();
 	static ArrayList<Shell> shellList = new ArrayList<Shell>();
 	public static void addWidget(HashMap<String, String> properties)
@@ -109,14 +114,14 @@ public class VisualizationGenerator {
 
 			//shell.open();
 
-			widgets.put(data, shell);
+			addWidgetToMap(data, properties.get("ID"), shell);
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Composite"))
 		{
 			Composite composite = new Composite((Composite)(widgets.get(parent)), style);
 			composite.setBounds(x, y, width, height);
 			composite.setToolTipText(ID);
-			widgets.put(data, composite);
+			addWidgetToMap(data, properties.get("ID"), composite);
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Label"))
 		{
@@ -125,7 +130,7 @@ public class VisualizationGenerator {
 			label.setToolTipText(ID);
 			if(properties.get("text") != null)
 				label.setText(properties.get("text"));
-			widgets.put(data, label);
+			addWidgetToMap(data, properties.get("ID"), label);
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Button"))
 		{
@@ -133,14 +138,14 @@ public class VisualizationGenerator {
 			button.setBounds(x, y, width, height);
 			button.setToolTipText(ID);
 			button.setText(properties.get("text"));
-			widgets.put(data, button);
+			addWidgetToMap(data, properties.get("ID"), button);
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Spinner"))
 		{
 			Spinner spinner = new Spinner((Composite)(widgets.get(parent)), style);
 			spinner.setBounds(x, y, width, height);
 			spinner.setToolTipText(ID);
-			widgets.put(data, spinner);
+			addWidgetToMap(data, properties.get("ID"), spinner);
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Group"))
 		{
@@ -151,7 +156,7 @@ public class VisualizationGenerator {
 			if(properties.get("text") != null)
 				group.setText(properties.get("text"));
 
-			widgets.put(data, group);
+			addWidgetToMap(data, properties.get("ID"), group);
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Text"))
 		{
@@ -164,7 +169,7 @@ public class VisualizationGenerator {
 			if(properties.get("text") != null)
 				text.setText(properties.get("text"));
 
-			widgets.put(data, text);
+			addWidgetToMap(data, properties.get("ID"), text);
 		}
 
 	}
@@ -186,5 +191,12 @@ public class VisualizationGenerator {
 		}
 
 		display.dispose();
+	}
+	
+	private static void addWidgetToMap(String data, String widgetID, Widget widget)
+	{
+		widgetList.put(widget,new WidgetId(widgetID));
+		widgets.put(data, widget);
+		widgetIDs.put(new WidgetId(widgetID), widget);
 	}
 }
