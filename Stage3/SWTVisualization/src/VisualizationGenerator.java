@@ -17,8 +17,9 @@ import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Spinner;
+import org.eclipse.swt.widgets.TabFolder;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.swt.widgets.Widget;
+import org.eclipse.swt.widgets.*;
 
 import efg.WidgetId;
 
@@ -62,13 +63,13 @@ public class VisualizationGenerator {
 	static HashMap<Widget,WidgetId> widgetList = new HashMap<Widget,WidgetId>();
 	static Display display = new Display();
 	static ArrayList<Shell> shellList = new ArrayList<Shell>();
-	public static void addWidget(HashMap<String, String> properties)
+	public static Widget addWidget(HashMap<String, String> properties)
 	{
 		if(properties.get("Rootwindow") != null)// && properties.get("Rootwindow").equals("true"))
 		{
 			//rootShell = new Shell();
 			//widgets.put(data, rootShell);
-			return;
+			return null;
 		}
 
 
@@ -77,9 +78,13 @@ public class VisualizationGenerator {
 			parent = properties.get("data").split(" ")[1];
 		String data = properties.get("data").split(" ")[0];
 
-
+		//some items may not be ripped correctly and therefore don't have bounds
+		if(properties.get("X")==null)
+		{
+			return null;
+		}
 		//System.out.println(widgets);
-
+		
 		int x = Integer.parseInt(properties.get("X"));
 		int y = Integer.parseInt(properties.get("Y"));
 		int width = Integer.parseInt(properties.get("width"));
@@ -115,6 +120,7 @@ public class VisualizationGenerator {
 			//shell.open();
 
 			addWidgetToMap(data, properties.get("ID"), shell);
+			return shell;
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Composite"))
 		{
@@ -122,6 +128,7 @@ public class VisualizationGenerator {
 			composite.setBounds(x, y, width, height);
 			composite.setToolTipText(ID);
 			addWidgetToMap(data, properties.get("ID"), composite);
+			return composite;
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Label"))
 		{
@@ -131,14 +138,20 @@ public class VisualizationGenerator {
 			if(properties.get("text") != null)
 				label.setText(properties.get("text"));
 			addWidgetToMap(data, properties.get("ID"), label);
+			return label;
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Button"))
 		{
 			Button button = new Button((Composite)(widgets.get(parent)), style);
 			button.setBounds(x, y, width, height);
 			button.setToolTipText(ID);
-			button.setText(properties.get("text"));
+			if(properties.get("text")==null)
+				button.setText("X");
+			else
+					
+				button.setText(properties.get("text"));
 			addWidgetToMap(data, properties.get("ID"), button);
+			return button;
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Spinner"))
 		{
@@ -146,6 +159,7 @@ public class VisualizationGenerator {
 			spinner.setBounds(x, y, width, height);
 			spinner.setToolTipText(ID);
 			addWidgetToMap(data, properties.get("ID"), spinner);
+			return spinner;
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Group"))
 		{
@@ -157,6 +171,7 @@ public class VisualizationGenerator {
 				group.setText(properties.get("text"));
 
 			addWidgetToMap(data, properties.get("ID"), group);
+			return group;
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Text"))
 		{
@@ -170,8 +185,90 @@ public class VisualizationGenerator {
 				text.setText(properties.get("text"));
 
 			addWidgetToMap(data, properties.get("ID"), text);
+			return text;
 		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.TabFolder"))
+		{
+			TabFolder folder = new TabFolder((Composite)(widgets.get(parent)), style);
 
+			folder.setBounds(x, y, width, height);
+			
+			folder.setToolTipText(ID);
+
+			addWidgetToMap(data, properties.get("ID"), folder);
+			return folder;
+		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.TreeItem"))
+		{
+			TreeItem item = new TreeItem((Tree)widgets.get(parent),style);
+			item.setText(properties.get("text"));
+			
+			addWidgetToMap(data, properties.get("ID"),item);
+			return item;
+		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.TableItem"))
+		{
+			TableItem item = new TableItem((Table)widgets.get(parent),style);
+			if(properties.get("text")!=null)
+				item.setText(properties.get("text"));
+			
+			addWidgetToMap(data, properties.get("ID"),item);
+			return item;
+		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.TabItem"))
+		{
+			TabItem item = new TabItem((TabFolder)widgets.get(parent),style);
+			if(properties.get("text")!=null)
+				item.setText(properties.get("text"));
+			
+			addWidgetToMap(data, properties.get("ID"),item);
+			return item;
+			
+		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.MenuItem"))
+		{
+			MenuItem item = new MenuItem((Menu)widgets.get(parent),style);
+			if(properties.get("text")!=null)
+				item.setText(properties.get("text"));
+			
+			addWidgetToMap(data, properties.get("ID"),item);
+			return item;
+			
+		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.ToolItem"))
+		{
+			ToolItem item = new ToolItem((ToolBar)widgets.get(parent),style);
+			if(properties.get("text")!=null)
+				item.setText(properties.get("text"));
+			
+			addWidgetToMap(data, properties.get("ID"),item);
+			return item;
+		}
+		else
+		{
+			Class [] classParm = {Composite.class, int.class};
+			Object [] objectParm = {};
+			try
+			{
+				Class cl = Class.forName(properties.get("Class"));
+				Constructor co = cl.getConstructor(classParm);
+				System.out.println(widgets.get(parent));
+				if(widgets.get(parent)==null)
+				{
+					System.out.println(ID);
+					System.out.println(parent);
+				}
+				Control control = (Control) co.newInstance(widgets.get(parent), style);
+				control.setBounds(x, y, width, height);
+				control.setToolTipText(ID);
+				addWidgetToMap(data, properties.get("ID"), control);
+				return control;
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return null;
 	}
 
 	public static void Show()
@@ -189,7 +286,6 @@ public class VisualizationGenerator {
 			}
 
 		}
-
 		display.dispose();
 	}
 	

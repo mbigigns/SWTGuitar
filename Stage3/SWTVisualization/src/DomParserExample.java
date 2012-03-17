@@ -23,6 +23,7 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.TabItem;
 import org.eclipse.swt.widgets.Widget;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -41,6 +42,7 @@ public class DomParserExample {
 	List myEmpls;
 	static Document dom;
 	static Document dom2;
+	public static EFGRenderListener EFGHighlighted;
 	
 	public static void main(String[] args)
 	{
@@ -108,76 +110,84 @@ public class DomParserExample {
 
 		for(int i = 0; i < attributeList.getLength(); i++)
 		{
-			Element attributes = (Element)(attributeList.item(i));
-			NodeList properties = attributes.getElementsByTagName("Property");
+			extractAttributes(i,attributeList,eventMap);
 			
-			eventMap = new HashMap<String, String>();
-			
-			for(int j=0;j<properties.getLength();j++)
+			Widget addedWidget = VisualizationGenerator.addWidget(eventMap);
+			if(addedWidget instanceof TabItem)
 			{
-				Element property = (Element)(properties.item(j));
-				NodeList nlList = property.getElementsByTagName("Name").item(0).getChildNodes();
-		        Node nValue = (Node) nlList.item(0);
-				String propertyName = property.getElementsByTagName("Name").item(0).getChildNodes().item(0).getNodeValue();
-				
-				if(propertyName.equals("ID"))
-				{
-					eventMap.put("ID", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("Class"))
-				{
-					System.out.println(property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-					eventMap.put("Class", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("bounds"))
-				{
-					//Rectangle {6, 48, 250, 250}
-					String numbers = property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue();
-					numbers = numbers.substring(numbers.indexOf("{") + 1, numbers.length() - 1);
-					numbers = numbers.replace(" ", "");
-					String[] boundList = numbers.split(",");
-					
-					String x = boundList[0];
-					String y = boundList[1];
-					String width = boundList[2];
-					String height = boundList[3];
-					//System.out.println(numbers);
-					//System.out.println(x + y + width + height);
-					//System.out.println(x + " " + " "+  y + " "+ width +" " + height);
-					eventMap.put("X", x);
-					eventMap.put("Y", y);
-					eventMap.put("width", width);
-					eventMap.put("height", height);
-				}
-				else if(propertyName.equals("layout"))
-				{
-					eventMap.put("layout", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("data"))
-				{	
-					//System.out.println(property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-					if(property.getElementsByTagName("Value").item(0).getFirstChild() == null)
-						eventMap.put("data", "");
-					else
-						eventMap.put("data", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("text"))
-				{
-					if(property.getElementsByTagName("Value").item(0).getFirstChild() != null)
-						eventMap.put("text", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("Rootwindow"))
-				{
-					//System.out.println("HERE");
-					eventMap.put("Rootwindow", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
-				else if(propertyName.equals("style"))
-				{
-					//System.out.println(property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-					eventMap.put("style", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
-				}
+				i++;
+				extractAttributes(i,attributeList,eventMap);
+				Widget nextWidget = VisualizationGenerator.addWidget(eventMap);
+				System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHH:"+addedWidget+" "+nextWidget);
+				if(nextWidget instanceof Control)
+					((TabItem) addedWidget).setControl((Control)nextWidget);
 			}
-			VisualizationGenerator.addWidget(eventMap);
+		}
+	}
+	
+	private static void extractAttributes(int i, NodeList attributeList, HashMap <String, String> eventMap)
+	{
+		Element attributes = (Element)(attributeList.item(i));
+		NodeList properties = attributes.getElementsByTagName("Property");
+		
+		eventMap.clear();
+		
+		for(int j=0;j<properties.getLength();j++)
+		{
+			Element property = (Element)(properties.item(j));
+			NodeList nlList = property.getElementsByTagName("Name").item(0).getChildNodes();
+	        Node nValue = (Node) nlList.item(0);
+			String propertyName = property.getElementsByTagName("Name").item(0).getChildNodes().item(0).getNodeValue();
+			
+			if(propertyName.equals("ID"))
+			{
+				eventMap.put("ID", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("Class"))
+			{
+				eventMap.put("Class", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("bounds"))
+			{
+				//Rectangle {6, 48, 250, 250}
+				String numbers = property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue();
+				numbers = numbers.substring(numbers.indexOf("{") + 1, numbers.length() - 1);
+				numbers = numbers.replace(" ", "");
+				String[] boundList = numbers.split(",");
+				
+				String x = boundList[0];
+				String y = boundList[1];
+				String width = boundList[2];
+				String height = boundList[3];
+				eventMap.put("X", x);
+				eventMap.put("Y", y);
+				eventMap.put("width", width);
+				eventMap.put("height", height);
+			}
+			else if(propertyName.equals("layout"))
+			{
+				eventMap.put("layout", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("data"))
+			{	
+				if(property.getElementsByTagName("Value").item(0).getFirstChild() == null)
+					eventMap.put("data", "");
+				else
+					eventMap.put("data", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("text"))
+			{
+				if(property.getElementsByTagName("Value").item(0).getFirstChild() != null)
+					eventMap.put("text", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("Rootwindow"))
+			{
+				eventMap.put("Rootwindow", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("style"))
+			{
+				eventMap.put("style", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
 		}
 	}
 	
@@ -199,23 +209,16 @@ public class DomParserExample {
 			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.REACHING).isEmpty();
 			if(widget instanceof Control && hasNeighbors)
 			{
-				System.out.println(neighbors);
 				Control control = (Control) widget;
 				control.setBackground(red);
 			}
-			widget.addListener(SWT.MouseDoubleClick, new EFGRenderListener(neighbors, blue));
 		}
-/*		for(Widget widget:VisualizationGenerator.widgetList.keySet())
+		
+
+		for(Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
 			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
-			for(int i=1;i<3;i++)
-			{
-				for(WidgetId neighborId: neighbors.get(i))
-				{
-					Widget neighbor = VisualizationGenerator.widgetIDs.get(neighborId);
-					neighbor.addListener(SWT.MouseDoubleClick, new EFGRenderListener());
-				}
-			}
-		}*/
+			widget.addListener(SWT.MouseDoubleClick, new EFGRenderListener(neighbors, blue));
+		}
 	}
 }

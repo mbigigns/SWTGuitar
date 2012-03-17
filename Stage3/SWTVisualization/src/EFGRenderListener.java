@@ -1,11 +1,13 @@
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 import org.eclipse.swt.graphics.Color;
+import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
@@ -17,23 +19,23 @@ import efg.EventFlowGraph.EdgeType;
 
 public class EFGRenderListener implements Listener{
 
-	private List<Widget> widgets;
+	private Map<Widget,Color> widgets;
 	private Color blue;
 	
 	public EFGRenderListener(Map<EdgeType, Set<WidgetId>> neighbors, Color blue)
 	{
-		widgets = new ArrayList<Widget>();
+		widgets = new HashMap<Widget,Color>();
 		
 		for(WidgetId neighborId: neighbors.get(EdgeType.NORMAL))
 		{
 			Widget neighbor = VisualizationGenerator.widgetIDs.get(neighborId);
-			widgets.add(neighbor);
+			storeWidgetColor(neighbor);
 		}
 		
 		for(WidgetId neighborId: neighbors.get(EdgeType.REACHING))
 		{
 			Widget neighbor = VisualizationGenerator.widgetIDs.get(neighborId);
-			widgets.add(neighbor);
+			storeWidgetColor(neighbor);
 		}
 		
 		
@@ -46,15 +48,36 @@ public class EFGRenderListener implements Listener{
 	
 	public void handleEvent(Event arg0) {
 		System.out.println("Double Clicked");
-		for(Widget w:widgets)
+		
+		//return the previously colored controls to their original color
+		if(DomParserExample.EFGHighlighted != null)
+			DomParserExample.EFGHighlighted.toggle();
+		
+		
+		for(Widget w:widgets.keySet())
 		{
 			System.out.println(w);
-			if(w instanceof Control)
-			{
-				Control control = (Control) w;
-				control.setBackground(blue);
-			}
+			Control control = (Control) w;
+			control.setBackground(blue);
+		}
+		DomParserExample.EFGHighlighted = this;
+	}
+	
+	public void toggle()
+	{
+		for(Widget w:widgets.keySet())
+		{
+			Control control = (Control) w;
+			control.setBackground(widgets.get(w));
 		}
 	}
-
+	
+	private void storeWidgetColor(Widget widget)
+	{
+		if(widget instanceof Control)
+		{
+			Control control = (Control) widget;
+			widgets.put(control, control.getBackground());
+		}
+	}
 }

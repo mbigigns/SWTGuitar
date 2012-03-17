@@ -2,23 +2,23 @@ package efg;
 
 public class EventId {
 
-	private long id;
+	private String id;
 	
 	public EventId(String id) {
 		if (id.startsWith("e")) { id = id.substring(1, id.length()); }
-		this.id = Long.parseLong(id);
-	}
-	
-	public EventId(long id) {
 		this.id = id;
 	}
 	
-	public long getId() {
+	public EventId(long id) {
+		this.id = Long.toString(id);
+	}
+	
+	public String getId() {
 		return id;
 	}
 	
 	@Override public int hashCode() {
-		return ((Long)id).hashCode();
+		return (id).hashCode();
 	}
 	
 	@Override public boolean equals(Object o) {
@@ -28,10 +28,10 @@ public class EventId {
 		
 		EventId other = (EventId) o;
 		
-		return this.id == other.id;
+		return this.id.equals(other.id);
 	}
 	
 	@Override public String toString() {
-		return "e" + Long.toString(this.id);
+		return "e" + this.id;
 	}
 }
