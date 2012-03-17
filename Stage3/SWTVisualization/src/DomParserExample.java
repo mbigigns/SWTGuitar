@@ -196,6 +196,7 @@ public class DomParserExample {
 		Display display = Display.getCurrent();
 		Color blue = display.getSystemColor(SWT.COLOR_BLUE);
 		Color red = display.getSystemColor(SWT.COLOR_RED);
+		Color green = display.getSystemColor(SWT.COLOR_GREEN);
 
 		EventFlowGraph parsedGraph = EFGParser.parseFile("GUITAR-Default.EFG");
 		for(Widget widget:VisualizationGenerator.widgetList.keySet())
@@ -218,7 +219,10 @@ public class DomParserExample {
 		for(Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
 			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
-			widget.addListener(SWT.MouseDoubleClick, new EFGRenderListener(neighbors, blue));
+			EFGRenderListener colorListener = new EFGRenderListener(neighbors, blue, green);
+			widget.addListener(SWT.MouseDoubleClick, colorListener);
+			widget.addListener(SWT.MouseEnter, colorListener);
+			widget.addListener(SWT.MouseExit, colorListener);
 		}
 	}
 }
