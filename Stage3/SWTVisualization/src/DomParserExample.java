@@ -113,6 +113,9 @@ public class DomParserExample {
 			extractAttributes(i,attributeList,eventMap);
 			
 			Widget addedWidget = VisualizationGenerator.addWidget(eventMap);
+			System.out.println(addedWidget);
+			if(addedWidget==null)
+				System.out.println(eventMap.get("Class"));
 			if(addedWidget instanceof TabItem)
 			{
 				i++;
@@ -122,6 +125,7 @@ public class DomParserExample {
 				if(nextWidget instanceof Control)
 					((TabItem) addedWidget).setControl((Control)nextWidget);
 			}
+			
 		}
 	}
 	
@@ -195,7 +199,7 @@ public class DomParserExample {
 	{
 		Display display = Display.getCurrent();
 		Color blue = display.getSystemColor(SWT.COLOR_BLUE);
-		Color red = display.getSystemColor(SWT.COLOR_RED);
+		Color red = display.getSystemColor(SWT.COLOR_GRAY);
 		Color green = display.getSystemColor(SWT.COLOR_GREEN);
 
 		EventFlowGraph parsedGraph = EFGParser.parseFile("GUITAR-Default.EFG");

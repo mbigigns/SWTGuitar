@@ -77,20 +77,25 @@ public class VisualizationGenerator {
 		if(properties.get("data").split(" ").length > 1)
 			parent = properties.get("data").split(" ")[1];
 		String data = properties.get("data").split(" ")[0];
-
-		//some items may not be ripped correctly and therefore don't have bounds
-		if(properties.get("X")==null)
-		{
-			return null;
-		}
-		//System.out.println(widgets);
 		
-		int x = Integer.parseInt(properties.get("X"));
-		int y = Integer.parseInt(properties.get("Y"));
-		int width = Integer.parseInt(properties.get("width"));
-		int height = Integer.parseInt(properties.get("height"));
+		int x=0;
+		int y=0;
+		int width=0;
+		int height=0;
+		
+		if(properties.get("X")!=null)
+			x = Integer.parseInt(properties.get("X"));
 
-		if(widgets.get(parent) != null)
+		if(properties.get("Y")!=null)
+			y = Integer.parseInt(properties.get("Y"));
+
+		if(properties.get("width")!=null)
+			width = Integer.parseInt(properties.get("width"));
+
+		if(properties.get("height")!=null)
+			height = Integer.parseInt(properties.get("height"));
+
+		if(widgets.get(parent) != null && widgets.get(parent) instanceof Composite)
 		{
 			Rectangle parentBounds = ((Composite)(widgets.get(parent))).getBounds();
 			//x = x - parentBounds.x;
@@ -215,6 +220,41 @@ public class VisualizationGenerator {
 			addWidgetToMap(data, properties.get("ID"),item);
 			return item;
 		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.TableColumn"))
+		{
+			TableColumn item = new TableColumn((Table)widgets.get(parent),style);
+			if(properties.get("text")!=null)
+				item.setText(properties.get("text"));
+			System.out.println(((Table)(widgets.get(parent))).getColumnCount());
+			System.out.println(width);
+			item.setWidth(width);
+			item.pack();
+			addWidgetToMap(data, properties.get("ID"),item);
+			return item;
+		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Table"))
+		{
+			/*Table table = new Table((Composite)widgets.get(parent), SWT.MULTI | SWT.BORDER | SWT.FULL_SELECTION);
+			table.setHeaderVisible (true);
+			table.setLinesVisible(true);*/
+		    Table table = new Table((Composite)widgets.get(parent), SWT.MULTI | SWT.BORDER | SWT.FULL_SELECTION);
+		    table.setLinesVisible(true);
+		    table.setHeaderVisible(true);
+
+		    String[] titles = { " ", "C", "!", "Description", "Resource", "In Folder", "Location" };
+		    for (int i = 0; i < titles.length; i++) {
+		      TableColumn column = new TableColumn(table, SWT.NONE);
+		      column.setText(titles[i]);
+		    }
+
+/*		    for (int i=0; i<titles.length; i++) {
+		      table.getColumn (i).pack ();
+		    }     */
+		    
+		    table.setBounds(x, y, width, height);
+			addWidgetToMap(data, properties.get("ID"),table);
+			return table;
+		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.TabItem"))
 		{
 			TabItem item = new TabItem((TabFolder)widgets.get(parent),style);
@@ -243,6 +283,18 @@ public class VisualizationGenerator {
 			
 			addWidgetToMap(data, properties.get("ID"),item);
 			return item;
+		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Menu"))
+		{
+			if(widgets.get(parent) instanceof Shell)
+			{
+				Menu menubar = new Menu((Shell)widgets.get(parent),SWT.BAR);
+	
+				((Shell)widgets.get(parent)).setMenuBar(menubar);
+				
+				addWidgetToMap(data, properties.get("ID"),menubar);
+				return menubar;
+			}
 		}
 		else
 		{
