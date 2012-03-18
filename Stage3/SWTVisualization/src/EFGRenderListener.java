@@ -14,9 +14,12 @@ import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Item;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.MenuItem;
+import org.eclipse.swt.widgets.TabItem;
 import org.eclipse.swt.widgets.ToolItem;
+import org.eclipse.swt.widgets.TreeItem;
 import org.eclipse.swt.widgets.Widget;
 
 import efg.EventFlowGraph;
@@ -59,7 +62,7 @@ public class EFGRenderListener implements Listener, MenuListener{
 	}
 	
 	public void handleEvent(Event arg0) {
-		if(arg0.type == SWT.MouseEnter || arg0.type == SWT.Arm)
+		if(arg0.type == SWT.MouseEnter || arg0.type == SWT.Arm || arg0.type == SWT.Selection)
 		{
 			System.out.println(arg0.type);
 			
@@ -79,14 +82,11 @@ public class EFGRenderListener implements Listener, MenuListener{
 					else
 						control.setBackground(blue);
 				}
-				else if(w instanceof MenuItem)
+				else if(w instanceof Item)
 				{
-					MenuItem i = (MenuItem) w;
-					i.setText("*"+i.getText());
-				}
-				else if(w instanceof ToolItem)
-				{
-					ToolItem i = (ToolItem) w;
+					Item i = (Item) w;
+					while(i.getText().charAt(0)=='*')
+						i.setText(i.getText().substring(1));
 					i.setText("*"+i.getText());
 				}
 			}
@@ -104,6 +104,7 @@ public class EFGRenderListener implements Listener, MenuListener{
 	
 	public void toggle()
 	{
+		System.out.println("Me Toggle");
 		for(Widget w:widgets.keySet())
 		{
 			if(w instanceof Control)
@@ -111,17 +112,13 @@ public class EFGRenderListener implements Listener, MenuListener{
 				Control control = (Control) w;
 				control.setBackground(widgets.get(w));
 			}
-			else if(w instanceof MenuItem)
+			else if(w instanceof Item)
 			{
-				MenuItem i = (MenuItem) w;
+				Item i = (Item) w;
 				if(i.getText().length()>0)
+				{
 					i.setText(i.getText().substring(1));
-			}
-			else if(w instanceof ToolItem)
-			{
-				ToolItem i = (ToolItem) w;
-				if(i.getText().length()>0)
-					i.setText(i.getText().substring(1));
+				}
 			}
 		}
 		DomParserExample.EFGHighlighted = null;
@@ -154,9 +151,9 @@ public class EFGRenderListener implements Listener, MenuListener{
 		System.out.println(widgets.keySet());
 		for(Widget w:widgets.keySet())
 		{
-			if(w instanceof MenuItem)
+			if(w instanceof Item)
 			{
-				MenuItem i = (MenuItem) w;
+				Item i = (Item) w;
 				i.setText("*"+i.getText());
 			}
 		}

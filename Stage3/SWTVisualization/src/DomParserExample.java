@@ -204,9 +204,9 @@ public class DomParserExample {
 	public static void setEFGVerifiers() throws SAXException
 	{
 		Display display = Display.getCurrent();
-		Color blue = display.getSystemColor(SWT.COLOR_BLUE);
-		Color red = display.getSystemColor(SWT.COLOR_GRAY);
-		Color green = display.getSystemColor(SWT.COLOR_GREEN);
+		Color blue = new Color(display, 142, 205, 240);
+		Color red = new Color(display, 255, 204, 204);
+		Color green = new Color(display, 77, 166, 25);
 
 		EventFlowGraph parsedGraph = EFGParser.parseFile("GUITAR-Default.EFG");
 		for(Widget widget:VisualizationGenerator.widgetList.keySet())
@@ -218,9 +218,13 @@ public class DomParserExample {
 			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NONE).isEmpty();
 			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NORMAL).isEmpty();
 			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.REACHING).isEmpty();
+			
+			System.out.println(widget+" "+hasNeighbors);
+			
 			if(widget instanceof Control && hasNeighbors)
 			{
 				Control control = (Control) widget;
+				System.out.println("Setting "+widget+" red");
 				control.setBackground(red);
 			}
 		}
@@ -234,6 +238,7 @@ public class DomParserExample {
 			widget.addListener(SWT.MouseEnter, colorListener);
 			widget.addListener(SWT.MouseExit, colorListener);
 			widget.addListener(SWT.Arm, colorListener);
+			widget.addListener(SWT.Selection, colorListener);
 			if(widget instanceof Menu)
 				((Menu)widget).addMenuListener(colorListener);
 			System.out.println(widget+" "+VisualizationGenerator.widgetList.get(widget)+" "+neighbors);

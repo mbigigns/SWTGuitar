@@ -9,13 +9,32 @@ import edu.umd.cs.guitar.ripper.test.aut.SWTMenuBarApp;
 import edu.umd.cs.guitar.ripper.test.aut.SWTMultiWindowDynamicApp;
 import edu.umd.cs.guitar.ripper.test.aut.SWTToolbarApp;
 import edu.umd.cs.guitar.ripper.test.aut.SWTTwoWindowsApp;
+import org.eclipse.swt.examples.controlexample.*;
 
 
 public class test {
 	public static void main(String args[])
 	{
 		SitarRipperConfiguration config = new SitarRipperConfiguration();
-		config.setMainClass(SWTToolbarApp.class.getName());
+		config.setMainClass(ControlExample
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				.class.getName());
 		SitarRipper ripper = new SitarRipper(config);
 
 		
@@ -30,6 +49,7 @@ public class test {
 		SitarConstants.WIDGET_PROPERTIES_LIST.add("size");
 		SitarConstants.WIDGET_PROPERTIES_LIST.add("style");
 		SitarConstants.WIDGET_PROPERTIES_LIST.add("bounds");
+		SitarConstants.WIDGET_PROPERTIES_LIST.add("layout");
 		
 		/*
 		SitarReplayerConfiguration replayerConfig = new SitarReplayerConfiguration();

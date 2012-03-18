@@ -2,23 +2,11 @@
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.graphics.Point;
+import org.eclipse.swt.browser.Browser;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.layout.FillLayout;
-import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Control;
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Group;
-import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Shell;
-import org.eclipse.swt.widgets.Spinner;
-import org.eclipse.swt.widgets.TabFolder;
-import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.*;
 
 import efg.WidgetId;
@@ -86,6 +74,7 @@ public class VisualizationGenerator {
 			if(properties.get("text") != null)
 				shell.setText(properties.get("text"));
 
+			shell.setToolTipText(ID);
 			//shell.open();
 
 			addWidgetToMap(data, properties.get("ID"), shell);
@@ -166,7 +155,7 @@ public class VisualizationGenerator {
 			{
 				FillLayout fillLayout = new FillLayout();
 				fillLayout.type = SWT.HORIZONTAL;
-				group.setBounds(x,y,500,500);
+				group.pack();
 				group.setLayout(fillLayout);
 			}
 			group.setToolTipText(ID);
@@ -211,7 +200,10 @@ public class VisualizationGenerator {
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.TreeItem"))
 		{
 			TreeItem item = new TreeItem((Tree)widgets.get(parent),style);
-			item.setText(properties.get("text"));
+			if(properties.get("text")!=null)
+				item.setText(properties.get("text"));
+			
+			item.setText(item.getText()+" "+ID);
 			
 			addWidgetToMap(data, properties.get("ID"),item);
 			return item;
@@ -222,28 +214,32 @@ public class VisualizationGenerator {
 			if(properties.get("text")!=null)
 				item.setText(properties.get("text"));
 			
+			item.setText(item.getText()+" "+ID);
+			
 			addWidgetToMap(data, properties.get("ID"),item);
 			return item;
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.TableColumn"))
 		{
-			/*TableColumn item = new TableColumn((Table)widgets.get(parent),style);
+			TableColumn item = new TableColumn((Table)widgets.get(parent),style);
 			if(properties.get("text")!=null)
 			{
 				item.setText(properties.get("text"));
 				((Table)widgets.get(parent)).setHeaderVisible(true);
 			}
+			item.setToolTipText(ID);
 			
 			//TODO: set the width properly
 			item.pack();
 			item.setWidth(width);
 			addWidgetToMap(data, properties.get("ID"),item);
-			return item;*/
+			return item;
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Table"))
 		{
-		    Table table = new Table((Composite)widgets.get(parent), SWT.SINGLE | SWT.BORDER | SWT.FULL_SELECTION);
+		    Table table = new Table((Composite)widgets.get(parent), style);
 		    table.setLinesVisible(true);
+		    table.setToolTipText(ID);
 		    //table.setHeaderVisible(true);
 
 			if(!(x==0&&y==0&&width==0&&height==0))
@@ -257,9 +253,10 @@ public class VisualizationGenerator {
 			if(properties.get("text")!=null)
 				item.setText(properties.get("text"));
 			
+			item.setToolTipText(ID);
+			
 			addWidgetToMap(data, properties.get("ID"),item);
 			return item;
-			
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.MenuItem"))
 		{
@@ -269,13 +266,16 @@ public class VisualizationGenerator {
 			if(properties.get("text")!=null)
 				item.setText(properties.get("text"));
 			
+			item.setText(item.getText()+" "+ID);
+			
 			addWidgetToMap(data, properties.get("ID"),item);
 			return item;
 			
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.ToolItem"))
 		{
-			ToolItem item = new ToolItem((ToolBar)widgets.get(parent),style);
+			Text item = new Text((ToolBar)widgets.get(parent),SWT.BORDER);
+			item.setBounds(x,y,width,height);
 			if(properties.get("text")!=null)
 				item.setText(properties.get("text"));
 			
@@ -286,9 +286,17 @@ public class VisualizationGenerator {
 		{
 			if(widgets.get(parent) instanceof Shell)
 			{
-				Menu menubar = new Menu((Shell)widgets.get(parent),SWT.BAR);
+				Menu menubar = new Menu((Shell)widgets.get(parent),style-33554432);
 	
-				((Shell)widgets.get(parent)).setMenuBar(menubar);
+				System.out.println(style-33554432);
+				System.out.println(SWT.BAR);
+				
+				System.out.println(widgets.get(parent));
+				
+				if(style-33554432 == SWT.BAR || style == SWT.BAR)
+					((Shell)widgets.get(parent)).setMenuBar(menubar);
+				else if (widgets.get(parent) instanceof Control && style-33554432 == SWT.POP_UP)
+					((Control)widgets.get(parent)).setMenu(menubar);
 				
 				addWidgetToMap(data, properties.get("ID"),menubar);
 				return menubar;
@@ -297,6 +305,7 @@ public class VisualizationGenerator {
 			{
 				Menu menu = new Menu((MenuItem)widgets.get(parent));
 				((MenuItem)widgets.get(parent)).setMenu(menu);
+				
 				addWidgetToMap(data, properties.get("ID"),menu);
 				return menu;
 			}
@@ -304,6 +313,16 @@ public class VisualizationGenerator {
 			{
 				System.out.println("Yay we have others");
 			}
+		}
+		else if(properties.get("Class").equals("org.eclipse.swt.browser.Browser"))
+		{
+			Text browser = new Text((Composite)widgets.get(parent),SWT.BORDER);
+			browser.setBounds(x,y,width,height);
+			browser.setText("Browser");
+			browser.setToolTipText(ID);
+			System.out.println("My Browser is at"+x+" "+y+" "+width+" "+height);
+			addWidgetToMap(data, properties.get("ID"),browser);
+			return browser;
 		}
 		else
 		{
@@ -313,11 +332,6 @@ public class VisualizationGenerator {
 				Class cl = Class.forName(properties.get("Class"));
 				Constructor co = cl.getConstructor(classParm);
 				System.out.println(widgets.get(parent));
-				if(widgets.get(parent)==null)
-				{
-					System.out.println(ID);
-					System.out.println(parent);
-				}
 				Control control = (Control) co.newInstance(widgets.get(parent), style);
 				if(!(x==0&&y==0&&width==0&&height==0))
 					control.setBounds(x, y, width, height);
