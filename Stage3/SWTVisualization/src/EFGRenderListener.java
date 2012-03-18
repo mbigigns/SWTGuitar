@@ -7,27 +7,33 @@ import java.util.Map;
 import java.util.Set;
 
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.MenuEvent;
+import org.eclipse.swt.events.MenuListener;
 import org.eclipse.swt.events.MouseListener;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
+import org.eclipse.swt.widgets.MenuItem;
+import org.eclipse.swt.widgets.ToolItem;
 import org.eclipse.swt.widgets.Widget;
 
 import efg.EventFlowGraph;
 import efg.WidgetId;
 import efg.EventFlowGraph.EdgeType;
 
-public class EFGRenderListener implements Listener{
+public class EFGRenderListener implements Listener, MenuListener{
 
+	private Widget widget;
 	private Map<Widget,Color> widgets;
 	private Map<Widget,EdgeType> edgeType;
 	private Color blue;
 	private Color green;
 	
-	public EFGRenderListener(Map<EdgeType, Set<WidgetId>> neighbors, Color blue, Color green)
+	public EFGRenderListener(Widget widget,Map<EdgeType, Set<WidgetId>> neighbors, Color blue, Color green)
 	{
+		this.widget=widget;
 		widgets = new HashMap<Widget,Color>();
 		edgeType = new HashMap<Widget,EdgeType>();
 		
@@ -37,6 +43,7 @@ public class EFGRenderListener implements Listener{
 			storeWidgetColor(neighbor,EdgeType.NORMAL);
 		}
 		
+		System.out.println(neighbors.get(EdgeType.REACHING));
 		for(WidgetId neighborId: neighbors.get(EdgeType.REACHING))
 		{
 			Widget neighbor = VisualizationGenerator.widgetIDs.get(neighborId);
@@ -45,29 +52,43 @@ public class EFGRenderListener implements Listener{
 		
 /*		System.out.println(widgets);
 		System.out.println(neighbors);*/
+		System.out.println(VisualizationGenerator.widgetList.get(widget)+" "+widgets);
 		
 		this.blue=blue;
 		this.green=green;
 	}
 	
 	public void handleEvent(Event arg0) {
-		if(arg0.type == SWT.MouseEnter)
+		if(arg0.type == SWT.MouseEnter || arg0.type == SWT.Arm)
 		{
-			System.out.println("Double Clicked");
+			System.out.println(arg0.type);
 			
 			//return the previously colored controls to their original color
 			if(DomParserExample.EFGHighlighted != null)
+			{
 				DomParserExample.EFGHighlighted.toggle();
-			
+			}
 			
 			for(Widget w:widgets.keySet())
 			{
-				System.out.println(w);
-				Control control = (Control) w;
-				if(edgeType.get(w)!=null&&edgeType.get(w).equals(EdgeType.REACHING))
-					control.setBackground(green);
-				else
-					control.setBackground(blue);
+				if(w instanceof Control)
+				{
+					Control control = (Control) w;
+					if(edgeType.get(w)!=null&&edgeType.get(w).equals(EdgeType.REACHING))
+						control.setBackground(green);
+					else
+						control.setBackground(blue);
+				}
+				else if(w instanceof MenuItem)
+				{
+					MenuItem i = (MenuItem) w;
+					i.setText("*"+i.getText());
+				}
+				else if(w instanceof ToolItem)
+				{
+					ToolItem i = (ToolItem) w;
+					i.setText("*"+i.getText());
+				}
 			}
 			DomParserExample.EFGHighlighted = this;
 		}
@@ -75,16 +96,37 @@ public class EFGRenderListener implements Listener{
 		{
 			toggle();
 		}
+		else
+		{
+			System.out.println("Menu");
+		}
 	}
 	
 	public void toggle()
 	{
 		for(Widget w:widgets.keySet())
 		{
-			Control control = (Control) w;
-			control.setBackground(widgets.get(w));
+			if(w instanceof Control)
+			{
+				Control control = (Control) w;
+				control.setBackground(widgets.get(w));
+			}
+			else if(w instanceof MenuItem)
+			{
+				MenuItem i = (MenuItem) w;
+				if(i.getText().length()>0)
+					i.setText(i.getText().substring(1));
+			}
+			else if(w instanceof ToolItem)
+			{
+				ToolItem i = (ToolItem) w;
+				if(i.getText().length()>0)
+					i.setText(i.getText().substring(1));
+			}
 		}
+		DomParserExample.EFGHighlighted = null;
 	}
+	
 	
 	private void storeWidgetColor(Widget widget, EdgeType edgetype)
 	{
@@ -94,5 +136,30 @@ public class EFGRenderListener implements Listener{
 			widgets.put(control, control.getBackground());
 			edgeType.put(widget,edgetype);
 		}
+		else
+		{
+			widgets.put(widget, null);
+		}
+	}
+
+	@Override
+	public void menuHidden(MenuEvent arg0) {
+	}
+
+	@Override
+	public void menuShown(MenuEvent arg0) {
+
+		System.out.println("Menu");
+		System.out.println(VisualizationGenerator.widgetList.get(widget));
+		System.out.println(widgets.keySet());
+		for(Widget w:widgets.keySet())
+		{
+			if(w instanceof MenuItem)
+			{
+				MenuItem i = (MenuItem) w;
+				i.setText("*"+i.getText());
+			}
+		}
+		DomParserExample.EFGHighlighted = this;
 	}
 }

@@ -23,7 +23,9 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.TabItem;
+import org.eclipse.swt.widgets.ToolItem;
 import org.eclipse.swt.widgets.Widget;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -168,6 +170,10 @@ public class DomParserExample {
 				eventMap.put("width", width);
 				eventMap.put("height", height);
 			}
+			else if(propertyName.equals("width"))
+			{
+				eventMap.put("width", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
 			else if(propertyName.equals("layout"))
 			{
 				eventMap.put("layout", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
@@ -223,10 +229,14 @@ public class DomParserExample {
 		for(Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
 			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
-			EFGRenderListener colorListener = new EFGRenderListener(neighbors, blue, green);
+			EFGRenderListener colorListener = new EFGRenderListener(widget, neighbors, blue, green);
 			widget.addListener(SWT.MouseDoubleClick, colorListener);
 			widget.addListener(SWT.MouseEnter, colorListener);
 			widget.addListener(SWT.MouseExit, colorListener);
+			widget.addListener(SWT.Arm, colorListener);
+			if(widget instanceof Menu)
+				((Menu)widget).addMenuListener(colorListener);
+			System.out.println(widget+" "+VisualizationGenerator.widgetList.get(widget)+" "+neighbors);
 		}
 	}
 }

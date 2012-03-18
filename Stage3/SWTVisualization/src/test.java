@@ -7,6 +7,7 @@ import edu.umd.cs.guitar.ripper.SitarRunner;
 import edu.umd.cs.guitar.ripper.test.aut.SWTBasicApp;
 import edu.umd.cs.guitar.ripper.test.aut.SWTMenuBarApp;
 import edu.umd.cs.guitar.ripper.test.aut.SWTMultiWindowDynamicApp;
+import edu.umd.cs.guitar.ripper.test.aut.SWTToolbarApp;
 import edu.umd.cs.guitar.ripper.test.aut.SWTTwoWindowsApp;
 
 
@@ -14,7 +15,7 @@ public class test {
 	public static void main(String args[])
 	{
 		SitarRipperConfiguration config = new SitarRipperConfiguration();
-		config.setMainClass(SWTMultiWindowDynamicApp.class.getName());
+		config.setMainClass(SWTToolbarApp.class.getName());
 		SitarRipper ripper = new SitarRipper(config);
 
 		

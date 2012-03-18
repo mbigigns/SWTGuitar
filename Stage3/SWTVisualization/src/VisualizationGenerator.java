@@ -24,40 +24,6 @@ import org.eclipse.swt.widgets.*;
 import efg.WidgetId;
 
 public class VisualizationGenerator {
-	/*	public Shell rootWindow = readWindow();
-	public void readGUI(Display display)
-	{
-		readComponent(rootWindow);
-
-        while (!rootWindow.isDisposed()) {
-            if (!display.readAndDispatch()) {
-                display.sleep();
-              }
-        }
-	}
-
-	private Shell readWindow()
-	{
-		Shell window = createWindow("",0,0,307,302);
-        window.setSize(307, 302);
-        window.setLocation(300, 300);
-        window.open();
-        return window;
-	}
-
-	private void readComponent(Composite window)
-	{	
-		//addWidget("org.eclipse.swt.widgets.Button","",0,0,20,20,0,window);
-	}
-
-	public Shell createWindow(String ID, int x, int y, int width, int height)
-	{
-		Shell window = new Shell();
-		return window;
-	}
-
-	 */
-
 	static HashMap<String, Widget> widgets = new HashMap<String, Widget>();
 	static HashMap<WidgetId, Widget> widgetIDs = new HashMap<WidgetId, Widget>();
 	static HashMap<Widget,WidgetId> widgetList = new HashMap<Widget,WidgetId>();
@@ -65,10 +31,8 @@ public class VisualizationGenerator {
 	static ArrayList<Shell> shellList = new ArrayList<Shell>();
 	public static Widget addWidget(HashMap<String, String> properties)
 	{
-		if(properties.get("Rootwindow") != null)// && properties.get("Rootwindow").equals("true"))
+		if(properties.get("Rootwindow") != null || properties.get("data")==null)
 		{
-			//rootShell = new Shell();
-			//widgets.put(data, rootShell);
 			return null;
 		}
 
@@ -130,7 +94,15 @@ public class VisualizationGenerator {
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Composite"))
 		{
 			Composite composite = new Composite((Composite)(widgets.get(parent)), style);
-			composite.setBounds(x, y, width, height);
+			if(!(x==0&&y==0&&width==0&&height==0))
+				composite.setBounds(x, y, width, height);
+			else
+			{
+				FillLayout fillLayout = new FillLayout();
+				fillLayout.type = SWT.VERTICAL;
+				composite.setLayout(fillLayout);
+				composite.pack();
+			}
 			composite.setToolTipText(ID);
 			addWidgetToMap(data, properties.get("ID"), composite);
 			return composite;
@@ -138,7 +110,10 @@ public class VisualizationGenerator {
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Label"))
 		{
 			Label label = new Label((Composite)(widgets.get(parent)), style);
-			label.setBounds(x, y, width, height);
+			if(!(x==0&&y==0&&width==0&&height==0))
+				label.setBounds(x, y, width, height);
+			else
+				label.pack();
 			label.setToolTipText(ID);
 			if(properties.get("text") != null)
 				label.setText(properties.get("text"));
@@ -148,12 +123,14 @@ public class VisualizationGenerator {
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Button"))
 		{
 			Button button = new Button((Composite)(widgets.get(parent)), style);
-			button.setBounds(x, y, width, height);
+			if(!(x==0&&y==0&&width==0&&height==0))
+				button.setBounds(x, y, width, height);
+			else
+				button.pack();
 			button.setToolTipText(ID);
 			if(properties.get("text")==null)
 				button.setText("X");
 			else
-					
 				button.setText(properties.get("text"));
 			addWidgetToMap(data, properties.get("ID"), button);
 			return button;
@@ -161,15 +138,37 @@ public class VisualizationGenerator {
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Spinner"))
 		{
 			Spinner spinner = new Spinner((Composite)(widgets.get(parent)), style);
-			spinner.setBounds(x, y, width, height);
+			if(!(x==0&&y==0&&width==0&&height==0))
+				spinner.setBounds(x, y, width, height);
+			else
+				spinner.pack();
 			spinner.setToolTipText(ID);
 			addWidgetToMap(data, properties.get("ID"), spinner);
 			return spinner;
 		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Link"))
+		{
+			Link control = new Link((Composite)(widgets.get(parent)), style);
+			if(!(x==0&&y==0&&width==0&&height==0))
+				control.setBounds(x, y, width, height);
+			control.setToolTipText(ID);
+			if(properties.get("text") != null)
+				control.setText(properties.get("text"));
+			addWidgetToMap(data, properties.get("ID"), control);
+			return control;
+		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Group"))
 		{
 			Group group = new Group((Composite)(widgets.get(parent)), style);
-			group.setBounds(x, y, width, height);
+			if(!(x==0&&y==0&&width==0&&height==0))
+				group.setBounds(x, y, width, height);
+			else
+			{
+				FillLayout fillLayout = new FillLayout();
+				fillLayout.type = SWT.HORIZONTAL;
+				group.setBounds(x,y,500,500);
+				group.setLayout(fillLayout);
+			}
 			group.setToolTipText(ID);
 
 			if(properties.get("text") != null)
@@ -182,7 +181,10 @@ public class VisualizationGenerator {
 		{
 			Text text = new Text((Composite)(widgets.get(parent)), style);
 
-			text.setBounds(x, y, width, height);
+			if(!(x==0&&y==0&&width==0&&height==0))
+				text.setBounds(x, y, width, height);
+			else
+				text.pack();
 			
 			text.setToolTipText(ID);
 
@@ -196,7 +198,10 @@ public class VisualizationGenerator {
 		{
 			TabFolder folder = new TabFolder((Composite)(widgets.get(parent)), style);
 
-			folder.setBounds(x, y, width, height);
+			if(!(x==0&&y==0&&width==0&&height==0))
+				folder.setBounds(x, y, width, height);
+			else
+				folder.pack();
 			
 			folder.setToolTipText(ID);
 
@@ -222,35 +227,26 @@ public class VisualizationGenerator {
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.TableColumn"))
 		{
-			TableColumn item = new TableColumn((Table)widgets.get(parent),style);
+			/*TableColumn item = new TableColumn((Table)widgets.get(parent),style);
 			if(properties.get("text")!=null)
+			{
 				item.setText(properties.get("text"));
-			System.out.println(((Table)(widgets.get(parent))).getColumnCount());
-			System.out.println(width);
-			item.setWidth(width);
+				((Table)widgets.get(parent)).setHeaderVisible(true);
+			}
+			
+			//TODO: set the width properly
 			item.pack();
+			item.setWidth(width);
 			addWidgetToMap(data, properties.get("ID"),item);
-			return item;
+			return item;*/
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Table"))
 		{
-			/*Table table = new Table((Composite)widgets.get(parent), SWT.MULTI | SWT.BORDER | SWT.FULL_SELECTION);
-			table.setHeaderVisible (true);
-			table.setLinesVisible(true);*/
-		    Table table = new Table((Composite)widgets.get(parent), SWT.MULTI | SWT.BORDER | SWT.FULL_SELECTION);
+		    Table table = new Table((Composite)widgets.get(parent), SWT.SINGLE | SWT.BORDER | SWT.FULL_SELECTION);
 		    table.setLinesVisible(true);
-		    table.setHeaderVisible(true);
+		    //table.setHeaderVisible(true);
 
-		    String[] titles = { " ", "C", "!", "Description", "Resource", "In Folder", "Location" };
-		    for (int i = 0; i < titles.length; i++) {
-		      TableColumn column = new TableColumn(table, SWT.NONE);
-		      column.setText(titles[i]);
-		    }
-
-/*		    for (int i=0; i<titles.length; i++) {
-		      table.getColumn (i).pack ();
-		    }     */
-		    
+			if(!(x==0&&y==0&&width==0&&height==0))
 		    table.setBounds(x, y, width, height);
 			addWidgetToMap(data, properties.get("ID"),table);
 			return table;
@@ -267,6 +263,8 @@ public class VisualizationGenerator {
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.MenuItem"))
 		{
+			System.out.println(properties.get("ID"));
+			System.out.println(widgets.get(parent));
 			MenuItem item = new MenuItem((Menu)widgets.get(parent),style);
 			if(properties.get("text")!=null)
 				item.setText(properties.get("text"));
@@ -295,11 +293,21 @@ public class VisualizationGenerator {
 				addWidgetToMap(data, properties.get("ID"),menubar);
 				return menubar;
 			}
+			else if(widgets.get(parent) instanceof MenuItem)
+			{
+				Menu menu = new Menu((MenuItem)widgets.get(parent));
+				((MenuItem)widgets.get(parent)).setMenu(menu);
+				addWidgetToMap(data, properties.get("ID"),menu);
+				return menu;
+			}
+			else
+			{
+				System.out.println("Yay we have others");
+			}
 		}
 		else
 		{
 			Class [] classParm = {Composite.class, int.class};
-			Object [] objectParm = {};
 			try
 			{
 				Class cl = Class.forName(properties.get("Class"));
@@ -311,7 +319,10 @@ public class VisualizationGenerator {
 					System.out.println(parent);
 				}
 				Control control = (Control) co.newInstance(widgets.get(parent), style);
-				control.setBounds(x, y, width, height);
+				if(!(x==0&&y==0&&width==0&&height==0))
+					control.setBounds(x, y, width, height);
+				else
+					control.pack();
 				control.setToolTipText(ID);
 				addWidgetToMap(data, properties.get("ID"), control);
 				return control;
