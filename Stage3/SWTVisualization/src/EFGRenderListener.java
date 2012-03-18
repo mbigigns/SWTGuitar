@@ -117,7 +117,8 @@ public class EFGRenderListener implements Listener, MenuListener{
 				Item i = (Item) w;
 				if(i.getText().length()>0)
 				{
-					i.setText(i.getText().substring(1));
+					while(i.getText().charAt(0)=='*')
+						i.setText(i.getText().substring(1));
 				}
 			}
 		}

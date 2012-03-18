@@ -101,6 +101,16 @@ public class EventFlowGraph {
 		return false;
 	}
 	
+	public WidgetId getWidgetFromEvent(EventId eventID)
+	{
+		for(EFGEvent event:events)
+		{
+			if(event.getEventId().equals(eventID))
+				return event.getWidgetId();
+		}
+		return null;
+	}
+	
 	public Map<EdgeType, Set<WidgetId>> getFollowingWidgets(WidgetId widgetId) {
 		
 		EnumMap<EdgeType, Set<WidgetId>> followingWidgets = new EnumMap<EdgeType, Set<WidgetId>>(EdgeType.class);

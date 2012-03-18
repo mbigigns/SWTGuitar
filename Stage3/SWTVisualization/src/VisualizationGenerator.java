@@ -295,7 +295,7 @@ public class VisualizationGenerator {
 				
 				if(style-33554432 == SWT.BAR || style == SWT.BAR)
 					((Shell)widgets.get(parent)).setMenuBar(menubar);
-				else if (widgets.get(parent) instanceof Control && style-33554432 == SWT.POP_UP)
+				else if (widgets.get(parent) instanceof Control && (style-33554432 == SWT.POP_UP || style == SWT.POP_UP))
 					((Control)widgets.get(parent)).setMenu(menubar);
 				
 				addWidgetToMap(data, properties.get("ID"),menubar);
@@ -320,13 +320,14 @@ public class VisualizationGenerator {
 			browser.setBounds(x,y,width,height);
 			browser.setText("Browser");
 			browser.setToolTipText(ID);
-			System.out.println("My Browser is at"+x+" "+y+" "+width+" "+height);
 			addWidgetToMap(data, properties.get("ID"),browser);
 			return browser;
 		}
 		else
 		{
 			Class [] classParm = {Composite.class, int.class};
+			
+			boolean customControlFlag = false;
 			try
 			{
 				Class cl = Class.forName(properties.get("Class"));
@@ -343,6 +344,17 @@ public class VisualizationGenerator {
 			}
 			catch (Exception e) {
 				e.printStackTrace();
+				customControlFlag = true;
+			}
+			
+			if(customControlFlag)
+			{
+				Group customControl = new Group((Composite)widgets.get(parent),SWT.BORDER);
+				customControl.setBounds(x,y,width,height);
+				customControl.setText(properties.get("Class"));
+				customControl.setToolTipText(ID);
+				addWidgetToMap(data, properties.get("ID"),customControl);
+				return customControl;
 			}
 		}
 		return null;

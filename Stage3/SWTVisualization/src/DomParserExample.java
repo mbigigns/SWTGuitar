@@ -45,6 +45,7 @@ public class DomParserExample {
 	static Document dom;
 	static Document dom2;
 	public static EFGRenderListener EFGHighlighted;
+	public static EventFlowGraph parsedGraph;
 	
 	public static void main(String[] args)
 	{
@@ -127,6 +128,15 @@ public class DomParserExample {
 				if(nextWidget instanceof Control)
 					((TabItem) addedWidget).setControl((Control)nextWidget);
 			}
+			//if the control has a menu, then add it
+			if(eventMap.get("menu")!=null)
+			{
+				i++;
+				extractAttributes(i,attributeList,eventMap);
+				Widget nextWidget = VisualizationGenerator.addWidget(eventMap);
+				if(nextWidget instanceof Menu && addedWidget instanceof Control)
+					((Control) addedWidget).setMenu((Menu)nextWidget);
+			}
 			
 		}
 	}
@@ -198,6 +208,14 @@ public class DomParserExample {
 			{
 				eventMap.put("style", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
 			}
+			else if(propertyName.equals("layout"))
+			{
+				eventMap.put("layout", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
+			else if(propertyName.equals("menu"))
+			{
+				eventMap.put("menu", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
+			}
 		}
 	}
 	
@@ -208,7 +226,7 @@ public class DomParserExample {
 		Color red = new Color(display, 255, 204, 204);
 		Color green = new Color(display, 77, 166, 25);
 
-		EventFlowGraph parsedGraph = EFGParser.parseFile("GUITAR-Default.EFG");
+		parsedGraph = EFGParser.parseFile("GUITAR-Default.EFG");
 		for(Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
 			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
