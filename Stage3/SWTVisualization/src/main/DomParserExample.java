@@ -56,7 +56,12 @@ public class DomParserExample {
 	
 	public static void main(String[] args)
 	{
-		runExample(true);
+		if(args.length<1){
+			//System.out.println("NO .TST file, just visual");
+			runExample(false);
+		}else{
+			runExample(true);
+		}
   
 	}
 	
