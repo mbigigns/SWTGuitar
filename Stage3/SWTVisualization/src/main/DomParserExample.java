@@ -316,11 +316,7 @@ public class DomParserExample {
 		}
 	}
 	
-<<<<<<< HEAD
 	public static void addColor(Widget w, Color c)
-=======
-	public void addColor(Widget w, Color c)
->>>>>>> 542b5ceb945323ef8eb3c489e700b591bbf74414
 	{
 		if(w instanceof Control)
 		{
@@ -335,11 +331,7 @@ public class DomParserExample {
 			i.setText("*"+i.getText());
 		}
 	}
-<<<<<<< HEAD
 	public static void removeColor(Widget w, Color c)
-=======
-	public void removeColor(Widget w, Color c)
->>>>>>> 542b5ceb945323ef8eb3c489e700b591bbf74414
 	{
 		if(w instanceof Control)
 		{
