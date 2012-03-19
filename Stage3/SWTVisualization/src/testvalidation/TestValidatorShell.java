@@ -113,7 +113,7 @@ public class TestValidatorShell {
 	private static void decolor(int step) {
 		WidgetId oldWidgetId = DomParserExample.parsedGraph.getWidgetFromEvent(new EventId(events.get(step)));
 		Widget oldWidget = VisualizationGenerator.widgetIDs.get(oldWidgetId);
-		DomParserExample.addColor(oldWidget, Display.getCurrent().getSystemColor(SWT.COLOR_GRAY));
+		DomParserExample.removeColor(oldWidget, Display.getCurrent().getSystemColor(SWT.COLOR_GRAY));
 	}
 	
 	private static void color(int step) {
