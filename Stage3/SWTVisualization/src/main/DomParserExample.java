@@ -1,6 +1,5 @@
 package main;
 
-
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -24,10 +23,14 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.TabItem;
 import org.eclipse.swt.widgets.ToolItem;
 import org.eclipse.swt.widgets.Widget;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.swt.widgets.Shell;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -114,8 +117,7 @@ public class DomParserExample {
 
 		for(int i = 0; i < attributeList.getLength(); i++)
 		{
-			extractAttributes(i,attributeList,eventMap);
-			
+			extractAttributes(i,attributeList,eventMap);		
 			Widget addedWidget = VisualizationGenerator.addWidget(eventMap);
 			System.out.println(addedWidget);
 			if(addedWidget==null)
@@ -261,6 +263,43 @@ public class DomParserExample {
 			if(widget instanceof Menu)
 				((Menu)widget).addMenuListener(colorListener);
 			System.out.println(widget+" "+VisualizationGenerator.widgetList.get(widget)+" "+neighbors);
+		}
+		
+		for(final Widget widget:VisualizationGenerator.widgetList.keySet())
+		{
+		WidgetId idz = VisualizationGenerator.widgetList.get(widget);;
+
+		if(idz.toString().equals("w3226986472"))
+		System.out.println(((Text)widget).getText());
+		widget.addListener(SWT.Selection, new Listener(){
+		public void handleEvent(Event e)
+		{
+		WidgetId widgetId = VisualizationGenerator.widgetList.get(widget);
+		System.out.println(widgetId.getId());
+		if(parsedGraph.opensWindow(widgetId))
+		{
+		System.out.println("MADE IT HERE");
+		for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL))
+		{
+		if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)
+		{
+		((Control)VisualizationGenerator.widgetIDs.get(widgetId2)).getShell().open();
+		}
+
+		}
+		for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.REACHING))
+		{
+		if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)
+		{
+		((Control)VisualizationGenerator.widgetIDs.get(widgetId2)).getShell().open();
+		}
+		}
+
+		//ArrayList<Widget> neighbors = new ArrayList <Widget>();
+		//neighbors.add(parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL));
+		}
+		}
+		});
 		}
 	}
 }
