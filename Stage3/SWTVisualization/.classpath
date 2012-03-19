@@ -9,5 +9,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/SWTRipper"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/SWTRipperTest"/>
 	<classpathentry kind="lib" path="/SWTReplayerTest/lib/junit.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ControlExample"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
