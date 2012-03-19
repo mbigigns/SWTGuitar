@@ -9,32 +9,14 @@ import edu.umd.cs.guitar.ripper.test.aut.SWTMenuBarApp;
 import edu.umd.cs.guitar.ripper.test.aut.SWTMultiWindowDynamicApp;
 import edu.umd.cs.guitar.ripper.test.aut.SWTToolbarApp;
 import edu.umd.cs.guitar.ripper.test.aut.SWTTwoWindowsApp;
-import org.eclipse.swt.examples.controlexample.*;
+//import org.eclipse.swt.examples.controlexample.*;
 
 
 public class test {
 	public static void main(String args[])
 	{
 		SitarRipperConfiguration config = new SitarRipperConfiguration();
-		config.setMainClass(ControlExample
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				.class.getName());
+		//config.setMainClass(ControlExample.class.getName());
 		SitarRipper ripper = new SitarRipper(config);
 
 		

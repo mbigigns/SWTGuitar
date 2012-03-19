@@ -346,7 +346,7 @@ public class VisualizationGenerator {
 				e.printStackTrace();
 				customControlFlag = true;
 			}
-			
+			/*
 			if(customControlFlag)
 			{
 				Group customControl = new Group((Composite)widgets.get(parent),SWT.BORDER);
@@ -356,6 +356,8 @@ public class VisualizationGenerator {
 				addWidgetToMap(data, properties.get("ID"),customControl);
 				return customControl;
 			}
+			*/
+			
 		}
 		return null;
 	}
