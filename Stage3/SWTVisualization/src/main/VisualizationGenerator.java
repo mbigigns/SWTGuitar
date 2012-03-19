@@ -3,11 +3,15 @@ package main;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.browser.Browser;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.layout.FormLayout;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.*;
 
 import efg.WidgetId;
@@ -16,7 +20,7 @@ public class VisualizationGenerator {
 	static HashMap<String, Widget> widgets = new HashMap<String, Widget>();
 	static HashMap<WidgetId, Widget> widgetIDs = new HashMap<WidgetId, Widget>();
 	static HashMap<Widget,WidgetId> widgetList = new HashMap<Widget,WidgetId>();
-	static Display display = new Display();
+	public static Display display = new Display();
 	static ArrayList<Shell> shellList = new ArrayList<Shell>();
 	public static Widget addWidget(HashMap<String, String> properties)
 	{
@@ -86,6 +90,11 @@ public class VisualizationGenerator {
 			Composite composite = new Composite((Composite)(widgets.get(parent)), style);
 			if(!(x==0&&y==0&&width==0&&height==0))
 				composite.setBounds(x, y, width, height);
+			else if(properties.get("layout")!=null)
+			{
+				composite.pack();
+				composite.setLayout(parseLayout(properties.get("layout")));
+			}
 			else
 			{
 				FillLayout fillLayout = new FillLayout();
@@ -152,6 +161,11 @@ public class VisualizationGenerator {
 			Group group = new Group((Composite)(widgets.get(parent)), style);
 			if(!(x==0&&y==0&&width==0&&height==0))
 				group.setBounds(x, y, width, height);
+			else if(properties.get("layout")!=null)
+			{
+				group.pack();
+				group.setLayout(parseLayout(properties.get("layout")));
+			}
 			else
 			{
 				FillLayout fillLayout = new FillLayout();
@@ -317,9 +331,18 @@ public class VisualizationGenerator {
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.browser.Browser"))
 		{
-			Text browser = new Text((Composite)widgets.get(parent),SWT.BORDER);
+			Group browser = new Group((Composite)widgets.get(parent),SWT.BORDER);
 			browser.setBounds(x,y,width,height);
 			browser.setText("Browser");
+			browser.setToolTipText(ID);
+			addWidgetToMap(data, properties.get("ID"),browser);
+			return browser;
+		}
+		else if(properties.get("Class").equals("org.eclipse.swt.browser.WebSite"))
+		{
+			Group browser = new Group((Composite)widgets.get(parent),SWT.BORDER);
+			browser.setBounds(x,y,width,height);
+			browser.setText("Website");
 			browser.setToolTipText(ID);
 			addWidgetToMap(data, properties.get("ID"),browser);
 			return browser;
@@ -345,6 +368,8 @@ public class VisualizationGenerator {
 			}
 			catch (Exception e) {
 				e.printStackTrace();
+				String blah = null;
+				//blah.length();
 				customControlFlag = true;
 			}
 			
@@ -384,5 +409,238 @@ public class VisualizationGenerator {
 		widgetList.put(widget,new WidgetId(widgetID));
 		widgets.put(data, widget);
 		widgetIDs.put(new WidgetId(widgetID), widget);
+	}
+	
+	private static Layout parseLayout(String layoutFormat)
+	{
+		if(layoutFormat.contains("GridLayout"))
+		{     
+			GridLayout layout = new GridLayout();
+			Pattern p;
+			Matcher m;
+			
+			p = Pattern.compile(".*marginWidth=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginWidth = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginBottom=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginBottom = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginHeight=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginHeight = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginLeft=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginLeft = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginRight=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginRight = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginTop=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginTop = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*numColumns=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.numColumns = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*verticalSpacing=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.verticalSpacing = Integer.parseInt(m.group(1));
+			}
+			return layout;
+		}
+		else if(layoutFormat.contains("FillLayout"))
+		{
+			FillLayout layout = new FillLayout();
+			Pattern p;
+			Matcher m;
+			
+			p = Pattern.compile(".*marginWidth=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginWidth = Integer.parseInt(m.group(1));
+			}
+			
+			
+			p = Pattern.compile(".*marginHeight=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginHeight = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*spacing=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.spacing = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*type=([A-Z]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				if(m.group(1).equals("SWT.HORIZONTAL"))
+					layout.type = SWT.HORIZONTAL;
+				else if(m.group(1).equals("SWT.VERTICAL"))
+					layout.type=SWT.VERTICAL;
+			}
+			return layout;
+		}
+		else if(layoutFormat.contains("FormLayout"))
+		{
+			FormLayout layout = new FormLayout();
+			
+			Pattern p;
+			Matcher m;
+			
+			p = Pattern.compile(".*marginWidth=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginWidth = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginBottom=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginBottom = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginHeight=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginHeight = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginLeft=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginLeft = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginRight=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginRight = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginTop=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginTop = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*spacing=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.spacing = Integer.parseInt(m.group(1));
+			}
+			
+			return layout;
+		}
+		else if(layoutFormat.contains("RowLayout"))
+		{
+			RowLayout layout = new RowLayout();
+			
+			Pattern p;
+			Matcher m;
+			
+			p = Pattern.compile(".*marginWidth=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginWidth = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginBottom=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginBottom = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginHeight=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginHeight = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginLeft=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginLeft = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginRight=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginRight = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*marginTop=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.marginTop = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*spacing=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.spacing = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*type=([A-Z]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				if(m.group(1).equals("SWT.HORIZONTAL"))
+					layout.type = SWT.HORIZONTAL;
+				else if(m.group(1).equals("SWT.VERTICAL"))
+					layout.type=SWT.VERTICAL;
+			}
+			return layout;
+			
+		}
+		return null;
 	}
 }

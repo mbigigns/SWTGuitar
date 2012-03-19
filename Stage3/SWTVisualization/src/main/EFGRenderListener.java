@@ -65,7 +65,7 @@ public class EFGRenderListener implements Listener, MenuListener{
 	public void handleEvent(Event arg0) {
 		if(arg0.type == SWT.MouseEnter || arg0.type == SWT.Arm || arg0.type == SWT.Selection)
 		{
-			System.out.println(arg0.type);
+			//System.out.println(arg0.type);
 			
 			//return the previously colored controls to their original color
 			if(DomParserExample.EFGHighlighted != null)
@@ -105,7 +105,7 @@ public class EFGRenderListener implements Listener, MenuListener{
 	
 	public void toggle()
 	{
-		System.out.println("Me Toggle");
+		//System.out.println("Me Toggle");
 		for(Widget w:widgets.keySet())
 		{
 			if(w instanceof Control)

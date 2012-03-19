@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/SWTModel"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/SWTRipper"/>
+	<classpathentry kind="lib" path="lib/swt-linux.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -127,7 +127,7 @@ public class DomParserExample {
 				i++;
 				extractAttributes(i,attributeList,eventMap);
 				Widget nextWidget = VisualizationGenerator.addWidget(eventMap);
-				System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHH:"+addedWidget+" "+nextWidget);
+				//System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHH:"+addedWidget+" "+nextWidget);
 				if(nextWidget instanceof Control)
 					((TabItem) addedWidget).setControl((Control)nextWidget);
 			}
@@ -240,12 +240,12 @@ public class DomParserExample {
 			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NORMAL).isEmpty();
 			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.REACHING).isEmpty();
 			
-			System.out.println(widget+" "+hasNeighbors);
+			//System.out.println(widget+" "+hasNeighbors);
 			
 			if(widget instanceof Control && hasNeighbors)
 			{
 				Control control = (Control) widget;
-				System.out.println("Setting "+widget+" red");
+				//System.out.println("Setting "+widget+" red");
 				control.setBackground(red);
 			}
 		}
@@ -278,7 +278,7 @@ public class DomParserExample {
 		System.out.println(widgetId.getId());
 		if(parsedGraph.opensWindow(widgetId))
 		{
-		System.out.println("MADE IT HERE");
+		//System.out.println("MADE IT HERE");
 		for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL))
 		{
 		if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)

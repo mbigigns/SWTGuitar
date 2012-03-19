@@ -8,7 +8,14 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/SWTRipperTest"/>
 	<classpathentry kind="lib" path="lib/GUIReplayer-Core.jar"/>
 	<classpathentry kind="lib" path="lib/args4j-2.0.12.jar"/>
-	<classpathentry kind="lib" path="lib/jemmy.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/SWTRipper"/>
+	<classpathentry kind="lib" path="lib/swt-linux.jar"/>
+	<classpathentry kind="lib" path="lib/cobertura-1.9.4.1/cobertura.jar"/>
+	<classpathentry kind="lib" path="lib/xmlunit-1.3.jar"/>
+	<classpathentry kind="lib" path="lib/cobertura-1.9.4.1/lib/jakarta-oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="lib/cobertura-1.9.4.1/lib/asm-tree-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/cobertura-1.9.4.1/lib/log4j-1.2.9.jar"/>
+	<classpathentry kind="lib" path="lib/GUITARModel-Core.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

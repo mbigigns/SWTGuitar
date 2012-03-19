@@ -11,5 +11,7 @@
 	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/SWTModel"/>
+	<classpathentry kind="lib" path="lib/swt-linux.jar"/>
+	<classpathentry kind="lib" path="lib/tuxguitar-1.2-linux-x86/tuxguitar.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
