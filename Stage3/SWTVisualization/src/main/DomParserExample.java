@@ -24,6 +24,7 @@ import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Item;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.TabItem;
@@ -300,6 +301,39 @@ public class DomParserExample {
 		}
 		}
 		});
+		}
+	}
+	
+	public void addColor(Widget w, Color c)
+	{
+		if(w instanceof Control)
+		{
+			Control control = (Control) w;
+			control.setBackground(c);
+		}
+		else if(w instanceof Item)
+		{
+			Item i = (Item) w;
+			while(i.getText().charAt(0)=='*')
+				i.setText(i.getText().substring(1));
+			i.setText("*"+i.getText());
+		}
+	}
+	public void removeColor(Widget w, Color c)
+	{
+		if(w instanceof Control)
+		{
+			Control control = (Control) w;
+			control.setBackground(c);
+		}
+		else if(w instanceof Item)
+		{
+			Item i = (Item) w;
+			if(i.getText().length()>0)
+			{
+				while(i.getText().charAt(0)=='*')
+					i.setText(i.getText().substring(1));
+			}
 		}
 	}
 }
