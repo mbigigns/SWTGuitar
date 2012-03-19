@@ -1,3 +1,4 @@
+package main;
 import edu.umd.cs.guitar.model.SitarConstants;
 import edu.umd.cs.guitar.replayer.SitarReplayer;
 import edu.umd.cs.guitar.replayer.SitarReplayerConfiguration;

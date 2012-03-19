@@ -1,4 +1,4 @@
-
+package main;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -24,6 +24,7 @@ import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Item;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.TabItem;
@@ -36,6 +37,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+
+import testvalidation.TestValidatorShell;
 
 import efg.EFGParser;
 import efg.EventFlowGraph;
@@ -53,24 +56,35 @@ public class DomParserExample {
 	
 	public static void main(String[] args)
 	{
-		runExample();
+		runExample(true);
   
 	}
 	
 
-	public static void runExample() {
+	public static void runExample(boolean testValidation) {
 
 		//parse the xml file and get the dom object
 		parseXmlFile();
 
 		//get each employee element and create a Employee object
 		parseDoc();
-
+		
 		try {
-			setEFGVerifiers();
-		} catch (SAXException e) {
+			parsedGraph = EFGParser.parseFile("GUITAR-Default.EFG");
+		} catch (SAXException e1) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e1.printStackTrace();
+		}
+
+		if(testValidation)
+			VisualizationGenerator.shellList.add(TestValidatorShell.getShell());
+		else {
+			try {
+				setEFGVerifiers();
+			} catch (SAXException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
 		VisualizationGenerator.Show();
@@ -127,7 +141,7 @@ public class DomParserExample {
 				i++;
 				extractAttributes(i,attributeList,eventMap);
 				Widget nextWidget = VisualizationGenerator.addWidget(eventMap);
-				System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHH:"+addedWidget+" "+nextWidget);
+				//System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHH:"+addedWidget+" "+nextWidget);
 				if(nextWidget instanceof Control)
 					((TabItem) addedWidget).setControl((Control)nextWidget);
 			}
@@ -229,7 +243,6 @@ public class DomParserExample {
 		Color red = new Color(display, 255, 204, 204);
 		Color green = new Color(display, 77, 166, 25);
 
-		parsedGraph = EFGParser.parseFile("GUITAR-Default.EFG");
 		for(Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
 			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
@@ -240,12 +253,12 @@ public class DomParserExample {
 			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NORMAL).isEmpty();
 			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.REACHING).isEmpty();
 			
-			System.out.println(widget+" "+hasNeighbors);
+			//System.out.println(widget+" "+hasNeighbors);
 			
 			if(widget instanceof Control && hasNeighbors)
 			{
 				Control control = (Control) widget;
-				System.out.println("Setting "+widget+" red");
+				//System.out.println("Setting "+widget+" red");
 				control.setBackground(red);
 			}
 		}
@@ -278,7 +291,7 @@ public class DomParserExample {
 		System.out.println(widgetId.getId());
 		if(parsedGraph.opensWindow(widgetId))
 		{
-		System.out.println("MADE IT HERE");
+		//System.out.println("MADE IT HERE");
 		for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL))
 		{
 		if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)
@@ -300,6 +313,47 @@ public class DomParserExample {
 		}
 		}
 		});
+		}
+	}
+	
+<<<<<<< HEAD
+	public static void addColor(Widget w, Color c)
+=======
+	public void addColor(Widget w, Color c)
+>>>>>>> 542b5ceb945323ef8eb3c489e700b591bbf74414
+	{
+		if(w instanceof Control)
+		{
+			Control control = (Control) w;
+			control.setBackground(c);
+		}
+		else if(w instanceof Item)
+		{
+			Item i = (Item) w;
+			while(i.getText().charAt(0)=='*')
+				i.setText(i.getText().substring(1));
+			i.setText("*"+i.getText());
+		}
+	}
+<<<<<<< HEAD
+	public static void removeColor(Widget w, Color c)
+=======
+	public void removeColor(Widget w, Color c)
+>>>>>>> 542b5ceb945323ef8eb3c489e700b591bbf74414
+	{
+		if(w instanceof Control)
+		{
+			Control control = (Control) w;
+			control.setBackground(c);
+		}
+		else if(w instanceof Item)
+		{
+			Item i = (Item) w;
+			if(i.getText().length()>0)
+			{
+				while(i.getText().charAt(0)=='*')
+					i.setText(i.getText().substring(1));
+			}
 		}
 	}
 }
