@@ -86,7 +86,9 @@ public class EventFlowGraph {
 	
 	public boolean opensWindow(WidgetId widgetId) {
 		List<EFGEvent> events = this.widgets.get(widgetId);
-		
+		if(events==null){
+			events = new ArrayList<EFGEvent>();
+		}
 		for (EFGEvent event : events) {
 			switch(event.getEventType()) {
 			case UNRESTRICTED_FOCUS:
