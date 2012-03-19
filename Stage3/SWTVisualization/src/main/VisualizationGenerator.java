@@ -13,12 +13,13 @@ import org.eclipse.swt.layout.FormLayout;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.*;
+import org.xml.sax.SAXException;
 
 import efg.WidgetId;
 
 public class VisualizationGenerator {
 	static HashMap<String, Widget> widgets = new HashMap<String, Widget>();
-	static HashMap<WidgetId, Widget> widgetIDs = new HashMap<WidgetId, Widget>();
+	public static HashMap<WidgetId, Widget> widgetIDs = new HashMap<WidgetId, Widget>();
 	static HashMap<Widget,WidgetId> widgetList = new HashMap<Widget,WidgetId>();
 	public static Display display = new Display();
 	static ArrayList<Shell> shellList = new ArrayList<Shell>();
@@ -643,4 +644,5 @@ public class VisualizationGenerator {
 		}
 		return null;
 	}
+
 }

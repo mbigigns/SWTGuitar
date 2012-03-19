@@ -24,6 +24,7 @@ import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Item;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.TabItem;
@@ -36,6 +37,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+
+import testvalidation.TestValidatorShell;
 
 import efg.EFGParser;
 import efg.EventFlowGraph;
@@ -53,24 +56,35 @@ public class DomParserExample {
 	
 	public static void main(String[] args)
 	{
-		runExample();
+		runExample(true);
   
 	}
 	
 
-	public static void runExample() {
+	public static void runExample(boolean testValidation) {
 
 		//parse the xml file and get the dom object
 		parseXmlFile();
 
 		//get each employee element and create a Employee object
 		parseDoc();
-
+		
 		try {
-			setEFGVerifiers();
-		} catch (SAXException e) {
+			parsedGraph = EFGParser.parseFile("GUITAR-Default.EFG");
+		} catch (SAXException e1) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e1.printStackTrace();
+		}
+
+		if(testValidation)
+			VisualizationGenerator.shellList.add(TestValidatorShell.getShell());
+		else {
+			try {
+				setEFGVerifiers();
+			} catch (SAXException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
 		VisualizationGenerator.Show();
@@ -229,7 +243,6 @@ public class DomParserExample {
 		Color red = new Color(display, 255, 204, 204);
 		Color green = new Color(display, 77, 166, 25);
 
-		parsedGraph = EFGParser.parseFile("GUITAR-Default.EFG");
 		for(Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
 			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
@@ -300,6 +313,39 @@ public class DomParserExample {
 		}
 		}
 		});
+		}
+	}
+	
+	public static void addColor(Widget w, Color c)
+	{
+		if(w instanceof Control)
+		{
+			Control control = (Control) w;
+			control.setBackground(c);
+		}
+		else if(w instanceof Item)
+		{
+			Item i = (Item) w;
+			while(i.getText().charAt(0)=='*')
+				i.setText(i.getText().substring(1));
+			i.setText("*"+i.getText());
+		}
+	}
+	public static void removeColor(Widget w, Color c)
+	{
+		if(w instanceof Control)
+		{
+			Control control = (Control) w;
+			control.setBackground(c);
+		}
+		else if(w instanceof Item)
+		{
+			Item i = (Item) w;
+			if(i.getText().length()>0)
+			{
+				while(i.getText().charAt(0)=='*')
+					i.setText(i.getText().substring(1));
+			}
 		}
 	}
 }
