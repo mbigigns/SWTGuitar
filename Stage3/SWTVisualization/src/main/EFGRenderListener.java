@@ -47,7 +47,7 @@ public class EFGRenderListener implements Listener, MenuListener{
 			storeWidgetColor(neighbor,EdgeType.NORMAL);
 		}
 		
-		System.out.println(neighbors.get(EdgeType.REACHING));
+		//System.out.println(neighbors.get(EdgeType.REACHING));
 		for(WidgetId neighborId: neighbors.get(EdgeType.REACHING))
 		{
 			Widget neighbor = VisualizationGenerator.widgetIDs.get(neighborId);
@@ -56,7 +56,7 @@ public class EFGRenderListener implements Listener, MenuListener{
 		
 /*		System.out.println(widgets);
 		System.out.println(neighbors);*/
-		System.out.println(VisualizationGenerator.widgetList.get(widget)+" "+widgets);
+		//System.out.println(VisualizationGenerator.widgetList.get(widget)+" "+widgets);
 		
 		this.blue=blue;
 		this.green=green;
@@ -96,10 +96,6 @@ public class EFGRenderListener implements Listener, MenuListener{
 		else if(arg0.type == SWT.MouseExit)
 		{
 			toggle();
-		}
-		else
-		{
-			System.out.println("Menu");
 		}
 	}
 	
@@ -147,10 +143,6 @@ public class EFGRenderListener implements Listener, MenuListener{
 
 	@Override
 	public void menuShown(MenuEvent arg0) {
-
-		System.out.println("Menu");
-		System.out.println(VisualizationGenerator.widgetList.get(widget));
-		System.out.println(widgets.keySet());
 		for(Widget w:widgets.keySet())
 		{
 			if(w instanceof Item)

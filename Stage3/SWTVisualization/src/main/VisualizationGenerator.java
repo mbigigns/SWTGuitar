@@ -30,7 +30,6 @@ public class VisualizationGenerator {
 			return null;
 		}
 
-
 		String parent = "";
 		if(properties.get("data").split(" ").length > 1)
 			parent = properties.get("data").split(" ")[1];
@@ -53,6 +52,12 @@ public class VisualizationGenerator {
 		if(properties.get("height")!=null)
 			height = Integer.parseInt(properties.get("height"));
 
+		//fixes issues where we have 0 height or 0 width properties temporarily
+		if(width == 0 && height !=0)
+			width = height;
+		else if(width !=0 && height ==0)
+			height = width;
+		
 		if(widgets.get(parent) != null && widgets.get(parent) instanceof Composite)
 		{
 			Rectangle parentBounds = ((Composite)(widgets.get(parent))).getBounds();
@@ -79,7 +84,7 @@ public class VisualizationGenerator {
 
 			if(properties.get("text") != null)
 				shell.setText(properties.get("text"));
-
+			
 			shell.setToolTipText(ID);
 			//shell.open();
 
@@ -117,6 +122,8 @@ public class VisualizationGenerator {
 			label.setToolTipText(ID);
 			if(properties.get("text") != null)
 				label.setText(properties.get("text"));
+			else
+				label.setText("X");
 			addWidgetToMap(data, properties.get("ID"), label);
 			return label;
 		}
@@ -154,6 +161,8 @@ public class VisualizationGenerator {
 			control.setToolTipText(ID);
 			if(properties.get("text") != null)
 				control.setText(properties.get("text"));
+			else
+				control.setText("X");
 			addWidgetToMap(data, properties.get("ID"), control);
 			return control;
 		}
@@ -161,17 +170,19 @@ public class VisualizationGenerator {
 		{
 			Group group = new Group((Composite)(widgets.get(parent)), style);
 			if(!(x==0&&y==0&&width==0&&height==0))
+			{
 				group.setBounds(x, y, width, height);
+			}
 			else if(properties.get("layout")!=null)
 			{
-				group.pack();
+/*				if(properties.get("text") != null)
+					System.out.println(properties.get("text"));*/
 				group.setLayout(parseLayout(properties.get("layout")));
 			}
 			else
 			{
 				FillLayout fillLayout = new FillLayout();
 				fillLayout.type = SWT.HORIZONTAL;
-				group.pack();
 				group.setLayout(fillLayout);
 			}
 			group.setToolTipText(ID);
@@ -213,11 +224,27 @@ public class VisualizationGenerator {
 			addWidgetToMap(data, properties.get("ID"), folder);
 			return folder;
 		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.ToolBar"))
+		{
+			ToolBar toolbar = new ToolBar((Composite)(widgets.get(parent)), style);
+
+			if(!(x==0&&y==0&&width==0&&height==0))
+				toolbar.setBounds(x, y, width, height);
+			else
+				toolbar.pack();
+			
+			toolbar.setToolTipText(ID);
+
+			addWidgetToMap(data, properties.get("ID"), toolbar);
+			return toolbar;
+		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.TreeItem"))
 		{
 			TreeItem item = new TreeItem((Tree)widgets.get(parent),style);
 			if(properties.get("text")!=null)
 				item.setText(properties.get("text"));
+			else
+				item.setText("X");
 			
 			item.setText(item.getText()+" "+ID);
 			
@@ -229,6 +256,8 @@ public class VisualizationGenerator {
 			TableItem item = new TableItem((Table)widgets.get(parent),style);
 			if(properties.get("text")!=null)
 				item.setText(properties.get("text"));
+			else
+				item.setText("X");
 			
 			item.setText(item.getText()+" "+ID);
 			
@@ -268,6 +297,8 @@ public class VisualizationGenerator {
 			TabItem item = new TabItem((TabFolder)widgets.get(parent),style);
 			if(properties.get("text")!=null)
 				item.setText(properties.get("text"));
+			else
+				item.setText("X");
 			
 			item.setToolTipText(ID);
 			
@@ -276,11 +307,13 @@ public class VisualizationGenerator {
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.MenuItem"))
 		{
-			System.out.println(properties.get("ID"));
-			System.out.println(widgets.get(parent));
+			//System.out.println(properties.get("ID"));
+			//System.out.println(widgets.get(parent));
 			MenuItem item = new MenuItem((Menu)widgets.get(parent),style);
 			if(properties.get("text")!=null)
 				item.setText(properties.get("text"));
+			else
+				item.setText("X");
 			
 			item.setText(item.getText()+" "+ID);
 			
@@ -290,11 +323,15 @@ public class VisualizationGenerator {
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.ToolItem"))
 		{
+			((ToolBar)widgets.get(parent)).setSize(1000, 1000);
 			Text item = new Text((ToolBar)widgets.get(parent),SWT.BORDER);
 			item.setBounds(x,y,width,height);
 			if(properties.get("text")!=null)
 				item.setText(properties.get("text"));
+			else
+				item.setText("X");
 			
+			item.setToolTipText(ID);
 			addWidgetToMap(data, properties.get("ID"),item);
 			return item;
 		}
@@ -303,11 +340,8 @@ public class VisualizationGenerator {
 			if(widgets.get(parent) instanceof Shell)
 			{
 				Menu menubar = new Menu((Shell)widgets.get(parent),style-33554432);
-	
-				System.out.println(style-33554432);
-				System.out.println(SWT.BAR);
-				
-				System.out.println(widgets.get(parent));
+					
+				//System.out.println(widgets.get(parent));
 				
 				if(style-33554432 == SWT.BAR || style == SWT.BAR)
 					((Shell)widgets.get(parent)).setMenuBar(menubar);
@@ -327,7 +361,8 @@ public class VisualizationGenerator {
 			}
 			else
 			{
-				System.out.println("Yay we have others");
+				System.out.println("DEBUG: Unaccounted Menu Type");
+				//System.out.println("Yay we have others");
 			}
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.browser.Browser"))
@@ -357,7 +392,7 @@ public class VisualizationGenerator {
 			{
 				Class cl = Class.forName(properties.get("Class"));
 				Constructor co = cl.getConstructor(classParm);
-				System.out.println(widgets.get(parent));
+				//System.out.println(widgets.get(parent));
 				Control control = (Control) co.newInstance(widgets.get(parent), style);
 				if(!(x==0&&y==0&&width==0&&height==0))
 					control.setBounds(x, y, width, height);
@@ -368,9 +403,7 @@ public class VisualizationGenerator {
 				return control;
 			}
 			catch (Exception e) {
-				e.printStackTrace();
-				String blah = null;
-				//blah.length();
+				System.out.println("DEBUG: Control not found in SWT library");
 				customControlFlag = true;
 			}
 			
@@ -417,6 +450,7 @@ public class VisualizationGenerator {
 		if(layoutFormat.contains("GridLayout"))
 		{     
 			GridLayout layout = new GridLayout();
+			layout.numColumns=1;
 			Pattern p;
 			Matcher m;
 			
@@ -474,6 +508,13 @@ public class VisualizationGenerator {
 			if(m.matches())
 			{
 				layout.verticalSpacing = Integer.parseInt(m.group(1));
+			}
+			
+			p = Pattern.compile(".*horizontalSpacing=([0-9]*).*");
+			m = p.matcher(layoutFormat);
+			if(m.matches())
+			{
+				layout.horizontalSpacing = Integer.parseInt(m.group(1));
 			}
 			return layout;
 		}

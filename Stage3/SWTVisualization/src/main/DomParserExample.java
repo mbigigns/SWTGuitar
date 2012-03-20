@@ -1,10 +1,8 @@
 package main;
 
 import java.io.IOException;
-import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -12,12 +10,6 @@ import java.util.Set;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
@@ -44,6 +36,7 @@ import efg.EFGParser;
 import efg.EventFlowGraph;
 import efg.WidgetId;
 import efg.EventFlowGraph.EdgeType;
+
 
 public class DomParserExample {
 
@@ -89,8 +82,7 @@ public class DomParserExample {
 		try {
 			parsedGraph = EFGParser.parseFile(efgPath);
 		} catch (SAXException e1) {
-			System.out.println("Error reading .efg file");
-			//e1.printStackTrace();
+			System.out.println("DEBUG: XML Parse Exception in EFG");
 			System.exit(0);
 		}
 		
@@ -122,17 +114,11 @@ public class DomParserExample {
 			dom2 = db.newDocument();
 
 		}catch(ParserConfigurationException pce) {
-			System.out.println("Error reading .GUI file");
-			//pce.printStackTrace();
-			System.exit(0);
+			System.out.println("DEBUG: XML Parse Exception in GUI");
 		}catch(SAXException se) {
-			System.out.println("Error reading .GUI file");
-			//se.printStackTrace();
-			System.exit(0);
+			System.out.println("DEBUG: XML Parse Exception in GUI");
 		}catch(IOException ioe) {
-			System.out.println("Error reading .GUI file");
-			//ioe.printStackTrace();
-			System.exit(0);
+			System.out.println("DEBUG: XML Parse Exception in GUI");
 		}
 	}
 
@@ -153,15 +139,14 @@ public class DomParserExample {
 		{
 			extractAttributes(i,attributeList,eventMap);		
 			Widget addedWidget = VisualizationGenerator.addWidget(eventMap);
-			System.out.println(addedWidget);
-			if(addedWidget==null)
-				System.out.println(eventMap.get("Class"));
+			//System.out.println(addedWidget);
+/*			if(addedWidget==null)
+				System.out.println(eventMap.get("Class"));*/
 			if(addedWidget instanceof TabItem)
 			{
 				i++;
 				extractAttributes(i,attributeList,eventMap);
 				Widget nextWidget = VisualizationGenerator.addWidget(eventMap);
-				//System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHH:"+addedWidget+" "+nextWidget);
 				if(nextWidget instanceof Control)
 					((TabItem) addedWidget).setControl((Control)nextWidget);
 			}
@@ -189,7 +174,6 @@ public class DomParserExample {
 		{
 			Element property = (Element)(properties.item(j));
 			NodeList nlList = property.getElementsByTagName("Name").item(0).getChildNodes();
-	        Node nValue = (Node) nlList.item(0);
 			String propertyName = property.getElementsByTagName("Name").item(0).getChildNodes().item(0).getNodeValue();
 			
 			if(propertyName.equals("ID"))
@@ -295,20 +279,18 @@ public class DomParserExample {
 			widget.addListener(SWT.Selection, colorListener);
 			if(widget instanceof Menu)
 				((Menu)widget).addMenuListener(colorListener);
-			System.out.println(widget+" "+VisualizationGenerator.widgetList.get(widget)+" "+neighbors);
+			//System.out.println(widget+" "+VisualizationGenerator.widgetList.get(widget)+" "+neighbors);
 		}
 		
 		for(final Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
 		WidgetId idz = VisualizationGenerator.widgetList.get(widget);;
 
-		if(idz.toString().equals("w3226986472"))
-		System.out.println(((Text)widget).getText());
 		widget.addListener(SWT.Selection, new Listener(){
 		public void handleEvent(Event e)
 		{
 		WidgetId widgetId = VisualizationGenerator.widgetList.get(widget);
-		System.out.println(widgetId.getId());
+		//System.out.println(widgetId.getId());
 		if(parsedGraph.opensWindow(widgetId))
 		{
 		//System.out.println("MADE IT HERE");
