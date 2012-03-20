@@ -1,9 +1,16 @@
-cp $1 GUITAR-Default.EFG
-cp $2 GUITAR-Default.GUI
+##
 
-if ["$3" = ""]; then
-	java -jar Vis.jar
+if [[ "$1" = "" || "$2" = "" ]]; then
+	echo ""
+	echo "For visualization: ./runner.sh <path/fileName.EFG> <path/fileName.GUI>"
+	echo ""	
+	echo "For visualization with test case: ./runner.sh <path/fileName.EFG> <path/fileName.GUI> <path/fileName.tst>"
+	echo ""
 else
-	cp $3 testcase.tst
-	java -jar Vis.jar $3
+	if ["$3" = ""]; then
+		java -jar Vis.jar $1 $2
+	else
+		cp $3 GUITAR-Default.tst
+		java -jar Vis.jar $1 $2 $3
+	fi
 fi
