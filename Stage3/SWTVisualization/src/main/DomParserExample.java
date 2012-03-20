@@ -53,16 +53,27 @@ public class DomParserExample {
 	static Document dom2;
 	public static EFGRenderListener EFGHighlighted;
 	public static EventFlowGraph parsedGraph;
+	public static String efgPath, guiPath, tstPath; //paths to .efg, .gui, and .tst files
+
 	
 	public static void main(String[] args)
 	{
-		if(args.length<1){
-			//System.out.println("NO .TST file, just visual");
-			runExample(false);
-		}else{
+		if(args.length<2 || args.length>3) {
+			System.out.println("Invalid number of arguments");
+			System.exit(0);
+		}
+		efgPath = args[0];
+		guiPath = args[1];
+		
+		//If test case path exists for test validation
+		if(args.length==3) {
+			tstPath = args[2];
+			//run test validator
 			runExample(true);
 		}
-  
+		
+		//run efg validator
+		runExample(false);
 	}
 	
 
@@ -74,24 +85,22 @@ public class DomParserExample {
 		//get each employee element and create a Employee object
 		parseDoc();
 		
+		//Load EFG data from efgPath
 		try {
-			parsedGraph = EFGParser.parseFile("GUITAR-Default.EFG");
+			parsedGraph = EFGParser.parseFile(efgPath);
 		} catch (SAXException e1) {
-			// TODO Auto-generated catch block
+			System.out.println("Error reading .efg file");
 			e1.printStackTrace();
-		}
-
-		if(testValidation)
-			VisualizationGenerator.shellList.add(TestValidatorShell.getShell());
-		else {
-			try {
-				setEFGVerifiers();
-			} catch (SAXException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			System.exit(0);
 		}
 		
+		
+		if(testValidation)
+			VisualizationGenerator.shellList.add(TestValidatorShell.getShell(tstPath));
+		else
+			setEFGVerifiers();
+	
+
 		VisualizationGenerator.Show();
 		//generateXML();
 
@@ -109,7 +118,7 @@ public class DomParserExample {
 			DocumentBuilder db = dbf.newDocumentBuilder();
 
 			//parse using builder to get DOM representation of the XML file
-			dom = db.parse("GUITAR-Default.GUI");
+			dom = db.parse(guiPath);
 			dom2 = db.newDocument();
 
 		}catch(ParserConfigurationException pce) {
@@ -241,7 +250,7 @@ public class DomParserExample {
 		}
 	}
 	
-	public static void setEFGVerifiers() throws SAXException
+	public static void setEFGVerifiers() 
 	{
 		Display display = Display.getCurrent();
 		Color blue = new Color(display, 142, 205, 240);

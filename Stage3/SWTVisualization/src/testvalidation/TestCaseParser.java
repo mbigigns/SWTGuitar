@@ -31,8 +31,8 @@ public class TestCaseParser {
 			}
 		} catch (Exception e) {
 			System.out.println("Error in .tst file");
-			System.err.println("Error in .tst file");
 			e.printStackTrace();
+			System.exit(0);
 		}
 		
 		return steps;
@@ -56,11 +56,17 @@ public class TestCaseParser {
 			dom = db.parse(file);
 
 		}catch(ParserConfigurationException pce) {
+			System.out.println("Error reading .tst file");
 			pce.printStackTrace();
+			System.exit(0);
 		}catch(SAXException se) {
+			System.out.println("Error reading .tst file");
 			se.printStackTrace();
+			System.exit(0);
 		}catch(IOException ioe) {
+			System.out.println("Error reading .tst file");
 			ioe.printStackTrace();
+			System.exit(0);
 		}
 		
 		return dom;

@@ -9,7 +9,7 @@ import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.*;
 import org.xml.sax.SAXException;
 
-import edu.umd.cs.guitar.ripper.test.aut.SWTBasicApp;
+//import edu.umd.cs.guitar.ripper.test.aut.SWTBasicApp;
 import efg.EventId;
 import efg.WidgetId;
 import main.*;
@@ -23,8 +23,8 @@ public class TestValidatorShell {
 
 	
 	
-	public static Shell getShell() {
-		events = TestCaseParser.parseTst("testcase.tst");
+	public static Shell getShell(String tstPath) {
+		events = TestCaseParser.parseTst(tstPath);
 		step = 0;
 
 		Display display = Display.getCurrent();
