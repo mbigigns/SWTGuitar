@@ -57,15 +57,15 @@ public class TestCaseParser {
 
 		}catch(ParserConfigurationException pce) {
 			System.out.println("Error reading .tst file");
-			pce.printStackTrace();
+			//pce.printStackTrace();
 			System.exit(0);
 		}catch(SAXException se) {
 			System.out.println("Error reading .tst file");
-			se.printStackTrace();
+			//se.printStackTrace();
 			System.exit(0);
 		}catch(IOException ioe) {
 			System.out.println("Error reading .tst file");
-			ioe.printStackTrace();
+			//ioe.printStackTrace();
 			System.exit(0);
 		}
 		

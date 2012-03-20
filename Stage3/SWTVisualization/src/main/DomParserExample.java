@@ -90,7 +90,7 @@ public class DomParserExample {
 			parsedGraph = EFGParser.parseFile(efgPath);
 		} catch (SAXException e1) {
 			System.out.println("Error reading .efg file");
-			e1.printStackTrace();
+			//e1.printStackTrace();
 			System.exit(0);
 		}
 		
@@ -122,11 +122,17 @@ public class DomParserExample {
 			dom2 = db.newDocument();
 
 		}catch(ParserConfigurationException pce) {
-			pce.printStackTrace();
+			System.out.println("Error reading .GUI file");
+			//pce.printStackTrace();
+			System.exit(0);
 		}catch(SAXException se) {
-			se.printStackTrace();
+			System.out.println("Error reading .GUI file");
+			//se.printStackTrace();
+			System.exit(0);
 		}catch(IOException ioe) {
-			ioe.printStackTrace();
+			System.out.println("Error reading .GUI file");
+			//ioe.printStackTrace();
+			System.exit(0);
 		}
 	}
 
