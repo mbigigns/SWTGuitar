@@ -10,6 +10,7 @@ import org.xml.sax.SAXException;
 
 public class TestCaseParser {
 
+	//parses the test case file and returns the events as an arraylist
 	/**
 	 * @param file - String name of testcase file (eg: test01.tst)
 	 * @return ArrayList<String> containing the eventIDs of the subsequent test events
@@ -38,7 +39,7 @@ public class TestCaseParser {
 		return steps;
 	}
 	
-	
+	//returns the document object of the test case file
 	/**
 	 * @param file - String name of testcase file (eg: test01.tst)
 	 * @return Document object initialized with dom components

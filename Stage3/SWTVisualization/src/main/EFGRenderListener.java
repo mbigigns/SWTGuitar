@@ -62,7 +62,9 @@ public class EFGRenderListener implements Listener, MenuListener{
 		this.green=green;
 	}
 	
+	//listens for the correct events and handles them correctly
 	public void handleEvent(Event arg0) {
+		//sets the coloring/adds an asterisk on these events
 		if(arg0.type == SWT.MouseEnter || arg0.type == SWT.Arm || arg0.type == SWT.Selection)
 		{
 			//System.out.println(arg0.type);
@@ -93,12 +95,14 @@ public class EFGRenderListener implements Listener, MenuListener{
 			}
 			DomParserExample.EFGHighlighted = this;
 		}
+		//turns off coloring and asterisk when mouse is moved off
 		else if(arg0.type == SWT.MouseExit)
 		{
 			toggle();
 		}
 	}
 	
+	//turns off the coloring and removes asterisks
 	public void toggle()
 	{
 		//System.out.println("Me Toggle");
@@ -122,7 +126,7 @@ public class EFGRenderListener implements Listener, MenuListener{
 		DomParserExample.EFGHighlighted = null;
 	}
 	
-	
+	//stores the original widget colors so they can be restored when coloring is removed
 	private void storeWidgetColor(Widget widget, EdgeType edgetype)
 	{
 		if(widget instanceof Control)
@@ -141,6 +145,7 @@ public class EFGRenderListener implements Listener, MenuListener{
 	public void menuHidden(MenuEvent arg0) {
 	}
 
+	//adds asterisks when the menu is shown
 	@Override
 	public void menuShown(MenuEvent arg0) {
 		for(Widget w:widgets.keySet())

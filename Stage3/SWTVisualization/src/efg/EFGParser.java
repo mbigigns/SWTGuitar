@@ -44,16 +44,19 @@ public class EFGParser extends DefaultHandler {
 	private int currCol = 0;
 	private String currEdgeType;
 
+	//return the compiled EFG
 	private EventFlowGraph getCompiledEfg() {
 		return compiledEfg;
 	}
 
+	//starts the document and initializes objects
 	@Override public void startDocument() {
 		this.compiledEfg = new EventFlowGraph();
 		this.parsedEvents = new ArrayList<EFGEvent>();
 		this.currState = new Stack<ParseState>();
 	}
 
+	//creates a new element in the EFG with the given parameters
 	@Override public void startElement(String uri, String localName, String qName, Attributes attributes) {
 		// update the state of parsing
 		ParseState currState = this.currState.push(ParseState.parse(qName));
@@ -76,6 +79,7 @@ public class EFGParser extends DefaultHandler {
 		}
 	}
 
+	//handles a finish state
 	@Override public void endElement(String uri, String localName, String qName) {
 		// update the state of parsing
 		ParseState finishedState = this.currState.pop();
@@ -103,6 +107,7 @@ public class EFGParser extends DefaultHandler {
 		}
 	}
 
+	//sets the correct value to the given string
 	@Override public void characters(char ch[], int start, int length) {
 		
 		String s = new String(ch, start, length);

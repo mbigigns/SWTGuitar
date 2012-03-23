@@ -18,11 +18,19 @@ import org.xml.sax.SAXException;
 import efg.WidgetId;
 
 public class VisualizationGenerator {
+	
+	//maps widget sequential counter to widget
 	static HashMap<String, Widget> widgets = new HashMap<String, Widget>();
+	
+	//maps widget IDs to widgets
 	public static HashMap<WidgetId, Widget> widgetIDs = new HashMap<WidgetId, Widget>();
+	
+	//maps widgets to their widget IDs
 	static HashMap<Widget,WidgetId> widgetList = new HashMap<Widget,WidgetId>();
 	public static Display display = new Display();
 	static ArrayList<Shell> shellList = new ArrayList<Shell>();
+	
+	//creates a widget based on the given properties
 	public static Widget addWidget(HashMap<String, String> properties)
 	{
 		if(properties.get("Rootwindow") != null || properties.get("data")==null)
@@ -30,6 +38,7 @@ public class VisualizationGenerator {
 			return null;
 		}
 
+		//extracts the ID of the parent based on a sequential counting system
 		String parent = "";
 		if(properties.get("data").split(" ").length > 1)
 			parent = properties.get("data").split(" ")[1];
@@ -52,12 +61,14 @@ public class VisualizationGenerator {
 		if(properties.get("height")!=null)
 			height = Integer.parseInt(properties.get("height"));
 
-		//fixes issues where we have 0 height or 0 width properties temporarily
+		//fixes issues where we have 0 height or 0 width properties temporarily by setting them as squares.  This is to adjust
+		//for incorrect rendering
 		if(width == 0 && height !=0)
 			width = height;
 		else if(width !=0 && height ==0)
 			height = width;
 		
+		//grabs the bounds of the parents to help calculate relative sizing
 		if(widgets.get(parent) != null && widgets.get(parent) instanceof Composite)
 		{
 			Rectangle parentBounds = ((Composite)(widgets.get(parent))).getBounds();
@@ -68,7 +79,7 @@ public class VisualizationGenerator {
 		String ID = properties.get("ID");
 		int style = Integer.parseInt(properties.get("style"));
 
-		
+		//handles and creates widget based on the type of class listed in the GUI
 		if(properties.get("Class").equals("org.eclipse.swt.widgets.Shell"))
 		{
 			Shell shell;
@@ -385,9 +396,11 @@ public class VisualizationGenerator {
 		}
 		else
 		{
+			//otherwise do not handle the widget specially
 			Class [] classParm = {Composite.class, int.class};
 			
 			boolean customControlFlag = false;
+			//creates a widget based on the class name as specified in the GUI file
 			try
 			{
 				Class cl = Class.forName(properties.get("Class"));
@@ -407,6 +420,8 @@ public class VisualizationGenerator {
 				customControlFlag = true;
 			}
 			
+			//handles controls that are not included in the SWT library, which occurs when it throws an exception in the earlier try/catch
+			//creates a group with the proper name as a placeholder for this type of control
 			if(customControlFlag)
 			{
 				Group customControl = new Group((Composite)widgets.get(parent),SWT.BORDER);
@@ -420,6 +435,7 @@ public class VisualizationGenerator {
 		return null;
 	}
 
+	//shows the correct initial shell windows
 	public static void Show()
 	{
 		for (int i = 0; i < shellList.size(); i++) 
@@ -438,6 +454,7 @@ public class VisualizationGenerator {
 		display.dispose();
 	}
 	
+	//adds a specific widget with the widgetID to the helper maps
 	private static void addWidgetToMap(String data, String widgetID, Widget widget)
 	{
 		widgetList.put(widget,new WidgetId(widgetID));
@@ -445,6 +462,8 @@ public class VisualizationGenerator {
 		widgetIDs.put(new WidgetId(widgetID), widget);
 	}
 	
+	//reads in the layout attribute and creates a layout based on the data included,
+	//handles GridLayout, FillLayout, FormLayout, and RowLayout
 	private static Layout parseLayout(String layoutFormat)
 	{
 		if(layoutFormat.contains("GridLayout"))

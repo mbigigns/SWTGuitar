@@ -22,7 +22,7 @@ public class TestValidatorShell {
 	private static Button backButton, nextButton;
 
 	
-	
+	//returns the window of the test case validator
 	public static Shell getShell(String tstPath) {
 		events = TestCaseParser.parseTst(tstPath);
 		step = 0;
@@ -110,12 +110,14 @@ public class TestValidatorShell {
 		return shell;
 	}
 	
+	//removes the coloring for the annotated step
 	private static void decolor(int step) {
 		WidgetId oldWidgetId = DomParserExample.parsedGraph.getWidgetFromEvent(new EventId(events.get(step)));
 		Widget oldWidget = VisualizationGenerator.widgetIDs.get(oldWidgetId);
 		DomParserExample.removeColor(oldWidget, Display.getCurrent().getSystemColor(SWT.COLOR_GRAY));
 	}
 	
+	//adds coloring to the annotated step
 	private static void color(int step) {
 		WidgetId newWidgetId = DomParserExample.parsedGraph.getWidgetFromEvent(new EventId(events.get(step)));
 		Widget newWidget = VisualizationGenerator.widgetIDs.get(newWidgetId);

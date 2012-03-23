@@ -7,10 +7,12 @@ package utils;
  */
 public final class Strings {
 
+	//compares whether string is null or empty
 	public static boolean isNullOrEmpty(String s) {
 		return s == null ? true : s.isEmpty();
 	}
 	
+	//compares strings
 	public static boolean equals(String a, String b) {
 		if (a == null && b == null) {
 			return true;

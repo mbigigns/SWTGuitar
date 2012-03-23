@@ -9,6 +9,7 @@ public class EventId {
 		this.id = id;
 	}
 	
+	//constructor when event is a number/long
 	public EventId(long id) {
 		this.id = Long.toString(id);
 	}

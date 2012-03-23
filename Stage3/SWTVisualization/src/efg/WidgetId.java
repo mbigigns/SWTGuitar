@@ -9,6 +9,7 @@ public class WidgetId {
 		this.id = Long.parseLong(id);
 	}
 	
+	//constructor when widget id is a number
 	public WidgetId(long id) { 
 		this.id = id;
 	}

@@ -45,12 +45,14 @@ public class EventFlowGraph {
 		init();
 	}
 	
+	//initializes data structures
 	private void init() {
 		this.events = new HashSet<EFGEvent>();
 		this.outgoingEdges = new HashMap<EFGEvent, Set<Adjacency>>();
 		this.widgets = new HashMap<WidgetId, List<EFGEvent>>();
 	}
 	
+	//adds specific event to the event flow graph
 	void addEvent(EFGEvent event) {
 		// update events
 		this.events.add(event);
@@ -67,6 +69,7 @@ public class EventFlowGraph {
 		eventsAssocWithWidget.add(event);
 	}
 	
+	//adds an edge between events to model the flows
 	void addAdjacency(EFGEvent a, EdgeType edge, EFGEvent b) {
 		
 		checkArg(this.events.contains(a), "a is not an event in this graph");
@@ -84,6 +87,7 @@ public class EventFlowGraph {
 		adjacencies.add(adj);
 	}
 	
+	//returns true if a specific widget will open a new window
 	public boolean opensWindow(WidgetId widgetId) {
 		List<EFGEvent> events = this.widgets.get(widgetId);
 		if(events==null){
@@ -103,6 +107,7 @@ public class EventFlowGraph {
 		return false;
 	}
 	
+	//returns the widget associated with a specific event
 	public WidgetId getWidgetFromEvent(EventId eventID)
 	{
 		for(EFGEvent event:events)
@@ -113,6 +118,7 @@ public class EventFlowGraph {
 		return null;
 	}
 	
+	//get the widgets that can be flowed to from a specific widget according to the EFG
 	public Map<EdgeType, Set<WidgetId>> getFollowingWidgets(WidgetId widgetId) {
 		
 		EnumMap<EdgeType, Set<WidgetId>> followingWidgets = new EnumMap<EdgeType, Set<WidgetId>>(EdgeType.class);
@@ -135,10 +141,12 @@ public class EventFlowGraph {
 		return followingWidgets;
 	}
 	
+	//get the widgets that can be flowed to from a specific widget according to the EFG based on a specific type of relationship
 	public Set<WidgetId> getFollowingWidgets(WidgetId widgetId, EdgeType edgeType) {
 		return getFollowingWidgets(widgetId).get(edgeType);
 	}
 	
+	//returns all widgets present in the EFG
 	public Set<WidgetId> getAllWidgets() {
 		return new HashSet<WidgetId>(this.widgets.keySet());
 	}

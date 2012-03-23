@@ -185,6 +185,7 @@ class EFGEvent {
 			}
 		}
 		
+		//parses an interaction and ensures it is valid
 		public static EventType parse(String interaction) {
 			EventType parsedInteraction = quickParseTable.get(interaction.toUpperCase());
 			

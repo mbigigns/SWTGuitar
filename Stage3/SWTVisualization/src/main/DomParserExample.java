@@ -51,11 +51,15 @@ public class DomParserExample {
 	
 	public static void main(String[] args)
 	{
+		//checks to see that the user entered 2 or 3 arguments
 		if(args.length<2 || args.length>3) {
 			System.out.println("Invalid number of arguments");
 			System.exit(0);
 		}
+		//the first argument is the EFG
 		efgPath = args[0];
+		
+		//the second argument is the GUI
 		guiPath = args[1];
 		
 		//If test case path exists for test validation
@@ -70,6 +74,7 @@ public class DomParserExample {
 	}
 	
 
+	//runs the main visualization window by parsing the EFG and GUI
 	public static void runExample(boolean testValidation) {
 
 		//parse the xml file and get the dom object
@@ -86,7 +91,7 @@ public class DomParserExample {
 			System.exit(0);
 		}
 		
-		
+		//adds in an extra shell window if the user is running a test case
 		if(testValidation)
 			VisualizationGenerator.shellList.add(TestValidatorShell.getShell(tstPath));
 		else
@@ -101,6 +106,7 @@ public class DomParserExample {
 
 	}
 
+	//parses the XML document for the GUI file and builds the document
 	private static void parseXmlFile(){
 		//get the factory
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -125,6 +131,7 @@ public class DomParserExample {
 	public 	ArrayList<HashMap<String, String>> eventList = new ArrayList <HashMap <String, String>>();
 	public 	HashMap <HashMap<String, String>, ArrayList<String>> edgeMap = new HashMap <HashMap<String, String>, ArrayList<String>>();
 
+	//parses the XMl document for the GUI
 	private static void parseDoc(){
 
 		HashMap <String, String> eventMap = new HashMap<String, String>();
@@ -135,13 +142,18 @@ public class DomParserExample {
 
 		NodeList attributeList = GUI.getElementsByTagName("Attributes");
 
+		//loops through the document and extracts all widgets/containers/
 		for(int i = 0; i < attributeList.getLength(); i++)
 		{
+			//reads the XMl for the attributes
 			extractAttributes(i,attributeList,eventMap);		
 			Widget addedWidget = VisualizationGenerator.addWidget(eventMap);
 			//System.out.println(addedWidget);
 /*			if(addedWidget==null)
 				System.out.println(eventMap.get("Class"));*/
+			
+			//if the widget to be added is a TabItem, then the next item will be a Composite that is contained in the tab.  We therefore
+			//add the container as the tab's contents
 			if(addedWidget instanceof TabItem)
 			{
 				i++;
@@ -150,7 +162,7 @@ public class DomParserExample {
 				if(nextWidget instanceof Control)
 					((TabItem) addedWidget).setControl((Control)nextWidget);
 			}
-			//if the control has a menu, then add it
+			//if the control has a menu, then add it to the correct control
 			if(eventMap.get("menu")!=null)
 			{
 				i++;
@@ -163,6 +175,7 @@ public class DomParserExample {
 		}
 	}
 	
+	//reads the XML node Attributes and reads in the useful attribute values
 	private static void extractAttributes(int i, NodeList attributeList, HashMap <String, String> eventMap)
 	{
 		Element attributes = (Element)(attributeList.item(i));
@@ -184,6 +197,7 @@ public class DomParserExample {
 			{
 				eventMap.put("Class", property.getElementsByTagName("Value").item(0).getFirstChild().getNodeValue());
 			}
+			//grab the width, height, x, and y from the rectangular bounds
 			else if(propertyName.equals("bounds"))
 			{
 				//Rectangle {6, 48, 250, 250}
@@ -240,20 +254,26 @@ public class DomParserExample {
 		}
 	}
 	
+	//adds the listeners that enables EFG coloring/indicating
 	public static void setEFGVerifiers() 
 	{
 		Display display = Display.getCurrent();
+		
+		//assigns blue, red/pink, green as the colors
 		Color blue = new Color(display, 142, 205, 240);
 		Color red = new Color(display, 255, 204, 204);
 		Color green = new Color(display, 77, 166, 25);
 
+		//iterates through all the widgets
 		for(Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
 			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
 			
 			boolean hasNeighbors = false;
 			
-			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NONE).isEmpty();
+			//hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NONE).isEmpty();
+			
+			//colors the controls that have Normal or Reaching outgoing events
 			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NORMAL).isEmpty();
 			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.REACHING).isEmpty();
 			
@@ -267,7 +287,7 @@ public class DomParserExample {
 			}
 		}
 		
-
+		//adds requisite listeners to each widget for EFGs
 		for(Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
 			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
@@ -282,42 +302,45 @@ public class DomParserExample {
 			//System.out.println(widget+" "+VisualizationGenerator.widgetList.get(widget)+" "+neighbors);
 		}
 		
+		//adds the requisite listeners for opening up new windows 
 		for(final Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
-		WidgetId idz = VisualizationGenerator.widgetList.get(widget);;
+			WidgetId idz = VisualizationGenerator.widgetList.get(widget);;
 
-		widget.addListener(SWT.Selection, new Listener(){
-		public void handleEvent(Event e)
-		{
-		WidgetId widgetId = VisualizationGenerator.widgetList.get(widget);
-		//System.out.println(widgetId.getId());
-		if(parsedGraph.opensWindow(widgetId))
-		{
-		//System.out.println("MADE IT HERE");
-		for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL))
-		{
-		if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)
-		{
-		((Control)VisualizationGenerator.widgetIDs.get(widgetId2)).getShell().open();
-		}
+			widget.addListener(SWT.Selection, new Listener(){
+				public void handleEvent(Event e)
+				{
+					WidgetId widgetId = VisualizationGenerator.widgetList.get(widget);
+					//System.out.println(widgetId.getId());
+					//checks whether the specified widget opens up a new window and opens the correct window
+					if(parsedGraph.opensWindow(widgetId))
+					{
+						//System.out.println("MADE IT HERE");
+						for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL))
+						{
+							if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)
+							{
+								((Control)VisualizationGenerator.widgetIDs.get(widgetId2)).getShell().open();
+							}
 
-		}
-		for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.REACHING))
-		{
-		if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)
-		{
-		((Control)VisualizationGenerator.widgetIDs.get(widgetId2)).getShell().open();
-		}
-		}
+						}
+						for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.REACHING))
+						{
+							if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)
+							{
+								((Control)VisualizationGenerator.widgetIDs.get(widgetId2)).getShell().open();
+							}
+						}
 
-		//ArrayList<Widget> neighbors = new ArrayList <Widget>();
-		//neighbors.add(parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL));
-		}
-		}
-		});
+						//ArrayList<Widget> neighbors = new ArrayList <Widget>();
+						//neighbors.add(parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL));
+					}
+				}
+			});
 		}
 	}
 	
+	//sets the widget as the specified color and/or adds an asterisk
 	public static void addColor(Widget w, Color c)
 	{
 		if(w instanceof Control)
@@ -333,6 +356,8 @@ public class DomParserExample {
 			i.setText("*"+i.getText());
 		}
 	}
+	
+	//sets the widget as the color and/or removes any asterisks
 	public static void removeColor(Widget w, Color c)
 	{
 		if(w instanceof Control)
