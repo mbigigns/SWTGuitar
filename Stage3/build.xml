@@ -1,0 +1,37 @@
+<project name="SWTVisualization">
+    
+    <property file="build.properties" />
+    
+	<property name="swt.dir" location="./SWTVisualization"/>
+	<property name="src.dir" location="${swt.dir}/src"/>
+	<property name="bin.dir" location="${swt.dir}/bin"/>
+	<property name="lib.dir"  location="${swt.dir}/lib"/>
+	
+	<path id="build.classpath">
+		<fileset dir="${lib.dir}">
+            <include name="${swt.jar.name}" />
+		</fileset>
+	</path>
+	
+    <target name="clean">
+        <delete dir="${bin.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${bin.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${bin.dir}" classpathref="build.classpath" includeantruntime="false"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <manifestclasspath property="jar.classpath" jarfile="./Vis.jar">
+            <classpath refid="build.classpath"/>
+        </manifestclasspath> 
+        <jar destfile="./Vis.jar" basedir="${bin.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="main.DomParserExample"/>
+                <attribute name="Class-Path" value="${jar.classpath}"/>
+            </manifest>
+        </jar>
+    </target>
+
+</project>
