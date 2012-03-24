@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project basedir="." default="build" name="SWTExamples">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <property name="cobertura.dir" value="../../../../guitar/lib/cobertura"/>
+    <property name="instrumented.dir" value="${cobertura.dir}/instrumented"/>
+    <property name="classes.dir" value="./bin"/>
+    <property name="reports.xml.dir" value="${cobertura.dir}/reports/junit-xml"/>
+    <property name="reports.html.dir" value="${cobertura.dir}/reports/junit-html"/>
+
+    <path id="JUnit 3.libraryclasspath">
+	<pathelement location="../../../../guitar/lib/misc/junit.jar"/>
+    </path>
+    <path id="SWTExamples.classpath">
+	<pathelement location="bin"/>
+        <!--pathelement location="lib/diffxml.jar"/>
+        <path refid="org.eclipse.swt.classpath"/>
+        <path refid="SWTReplayer.classpath"/>
+        <path refid="SWTRipper.classpath"/>
+        <pathelement location="../mujava/openjava2005.jar"/>
+	<pathelement location="../mujava/mujava.jar"/-->
+	<!--fileset dir="lib">
+	    <include name="**/*.jar" />
+	</fileset-->
+        <fileset dir="../../../../guitar/dist/guitar/jars">
+	    <include name="**/*.jar" />
+	</fileset>
+        <path refid="JUnit 3.libraryclasspath"/>
+    </path>
+    <path id="cobertura.classpath">
+  	    <fileset dir="${cobertura.dir}">
+		<include name="cobertura.jar" />
+		<include name="lib/**/*.jar" />
+   	    </fileset>
+    </path>
+
+    <taskdef classpathref="cobertura.classpath" resource="tasks.properties"/>
+
+    <target name="instrument" depends="cobertura-init">
+	    <cobertura-instrument todir="${instrumented.dir}">
+		<fileset dir="${classes.dir}">
+		    <include name="${inst_path}/*.class" />
+		</fileset>
+	    </cobertura-instrument>
+    </target>
+
+    <target name="test" depends="instrument">
+	<junit fork="yes">
+	    <sysproperty key="net.sourceforge.cobertura.datafile" file="./cobertura.ser" />
+	    <sysproperty key="cmdargs" value="${args}" />
+
+ 	    <classpath location="${instrumented.dir}" />
+	    <classpath location="${classes.dir}" />
+
+	    <classpath refid="cobertura.classpath" />
+	    <classpath refid="SWTExamples.classpath"/>
+
+	    <formatter type="xml" />
+
+	    <test name="${testcase}" todir="${reports.xml.dir}" if="testcase" />
+
+	    <batchtest todir="${reports.xml.dir}" unless="testcase">
+		    <zipfileset src="../../../../guitar/dist/guitar/jars/guitar-lib/gui-replayer-swt.jar" includes="**/SitarReplayerMainTest.class" />
+    	    </batchtest>
+	</junit>
+
+	<junitreport todir="${reports.xml.dir}">
+	    <fileset dir="${reports.xml.dir}">
+		<include name="TEST-*.xml" />
+	    </fileset>
+	    <report format="frames" todir="${reports.html.dir}" />
+	</junitreport>
+    </target>
+
+    <target name="xml-report">
+	        <cobertura-report format="xml" destdir="./results/cobertura/xml">
+			<fileset dir="./src">
+				<include name="**/*.java"/>
+			</fileset>
+		</cobertura-report>
+    </target>
+
+
+    <target name="html-report">
+		<!--
+			Generate a series of HTML files containing the coverage
+			data in a user-readable form using nested source filesets.
+		-->
+		<cobertura-report destdir="./results/cobertura/html">
+			<fileset dir="./src">
+				<include name="**/*.java"/>
+			</fileset>
+		</cobertura-report>
+    </target>
+
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <target name="cobertura-init">
+        <mkdir dir="${reports.xml.dir}"/>
+	<mkdir dir="${reports.html.dir}" />
+    </target>
+ 
+    <target name="clean">
+        <delete>
+	    <fileset dir="bin" includes="**/*.class"/>
+	</delete>
+    </target>
+    <target depends="init" name="build">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="SWTExamples.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="PaintExample">
+        <java classname="org.eclipse.swt.examples.paint.PaintExample" failonerror="true" fork="yes">
+            <classpath refid="SWTExamples.classpath"/>
+        </java>
+    </target>
+    <target name="SitarReplayer">
+        <java classname="edu.umd.cs.guitar.replayer.SitarReplayerMain" failonerror="true" fork="yes">
+ 	   <arg line="${args}"/>
+           <classpath refid="SWTExamples.classpath"/>
+        </java>
+    </target>
+    <target name="SitarRipper">
+	<java classname="edu.umd.cs.guitar.ripper.SitarRipperMain" failonerror="true" fork="yes">
+        	<arg line="${args}"/>
+		<classpath refid="SWTExamples.classpath"/>
+        </java>
+    </target>
+    <target name="CoverageParser">
+	<java classname="XMLParser" failonerror="true" fork="yes">
+        	<arg line="${args}"/>
+		<classpath refid="SWTExamples.classpath"/>
+        </java>
+    </target>
+</project>

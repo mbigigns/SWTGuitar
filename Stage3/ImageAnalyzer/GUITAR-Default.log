@@ -1,0 +1,2419 @@
+[main] ERROR configuration.xml not found!!!
+[main] INFO  No configuration file. Using an empty one...
+[main] DEBUG =============================
+[main] DEBUG Application URLs: 
+[main] DEBUG -----------------------------
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/log4j-1.2.15.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/gexf4j-core-0.2.0-ALPHA.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-efg.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/ext/swt/ImageAnalyzer/bin/
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/args4j-2.0.10.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-io-2.0.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/coverage-parser.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/asm-3.3.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/java-getopt-1.0.13.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph-converter.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-random-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/lib/misc/junit.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-path2root.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-cli-1.2.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-program-analysis.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/swt-3.7.1-linux-32.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2ecig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-graph-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/cobertura.jar
+[main] DEBUG =============================
+[main] DEBUG Application Parameters: 
+[main] DEBUG -----------------------------
+[main] DEBUG Display ready
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {Image Analyzer}
+[SitarExecutor] DEBUG Root window size: 1
+[SitarExecutor] DEBUG Window title: Image Analyzer
+[SitarExecutor] INFO  Number of root windows: 1
+[SitarExecutor] INFO  ------- BEGIN WINDOW -------
+[SitarExecutor] INFO  Ripping window: *Image Analyzer*
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Type:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Size:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Depth:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Transparent pixel:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Time to load:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Animation size:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Background pixel:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Image location:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Disposal:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Delay:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Repeats:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Palette:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Sash {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Pixel data:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget StyledText {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&File, Alpha}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Type:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Size:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Depth:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Transparent pixel:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Time to load:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Animation size:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Background pixel:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Image location:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Disposal:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Delay:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Repeats:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Palette:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Sash {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Pixel data:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget StyledText {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&File, Alpha}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Notifying Shell {Image Analyzer} event type 10
+[main] DEBUG Notifying Shell {Image Analyzer} event type 11
+[main] DEBUG Notifying Shell {Image Analyzer} event type 19
+[main] DEBUG Notifying Shell {Image Analyzer} event type 20
+[main] DEBUG Notifying Shell {Image Analyzer} event type 21
+[main] DEBUG Notifying Shell {Image Analyzer} event type 26
+[main] DEBUG Notifying Shell {Image Analyzer} event type 27
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Type:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Size:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Depth:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Transparent pixel:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Time to load:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Animation size:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Background pixel:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Image location:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Disposal:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Delay:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Repeats:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Palette:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Sash {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Pixel data:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget StyledText {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&File, Alpha}
+[SitarExecutor] DEBUG *Image Analyzer* in window *Image Analyzer* has 22 children: [ - org.eclipse.swt.widgets.Composite;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Canvas;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Canvas;  - org.eclipse.swt.widgets.Sash;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.custom.StyledText;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Composite</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Background}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {X Scale}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Y Scale}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Alpha-K}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Display}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Animation}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Background}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {X Scale}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Y Scale}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Alpha-K}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Display}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Animation}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Background}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {X Scale}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Y Scale}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Alpha-K}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Display}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Animation}
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 6 children: [ - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Group; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {White}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {White}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {White}
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 1 children: [ - org.eclipse.swt.widgets.Combo; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Combo</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Combo {White} event type 13
+[main] DEBUG Notifying Combo {White} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {1}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {1}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {1}
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 1 children: [ - org.eclipse.swt.widgets.Combo; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Combo</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Combo {1} event type 13
+[main] DEBUG Notifying Combo {1} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {1}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {1}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {1}
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 1 children: [ - org.eclipse.swt.widgets.Combo; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Combo</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Combo {1} event type 13
+[main] DEBUG Notifying Combo {1} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {255}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {255}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {255}
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 1 children: [ - org.eclipse.swt.widgets.Combo; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Combo</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Combo {255} event type 13
+[main] DEBUG Notifying Combo {255} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Incremental}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Transparent}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Mask}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Background}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Incremental}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Transparent}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Mask}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Background}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Incremental}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Transparent}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Mask}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Background}
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 4 children: [Incremental - org.eclipse.swt.widgets.Button; Transparent - org.eclipse.swt.widgets.Button; Mask - org.eclipse.swt.widgets.Button; Background - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Incremental</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Incremental} event type 13
+[main] DEBUG Notifying Button {Incremental} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Incremental* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Transparent</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Transparent} event type 13
+[main] DEBUG Notifying Button {Transparent} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Transparent* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Mask</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Mask} event type 13
+[main] DEBUG Notifying Button {Mask} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Mask* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Background</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Background} event type 13
+[main] DEBUG Notifying Button {Background} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Background* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {< &Previous}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {&Next >}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {&Animate}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {< &Previous}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {&Next >}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {&Animate}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {< &Previous}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {&Next >}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {&Animate}
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 3 children: [< &Previous - org.eclipse.swt.widgets.Button; &Next > - org.eclipse.swt.widgets.Button; &Animate - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>< &Previous</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {< &Previous} event type 13
+[main] DEBUG Notifying Button {< &Previous} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *< &Previous* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Next ></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {&Next >} event type 13
+[main] DEBUG Notifying Button {&Next >} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *&Next >* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Animate</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {&Animate} event type 13
+[main] DEBUG Notifying Button {&Animate} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *&Animate* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Canvas</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Canvas {} event type 5
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Canvas</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Sash</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Sash {} event type 13
+[main] DEBUG Notifying Sash {} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.custom.StyledText</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying StyledText {} event type 1
+[main] DEBUG Notifying StyledText {} event type 2
+[main] DEBUG Notifying StyledText {} event type 3
+[main] DEBUG Notifying StyledText {} event type 4
+[main] DEBUG Notifying StyledText {} event type 5
+[main] DEBUG Notifying StyledText {} event type 8
+[main] DEBUG Notifying StyledText {} event type 11
+[main] DEBUG Notifying StyledText {} event type 15
+[main] DEBUG Notifying StyledText {} event type 31
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&File}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Alpha}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&File}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Alpha}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&File}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Alpha}
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 2 children: [&File - org.eclipse.swt.widgets.MenuItem; Alpha - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&File</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Open File...	Ctrl+O, Open &URL...	Ctrl+U, &Reopen, |, &Load File...	Ctrl+L, |, &Save	Ctrl+S, Save &As..., Save &Mask As..., |, &Print	Ctrl+P, |, E&xit}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Open File...	Ctrl+O, Open &URL...	Ctrl+U, &Reopen, |, &Load File...	Ctrl+L, |, &Save	Ctrl+S, Save &As..., Save &Mask As..., |, &Print	Ctrl+P, |, E&xit}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Open File...	Ctrl+O, Open &URL...	Ctrl+U, &Reopen, |, &Load File...	Ctrl+L, |, &Save	Ctrl+S, Save &As..., Save &Mask As..., |, &Print	Ctrl+P, |, E&xit}
+[SitarExecutor] DEBUG *&File* in window *Image Analyzer* has 1 children: [ - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Open File...	Ctrl+O}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Open &URL...	Ctrl+U}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Reopen}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Load File...	Ctrl+L}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Save	Ctrl+S}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Save &As...}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Save &Mask As...}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Print	Ctrl+P}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {E&xit}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Open File...	Ctrl+O}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Open &URL...	Ctrl+U}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Reopen}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Load File...	Ctrl+L}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Save	Ctrl+S}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Save &As...}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Save &Mask As...}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Print	Ctrl+P}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {E&xit}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Open File...	Ctrl+O}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Open &URL...	Ctrl+U}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Reopen}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Load File...	Ctrl+L}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Save	Ctrl+S}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Save &As...}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Save &Mask As...}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Print	Ctrl+P}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {E&xit}
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 13 children: [&Open File...	Ctrl+O - org.eclipse.swt.widgets.MenuItem; Open &URL...	Ctrl+U - org.eclipse.swt.widgets.MenuItem; &Reopen - org.eclipse.swt.widgets.MenuItem;  - org.eclipse.swt.widgets.MenuItem; &Load File...	Ctrl+L - org.eclipse.swt.widgets.MenuItem;  - org.eclipse.swt.widgets.MenuItem; &Save	Ctrl+S - org.eclipse.swt.widgets.MenuItem; Save &As... - org.eclipse.swt.widgets.MenuItem; Save &Mask As... - org.eclipse.swt.widgets.MenuItem;  - org.eclipse.swt.widgets.MenuItem; &Print	Ctrl+P - org.eclipse.swt.widgets.MenuItem;  - org.eclipse.swt.widgets.MenuItem; E&xit - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Open File...	Ctrl+O</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Open File...	Ctrl+O} event type 13
+[main] DEBUG Notifying MenuItem {&Open File...	Ctrl+O} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Open File...	Ctrl+O* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Open &URL...	Ctrl+U</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Open &URL...	Ctrl+U} event type 13
+[main] DEBUG Notifying MenuItem {Open &URL...	Ctrl+U} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Open &URL...	Ctrl+U* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Reopen</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Reopen} event type 13
+[main] DEBUG Notifying MenuItem {&Reopen} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Reopen* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Load File...	Ctrl+L</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Load File...	Ctrl+L} event type 13
+[main] DEBUG Notifying MenuItem {&Load File...	Ctrl+L} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Load File...	Ctrl+L* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Save	Ctrl+S</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Save	Ctrl+S} event type 13
+[main] DEBUG Notifying MenuItem {&Save	Ctrl+S} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Save	Ctrl+S* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Save &As...</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Save &As...} event type 13
+[main] DEBUG Notifying MenuItem {Save &As...} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Save &As...* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Save &Mask As...</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Save &Mask As...} event type 13
+[main] DEBUG Notifying MenuItem {Save &Mask As...} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Save &Mask As...* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Print	Ctrl+P</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Print	Ctrl+P} event type 13
+[main] DEBUG Notifying MenuItem {&Print	Ctrl+P} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Print	Ctrl+P* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>E&xit</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *E&xit* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Alpha</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {K, (K + x) % 256, (K + y) % 256}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {K, (K + x) % 256, (K + y) % 256}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {K, (K + x) % 256, (K + y) % 256}
+[SitarExecutor] DEBUG *Alpha* in window *Image Analyzer* has 1 children: [ - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {K}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {(K + x) % 256}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {(K + y) % 256}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {K}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {(K + x) % 256}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {(K + y) % 256}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {K}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {(K + x) % 256}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {(K + y) % 256}
+[SitarExecutor] DEBUG ** in window *Image Analyzer* has 3 children: [K - org.eclipse.swt.widgets.MenuItem; (K + x) % 256 - org.eclipse.swt.widgets.MenuItem; (K + y) % 256 - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>K</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {K} event type 13
+[main] DEBUG Notifying MenuItem {K} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *K* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>(K + x) % 256</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {(K + x) % 256} event type 13
+[main] DEBUG Notifying MenuItem {(K + x) % 256} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *(K + x) % 256* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Image Analyzer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>(K + y) % 256</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {(K + y) % 256} event type 13
+[main] DEBUG Notifying MenuItem {(K + y) % 256} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *(K + y) % 256* in window *Image Analyzer* has 0 children: []
+[SitarExecutor] INFO  Display disposed
+[SitarExecutor] INFO  -----------------------------
+[SitarExecutor] INFO  OUTPUT SUMARY: 
+[SitarExecutor] INFO  Number of Windows: 1
+[SitarExecutor] INFO  GUI file:./results/GUITAR-Default.GUI
+[SitarExecutor] INFO  Open Component file:log_widget.xml
+[SitarExecutor] INFO  Time Elapsed: 00 : 00 : 08: 873

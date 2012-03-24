@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GUIStructure>
+    <GUI>
+        <Window>
+            <Attributes>
+                <Property>
+                    <Name>Title</Name>
+                    <Value>SWT Browser</Value>
+                </Property>
+                <Property>
+                    <Name>Modal</Name>
+                    <Value>false</Value>
+                </Property>
+                <Property>
+                    <Name>Rootwindow</Name>
+                    <Value>true</Value>
+                </Property>
+                <Property>
+                    <Name>bounds</Name>
+                    <Value>Rectangle {3, 111, 642, 510}</Value>
+                </Property>
+                <Property>
+                    <Name>data</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>layout</Name>
+                    <Value>FormLayout {}</Value>
+                </Property>
+                <Property>
+                    <Name>size</Name>
+                    <Value>Point {642, 510}</Value>
+                </Property>
+                <Property>
+                    <Name>style</Name>
+                    <Value>570426608</Value>
+                </Property>
+                <Property>
+                    <Name>visible</Name>
+                    <Value>true</Value>
+                </Property>
+            </Attributes>
+        </Window>
+        <Container>
+            <Contents>
+                <Container>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w715427020</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.Shell</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>TERMINAL</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>SWT Browser</Value>
+                        </Property>
+                        <Property>
+                            <Name>bounds</Name>
+                            <Value>Rectangle {3, 111, 642, 510}</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>layout</Name>
+                            <Value>FormLayout {}</Value>
+                        </Property>
+                        <Property>
+                            <Name>size</Name>
+                            <Value>Point {642, 510}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>570426608</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>SWT Browser</Value>
+                        </Property>
+                        <Property>
+                            <Name>visible</Name>
+                            <Value>true</Value>
+                        </Property>
+                    </Attributes>
+                    <Contents>
+                        <Widget>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w3099699448</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.browser.Browser</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>34</Value>
+</Property>
+<Property>
+    <Name>ReplayableAction</Name>
+    <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {0, 34, 640, 419}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>1 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {SWT Browser}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {640, 419}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>570427392</Value>
+</Property>
+<Property>
+    <Name>text</Name>
+    <Value>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Eclipse - The Eclipse Foundation open source community website.&lt;/title&gt;&lt;meta name=&quot;author&quot; content=&quot;Eclipse Foundation, Inc.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;eclipse,project,plug-ins,plugins,java,ide,swt,refactoring,free java ide,tools,platform,open source,development environment,development,ide&quot; /&gt;
+	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/eclipse.org-common/yui/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css&quot; media=&quot;screen&quot; /&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/eclipse.org-common/yui/2.6.0/build/menu/assets/skins/sam/menu.css&quot; media=&quot;screen&quot; /&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/eclipse.org-common/themes/Nova/css/reset.css&quot; media=&quot;screen&quot;/&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/eclipse.org-common/themes/Nova/css/layout.css&quot; media=&quot;screen&quot; /&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/eclipse.org-common/themes/Nova/css/header.css&quot; media=&quot;screen&quot; /&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/eclipse.org-common/themes/Nova/css/footer.css&quot; media=&quot;screen&quot; /&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/eclipse.org-common/themes/Nova/css/visual.css&quot; media=&quot;screen&quot; /&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/eclipse.org-common/themes/Nova/css/print.css&quot; media=&quot;print&quot; /&gt;
+	&lt;!--[if lte IE 7]&gt; 	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/eclipse.org-common/themes/Nova/css/ie_style.css&quot; media=&quot;screen&quot;/&gt; &lt;![endif]--&gt;
+	&lt;!--[if IE 6]&gt; 	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/eclipse.org-common/themes/Nova/css/ie6_style.css&quot; media=&quot;screen&quot;/&gt; &lt;![endif]--&gt;
+	&lt;!-- Dependencies --&gt; 
+	&lt;!-- Source File --&gt;
+	&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/home/scripts/jquery.carousel.min.js&quot;&gt;&lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/home/content/nova.css&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/home/content/10years.css&quot;/&gt;&lt;!--[if IE 6]&gt; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/home/content/ie6_nova.css&quot; media=&quot;screen&quot;/&gt; &lt;![endif]--&gt;&lt;link rel=&quot;alternate&quot; title=&quot;Eclipse RSS Feed&quot; href=&quot;http://feeds.feedburner.com/eclipse/fnews&quot; type=&quot;application/rss+xml&quot;&gt;&lt;/head&gt;
+&lt;body&gt;
+	&lt;div id=&quot;novaWrapper&quot;&gt;		&lt;div id=&quot;clearHeader&quot;&gt;
+			&lt;div id=&quot;logo&quot;&gt;
+				
+
+&lt;div id=&quot;promotion&quot;&gt;
+	&lt;a href=&quot;http://www.eclipsecon.org/2012/registration&quot;&gt;
+		&lt;img src=&quot;/home/promotions/econ2012/countdown/agile/4days.png&quot; alt=&quot;EclipseCon 2012&quot;/&gt;
+	&lt;/a&gt;
+&lt;/div&gt;	
+
+
+
+
+
+			&lt;/div&gt;
+&lt;div id=&quot;otherSites&quot;&gt;&lt;div id=&quot;sites&quot;&gt;&lt;ul id=&quot;sitesUL&quot;&gt;
+&lt;li&gt;&lt;a href='http://marketplace.eclipse.org'&gt;&lt;img alt=&quot;Eclipse Marketplace&quot; src=&quot;http://dev.eclipse.org/custom_icons/marketplace.png&quot;/&gt;&amp;nbsp;&lt;div&gt;Eclipse Marketplace&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://live.eclipse.org'&gt;&lt;img alt=&quot;Eclipse Live&quot; src=&quot;http://dev.eclipse.org/custom_icons/audio-input-microphone-bw.png&quot;/&gt;&amp;nbsp;&lt;div&gt;Eclipse Live&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='https://bugs.eclipse.org/bugs/'&gt;&lt;img alt=&quot;Bugzilla&quot; src=&quot;http://dev.eclipse.org/custom_icons/system-search-bw.png&quot;/&gt;&amp;nbsp;&lt;div&gt;Bugzilla&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://www.eclipse.org/forums/'&gt;&lt;img alt=&quot;Forums&quot; src=&quot;http://dev.eclipse.org/large_icons/apps/internet-group-chat.png&quot;/&gt;&amp;nbsp;&lt;div&gt;Eclipse Forums&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://www.planeteclipse.org/'&gt;&lt;img alt=&quot;Planet Eclipse&quot; src=&quot;http://dev.eclipse.org/large_icons/devices/audio-card.png&quot;/&gt;&amp;nbsp;&lt;div&gt;Planet Eclipse&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://wiki.eclipse.org/'&gt;&lt;img alt=&quot;Eclipse Wiki&quot; src=&quot;http://dev.eclipse.org/custom_icons/accessories-text-editor-bw.png&quot;/&gt;&amp;nbsp;&lt;div&gt;Eclipse Wiki&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://portal.eclipse.org'&gt;&lt;img alt=&quot;MyFoundation Portal&quot; src=&quot;http://dev.eclipse.org/custom_icons/preferences-system-network-proxy-bw.png&quot;/&gt;&lt;div&gt;My Foundation Portal&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;	&lt;div id=&quot;header&quot;&gt;			
+		&lt;div id=&quot;menu&quot;&gt;
+			&lt;ul&gt;
+						&lt;li&gt;&lt;a href=&quot;/&quot; target=&quot;_self&quot;&gt;Home&lt;/a&gt;&lt;/li&gt; 
+			&lt;li&gt;&lt;a href=&quot;/downloads/&quot; target=&quot;_self&quot;&gt;Downloads&lt;/a&gt;&lt;/li&gt; 
+			&lt;li&gt;&lt;a href=&quot;/users/&quot; target=&quot;_self&quot;&gt;Users&lt;/a&gt;&lt;/li&gt; 
+			&lt;li&gt;&lt;a href=&quot;/membership/&quot; target=&quot;_self&quot;&gt;Members&lt;/a&gt;&lt;/li&gt; 
+			&lt;li&gt;&lt;a href=&quot;/committers/&quot; target=&quot;_self&quot;&gt;Committers&lt;/a&gt;&lt;/li&gt; 
+			&lt;li&gt;&lt;a href=&quot;/resources/&quot; target=&quot;_self&quot;&gt;Resources&lt;/a&gt;&lt;/li&gt; 
+			&lt;li&gt;&lt;a href=&quot;/projects/&quot; target=&quot;_self&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt; 
+			&lt;li&gt;&lt;a href=&quot;/org/&quot; target=&quot;_self&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt; 
+				&lt;/ul&gt;
+		&lt;/div&gt;
+
+		&lt;div id=&quot;search&quot;&gt;
+				&lt;form action=&quot;http://www.google.com/cse&quot; id=&quot;searchbox_017941334893793413703:sqfrdtd112s&quot;&gt;
+			 	&lt;input type=&quot;hidden&quot; name=&quot;cx&quot; value=&quot;017941334893793413703:sqfrdtd112s&quot; /&gt;
+		  		&lt;input id=&quot;searchBox&quot; type=&quot;text&quot; name=&quot;q&quot; size=&quot;25&quot; /&gt;
+		  		&lt;input id=&quot;searchButton&quot; type=&quot;submit&quot; name=&quot;sa&quot; value=&quot;Search&quot; /&gt;
+				&lt;/form&gt;
+			&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.google.com/coop/cse/brand?form=searchbox_017941334893793413703%3Asqfrdtd112s&amp;lang=en&quot;&gt;&lt;/script&gt;			
+		&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div id=&quot;novaContent&quot;&gt;
+			
+	&lt;div id=&quot;blockBuster&quot;&gt;
+		&lt;div id=&quot;bbContent&quot;&gt;
+			&lt;ul&gt;
+							
+				&lt;li&gt;&lt;a href=&quot;http://www.eclipse.org/Xtext/&quot;&gt;&lt;img src=&quot;/home/content/slider/slide-xtext.jpg&quot;/&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.eclipse.org/windowbuilder/&quot;&gt;&lt;img src=&quot;/home/content/slider/slide-window.jpg&quot;/&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.eclipse.org/rap/&quot;&gt;&lt;img src=&quot;/home/content/slider/slide-rap.jpg&quot;/&gt;&lt;/a&gt;&lt;/li&gt;				
+				
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;bbNav&quot;&gt;
+			&lt;div id=&quot;buttonHolder&quot;&gt;
+				&lt;a id=&quot;downloadButton&quot; href=&quot;/downloads/&quot;&gt;&lt;img src=&quot;/home/images/download.png&quot; alt=&quot;Download Eclipse&quot;/&gt;&lt;/a&gt;
+			&lt;/div&gt;
+&lt;div style=&quot;float:right; margin-top: 34px;&quot;&gt;&lt;iframe src='http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Eclipse/259655700571&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like' style='border: medium none; overflow: hidden; width: 90px; height: 22px;' frameborder='0' scrolling='no'&gt;&lt;/iframe&gt;&lt;/div&gt;
+			&lt;ul class=&quot;noImage&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;http://marketplace.eclipse.org&quot;&gt;&lt;img src=&quot;/home/images/bullet.png&quot; alt=&quot;Plugins&quot;/&gt;Plugins&lt;/a&gt;&lt;/li&gt;			
+				&lt;li&gt;&lt;a href=&quot;/contribute/&quot;&gt;&lt;img src=&quot;/home/images/bullet.png&quot; alt=&quot;Contribute&quot;/&gt;Contribute&lt;/a&gt;&lt;/li&gt;
+				&lt;li class=&quot;bottom&quot;&gt;&lt;a href=&quot;/documentation/&quot;&gt;&lt;img src=&quot;/home/images/bullet.png&quot; alt=&quot;Documentation&quot;/&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+				&lt;li class=&quot;bottom&quot;&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/&quot;&gt;&lt;img src=&quot;/home/images/bullet.png&quot; alt=&quot;Eclipse Bugzilla&quot;/&gt;Report a Bug&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;			
+		&lt;/div&gt;	
+	&lt;/div&gt;
+	&lt;div id=&quot;fullcolumn&quot;&gt;
+		&lt;div id=&quot;midcolumn&quot;&gt;
+			&lt;h3&gt;&lt;a class=&quot;rss&quot; href=&quot;http://feeds.feedburner.com/eclipse/fnews&quot;&gt;&lt;img align=&quot;right&quot; src=&quot;/images/rss2.gif&quot; alt=&quot;RSS Feed&quot;/&gt;&lt;/a&gt;&lt;a href=&quot;/community/news/eclipsenews.php&quot;&gt;Announcements&lt;/a&gt;&lt;/h3&gt;
+						&lt;table class=&quot;newsPosts&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+	&lt;tr&gt;
+						&lt;td class=&quot;date&quot;&gt;2012/03/19&lt;/td&gt;
+						&lt;td&gt;&lt;a class=&quot;link&quot; href=&quot;http://www.eclipsecon.org/2012/&quot;&gt;Last Week to Register for EclipseCon and Agile ALM Connect&lt;/a&gt;&lt;br/&gt;
+															&lt;div class=&quot;details&quot;&gt;EclipseCon 2012 and Agile ALM Connect starts next Monday, March 26 in Reston, Virginia (close to Washington, DC).  
+    	Don't forget to &lt;a href=&quot;http://www.eclipsecon.org/2012/registration&quot;&gt;register before March 23.&lt;/a&gt;&lt;/div&gt;
+													&lt;/td&gt;
+					&lt;/tr&gt; &lt;tr&gt;
+						&lt;td class=&quot;date&quot;&gt;2012/03/01&lt;/td&gt;
+						&lt;td&gt;&lt;a class=&quot;link&quot; href=&quot;http://www.eclipse.org/org/press-release/20120303_awardfinalists.php&quot;&gt;Finalists for the Eclipse Community Awards 2012&lt;/a&gt;&lt;br/&gt;
+															&lt;div class=&quot;details&quot;&gt;The Eclipse Foundation congratulates the finalists for the 2012 Eclipse Community Awards. Winners for each category will be announced on March 26, 2012 during the Awards Ceremony at &lt;a href=&quot;http://www.eclipsecon.org/2012/&quot;&gt;EclipseCon 2012&lt;/a&gt;. &lt;/div&gt;
+													&lt;/td&gt;
+					&lt;/tr&gt; &lt;tr&gt;
+						&lt;td class=&quot;date&quot;&gt;2012/02/29&lt;/td&gt;
+						&lt;td&gt;&lt;a class=&quot;link&quot; href=&quot;http://www.eclipse.org/org/press-release/20120229_eclipse_member_showcase_solutions.php&quot;&gt;Eclipse Foundation Member Companies Showcase Business Solutions in the Open Source Park at CeBIT 2012&lt;/a&gt;&lt;br/&gt;
+															&lt;div class=&quot;details&quot;&gt;The Eclipse Foundation announced today that it will be at CeBIT 2012 in Hannover, Germany, with six co-operating Eclipse ecosystem members and a redesigned Eclipse Theme Island. In its 3rd year at CeBIT, the Eclipse Foundation Island provides a unique opportunity to learn about Eclipse open source s...&lt;/div&gt;
+													&lt;/td&gt;
+					&lt;/tr&gt; &lt;tr&gt;
+						&lt;td class=&quot;date&quot;&gt;2012/02/27&lt;/td&gt;
+						&lt;td&gt;&lt;a class=&quot;link&quot; href=&quot;http://mmilinkov.wordpress.com/2012/02/27/voting-is-open/&quot;&gt;Eclipse Foundation Board of Directors Election Now Open&lt;/a&gt;&lt;br/&gt;
+															&lt;div class=&quot;details&quot;&gt;Voting for the Eclipse Foundation&amp;rsquo;s 2012 Board of Directors is &lt;a href=&quot;http://mmilinkov.wordpress.com/2012/02/27/voting-is-open/&quot;&gt;now open.&lt;/a&gt;&lt;/div&gt;
+													&lt;/td&gt;
+					&lt;/tr&gt; &lt;tr&gt;
+						&lt;td class=&quot;date&quot;&gt;2012/02/24&lt;/td&gt;
+						&lt;td&gt;&lt;a class=&quot;link&quot; href=&quot;http://eclipse.org/downloads/&quot;&gt;Eclipse Indigo SR2 is Now Available for Download&lt;/a&gt;&lt;br/&gt;
+															&lt;div class=&quot;details&quot;&gt;The Eclipse Indigo Service Release 2 (SR2) is now available for &lt;a href=&quot;http://eclipse.org/downloads/&quot;&gt;download.&lt;/a&gt; Get the latest updates and fixes 
+    	for the different Eclipse projects participating in the release train.&lt;/div&gt;
+													&lt;/td&gt;
+					&lt;/tr&gt; 		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; class=&quot;feedMore&quot;&gt;&lt;a href=&quot;/community/news/eclipsenews.php&quot;&gt;More...&lt;/a&gt;&lt;/td&gt;
+		&lt;/tr&gt;	
+			&lt;/table&gt;
+	        	&lt;h3&gt;&lt;a class=&quot;rss&quot; href=&quot;/home/eclipseinthenews.rss&quot;&gt;&lt;img align=&quot;right&quot; src=&quot;/images/rss2.gif&quot; alt=&quot;RSS Feed&quot;/&gt;&lt;/a&gt;&lt;a href=&quot;/community/news/eclipseinthenews.php&quot;&gt;Community News&lt;/a&gt;&lt;/h3&gt;
+						&lt;table class=&quot;newsPosts&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+	  
+							&lt;tr&gt;
+								&lt;td class=&quot;date&quot; valign=&quot;top&quot;&gt;2012/03/20&lt;/td&gt;
+								&lt;td&gt;
+									&lt;a class=&quot;link&quot; href=&quot;http://www.bredex.de/web/index.php/news_article_en/items/guidancer-60-and-jubula-12-released.html&quot; target=&quot;_blank&quot;&gt;GUIdancer 6.0 and Jubula 1.2 released&lt;/a&gt; &lt;br/&gt;
+																			&lt;div class=&quot;details&quot;&gt;BREDEX is pleased to announce the release of GUIdancer 6.0 and Jubula 1.2. The new versions contain additional features to make test result reporting and analysis more comfortable, so that test results are easier to integrate into the development process.&lt;/div&gt;
+																			
+								&lt;/td&gt;
+							&lt;/tr&gt;	 
+							  
+							&lt;tr&gt;
+								&lt;td class=&quot;date&quot; valign=&quot;top&quot;&gt;2012/03/15&lt;/td&gt;
+								&lt;td&gt;
+									&lt;a class=&quot;link&quot; href=&quot;https://jazz.net/blog/index.php/2012/03/09/find-us-at-eclipsecon-2012-in-reston-va-on-march-26-29/&quot; target=&quot;_blank&quot;&gt;Find us at EclipseCon 2012 in Reston, VA on March 26-29&lt;/a&gt; &lt;br/&gt;
+																			&lt;div class=&quot;details&quot;&gt;EclipseCon 2012 will be held just outside of Washington D.C. in Reston, VA on March 26-29.  Considering &lt;a href=&quot;http://www.ibm.com/developerworks/rational/library/nov05/cernosek/&quot;&gt;our long standing relationship with Eclipse&lt;/a&gt;, the Jazz Team is proud to be a very active part of the Eclipse Communi...&lt;/div&gt;
+																			
+								&lt;/td&gt;
+							&lt;/tr&gt;	 
+							  
+							&lt;tr&gt;
+								&lt;td class=&quot;date&quot; valign=&quot;top&quot;&gt;2012/03/12&lt;/td&gt;
+								&lt;td&gt;
+									&lt;a class=&quot;link&quot; href=&quot;http://www.antelink.com/antelink-becomes-member-eclipse-foundation.html&quot; target=&quot;_blank&quot;&gt;Antelink Becomes a Member of the Eclipse Foundation&lt;/a&gt; &lt;br/&gt;
+																			&lt;div class=&quot;details&quot;&gt;Antelink, provider of multi-source tracking &amp;amp; software lifecycle management, announced today its membership to the Eclipse Foundation. Antelink has &lt;a target=&quot;_blank&quot; href=&quot;http://www.eclipse.org/membership/showMember.php?member_id=1038&quot; title=&quot;Eclipse Membership: Antelink&quot;&gt;joined as a Solutions...&lt;/div&gt;
+																			
+								&lt;/td&gt;
+							&lt;/tr&gt;	 
+							  
+							&lt;tr&gt;
+								&lt;td class=&quot;date&quot; valign=&quot;top&quot;&gt;2012/03/06&lt;/td&gt;
+								&lt;td&gt;
+									&lt;a class=&quot;link&quot; href=&quot;http://www.froglogic.com/news-events/index.php?id=squish-4.2-released.html&quot; target=&quot;_blank&quot;&gt;froglogic Releases GUI Testing Tool Squish 4.2&lt;/a&gt; &lt;br/&gt;
+																			&lt;div class=&quot;details&quot;&gt;Squish is the leading &lt;a href=&quot;http://www.froglogic.com/pg?id=Products&amp;amp;category=squish&amp;amp;sub=overview&amp;amp;subsub=overview&quot;&gt;functional, cross-platform GUI and regression testing tool&lt;/a&gt; that can test applications based on a variety of GUI technologies, including Nokia's Qt Software Development...&lt;/div&gt;
+																			
+								&lt;/td&gt;
+							&lt;/tr&gt;	 
+							  
+							&lt;tr&gt;
+								&lt;td class=&quot;date&quot; valign=&quot;top&quot;&gt;2012/03/01&lt;/td&gt;
+								&lt;td&gt;
+									&lt;a class=&quot;link&quot; href=&quot;http://jaxenter.com/browser-based-ide-eclipse-orion-gets-0-4-release.1-41166.html&quot; target=&quot;_blank&quot;&gt;Browser-based IDE Eclipse Orion gets 0.4 release&lt;/a&gt; &lt;br/&gt;
+																			&lt;div class=&quot;details&quot;&gt;The Eclipse Foundation has announced the release of version 0.4 of Orion, its browser-based IDE for web development. The first major release for four months, 0.4 contains significant modifications to the project&amp;rsquo;s UI, as well as improved HTML and CSS validation, syntax highlighting using CodeMirro...&lt;/div&gt;
+																			
+								&lt;/td&gt;
+							&lt;/tr&gt;	 
+									&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; class=&quot;feedMore&quot;&gt;&lt;a href=&quot;/community/news/eclipseinthenews.php&quot;&gt;More...&lt;/a&gt;&lt;/td&gt;
+		&lt;/tr&gt;	
+			&lt;/table&gt;
+				&lt;div style=&quot;width:100%;text-align:center;&quot;&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+				google_ad_client = &quot;pub-6797025590085056&quot;;
+				/* 728x90, created 4/17/09 */
+				google_ad_slot = &quot;9174493316&quot;;
+				google_ad_width = 468;
+				google_ad_height = 60;
+				//--&gt;
+				&lt;/script&gt;
+				&lt;script type=&quot;text/javascript&quot; src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;&lt;/script&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;rightcolumn&quot;&gt;
+			&lt;div class=&quot;sideitem&quot;&gt;
+				&lt;div class=&quot;modal noBG&quot;&gt;
+											&lt;div width=&quot;200&quot; style=&quot;text-align:center;padding-bottom:20px;&quot;&gt;&lt;a href=&quot;/go/PROMO_MP&quot; rel=&quot;nofollow&quot;&gt;&lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/membership/promo/images/mp3.jpg&quot; alt=&quot;Eclipse Marketplace&quot; title=&quot;Eclipse Marketplace&quot;&gt;&lt;/a&gt;&lt;/div&gt;									&lt;/div&gt;
+			&lt;/div&gt;	
+			&lt;div class=&quot;sideitem&quot;&gt;	
+        		&lt;h6&gt;&lt;a class=&quot;rss&quot; href=&quot;http://feeds.feedburner.com/EclipseMarketplace&quot;&gt;&lt;img align=&quot;right&quot; src=&quot;/images/rss2.gif&quot; alt=&quot;RSS Feed&quot;/&gt;&lt;/a&gt;&lt;a href=&quot;http://marketplace.eclipse.org&quot;&gt;Eclipse Marketplace&lt;/a&gt;&lt;/h6&gt;
+				&lt;div class=&quot;modal epicFeed&quot;&gt;
+							&lt;ul&gt;
+	&lt;li class=&quot;new&quot;&gt; 
+						&lt;a class=&quot;link&quot; href=&quot;http://marketplace.eclipse.org/node/2298&quot;&gt;JUnit Helper - 1.11.0&lt;/a&gt;&lt;br/&gt;
+						&lt;span class=&quot;posted&quot;&gt;2012/03/21&lt;/span&gt;
+											  &lt;/li&gt;&lt;li class=&quot;new&quot;&gt; 
+						&lt;a class=&quot;link&quot; href=&quot;http://marketplace.eclipse.org/node/62420&quot;&gt;JasperWave - 0.9.4&lt;/a&gt;&lt;br/&gt;
+						&lt;span class=&quot;posted&quot;&gt;2012/03/21&lt;/span&gt;
+											  &lt;/li&gt;&lt;li class=&quot;new&quot;&gt; 
+						&lt;a class=&quot;link&quot; href=&quot;http://marketplace.eclipse.org/node/19495&quot;&gt;UML Lab - 1.4.2&lt;/a&gt;&lt;br/&gt;
+						&lt;span class=&quot;posted&quot;&gt;2012/03/21&lt;/span&gt;
+											  &lt;/li&gt;&lt;li class=&quot;new&quot;&gt; 
+						&lt;a class=&quot;link&quot; href=&quot;http://marketplace.eclipse.org/node/140077&quot;&gt;Pdf4Eclipse - 1.0.2&lt;/a&gt;&lt;br/&gt;
+						&lt;span class=&quot;posted&quot;&gt;2012/03/21&lt;/span&gt;
+											  &lt;/li&gt;&lt;li class=&quot;new&quot;&gt; 
+						&lt;a class=&quot;link&quot; href=&quot;http://marketplace.eclipse.org/node/2189&quot;&gt;Code Rocket Eclipse - 1.15&lt;/a&gt;&lt;br/&gt;
+						&lt;span class=&quot;posted&quot;&gt;2012/03/21&lt;/span&gt;
+											  &lt;/li&gt;		&lt;/ul&gt;
+		
+				&lt;/div&gt;	
+			&lt;/div&gt;
+				&lt;div class=&quot;more&quot;&gt;					
+					&lt;div class=&quot;moreButton&quot;&gt;
+						&lt;a href=&quot;http://marketplace.eclipse.org&quot;&gt;View All Plugins&lt;/a&gt;
+					&lt;/div&gt;						
+				&lt;/div&gt;		
+			&lt;div class=&quot;sideitem&quot;&gt;
+        	&lt;h6&gt;&lt;a class=&quot;rss&quot; href=&quot;http://feeds.feedburner.com/eclipselive&quot;&gt;&lt;img align=&quot;right&quot; src=&quot;/images/rss2.gif&quot; alt=&quot;RSS Feed&quot;/&gt;&lt;/a&gt;&lt;a href=&quot;http://live.eclipse.org&quot;&gt;Eclipse Live&lt;/a&gt;&lt;/h6&gt;
+				&lt;div class=&quot;modal liveFeed&quot;&gt;
+							&lt;ul&gt;
+	&lt;li class=&quot;new&quot;&gt; 
+						&lt;a class=&quot;link&quot; href=&quot;http://live.eclipse.org/node/1145&quot;&gt;Critical Fix in Sonatype Nexus 2.0.2 Addresses Problem with P2 Proxies&lt;/a&gt;&lt;br/&gt;
+						&lt;span class=&quot;posted&quot;&gt;2012/03/14&lt;/span&gt;
+											  &lt;/li&gt;&lt;li class=&quot;new&quot;&gt; 
+						&lt;a class=&quot;link&quot; href=&quot;http://live.eclipse.org/node/1088&quot;&gt;Webinar: Transforming development visibility and productivity with Borland StarTeam 12.0 and Tasktop&lt;/a&gt;&lt;br/&gt;
+						&lt;span class=&quot;posted&quot;&gt;2012/03/09&lt;/span&gt;
+											  &lt;/li&gt;&lt;li class=&quot;new&quot;&gt; 
+						&lt;a class=&quot;link&quot; href=&quot;http://live.eclipse.org/node/1144&quot;&gt;Upcoming Event: Getting ALM2.0+ to work - Breaking down the silos to provide an integrated value chain for software delivery and beyond&lt;/a&gt;&lt;br/&gt;
+						&lt;span class=&quot;posted&quot;&gt;2012/03/09&lt;/span&gt;
+											  &lt;/li&gt;&lt;li class=&quot;new&quot;&gt; 
+						&lt;a class=&quot;link&quot; href=&quot;http://live.eclipse.org/node/1086&quot;&gt;P4Eclipse Tutorial&lt;/a&gt;&lt;br/&gt;
+						&lt;span class=&quot;posted&quot;&gt;2012/01/19&lt;/span&gt;
+											  &lt;/li&gt;&lt;li class=&quot;new&quot;&gt; 
+						&lt;a class=&quot;link&quot; href=&quot;http://live.eclipse.org/node/1079&quot;&gt;Modernize your ALM Architecture with Tasktop Sync 2.0 &lt;/a&gt;&lt;br/&gt;
+						&lt;span class=&quot;posted&quot;&gt;2012/01/19&lt;/span&gt;
+											  &lt;/li&gt;		&lt;/ul&gt;
+					&lt;/div&gt;	
+			&lt;/div&gt;
+				&lt;div class=&quot;more&quot;&gt;
+					&lt;div class=&quot;moreButton&quot;&gt;
+						&lt;a href=&quot;http://live.eclipse.org/&quot;&gt;More from Live&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;div class=&quot;sideitem&quot;&gt;	
+        		&lt;h6&gt;&lt;a href=&quot;http://eclipselabs.org&quot;&gt;Eclipse Labs&lt;/a&gt; &lt;span class=&quot;labsActive&quot;&gt;(Most Active)&lt;/span&gt;&lt;/h6&gt;
+				&lt;div class=&quot;modal epicFeed&quot;&gt;
+					&lt;ul&gt; &lt;li class=&quot;new&quot;&gt;&lt;a class=&quot;link&quot; href=&quot;http://code.google.com/a/eclipselabs.org/p/k16t2-team2-7-worms&quot;&gt;k16t2-team2-7-worms&lt;/a&gt;
+			 &lt;br/&gt;
+						 &lt;li class=&quot;new&quot;&gt;&lt;a class=&quot;link&quot; href=&quot;http://code.google.com/a/eclipselabs.org/p/swtqt&quot;&gt;swtqt&lt;/a&gt;
+			 &lt;br/&gt;
+						 &lt;li class=&quot;new&quot;&gt;&lt;a class=&quot;link&quot; href=&quot;http://code.google.com/a/eclipselabs.org/p/tapiji&quot;&gt;tapiji&lt;/a&gt;
+			 &lt;br/&gt;
+						 &lt;li class=&quot;new&quot;&gt;&lt;a class=&quot;link&quot; href=&quot;http://code.google.com/a/eclipselabs.org/p/dawb&quot;&gt;dawb&lt;/a&gt;
+			 &lt;br/&gt;
+						 &lt;li class=&quot;new&quot;&gt;&lt;a class=&quot;link&quot; href=&quot;http://code.google.com/a/eclipselabs.org/p/code-recommenders&quot;&gt;code-recommenders&lt;/a&gt;
+			 &lt;br/&gt;
+						&lt;/ul&gt;	
+				&lt;/div&gt;	
+			&lt;/div&gt;
+			&lt;!--  
+			&lt;div id=&quot;promos&quot;&gt;	
+				&lt;a href=&quot;/go/PROMO_TRAINING&quot; rel=&quot;nofollow&quot;&gt;&lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/community/training/images/promo2011.jpg&quot; alt=&quot;Eclipse Fall Training Series&quot; title=&quot;Eclipse Fall Training Series&quot;&gt;&lt;/a&gt;
+			&lt;/div&gt;	
+			--&gt;
+			&lt;br/&gt;&lt;br/&gt;			
+			&lt;div style=&quot;width:100%;text-align:right;&quot;&gt;
+				&lt;a href=&quot;/community/news/rssfeeds.php&quot;&gt;Eclipse RSS Feeds&lt;/a&gt;
+			&lt;/div&gt;	
+			
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;script type=&quot;text/javascript&quot;&gt;
+    $(function(){
+        $(&quot;div#bbContent&quot;).carousel({
+            				nextBtn :'&lt;span&gt;&amp;nbsp;&lt;/span&gt;', 
+            				prevBtn :'&lt;span&gt;&amp;nbsp;&lt;/span&gt;',
+            				autoSlide : 'true',
+            				autoSlideInterval : '13500',
+            				loop: 'true',
+                				
+        });
+    });
+	&lt;/script&gt;
+		&lt;script type=&quot;text/javascript&quot;&gt;
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-910670-2']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		&lt;/script&gt;		
+
+		&lt;br style=&quot;clear:both;height:1em;&quot;/&gt;&amp;nbsp;
+		&lt;/div&gt; 		
+		&lt;div id=&quot;clearFooter&quot;&gt;&lt;/div&gt;
+			&lt;div id=&quot;footer&quot;&gt;
+			&lt;ul id=&quot;footernav&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;/legal/privacy.php&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;/legal/termsofuse.php&quot;&gt;Terms of Use&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;/legal/copyright.php&quot;&gt;Copyright Agent&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;/legal/&quot;&gt;Legal&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;/org/foundation/contact.php&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;span id=&quot;copyright&quot;&gt;Copyright &amp;copy; 2012 The Eclipse Foundation. All Rights Reserved.&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/div&gt; &lt;/body&gt;		
+&lt;/html&gt;
+</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                        </Widget>
+                        <Container>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w36266464</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.ToolBar</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>5</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {0, 5, 254, 31}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>2 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {SWT Browser}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {254, 31}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>570425600</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                            <Contents>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2837934852</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.ToolItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Back</Value>
+        </Property>
+        <Property>
+            <Name>bounds</Name>
+            <Value>Rectangle {1, 1, 44, 29}</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>7 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>false</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>ToolBar {}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>8</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Back</Value>
+        </Property>
+        <Property>
+            <Name>width</Name>
+            <Value>44</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2484746620</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.ToolItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Forward</Value>
+        </Property>
+        <Property>
+            <Name>bounds</Name>
+            <Value>Rectangle {45, 1, 69, 29}</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>8 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>false</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>ToolBar {}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>8</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Forward</Value>
+        </Property>
+        <Property>
+            <Name>width</Name>
+            <Value>69</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2840035184</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.ToolItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Stop</Value>
+        </Property>
+        <Property>
+            <Name>bounds</Name>
+            <Value>Rectangle {114, 1, 44, 29}</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>9 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>ToolBar {}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>8</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Stop</Value>
+        </Property>
+        <Property>
+            <Name>width</Name>
+            <Value>44</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w945174996</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.ToolItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Refresh</Value>
+        </Property>
+        <Property>
+            <Name>bounds</Name>
+            <Value>Rectangle {158, 1, 64, 29}</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>10 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>ToolBar {}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>8</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Refresh</Value>
+        </Property>
+        <Property>
+            <Name>width</Name>
+            <Value>64</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2829693704</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.ToolItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Go</Value>
+        </Property>
+        <Property>
+            <Name>bounds</Name>
+            <Value>Rectangle {222, 1, 31, 29}</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>11 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>ToolBar {}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>8</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Go</Value>
+        </Property>
+        <Property>
+            <Name>width</Name>
+            <Value>31</Value>
+        </Property>
+    </Attributes>
+</Widget>
+                            </Contents>
+                        </Container>
+                        <Widget>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w4069140292</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Canvas</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>611</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>5</Value>
+</Property>
+<Property>
+    <Name>ReplayableAction</Name>
+    <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {611, 5, 24, 24}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>3 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {SWT Browser}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {24, 24}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>33816576</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                        </Widget>
+                        <Widget>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w2119151512</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Text</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>259</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>5</Value>
+</Property>
+<Property>
+    <Name>ReplayableAction</Name>
+    <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+    <Value>edu.umd.cs.guitar.event.SitarEditableTextAction</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {259, 5, 347, 27}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>4 0</Value>
+</Property>
+<Property>
+    <Name>editable</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {SWT Browser}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {347, 27}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>570443780</Value>
+</Property>
+<Property>
+    <Name>text</Name>
+    <Value>http://www.eclipse.org/</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                        </Widget>
+                        <Widget>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w2386164036</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Label</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>5</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>458</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {5, 458, 480, 17}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>5 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {SWT Browser}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {480, 17}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>570966016</Value>
+</Property>
+<Property>
+    <Name>text</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                        </Widget>
+                        <Widget>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w988803084</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.ProgressBar</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>485</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>461</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {485, 461, 150, 14}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>6 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {SWT Browser}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {150, 14}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>570949888</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                        </Widget>
+                    </Contents>
+                </Container>
+            </Contents>
+        </Container>
+    </GUI>
+</GUIStructure>

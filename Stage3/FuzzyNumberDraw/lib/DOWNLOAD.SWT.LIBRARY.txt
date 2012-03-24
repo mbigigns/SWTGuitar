@@ -1,0 +1,4 @@
+
+Download SWT library jar and add it to CLASSPATH and/or Ant build.xml file.
+
+http://www.eclipse.org/swt/

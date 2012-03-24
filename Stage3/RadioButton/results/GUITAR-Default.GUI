@@ -1,0 +1,1953 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GUIStructure>
+    <GUI>
+        <Window>
+            <Attributes>
+                <Property>
+                    <Name>Title</Name>
+                    <Value>Radio Button Demo</Value>
+                </Property>
+                <Property>
+                    <Name>Modal</Name>
+                    <Value>false</Value>
+                </Property>
+                <Property>
+                    <Name>Rootwindow</Name>
+                    <Value>true</Value>
+                </Property>
+                <Property>
+                    <Name>bounds</Name>
+                    <Value>Rectangle {0, 24, 302, 307}</Value>
+                </Property>
+                <Property>
+                    <Name>data</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>layout</Name>
+                    <Value>GridLayout {marginWidth=5 marginHeight=5 horizontalSpacing=5 verticalSpacing=5}</Value>
+                </Property>
+                <Property>
+                    <Name>size</Name>
+                    <Value>Point {302, 307}</Value>
+                </Property>
+                <Property>
+                    <Name>style</Name>
+                    <Value>570425440</Value>
+                </Property>
+                <Property>
+                    <Name>visible</Name>
+                    <Value>true</Value>
+                </Property>
+            </Attributes>
+        </Window>
+        <Container>
+            <Contents>
+                <Container>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w1657046732</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.Shell</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>TERMINAL</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>Radio Button Demo</Value>
+                        </Property>
+                        <Property>
+                            <Name>bounds</Name>
+                            <Value>Rectangle {0, 24, 302, 307}</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>layout</Name>
+                            <Value>GridLayout {marginWidth=5 marginHeight=5 horizontalSpacing=5 verticalSpacing=5}</Value>
+                        </Property>
+                        <Property>
+                            <Name>size</Name>
+                            <Value>Point {302, 307}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>570425440</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>Radio Button Demo</Value>
+                        </Property>
+                        <Property>
+                            <Name>visible</Name>
+                            <Value>true</Value>
+                        </Property>
+                    </Attributes>
+                    <Contents>
+                        <Container>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w383969952</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Group</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>5</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>5</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {5, 5, 150, 49}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>1 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>layout</Name>
+    <Value>RowLayout {type=SWT.HORIZONTAL marginLeft=3 marginTop=3 marginRight=3 marginBottom=3 spacing=3 wrap=true pack=true fill=false justify=false}</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {Radio Button Demo}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {150, 49}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>570949636</Value>
+</Property>
+<Property>
+    <Name>text</Name>
+    <Value>Select Shape</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                            <Contents>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w469111236</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.Button</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>10</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>25</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Circle</Value>
+        </Property>
+        <Property>
+            <Name>bounds</Name>
+            <Value>Rectangle {5, 20, 64, 24}</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>7 1 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Group {Select Shape}</Value>
+        </Property>
+        <Property>
+            <Name>size</Name>
+            <Value>Point {64, 24}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>570441744</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Circle</Value>
+        </Property>
+        <Property>
+            <Name>visible</Name>
+            <Value>true</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2331280120</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.Button</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>77</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>25</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Square</Value>
+        </Property>
+        <Property>
+            <Name>bounds</Name>
+            <Value>Rectangle {72, 20, 73, 24}</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>8 1 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Group {Select Shape}</Value>
+        </Property>
+        <Property>
+            <Name>size</Name>
+            <Value>Point {73, 24}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>570441744</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Square</Value>
+        </Property>
+        <Property>
+            <Name>visible</Name>
+            <Value>true</Value>
+        </Property>
+    </Attributes>
+</Widget>
+                            </Contents>
+                        </Container>
+                        <Container>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w383970014</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Group</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>5</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>59</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {5, 59, 216, 52}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>2 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>layout</Name>
+    <Value>RowLayout {type=SWT.HORIZONTAL marginLeft=3 marginTop=3 marginRight=3 marginBottom=3 spacing=3 wrap=true pack=true fill=false justify=false}</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {Radio Button Demo}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {216, 52}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>570949636</Value>
+</Property>
+<Property>
+    <Name>text</Name>
+    <Value>Select Fill Color</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                            <Contents>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w1245739540</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.Button</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>10</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>79</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Color</Value>
+        </Property>
+        <Property>
+            <Name>bounds</Name>
+            <Value>Rectangle {5, 20, 63, 24}</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>9 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Group {Select Fill Color}</Value>
+        </Property>
+        <Property>
+            <Name>size</Name>
+            <Value>Point {63, 24}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>570441744</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Color</Value>
+        </Property>
+        <Property>
+            <Name>visible</Name>
+            <Value>true</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w994314856</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.Button</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>76</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>79</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>None</Value>
+        </Property>
+        <Property>
+            <Name>bounds</Name>
+            <Value>Rectangle {71, 20, 62, 24}</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>10 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Group {Select Fill Color}</Value>
+        </Property>
+        <Property>
+            <Name>size</Name>
+            <Value>Point {62, 24}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>570441744</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>None</Value>
+        </Property>
+        <Property>
+            <Name>visible</Name>
+            <Value>true</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w3043653620</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.Text</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>141</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>79</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarEditableTextAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value></Value>
+        </Property>
+        <Property>
+            <Name>bounds</Name>
+            <Value>Rectangle {136, 20, 75, 27}</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>11 2 0</Value>
+        </Property>
+        <Property>
+            <Name>editable</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Group {Select Fill Color}</Value>
+        </Property>
+        <Property>
+            <Name>size</Name>
+            <Value>Point {75, 27}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>570443780</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value></Value>
+        </Property>
+        <Property>
+            <Name>visible</Name>
+            <Value>true</Value>
+        </Property>
+    </Attributes>
+</Widget>
+                            </Contents>
+                        </Container>
+                        <Widget>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w383970076</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Group</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>5</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>116</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {5, 116, 119, 83}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>3 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {Radio Button Demo}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {119, 83}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>570949636</Value>
+</Property>
+<Property>
+    <Name>text</Name>
+    <Value>Rendered Shape</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                        </Widget>
+                        <Widget>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w1763283338</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Button</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>5</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>204</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value>Create Shape</Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {5, 204, 101, 29}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>4 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {Radio Button Demo}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {101, 29}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>587202568</Value>
+</Property>
+<Property>
+    <Name>text</Name>
+    <Value>Create Shape</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                        </Widget>
+                        <Widget>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w1241733264</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Button</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>5</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>238</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value>Reset</Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {5, 238, 50, 29}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>5 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {Radio Button Demo}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {50, 29}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>587202568</Value>
+</Property>
+<Property>
+    <Name>text</Name>
+    <Value>Reset</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                        </Widget>
+                        <Container>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w2182598086</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Menu</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>6 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {Radio Button Demo}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>33554434</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                            <Contents>
+<Container>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2738403608</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>&amp;Options</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>menu</Name>
+            <Value>Menu {About, &amp;Shape, &amp;Color}</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {&amp;Options}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>64</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>&amp;Options</Value>
+        </Property>
+    </Attributes>
+    <Contents>
+        <Container>
+            <Attributes>
+                <Property>
+                    <Name>ID</Name>
+                    <Value>w2186844360</Value>
+                </Property>
+                <Property>
+                    <Name>Class</Name>
+                    <Value>org.eclipse.swt.widgets.Menu</Value>
+                </Property>
+                <Property>
+                    <Name>Type</Name>
+                    <Value>SYSTEM INTERACTION</Value>
+                </Property>
+                <Property>
+                    <Name>X</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>Y</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>Title</Name>
+                    <Value></Value>
+                </Property>
+                <Property>
+                    <Name>data</Name>
+                    <Value>13 12 6 0</Value>
+                </Property>
+                <Property>
+                    <Name>enabled</Name>
+                    <Value>true</Value>
+                </Property>
+                <Property>
+                    <Name>parent</Name>
+                    <Value>Shell {Radio Button Demo}</Value>
+                </Property>
+                <Property>
+                    <Name>style</Name>
+                    <Value>33554436</Value>
+                </Property>
+                <Property>
+                    <Name>visible</Name>
+                    <Value>false</Value>
+                </Property>
+            </Attributes>
+            <Contents>
+                <Container>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w3097813408</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;Shape</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>15 13 12 6 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>menu</Name>
+                            <Value>Menu {Circle, Square}</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {About, &amp;Shape, &amp;Color}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>64</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;Shape</Value>
+                        </Property>
+                    </Attributes>
+                    <Contents>
+                        <Container>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w2995415480</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Menu</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>17 15 13 12 6 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {Radio Button Demo}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>33554436</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>false</Value>
+</Property>
+                            </Attributes>
+                            <Contents>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w798098196</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Circle</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>18 17 15 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {Circle, Square}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Circle</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2660267080</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Square</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>19 17 15 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {Circle, Square}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Square</Value>
+        </Property>
+    </Attributes>
+</Widget>
+                            </Contents>
+                        </Container>
+                    </Contents>
+                </Container>
+                <Container>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w3039584424</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;Color</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>16 13 12 6 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>menu</Name>
+                            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {About, &amp;Shape, &amp;Color}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>64</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;Color</Value>
+                        </Property>
+                    </Attributes>
+                    <Contents>
+                        <Container>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w3680185768</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Menu</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>20 16 13 12 6 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {Radio Button Demo}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>33554436</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>false</Value>
+</Property>
+                            </Attributes>
+                            <Contents>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w829382868</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>None</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>21 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>None</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w1076712176</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Black</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>22 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Black</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w827942236</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Blue</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>23 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Blue</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w828108928</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Cyan</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>24 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Cyan</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w1189099176</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Dark Gray</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>25 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Dark Gray</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w828558720</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Gray</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>26 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Gray</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w1095913216</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Green</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>27 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Green</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w3426230568</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Light Gray</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>28 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Light Gray</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2204013976</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Magenta</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>29 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Magenta</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w1709644972</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Orange</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>30 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Orange</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w829598156</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Pink</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>31 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Pink</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w819975480</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Red</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>32 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Red</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w1153844120</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>White</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>33 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>White</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2808092100</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Yellow</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>34 20 16 13 12 6 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {None, Black, Blue, Cyan, Dark Gray, Gray, Green, Light Gray, Magenta, Orange, Pink, Red, White, Yellow}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Yellow</Value>
+        </Property>
+    </Attributes>
+</Widget>
+                            </Contents>
+                        </Container>
+                    </Contents>
+                </Container>
+            </Contents>
+        </Container>
+    </Contents>
+</Container>
+                            </Contents>
+                        </Container>
+                    </Contents>
+                </Container>
+            </Contents>
+        </Container>
+    </GUI>
+</GUIStructure>

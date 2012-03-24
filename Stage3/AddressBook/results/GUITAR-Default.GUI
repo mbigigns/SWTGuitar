@@ -1,0 +1,2367 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GUIStructure>
+    <GUI>
+        <Window>
+            <Attributes>
+                <Property>
+                    <Name>Title</Name>
+                    <Value>Address Book - Untitled</Value>
+                </Property>
+                <Property>
+                    <Name>Modal</Name>
+                    <Value>false</Value>
+                </Property>
+                <Property>
+                    <Name>Rootwindow</Name>
+                    <Value>true</Value>
+                </Property>
+                <Property>
+                    <Name>bounds</Name>
+                    <Value>Rectangle {0, 24, 901, 301}</Value>
+                </Property>
+                <Property>
+                    <Name>data</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>layout</Name>
+                    <Value>FillLayout {type=SWT.HORIZONTAL}</Value>
+                </Property>
+                <Property>
+                    <Name>size</Name>
+                    <Value>Point {901, 301}</Value>
+                </Property>
+                <Property>
+                    <Name>style</Name>
+                    <Value>570426608</Value>
+                </Property>
+                <Property>
+                    <Name>visible</Name>
+                    <Value>true</Value>
+                </Property>
+            </Attributes>
+        </Window>
+        <Container>
+            <Contents>
+                <Container>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w3927982668</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.Shell</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>TERMINAL</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>Address Book - Untitled</Value>
+                        </Property>
+                        <Property>
+                            <Name>bounds</Name>
+                            <Value>Rectangle {0, 24, 901, 301}</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>layout</Name>
+                            <Value>FillLayout {type=SWT.HORIZONTAL}</Value>
+                        </Property>
+                        <Property>
+                            <Name>size</Name>
+                            <Value>Point {901, 301}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>570426608</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>Address Book - Untitled</Value>
+                        </Property>
+                        <Property>
+                            <Name>visible</Name>
+                            <Value>true</Value>
+                        </Property>
+                    </Attributes>
+                    <Contents>
+                        <Container>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w2332272556</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Table</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>ReplayableAction</Name>
+    <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>bounds</Name>
+    <Value>Rectangle {0, 0, 899, 271}</Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>1 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>menu</Name>
+    <Value>Menu {&amp;New..., |, &amp;Edit..., &amp;Copy, &amp;Paste, &amp;Delete, |, &amp;Find...}</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {Address Book - Untitled}</Value>
+</Property>
+<Property>
+    <Name>size</Name>
+    <Value>Point {899, 271}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>570493700</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                            <Contents>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w897999896</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.TableColumn</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Last Name</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>3 1 0</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Table {}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16384</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Last Name</Value>
+        </Property>
+        <Property>
+            <Name>width</Name>
+            <Value>150</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w749491632</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.TableColumn</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>First Name</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>4 1 0</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Table {}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16384</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>First Name</Value>
+        </Property>
+        <Property>
+            <Name>width</Name>
+            <Value>150</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w299921660</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.TableColumn</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Business Phone</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>5 1 0</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Table {}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16384</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Business Phone</Value>
+        </Property>
+        <Property>
+            <Name>width</Name>
+            <Value>150</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w3537057912</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.TableColumn</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Home Phone</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>6 1 0</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Table {}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16384</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Home Phone</Value>
+        </Property>
+        <Property>
+            <Name>width</Name>
+            <Value>150</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2514315956</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.TableColumn</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Email</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>7 1 0</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Table {}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16384</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Email</Value>
+        </Property>
+        <Property>
+            <Name>width</Name>
+            <Value>150</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2246330552</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.TableColumn</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Fax</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>8 1 0</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Table {}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>16384</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Fax</Value>
+        </Property>
+        <Property>
+            <Name>width</Name>
+            <Value>150</Value>
+        </Property>
+    </Attributes>
+</Widget>
+                            </Contents>
+                        </Container>
+                        <Container>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w2926302048</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Menu</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>2 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {Address Book - Untitled}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>33554434</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>true</Value>
+</Property>
+                            </Attributes>
+                            <Contents>
+<Container>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w1472631052</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>&amp;File</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>9 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>menu</Name>
+            <Value>Menu {&amp;New Contact...	Ctrl+N, &amp;Edit Contact...	Ctrl+E, |, New Address &amp;Book	Ctrl+B, &amp;Open Address Book...	Ctrl+O, &amp;Save Address Book	Ctrl+S, Save &amp;Address Book As...	Ctrl+A, |, E&amp;xit}</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {&amp;File, &amp;Edit, &amp;Search, &amp;Help}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>64</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>&amp;File</Value>
+        </Property>
+    </Attributes>
+    <Contents>
+        <Container>
+            <Attributes>
+                <Property>
+                    <Name>ID</Name>
+                    <Value>w1018357216</Value>
+                </Property>
+                <Property>
+                    <Name>Class</Name>
+                    <Value>org.eclipse.swt.widgets.Menu</Value>
+                </Property>
+                <Property>
+                    <Name>Type</Name>
+                    <Value>SYSTEM INTERACTION</Value>
+                </Property>
+                <Property>
+                    <Name>X</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>Y</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>ReplayableAction</Name>
+                    <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                </Property>
+                <Property>
+                    <Name>Title</Name>
+                    <Value></Value>
+                </Property>
+                <Property>
+                    <Name>data</Name>
+                    <Value>13 9 2 0</Value>
+                </Property>
+                <Property>
+                    <Name>enabled</Name>
+                    <Value>true</Value>
+                </Property>
+                <Property>
+                    <Name>parent</Name>
+                    <Value>Shell {Address Book - Untitled}</Value>
+                </Property>
+                <Property>
+                    <Name>style</Name>
+                    <Value>33554436</Value>
+                </Property>
+                <Property>
+                    <Name>visible</Name>
+                    <Value>false</Value>
+                </Property>
+            </Attributes>
+            <Contents>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w613840400</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;New Contact...	Ctrl+N</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>262222</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>14 13 9 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;New Contact...	Ctrl+N, &amp;Edit Contact...	Ctrl+E, |, New Address &amp;Book	Ctrl+B, &amp;Open Address Book...	Ctrl+O, &amp;Save Address Book	Ctrl+S, Save &amp;Address Book As...	Ctrl+A, |, E&amp;xit}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;New Contact...	Ctrl+N</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w2240089858</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;Edit Contact...	Ctrl+E</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>262213</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>15 13 9 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>false</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;New Contact...	Ctrl+N, &amp;Edit Contact...	Ctrl+E, |, New Address &amp;Book	Ctrl+B, &amp;Open Address Book...	Ctrl+O, &amp;Save Address Book	Ctrl+S, Save &amp;Address Book As...	Ctrl+A, |, E&amp;xit}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;Edit Contact...	Ctrl+E</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w3353846016</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value></Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>16 13 9 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;New Contact...	Ctrl+N, &amp;Edit Contact...	Ctrl+E, |, New Address &amp;Book	Ctrl+B, &amp;Open Address Book...	Ctrl+O, &amp;Save Address Book	Ctrl+S, Save &amp;Address Book As...	Ctrl+A, |, E&amp;xit}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>2</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value></Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w1522326750</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>New Address &amp;Book	Ctrl+B</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>262210</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>17 13 9 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;New Contact...	Ctrl+N, &amp;Edit Contact...	Ctrl+E, |, New Address &amp;Book	Ctrl+B, &amp;Open Address Book...	Ctrl+O, &amp;Save Address Book	Ctrl+S, Save &amp;Address Book As...	Ctrl+A, |, E&amp;xit}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>New Address &amp;Book	Ctrl+B</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w2497528760</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;Open Address Book...	Ctrl+O</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>262223</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>18 13 9 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;New Contact...	Ctrl+N, &amp;Edit Contact...	Ctrl+E, |, New Address &amp;Book	Ctrl+B, &amp;Open Address Book...	Ctrl+O, &amp;Save Address Book	Ctrl+S, Save &amp;Address Book As...	Ctrl+A, |, E&amp;xit}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;Open Address Book...	Ctrl+O</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w2489328354</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;Save Address Book	Ctrl+S</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>262227</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>19 13 9 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>false</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;New Contact...	Ctrl+N, &amp;Edit Contact...	Ctrl+E, |, New Address &amp;Book	Ctrl+B, &amp;Open Address Book...	Ctrl+O, &amp;Save Address Book	Ctrl+S, Save &amp;Address Book As...	Ctrl+A, |, E&amp;xit}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;Save Address Book	Ctrl+S</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w16846928</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>Save &amp;Address Book As...	Ctrl+A</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>262209</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>20 13 9 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>false</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;New Contact...	Ctrl+N, &amp;Edit Contact...	Ctrl+E, |, New Address &amp;Book	Ctrl+B, &amp;Open Address Book...	Ctrl+O, &amp;Save Address Book	Ctrl+S, Save &amp;Address Book As...	Ctrl+A, |, E&amp;xit}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>Save &amp;Address Book As...	Ctrl+A</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w3353846326</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value></Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>21 13 9 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;New Contact...	Ctrl+N, &amp;Edit Contact...	Ctrl+E, |, New Address &amp;Book	Ctrl+B, &amp;Open Address Book...	Ctrl+O, &amp;Save Address Book	Ctrl+S, Save &amp;Address Book As...	Ctrl+A, |, E&amp;xit}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>2</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value></Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w3613741180</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>TERMINAL</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>E&amp;xit</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>22 13 9 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;New Contact...	Ctrl+N, &amp;Edit Contact...	Ctrl+E, |, New Address &amp;Book	Ctrl+B, &amp;Open Address Book...	Ctrl+O, &amp;Save Address Book	Ctrl+S, Save &amp;Address Book As...	Ctrl+A, |, E&amp;xit}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>E&amp;xit</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+            </Contents>
+        </Container>
+    </Contents>
+</Container>
+<Container>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w1472492356</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>&amp;Edit</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>10 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>menu</Name>
+            <Value>Menu {&amp;Edit...	Ctrl+E, &amp;Copy	Ctrl+C, &amp;Paste	Ctrl+V, De&amp;lete	Del, |, &amp;Sort}</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {&amp;File, &amp;Edit, &amp;Search, &amp;Help}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>64</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>&amp;Edit</Value>
+        </Property>
+    </Attributes>
+    <Contents>
+        <Container>
+            <Attributes>
+                <Property>
+                    <Name>ID</Name>
+                    <Value>w1009758064</Value>
+                </Property>
+                <Property>
+                    <Name>Class</Name>
+                    <Value>org.eclipse.swt.widgets.Menu</Value>
+                </Property>
+                <Property>
+                    <Name>Type</Name>
+                    <Value>SYSTEM INTERACTION</Value>
+                </Property>
+                <Property>
+                    <Name>X</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>Y</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>ReplayableAction</Name>
+                    <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                </Property>
+                <Property>
+                    <Name>Title</Name>
+                    <Value></Value>
+                </Property>
+                <Property>
+                    <Name>data</Name>
+                    <Value>23 10 2 0</Value>
+                </Property>
+                <Property>
+                    <Name>enabled</Name>
+                    <Value>true</Value>
+                </Property>
+                <Property>
+                    <Name>parent</Name>
+                    <Value>Shell {Address Book - Untitled}</Value>
+                </Property>
+                <Property>
+                    <Name>style</Name>
+                    <Value>33554436</Value>
+                </Property>
+                <Property>
+                    <Name>visible</Name>
+                    <Value>false</Value>
+                </Property>
+            </Attributes>
+            <Contents>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w3494703268</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;Edit...	Ctrl+E</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>262213</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>24 23 10 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>false</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;Edit...	Ctrl+E, &amp;Copy	Ctrl+C, &amp;Paste	Ctrl+V, De&amp;lete	Del, |, &amp;Sort}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;Edit...	Ctrl+E</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w4129703848</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;Copy	Ctrl+C</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>262211</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>25 23 10 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>false</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;Edit...	Ctrl+E, &amp;Copy	Ctrl+C, &amp;Paste	Ctrl+V, De&amp;lete	Del, |, &amp;Sort}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;Copy	Ctrl+C</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w2117759404</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;Paste	Ctrl+V</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>262230</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>26 23 10 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>false</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;Edit...	Ctrl+E, &amp;Copy	Ctrl+C, &amp;Paste	Ctrl+V, De&amp;lete	Del, |, &amp;Sort}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;Paste	Ctrl+V</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w1497635880</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>De&amp;lete	Del</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>27 23 10 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>false</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;Edit...	Ctrl+E, &amp;Copy	Ctrl+C, &amp;Paste	Ctrl+V, De&amp;lete	Del, |, &amp;Sort}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>De&amp;lete	Del</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w2756854244</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value></Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>28 23 10 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;Edit...	Ctrl+E, &amp;Copy	Ctrl+C, &amp;Paste	Ctrl+V, De&amp;lete	Del, |, &amp;Sort}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>2</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value></Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Container>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w2907561332</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;Sort</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>29 23 10 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>false</Value>
+                        </Property>
+                        <Property>
+                            <Name>menu</Name>
+                            <Value>Menu {Last Name, First Name, Business Phone, Home Phone, Email, Fax}</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;Edit...	Ctrl+E, &amp;Copy	Ctrl+C, &amp;Paste	Ctrl+V, De&amp;lete	Del, |, &amp;Sort}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>64</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;Sort</Value>
+                        </Property>
+                    </Attributes>
+                    <Contents>
+                        <Container>
+                            <Attributes>
+<Property>
+    <Name>ID</Name>
+    <Value>w4084688656</Value>
+</Property>
+<Property>
+    <Name>Class</Name>
+    <Value>org.eclipse.swt.widgets.Menu</Value>
+</Property>
+<Property>
+    <Name>Type</Name>
+    <Value>SYSTEM INTERACTION</Value>
+</Property>
+<Property>
+    <Name>X</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Y</Name>
+    <Value>0</Value>
+</Property>
+<Property>
+    <Name>Title</Name>
+    <Value></Value>
+</Property>
+<Property>
+    <Name>data</Name>
+    <Value>30 29 23 10 2 0</Value>
+</Property>
+<Property>
+    <Name>enabled</Name>
+    <Value>true</Value>
+</Property>
+<Property>
+    <Name>parent</Name>
+    <Value>Shell {Address Book - Untitled}</Value>
+</Property>
+<Property>
+    <Name>style</Name>
+    <Value>33554436</Value>
+</Property>
+<Property>
+    <Name>visible</Name>
+    <Value>false</Value>
+</Property>
+                            </Attributes>
+                            <Contents>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w3075940856</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Last Name</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>31 30 29 23 10 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {Last Name, First Name, Business Phone, Home Phone, Email, Fax}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>8</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Last Name</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2927432592</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>First Name</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>32 30 29 23 10 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {Last Name, First Name, Business Phone, Home Phone, Email, Fax}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>8</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>First Name</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w2477862620</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Business Phone</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>33 30 29 23 10 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {Last Name, First Name, Business Phone, Home Phone, Email, Fax}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>8</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Business Phone</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w1420031576</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Home Phone</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>34 30 29 23 10 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {Last Name, First Name, Business Phone, Home Phone, Email, Fax}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>8</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Home Phone</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w397289620</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Email</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>35 30 29 23 10 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {Last Name, First Name, Business Phone, Home Phone, Email, Fax}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>8</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Email</Value>
+        </Property>
+    </Attributes>
+</Widget>
+<Widget>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w129304216</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>ReplayableAction</Name>
+            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>Fax</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>36 30 29 23 10 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {Last Name, First Name, Business Phone, Home Phone, Email, Fax}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>8</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>Fax</Value>
+        </Property>
+    </Attributes>
+</Widget>
+                            </Contents>
+                        </Container>
+                    </Contents>
+                </Container>
+            </Contents>
+        </Container>
+    </Contents>
+</Container>
+<Container>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w85158844</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>&amp;Search</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>11 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>menu</Name>
+            <Value>Menu {&amp;Find...	Ctrl+F, Find &amp;Next...	F3}</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {&amp;File, &amp;Edit, &amp;Search, &amp;Help}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>64</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>&amp;Search</Value>
+        </Property>
+    </Attributes>
+    <Contents>
+        <Container>
+            <Attributes>
+                <Property>
+                    <Name>ID</Name>
+                    <Value>w894426240</Value>
+                </Property>
+                <Property>
+                    <Name>Class</Name>
+                    <Value>org.eclipse.swt.widgets.Menu</Value>
+                </Property>
+                <Property>
+                    <Name>Type</Name>
+                    <Value>SYSTEM INTERACTION</Value>
+                </Property>
+                <Property>
+                    <Name>X</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>Y</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>Title</Name>
+                    <Value></Value>
+                </Property>
+                <Property>
+                    <Name>data</Name>
+                    <Value>37 11 2 0</Value>
+                </Property>
+                <Property>
+                    <Name>enabled</Name>
+                    <Value>true</Value>
+                </Property>
+                <Property>
+                    <Name>parent</Name>
+                    <Value>Shell {Address Book - Untitled}</Value>
+                </Property>
+                <Property>
+                    <Name>style</Name>
+                    <Value>33554436</Value>
+                </Property>
+                <Property>
+                    <Name>visible</Name>
+                    <Value>false</Value>
+                </Property>
+            </Attributes>
+            <Contents>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w2961161796</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;Find...	Ctrl+F</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>262214</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>38 37 11 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;Find...	Ctrl+F, Find &amp;Next...	F3}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;Find...	Ctrl+F</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w3785172908</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>Find &amp;Next...	F3</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>16777228</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>39 37 11 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;Find...	Ctrl+F, Find &amp;Next...	F3}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>Find &amp;Next...	F3</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+            </Contents>
+        </Container>
+    </Contents>
+</Container>
+<Container>
+    <Attributes>
+        <Property>
+            <Name>ID</Name>
+            <Value>w1472854048</Value>
+        </Property>
+        <Property>
+            <Name>Class</Name>
+            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+        </Property>
+        <Property>
+            <Name>Type</Name>
+            <Value>SYSTEM INTERACTION</Value>
+        </Property>
+        <Property>
+            <Name>X</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Y</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>Title</Name>
+            <Value>&amp;Help</Value>
+        </Property>
+        <Property>
+            <Name>accelerator</Name>
+            <Value>0</Value>
+        </Property>
+        <Property>
+            <Name>data</Name>
+            <Value>12 2 0</Value>
+        </Property>
+        <Property>
+            <Name>enabled</Name>
+            <Value>true</Value>
+        </Property>
+        <Property>
+            <Name>menu</Name>
+            <Value>Menu {&amp;About Address Book...}</Value>
+        </Property>
+        <Property>
+            <Name>parent</Name>
+            <Value>Menu {&amp;File, &amp;Edit, &amp;Search, &amp;Help}</Value>
+        </Property>
+        <Property>
+            <Name>style</Name>
+            <Value>64</Value>
+        </Property>
+        <Property>
+            <Name>text</Name>
+            <Value>&amp;Help</Value>
+        </Property>
+    </Attributes>
+    <Contents>
+        <Container>
+            <Attributes>
+                <Property>
+                    <Name>ID</Name>
+                    <Value>w1032182968</Value>
+                </Property>
+                <Property>
+                    <Name>Class</Name>
+                    <Value>org.eclipse.swt.widgets.Menu</Value>
+                </Property>
+                <Property>
+                    <Name>Type</Name>
+                    <Value>SYSTEM INTERACTION</Value>
+                </Property>
+                <Property>
+                    <Name>X</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>Y</Name>
+                    <Value>0</Value>
+                </Property>
+                <Property>
+                    <Name>Title</Name>
+                    <Value></Value>
+                </Property>
+                <Property>
+                    <Name>data</Name>
+                    <Value>40 12 2 0</Value>
+                </Property>
+                <Property>
+                    <Name>enabled</Name>
+                    <Value>true</Value>
+                </Property>
+                <Property>
+                    <Name>parent</Name>
+                    <Value>Shell {Address Book - Untitled}</Value>
+                </Property>
+                <Property>
+                    <Name>style</Name>
+                    <Value>33554436</Value>
+                </Property>
+                <Property>
+                    <Name>visible</Name>
+                    <Value>false</Value>
+                </Property>
+            </Attributes>
+            <Contents>
+                <Widget>
+                    <Attributes>
+                        <Property>
+                            <Name>ID</Name>
+                            <Value>w3490428628</Value>
+                        </Property>
+                        <Property>
+                            <Name>Class</Name>
+                            <Value>org.eclipse.swt.widgets.MenuItem</Value>
+                        </Property>
+                        <Property>
+                            <Name>Type</Name>
+                            <Value>SYSTEM INTERACTION</Value>
+                        </Property>
+                        <Property>
+                            <Name>X</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>Y</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>ReplayableAction</Name>
+                            <Value>edu.umd.cs.guitar.event.SitarDefaultAction</Value>
+                        </Property>
+                        <Property>
+                            <Name>Title</Name>
+                            <Value>&amp;About Address Book...</Value>
+                        </Property>
+                        <Property>
+                            <Name>accelerator</Name>
+                            <Value>0</Value>
+                        </Property>
+                        <Property>
+                            <Name>data</Name>
+                            <Value>41 40 12 2 0</Value>
+                        </Property>
+                        <Property>
+                            <Name>enabled</Name>
+                            <Value>true</Value>
+                        </Property>
+                        <Property>
+                            <Name>parent</Name>
+                            <Value>Menu {&amp;About Address Book...}</Value>
+                        </Property>
+                        <Property>
+                            <Name>style</Name>
+                            <Value>8</Value>
+                        </Property>
+                        <Property>
+                            <Name>text</Name>
+                            <Value>&amp;About Address Book...</Value>
+                        </Property>
+                    </Attributes>
+                </Widget>
+            </Contents>
+        </Container>
+    </Contents>
+</Container>
+                            </Contents>
+                        </Container>
+                    </Contents>
+                </Container>
+            </Contents>
+        </Container>
+    </GUI>
+</GUIStructure>

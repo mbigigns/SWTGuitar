@@ -1,0 +1,52 @@
+<project name="FuzzyArithmetic" basedir="." default="jar">
+    <property name="src.dir"     value="src"/>
+    <property name="build.dir"   value="bin"/>
+	<property name="jar.dir"     value="."/>
+    <property name="jar.name"    value="FuzzyArithmetic"/>
+    <property name="swt.jar"     value="./lib/swt-3.5.2-gtk-am64.jar"/>
+    <property name="deploy.dir"  value="/mnt/d/Programming/Fuzzy/za diplomski/Unification/"/>
+
+
+
+    <target name="clean">
+    		<delete dir="${build.dir}"/>
+    </target>
+
+
+
+    <target name="compile">
+  			<mkdir dir="${build.dir}"/>
+        	<javac srcdir="${src.dir}" destdir="${build.dir}">
+			   <classpath>   
+            	  <pathelement location="${swt.jar}"/>   
+        	   </classpath>
+			</javac>
+    </target>
+
+
+
+    <target name="jar" depends="compile">
+		<mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/${jar.name}.jar" basedir="${build.dir}" excludes="**/test/*">
+            <manifest>
+   				<attribute name="Built-By" value="nikola.kolarovic@gmail.com"/>
+				<attribute name="Implementation-Title" value="FuzzyArithmetic"/>
+				<attribute name="Project-URL" value="http://sourceforge.net/projects/fuzzyarith"/>
+				<attribute name="Implementation-Version" value="0.99b"/> 
+            </manifest>
+        </jar>
+    </target>
+
+
+	<target name="deploy" depends="jar">
+		<copy file="${jar.dir}/${jar.name}.jar" todir="${deploy.dir}"/>
+	</target>
+
+
+
+    <target name="run" depends="compile">
+        <java classname="rs.ac.ns.ftn.tmd.fuzzy.test.FuzzyNumberDraw" classpath="${build.dir}:${swt.jar}"/>
+    </target>
+
+
+</project>

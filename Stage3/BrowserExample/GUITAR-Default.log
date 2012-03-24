@@ -1,0 +1,520 @@
+[main] ERROR configuration.xml not found!!!
+[main] INFO  No configuration file. Using an empty one...
+[main] DEBUG =============================
+[main] DEBUG Application URLs: 
+[main] DEBUG -----------------------------
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/log4j-1.2.15.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/gexf4j-core-0.2.0-ALPHA.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-efg.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/args4j-2.0.10.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-io-2.0.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/coverage-parser.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/asm-3.3.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/java-getopt-1.0.13.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph-converter.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-random-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/lib/misc/junit.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-path2root.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-cli-1.2.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/ext/swt/BrowserExample/bin/
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-program-analysis.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/swt-3.7.1-linux-32.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2ecig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-graph-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/cobertura.jar
+[main] DEBUG =============================
+[main] DEBUG Application Parameters: 
+[main] DEBUG -----------------------------
+[main] DEBUG Display ready
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {SWT Browser}
+[SitarExecutor] DEBUG Root window size: 1
+[SitarExecutor] DEBUG Window title: SWT Browser
+[SitarExecutor] INFO  Number of root windows: 1
+[SitarExecutor] INFO  ------- BEGIN WINDOW -------
+[SitarExecutor] INFO  Ripping window: *SWT Browser*
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Browser {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarToolBar for widget ToolBar {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget ProgressBar {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Browser {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarToolBar for widget ToolBar {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget ProgressBar {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Browser {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarToolBar for widget ToolBar {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget ProgressBar {}
+[SitarExecutor] DEBUG *SWT Browser* in window *SWT Browser* has 6 children: [ - org.eclipse.swt.browser.Browser;  - org.eclipse.swt.widgets.ToolBar;  - org.eclipse.swt.widgets.Canvas;  - org.eclipse.swt.widgets.Text;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.ProgressBar; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.browser.Browser</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Browser {} event type 1
+[main] DEBUG Notifying Browser {} event type 11
+[main] DEBUG Notifying Browser {} event type 15
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Browser* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.ToolBar</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Back}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Forward}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Stop}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Refresh}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Go}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Back}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Forward}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Stop}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Refresh}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Go}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Back}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Forward}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Stop}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Refresh}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget ToolItem {Go}
+[SitarExecutor] DEBUG ** in window *SWT Browser* has 5 children: [Back - org.eclipse.swt.widgets.ToolItem; Forward - org.eclipse.swt.widgets.ToolItem; Stop - org.eclipse.swt.widgets.ToolItem; Refresh - org.eclipse.swt.widgets.ToolItem; Go - org.eclipse.swt.widgets.ToolItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Back</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.ToolItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying ToolItem {Back} event type 13
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Back* in window *SWT Browser* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Forward</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.ToolItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying ToolItem {Forward} event type 13
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Forward* in window *SWT Browser* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Stop</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.ToolItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying ToolItem {Stop} event type 13
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Stop* in window *SWT Browser* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Refresh</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.ToolItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying ToolItem {Refresh} event type 13
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Refresh* in window *SWT Browser* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Go</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.ToolItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying ToolItem {Go} event type 13
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Go* in window *SWT Browser* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Canvas</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Canvas {} event type 3
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Browser* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Text {} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Browser* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Browser* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Browser</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.ProgressBar</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Browser* has 0 children: []
+[SitarExecutor] INFO  Display disposed
+[SitarExecutor] INFO  -----------------------------
+[SitarExecutor] INFO  OUTPUT SUMARY: 
+[SitarExecutor] INFO  Number of Windows: 1
+[SitarExecutor] INFO  GUI file:./results/GUITAR-Default.GUI
+[SitarExecutor] INFO  Open Component file:log_widget.xml
+[SitarExecutor] INFO  Time Elapsed: 00 : 00 : 05: 342

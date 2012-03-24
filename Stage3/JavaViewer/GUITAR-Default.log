@@ -1,0 +1,334 @@
+[main] ERROR configuration.xml not found!!!
+[main] INFO  No configuration file. Using an empty one...
+[main] DEBUG =============================
+[main] DEBUG Application URLs: 
+[main] DEBUG -----------------------------
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/log4j-1.2.15.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/gexf4j-core-0.2.0-ALPHA.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-efg.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/args4j-2.0.10.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/ext/swt/JavaViewer/bin/
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-io-2.0.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/coverage-parser.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/asm-3.3.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/java-getopt-1.0.13.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph-converter.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-random-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/lib/misc/junit.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-path2root.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-cli-1.2.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-program-analysis.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/swt-3.7.1-linux-32.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2ecig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-graph-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/cobertura.jar
+[main] DEBUG =============================
+[main] DEBUG Application Parameters: 
+[main] DEBUG -----------------------------
+[main] DEBUG Display ready
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {SWT Java Viewer}
+[SitarExecutor] DEBUG Root window size: 1
+[SitarExecutor] DEBUG Window title: SWT Java Viewer
+[SitarExecutor] INFO  Number of root windows: 1
+[SitarExecutor] INFO  ------- BEGIN WINDOW -------
+[SitarExecutor] INFO  Ripping window: *SWT Java Viewer*
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Java Viewer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Java Viewer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget StyledText {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&File}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget StyledText {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&File}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Notifying Shell {SWT Java Viewer} event type 19
+[main] DEBUG Notifying Shell {SWT Java Viewer} event type 20
+[main] DEBUG Notifying Shell {SWT Java Viewer} event type 21
+[main] DEBUG Notifying Shell {SWT Java Viewer} event type 26
+[main] DEBUG Notifying Shell {SWT Java Viewer} event type 27
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget StyledText {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&File}
+[SitarExecutor] DEBUG *SWT Java Viewer* in window *SWT Java Viewer* has 2 children: [ - org.eclipse.swt.custom.StyledText;  - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Java Viewer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.custom.StyledText</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying StyledText {} event type 1
+[main] DEBUG Notifying StyledText {} event type 2
+[main] DEBUG Notifying StyledText {} event type 3
+[main] DEBUG Notifying StyledText {} event type 4
+[main] DEBUG Notifying StyledText {} event type 5
+[main] DEBUG Notifying StyledText {} event type 11
+[main] DEBUG Notifying StyledText {} event type 15
+[main] DEBUG Notifying StyledText {} event type 31
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Java Viewer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Java Viewer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&File}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&File}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&File}
+[SitarExecutor] DEBUG ** in window *SWT Java Viewer* has 1 children: [&File - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Java Viewer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&File</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Open...	Ctrl+O, E&xit}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Open...	Ctrl+O, E&xit}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Open...	Ctrl+O, E&xit}
+[SitarExecutor] DEBUG *&File* in window *SWT Java Viewer* has 1 children: [ - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Java Viewer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Open...	Ctrl+O}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {E&xit}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Open...	Ctrl+O}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {E&xit}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Open...	Ctrl+O}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {E&xit}
+[SitarExecutor] DEBUG ** in window *SWT Java Viewer* has 2 children: [&Open...	Ctrl+O - org.eclipse.swt.widgets.MenuItem; E&xit - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Java Viewer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Open...	Ctrl+O</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Open...	Ctrl+O} event type 13
+[main] DEBUG Notifying MenuItem {&Open...	Ctrl+O} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Open...	Ctrl+O* in window *SWT Java Viewer* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Java Viewer</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>E&xit</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *E&xit* in window *SWT Java Viewer* has 0 children: []
+[SitarExecutor] INFO  Display disposed
+[SitarExecutor] INFO  -----------------------------
+[SitarExecutor] INFO  OUTPUT SUMARY: 
+[SitarExecutor] INFO  Number of Windows: 1
+[SitarExecutor] INFO  GUI file:./results/GUITAR-Default.GUI
+[SitarExecutor] INFO  Open Component file:log_widget.xml
+[SitarExecutor] INFO  Time Elapsed: 00 : 00 : 03: 528

@@ -1,0 +1,1673 @@
+[main] ERROR configuration.xml not found!!!
+[main] INFO  No configuration file. Using an empty one...
+[main] DEBUG =============================
+[main] DEBUG Application URLs: 
+[main] DEBUG -----------------------------
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/log4j-1.2.15.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/gexf4j-core-0.2.0-ALPHA.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-efg.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/args4j-2.0.10.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-io-2.0.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/coverage-parser.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/asm-3.3.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/java-getopt-1.0.13.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/ext/swt/AddressBook/bin/
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph-converter.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-random-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/lib/misc/junit.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-path2root.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-cli-1.2.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-program-analysis.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/swt-3.7.1-linux-32.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2ecig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-graph-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/cobertura.jar
+[main] DEBUG =============================
+[main] DEBUG Application Parameters: 
+[main] DEBUG -----------------------------
+[SitarExecutor] DEBUG GUI not ready yet
+[SitarExecutor] DEBUG Waiting for GUI to initialize for: 100ms
+[main] DEBUG Display ready
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {Address Book - Untitled}
+[SitarExecutor] DEBUG Root window size: 1
+[SitarExecutor] DEBUG Window title: Address Book - Untitled
+[SitarExecutor] INFO  Number of root windows: 1
+[SitarExecutor] INFO  ------- BEGIN WINDOW -------
+[SitarExecutor] INFO  Ripping window: *Address Book - Untitled*
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarTable for widget Table {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&File, &Edit, &Search, &Help}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarTable for widget Table {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&File, &Edit, &Search, &Help}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Notifying Shell {Address Book - Untitled} event type 19
+[main] DEBUG Notifying Shell {Address Book - Untitled} event type 20
+[main] DEBUG Notifying Shell {Address Book - Untitled} event type 21
+[main] DEBUG Notifying Shell {Address Book - Untitled} event type 26
+[main] DEBUG Notifying Shell {Address Book - Untitled} event type 27
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarTable for widget Table {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&File, &Edit, &Search, &Help}
+[SitarExecutor] DEBUG *Address Book - Untitled* in window *Address Book - Untitled* has 2 children: [ - org.eclipse.swt.widgets.Table;  - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Table</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Last Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {First Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Business Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Home Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Email}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Fax}
+[main] DEBUG Notifying Table {} event type 13
+[main] DEBUG Notifying Table {} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Last Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {First Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Business Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Home Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Email}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Fax}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Last Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {First Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Business Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Home Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Email}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.UnknownSitarItem for widget TableColumn {Fax}
+[SitarExecutor] DEBUG ** in window *Address Book - Untitled* has 6 children: [Last Name - org.eclipse.swt.widgets.TableColumn; First Name - org.eclipse.swt.widgets.TableColumn; Business Phone - org.eclipse.swt.widgets.TableColumn; Home Phone - org.eclipse.swt.widgets.TableColumn; Email - org.eclipse.swt.widgets.TableColumn; Fax - org.eclipse.swt.widgets.TableColumn; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Last Name</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.TableColumn</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying TableColumn {Last Name} event type 13
+[main] DEBUG Notifying TableColumn {Last Name} event type 14
+[SitarExecutor] DEBUG *Last Name* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>First Name</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.TableColumn</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying TableColumn {First Name} event type 13
+[main] DEBUG Notifying TableColumn {First Name} event type 14
+[SitarExecutor] DEBUG *First Name* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Business Phone</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.TableColumn</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying TableColumn {Business Phone} event type 13
+[main] DEBUG Notifying TableColumn {Business Phone} event type 14
+[SitarExecutor] DEBUG *Business Phone* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Home Phone</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.TableColumn</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying TableColumn {Home Phone} event type 13
+[main] DEBUG Notifying TableColumn {Home Phone} event type 14
+[SitarExecutor] DEBUG *Home Phone* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Email</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.TableColumn</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying TableColumn {Email} event type 13
+[main] DEBUG Notifying TableColumn {Email} event type 14
+[SitarExecutor] DEBUG *Email* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Fax</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.TableColumn</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying TableColumn {Fax} event type 13
+[main] DEBUG Notifying TableColumn {Fax} event type 14
+[SitarExecutor] DEBUG *Fax* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&File}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Edit}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Search}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Help}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&File}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Edit}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Search}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Help}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&File}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Edit}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Search}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Help}
+[SitarExecutor] DEBUG ** in window *Address Book - Untitled* has 4 children: [&File - org.eclipse.swt.widgets.MenuItem; &Edit - org.eclipse.swt.widgets.MenuItem; &Search - org.eclipse.swt.widgets.MenuItem; &Help - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&File</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&New Contact...	Ctrl+N, &Edit Contact...	Ctrl+E, |, New Address &Book	Ctrl+B, &Open Address Book...	Ctrl+O, &Save Address Book	Ctrl+S, Save &Address Book As...	Ctrl+A, |, E&xit}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&New Contact...	Ctrl+N, &Edit Contact...	Ctrl+E, |, New Address &Book	Ctrl+B, &Open Address Book...	Ctrl+O, &Save Address Book	Ctrl+S, Save &Address Book As...	Ctrl+A, |, E&xit}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&New Contact...	Ctrl+N, &Edit Contact...	Ctrl+E, |, New Address &Book	Ctrl+B, &Open Address Book...	Ctrl+O, &Save Address Book	Ctrl+S, Save &Address Book As...	Ctrl+A, |, E&xit}
+[SitarExecutor] DEBUG *&File* in window *Address Book - Untitled* has 1 children: [ - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&New Contact...	Ctrl+N}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Edit Contact...	Ctrl+E}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {New Address &Book	Ctrl+B}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Open Address Book...	Ctrl+O}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Save Address Book	Ctrl+S}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Save &Address Book As...	Ctrl+A}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {E&xit}
+[main] DEBUG Notifying Menu {&New Contact...	Ctrl+N, &Edit Contact...	Ctrl+E, |, New Address &Book	Ctrl+B, &Open Address Book...	Ctrl+O, &Save Address Book	Ctrl+S, Save &Address Book As...	Ctrl+A, |, E&xit} event type 22
+[main] DEBUG Notifying Menu {&New Contact...	Ctrl+N, &Edit Contact...	Ctrl+E, |, New Address &Book	Ctrl+B, &Open Address Book...	Ctrl+O, &Save Address Book	Ctrl+S, Save &Address Book As...	Ctrl+A, |, E&xit} event type 23
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&New Contact...	Ctrl+N}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Edit Contact...	Ctrl+E}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {New Address &Book	Ctrl+B}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Open Address Book...	Ctrl+O}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Save Address Book	Ctrl+S}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Save &Address Book As...	Ctrl+A}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {E&xit}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&New Contact...	Ctrl+N}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Edit Contact...	Ctrl+E}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {New Address &Book	Ctrl+B}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Open Address Book...	Ctrl+O}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Save Address Book	Ctrl+S}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Save &Address Book As...	Ctrl+A}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {E&xit}
+[SitarExecutor] DEBUG ** in window *Address Book - Untitled* has 9 children: [&New Contact...	Ctrl+N - org.eclipse.swt.widgets.MenuItem; &Edit Contact...	Ctrl+E - org.eclipse.swt.widgets.MenuItem;  - org.eclipse.swt.widgets.MenuItem; New Address &Book	Ctrl+B - org.eclipse.swt.widgets.MenuItem; &Open Address Book...	Ctrl+O - org.eclipse.swt.widgets.MenuItem; &Save Address Book	Ctrl+S - org.eclipse.swt.widgets.MenuItem; Save &Address Book As...	Ctrl+A - org.eclipse.swt.widgets.MenuItem;  - org.eclipse.swt.widgets.MenuItem; E&xit - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&New Contact...	Ctrl+N</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&New Contact...	Ctrl+N} event type 13
+[main] DEBUG Notifying MenuItem {&New Contact...	Ctrl+N} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&New Contact...	Ctrl+N* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Edit Contact...	Ctrl+E</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Edit Contact...	Ctrl+E} event type 13
+[main] DEBUG Notifying MenuItem {&Edit Contact...	Ctrl+E} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Edit Contact...	Ctrl+E* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG ** in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>New Address &Book	Ctrl+B</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {New Address &Book	Ctrl+B} event type 13
+[main] DEBUG Notifying MenuItem {New Address &Book	Ctrl+B} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *New Address &Book	Ctrl+B* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Open Address Book...	Ctrl+O</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Open Address Book...	Ctrl+O} event type 13
+[main] DEBUG Notifying MenuItem {&Open Address Book...	Ctrl+O} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Open Address Book...	Ctrl+O* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Save Address Book	Ctrl+S</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Save Address Book	Ctrl+S} event type 13
+[main] DEBUG Notifying MenuItem {&Save Address Book	Ctrl+S} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Save Address Book	Ctrl+S* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Save &Address Book As...	Ctrl+A</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Save &Address Book As...	Ctrl+A} event type 13
+[main] DEBUG Notifying MenuItem {Save &Address Book As...	Ctrl+A} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Save &Address Book As...	Ctrl+A* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG ** in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>E&xit</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *E&xit* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Edit</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Edit...	Ctrl+E, &Copy	Ctrl+C, &Paste	Ctrl+V, De&lete	Del, |, &Sort}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Edit...	Ctrl+E, &Copy	Ctrl+C, &Paste	Ctrl+V, De&lete	Del, |, &Sort}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Edit...	Ctrl+E, &Copy	Ctrl+C, &Paste	Ctrl+V, De&lete	Del, |, &Sort}
+[SitarExecutor] DEBUG *&Edit* in window *Address Book - Untitled* has 1 children: [ - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Edit...	Ctrl+E}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Copy	Ctrl+C}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Paste	Ctrl+V}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {De&lete	Del}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Sort}
+[main] DEBUG Notifying Menu {&Edit...	Ctrl+E, &Copy	Ctrl+C, &Paste	Ctrl+V, De&lete	Del, |, &Sort} event type 22
+[main] DEBUG Notifying Menu {&Edit...	Ctrl+E, &Copy	Ctrl+C, &Paste	Ctrl+V, De&lete	Del, |, &Sort} event type 23
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Edit...	Ctrl+E}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Copy	Ctrl+C}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Paste	Ctrl+V}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {De&lete	Del}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Sort}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Edit...	Ctrl+E}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Copy	Ctrl+C}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Paste	Ctrl+V}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {De&lete	Del}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {|}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Sort}
+[SitarExecutor] DEBUG ** in window *Address Book - Untitled* has 6 children: [&Edit...	Ctrl+E - org.eclipse.swt.widgets.MenuItem; &Copy	Ctrl+C - org.eclipse.swt.widgets.MenuItem; &Paste	Ctrl+V - org.eclipse.swt.widgets.MenuItem; De&lete	Del - org.eclipse.swt.widgets.MenuItem;  - org.eclipse.swt.widgets.MenuItem; &Sort - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Edit...	Ctrl+E</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Edit...	Ctrl+E} event type 13
+[main] DEBUG Notifying MenuItem {&Edit...	Ctrl+E} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Edit...	Ctrl+E* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Copy	Ctrl+C</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Copy	Ctrl+C} event type 13
+[main] DEBUG Notifying MenuItem {&Copy	Ctrl+C} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Copy	Ctrl+C* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Paste	Ctrl+V</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Paste	Ctrl+V} event type 13
+[main] DEBUG Notifying MenuItem {&Paste	Ctrl+V} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Paste	Ctrl+V* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>De&lete	Del</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {De&lete	Del} event type 13
+[main] DEBUG Notifying MenuItem {De&lete	Del} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *De&lete	Del* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG ** in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Sort</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {Last Name, First Name, Business Phone, Home Phone, Email, Fax}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {Last Name, First Name, Business Phone, Home Phone, Email, Fax}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {Last Name, First Name, Business Phone, Home Phone, Email, Fax}
+[SitarExecutor] DEBUG *&Sort* in window *Address Book - Untitled* has 1 children: [ - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Last Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {First Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Business Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Home Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Email}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Fax}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Last Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {First Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Business Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Home Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Email}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Fax}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Last Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {First Name}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Business Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Home Phone}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Email}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Fax}
+[SitarExecutor] DEBUG ** in window *Address Book - Untitled* has 6 children: [Last Name - org.eclipse.swt.widgets.MenuItem; First Name - org.eclipse.swt.widgets.MenuItem; Business Phone - org.eclipse.swt.widgets.MenuItem; Home Phone - org.eclipse.swt.widgets.MenuItem; Email - org.eclipse.swt.widgets.MenuItem; Fax - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Last Name</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Last Name} event type 13
+[main] DEBUG Notifying MenuItem {Last Name} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Last Name* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>First Name</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {First Name} event type 13
+[main] DEBUG Notifying MenuItem {First Name} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *First Name* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Business Phone</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Business Phone} event type 13
+[main] DEBUG Notifying MenuItem {Business Phone} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Business Phone* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Home Phone</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Home Phone} event type 13
+[main] DEBUG Notifying MenuItem {Home Phone} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Home Phone* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Email</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Email} event type 13
+[main] DEBUG Notifying MenuItem {Email} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Email* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Fax</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Fax} event type 13
+[main] DEBUG Notifying MenuItem {Fax} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Fax* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Search</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Find...	Ctrl+F, Find &Next...	F3}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Find...	Ctrl+F, Find &Next...	F3}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&Find...	Ctrl+F, Find &Next...	F3}
+[SitarExecutor] DEBUG *&Search* in window *Address Book - Untitled* has 1 children: [ - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Find...	Ctrl+F}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Find &Next...	F3}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Find...	Ctrl+F}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Find &Next...	F3}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&Find...	Ctrl+F}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Find &Next...	F3}
+[SitarExecutor] DEBUG ** in window *Address Book - Untitled* has 2 children: [&Find...	Ctrl+F - org.eclipse.swt.widgets.MenuItem; Find &Next...	F3 - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Find...	Ctrl+F</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&Find...	Ctrl+F} event type 13
+[main] DEBUG Notifying MenuItem {&Find...	Ctrl+F} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&Find...	Ctrl+F* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Find &Next...	F3</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Find &Next...	F3} event type 13
+[main] DEBUG Notifying MenuItem {Find &Next...	F3} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Find &Next...	F3* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&Help</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&About Address Book...}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&About Address Book...}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&About Address Book...}
+[SitarExecutor] DEBUG *&Help* in window *Address Book - Untitled* has 1 children: [ - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&About Address Book...}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&About Address Book...}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {&About Address Book...}
+[SitarExecutor] DEBUG ** in window *Address Book - Untitled* has 1 children: [&About Address Book... - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Address Book - Untitled</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>&About Address Book...</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {&About Address Book...} event type 13
+[main] DEBUG Notifying MenuItem {&About Address Book...} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *&About Address Book...* in window *Address Book - Untitled* has 0 children: []
+[SitarExecutor] INFO  Display disposed
+[SitarExecutor] INFO  -----------------------------
+[SitarExecutor] INFO  OUTPUT SUMARY: 
+[SitarExecutor] INFO  Number of Windows: 1
+[SitarExecutor] INFO  GUI file:./results/GUITAR-Default.GUI
+[SitarExecutor] INFO  Open Component file:log_widget.xml
+[SitarExecutor] INFO  Time Elapsed: 00 : 00 : 09: 515

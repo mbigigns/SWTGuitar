@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Configuration>
+	<IgnoredComponents>
+		<!-- Ignore the "About" menu item -->
+		<FullComponent>
+			<Window>
+				<Attributes>
+					<Property>
+						<Name>Title</Name>
+						<Value>Radio Button Demo</Value>
+					</Property> 
+				</Attributes>
+			</Window>
+
+			<Component>
+				<Attributes>
+					<Property>
+						<Name>Title</Name>
+						<Value>About</Value>
+					</Property>
+
+					<Property>
+						<Name>Class</Name>
+						<Value>org.eclipse.swt.widgets.MenuItem</Value>
+					</Property>
+				</Attributes>
+			</Component>
+		</FullComponent>
+		
+	</IgnoredComponents>
+	
+	<TerminalComponents>
+		<!-- Declare OK as a terminal component -->
+		<FullComponent>
+			<Component>
+				<Attributes>
+					<Property>
+						<Name>Title</Name>
+						<Value>OK</Value>
+					</Property>
+				</Attributes>
+			</Component>
+		</FullComponent>
+		
+	</TerminalComponents>
+	
+</Configuration>

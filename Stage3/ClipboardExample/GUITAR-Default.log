@@ -1,0 +1,2448 @@
+[main] ERROR configuration.xml not found!!!
+[main] INFO  No configuration file. Using an empty one...
+[main] DEBUG =============================
+[main] DEBUG Application URLs: 
+[main] DEBUG -----------------------------
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/log4j-1.2.15.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/gexf4j-core-0.2.0-ALPHA.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-efg.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/args4j-2.0.10.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-io-2.0.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/coverage-parser.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/asm-3.3.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/java-getopt-1.0.13.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/ext/swt/ClipboardExample/bin/
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph-converter.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-random-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/lib/misc/junit.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-path2root.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-cli-1.2.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-program-analysis.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/swt-3.7.1-linux-32.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2ecig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-graph-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/cobertura.jar
+[main] DEBUG =============================
+[main] DEBUG Application Parameters: 
+[main] DEBUG -----------------------------
+[SitarExecutor] DEBUG GUI not ready yet
+[SitarExecutor] DEBUG Waiting for GUI to initialize for: 100ms
+[main] DEBUG Display ready
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {SWT Clipboard}
+[SitarExecutor] DEBUG Root window size: 1
+[SitarExecutor] DEBUG Window title: SWT Clipboard
+[SitarExecutor] INFO  Number of root windows: 1
+[SitarExecutor] INFO  ------- BEGIN WINDOW -------
+[SitarExecutor] INFO  Ripping window: *SWT Clipboard*
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget ScrolledComposite {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget ScrolledComposite {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget ScrolledComposite {}
+[SitarExecutor] DEBUG *SWT Clipboard* in window *SWT Clipboard* has 1 children: [ - org.eclipse.swt.custom.ScrolledComposite; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.custom.ScrolledComposite</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 1 children: [ - org.eclipse.swt.widgets.Composite; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Composite</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Copy From:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Paste To:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Control API:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Available Types}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Notifying Composite {} event type 11
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Copy From:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Paste To:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Control API:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Available Types}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Copy From:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Paste To:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Control API:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Available Types}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 5 children: [ - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Label; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {TextTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {RTFTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {HTMLTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {FileTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {ImageTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {TextTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {RTFTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {HTMLTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {FileTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {ImageTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {TextTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {RTFTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {HTMLTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {FileTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {ImageTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 15 children: [ - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Text; Copy - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Text; Copy - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Text; Copy - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Composite; Copy - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Composite; Copy - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Copy</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Copy} event type 13
+[main] DEBUG Notifying Button {Copy} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Copy* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Copy</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Copy} event type 13
+[main] DEBUG Notifying Button {Copy} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Copy* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Copy</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Copy} event type 13
+[main] DEBUG Notifying Button {Copy} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Copy* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Composite</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarTable for widget Table {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Select file(s)}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Select directory}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarTable for widget Table {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Select file(s)}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Select directory}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarTable for widget Table {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Select file(s)}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Select directory}
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 3 children: [ - org.eclipse.swt.widgets.Table; Select file(s) - org.eclipse.swt.widgets.Button; Select directory - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Table</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Select file(s)</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Select file(s)} event type 13
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Select file(s)* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Select directory</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Select directory} event type 13
+[main] DEBUG Notifying Button {Select directory} event type 14
+[main] DEBUG Notifying Button {Select file(s)} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Select directory* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Copy</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Copy} event type 13
+[main] DEBUG Notifying Button {Copy} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Copy* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Composite</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Open Image}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Open Image}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Open Image}
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 2 children: [ - org.eclipse.swt.widgets.Canvas; Open Image - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Canvas</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Open Image</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Open Image} event type 13
+[main] DEBUG Notifying Button {Open Image} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Open Image* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Copy</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Copy} event type 13
+[main] DEBUG Notifying Button {Copy} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Copy* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {TextTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {RTFTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {HTMLTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {FileTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarTable for widget Table {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {ImageTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {TextTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {RTFTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {HTMLTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {FileTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarTable for widget Table {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {ImageTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {TextTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {RTFTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {HTMLTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {FileTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarTable for widget Table {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {ImageTransfer:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 15 children: [ - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Text; Paste - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Text; Paste - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Text; Paste - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Table; Paste - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Canvas; Paste - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Paste</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Paste} event type 13
+[main] DEBUG Notifying Button {Paste} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Paste* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Paste</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Paste} event type 13
+[main] DEBUG Notifying Button {Paste} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Paste* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Paste</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Paste} event type 13
+[main] DEBUG Notifying Button {Paste} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Paste* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Table</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Paste</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Paste} event type 13
+[main] DEBUG Notifying Button {Paste} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Paste* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Canvas</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Paste</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Paste} event type 13
+[main] DEBUG Notifying Button {Paste} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Paste* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Text:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Cut}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Combo:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Cut}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {StyledText:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget StyledText {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Text:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Cut}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Combo:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Cut}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {StyledText:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget StyledText {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Text:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Cut}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Combo:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Cut}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {StyledText:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Copy}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Paste}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget StyledText {}
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 15 children: [ - org.eclipse.swt.widgets.Label; Cut - org.eclipse.swt.widgets.Button; Copy - org.eclipse.swt.widgets.Button; Paste - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Text;  - org.eclipse.swt.widgets.Label; Cut - org.eclipse.swt.widgets.Button; Copy - org.eclipse.swt.widgets.Button; Paste - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Combo;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label; Copy - org.eclipse.swt.widgets.Button; Paste - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.custom.StyledText; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Cut</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Cut} event type 13
+[main] DEBUG Notifying Button {Cut} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Cut* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Copy</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Copy} event type 13
+[main] DEBUG Notifying Button {Copy} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Copy* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Paste</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Paste} event type 13
+[main] DEBUG Notifying Button {Paste} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Paste* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Cut</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Cut} event type 13
+[main] DEBUG Notifying Button {Cut} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Cut* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Copy</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Copy} event type 13
+[main] DEBUG Notifying Button {Copy} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Copy* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Paste</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Paste} event type 13
+[main] DEBUG Notifying Button {Paste} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Paste* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Combo</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Copy</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Copy} event type 13
+[main] DEBUG Notifying Button {Copy} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Copy* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Paste</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Paste} event type 13
+[main] DEBUG Notifying Button {Paste} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Paste* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.custom.StyledText</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying StyledText {} event type 1
+[main] DEBUG Notifying StyledText {} event type 2
+[main] DEBUG Notifying StyledText {} event type 3
+[main] DEBUG Notifying StyledText {} event type 4
+[main] DEBUG Notifying StyledText {} event type 5
+[main] DEBUG Notifying StyledText {} event type 11
+[main] DEBUG Notifying StyledText {} event type 15
+[main] DEBUG Notifying StyledText {} event type 31
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget List {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Get Available Types}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget List {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Get Available Types}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget List {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Get Available Types}
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 2 children: [ - org.eclipse.swt.widgets.List; Get Available Types - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.List</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Get Available Types</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Get Available Types} event type 13
+[main] DEBUG Notifying Button {Get Available Types} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Get Available Types* in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>SWT Clipboard</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *SWT Clipboard* has 0 children: []
+[SitarExecutor] INFO  Display disposed
+[main] ERROR edu.umd.cs.guitar.model.SitarApplicationStartException: java.lang.reflect.InvocationTargetException
+[SitarExecutor] INFO  -----------------------------
+[SitarExecutor] INFO  OUTPUT SUMARY: 
+[SitarExecutor] INFO  Number of Windows: 1
+[SitarExecutor] INFO  GUI file:./results/GUITAR-Default.GUI
+[SitarExecutor] INFO  Open Component file:log_widget.xml
+[SitarExecutor] INFO  Time Elapsed: 00 : 00 : 09: 632

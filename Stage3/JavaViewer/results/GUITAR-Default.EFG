@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EFG>
+    <Events>
+        <Event>
+            <EventId>e3037458636</EventId>
+            <WidgetId>w3037458636</WidgetId>
+            <Type>EXPAND</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarDefaultAction</Action>
+        </Event>
+        <Event>
+            <EventId>e2511403364</EventId>
+            <WidgetId>w2511403364</WidgetId>
+            <Type>SYSTEM INTERACTION</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarDefaultAction</Action>
+        </Event>
+        <Event>
+            <EventId>e164145388</EventId>
+            <WidgetId>w164145388</WidgetId>
+            <Type>SYSTEM INTERACTION</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarDefaultAction</Action>
+        </Event>
+        <Event>
+            <EventId>e1520305932</EventId>
+            <WidgetId>w1520305932</WidgetId>
+            <Type>TERMINAL</Type>
+            <Initial>true</Initial>
+            <Action>edu.umd.cs.guitar.event.SitarDefaultAction</Action>
+        </Event>
+    </Events>
+    <EventGraph>
+        <Row>
+            <E>0</E>
+            <E>2</E>
+            <E>2</E>
+            <E>2</E>
+        </Row>
+        <Row>
+            <E>1</E>
+            <E>0</E>
+            <E>0</E>
+            <E>0</E>
+        </Row>
+        <Row>
+            <E>1</E>
+            <E>0</E>
+            <E>0</E>
+            <E>0</E>
+        </Row>
+        <Row>
+            <E>0</E>
+            <E>0</E>
+            <E>0</E>
+            <E>0</E>
+        </Row>
+    </EventGraph>
+</EFG>

@@ -1,0 +1,2427 @@
+[main] ERROR configuration.xml not found!!!
+[main] INFO  No configuration file. Using an empty one...
+[main] DEBUG =============================
+[main] DEBUG Application URLs: 
+[main] DEBUG -----------------------------
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/log4j-1.2.15.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/gexf4j-core-0.2.0-ALPHA.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-efg.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/ext/swt/DNDExample/bin/
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/args4j-2.0.10.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-io-2.0.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/coverage-parser.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/asm-3.3.1.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/java-getopt-1.0.13.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph-converter.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-swt.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/guistructure-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-replayer-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-random-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-model-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/lib/misc/junit.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-path2root.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/commons-cli-1.2.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-sequence-length.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/abs2exec-tc-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/gui-ripper-core.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/testcase-generator-program-analysis.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/swt-3.7.1-linux-32.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2ecig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-efg2eig.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/guitar-lib/graph2graph-graph-info.jar
+[main] DEBUG 	/home/ericubuntu/swt4/guitar/dist/guitar/jars/cobertura.jar
+[main] DEBUG =============================
+[main] DEBUG Application Parameters: 
+[main] DEBUG -----------------------------
+[main] DEBUG Display ready
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {Drag and Drop Example}
+[SitarExecutor] DEBUG Root window size: 1
+[SitarExecutor] DEBUG Window title: Drag and Drop Example
+[SitarExecutor] INFO  Number of root windows: 1
+[SitarExecutor] INFO  ------- BEGIN WINDOW -------
+[SitarExecutor] INFO  Ripping window: *Drag and Drop Example*
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget ScrolledComposite {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget ScrolledComposite {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget ScrolledComposite {}
+[SitarExecutor] DEBUG *Drag and Drop Example* in window *Drag and Drop Example* has 1 children: [ - org.eclipse.swt.custom.ScrolledComposite; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.custom.ScrolledComposite</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 1 children: [ - org.eclipse.swt.widgets.Composite; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Composite</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drag Source:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Widget}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drop Target:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Widget}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Notifying Composite {} event type 11
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drag Source:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Widget}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drop Target:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Widget}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drag Source:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Widget}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drop Target:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Widget}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 6 children: [ - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Composite;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Composite; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drag Source Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DragSource}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drag Source Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DragSource}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drag Source Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DragSource}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 3 children: [ - org.eclipse.swt.widgets.Combo;  - org.eclipse.swt.widgets.Label; DragSource - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Combo</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Combo {Label} event type 13
+[main] DEBUG Notifying Combo {Label} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] ERROR ripComponent exception
+java.lang.NullPointerException
+	at java.util.LinkedList.addAll(LinkedList.java:286)
+	at java.util.LinkedList.addAll(LinkedList.java:264)
+	at edu.umd.cs.guitar.ripper.SitarRipperMonitor.expandGUI(SitarRipperMonitor.java:256)
+	at edu.umd.cs.guitar.ripper.Ripper.ripComponent(Ripper.java:518)
+	at edu.umd.cs.guitar.ripper.Ripper.ripComponent(Ripper.java:642)
+	at edu.umd.cs.guitar.ripper.Ripper.ripComponent(Ripper.java:642)
+	at edu.umd.cs.guitar.ripper.Ripper.ripComponent(Ripper.java:642)
+	at edu.umd.cs.guitar.ripper.Ripper.ripComponent(Ripper.java:642)
+	at edu.umd.cs.guitar.ripper.Ripper.ripWindow(Ripper.java:426)
+	at edu.umd.cs.guitar.ripper.Ripper.execute(Ripper.java:348)
+	at edu.umd.cs.guitar.ripper.SitarRipper.onExecute(SitarRipper.java:178)
+	at edu.umd.cs.guitar.swt.launcher.SitarExecutor.execute(SitarExecutor.java:216)
+	at edu.umd.cs.guitar.swt.launcher.SitarRunner$1.run(SitarRunner.java:51)
+	at java.lang.Thread.run(Thread.java:679)
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DragSource</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DragSource} event type 13
+[main] DEBUG Notifying Button {DragSource} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DragSource* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Composite</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Allowed Operation(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Transfer Type(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Allowed Operation(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Transfer Type(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Allowed Operation(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Transfer Type(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 3 children: [ - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Text; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_MOVE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_COPY}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_LINK}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_MOVE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_COPY}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_LINK}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_MOVE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_COPY}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_LINK}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 3 children: [DND.DROP_MOVE - org.eclipse.swt.widgets.Button; DND.DROP_COPY - org.eclipse.swt.widgets.Button; DND.DROP_LINK - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DND.DROP_MOVE</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DND.DROP_MOVE} event type 13
+[main] DEBUG Notifying Button {DND.DROP_MOVE} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DND.DROP_MOVE* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DND.DROP_COPY</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DND.DROP_COPY} event type 13
+[main] DEBUG Notifying Button {DND.DROP_COPY} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DND.DROP_COPY* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DND.DROP_LINK</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DND.DROP_LINK} event type 13
+[main] DEBUG Notifying Button {DND.DROP_LINK} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DND.DROP_LINK* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Text Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {RTF Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {HTML Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {URL Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {File Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Select File(s)}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget List {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Text Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {RTF Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {HTML Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {URL Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {File Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Select File(s)}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget List {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Text Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {RTF Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {HTML Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {URL Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {File Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Select File(s)}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget List {}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 7 children: [Text Transfer - org.eclipse.swt.widgets.Button; RTF Transfer - org.eclipse.swt.widgets.Button; HTML Transfer - org.eclipse.swt.widgets.Button; URL Transfer - org.eclipse.swt.widgets.Button; File Transfer - org.eclipse.swt.widgets.Button; Select File(s) - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.List; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Text Transfer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Text Transfer} event type 13
+[main] DEBUG Notifying Button {Text Transfer} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Text Transfer* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>RTF Transfer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {RTF Transfer} event type 13
+[main] DEBUG Notifying Button {RTF Transfer} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *RTF Transfer* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>HTML Transfer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {HTML Transfer} event type 13
+[main] DEBUG Notifying Button {HTML Transfer} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *HTML Transfer* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>URL Transfer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {URL Transfer} event type 13
+[main] DEBUG Notifying Button {URL Transfer} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *URL Transfer* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>File Transfer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {File Transfer} event type 13
+[main] DEBUG Notifying Button {File Transfer} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *File Transfer* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Select File(s)</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Select File(s)} event type 13
+[main] DEBUG Notifying Button {Select File(s)} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Select File(s)* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.List</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {Clear, Show Event detail}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {Clear, Show Event detail}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {Clear, Show Event detail}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 1 children: [ - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Clear}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Show Event detail}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Clear}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Show Event detail}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Clear}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Show Event detail}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 2 children: [Clear - org.eclipse.swt.widgets.MenuItem; Show Event detail - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Clear</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Clear} event type 13
+[main] DEBUG Notifying MenuItem {Clear} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Clear* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Show Event detail</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Show Event detail} event type 13
+[main] DEBUG Notifying MenuItem {Show Event detail} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Show Event detail* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drop Target Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DropTarget}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drop Target Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DropTarget}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Combo {Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Drop Target Label}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DropTarget}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 3 children: [ - org.eclipse.swt.widgets.Combo;  - org.eclipse.swt.widgets.Label; DropTarget - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Combo</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Combo {Label} event type 13
+[main] DEBUG Notifying Combo {Label} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] DEBUG !!!! widget disposed
+[SitarExecutor] ERROR ripComponent exception
+java.lang.NullPointerException
+	at java.util.LinkedList.addAll(LinkedList.java:286)
+	at java.util.LinkedList.addAll(LinkedList.java:264)
+	at edu.umd.cs.guitar.ripper.SitarRipperMonitor.expandGUI(SitarRipperMonitor.java:256)
+	at edu.umd.cs.guitar.ripper.Ripper.ripComponent(Ripper.java:518)
+	at edu.umd.cs.guitar.ripper.Ripper.ripComponent(Ripper.java:642)
+	at edu.umd.cs.guitar.ripper.Ripper.ripComponent(Ripper.java:642)
+	at edu.umd.cs.guitar.ripper.Ripper.ripComponent(Ripper.java:642)
+	at edu.umd.cs.guitar.ripper.Ripper.ripComponent(Ripper.java:642)
+	at edu.umd.cs.guitar.ripper.Ripper.ripWindow(Ripper.java:426)
+	at edu.umd.cs.guitar.ripper.Ripper.execute(Ripper.java:348)
+	at edu.umd.cs.guitar.ripper.SitarRipper.onExecute(SitarRipper.java:178)
+	at edu.umd.cs.guitar.swt.launcher.SitarExecutor.execute(SitarExecutor.java:216)
+	at edu.umd.cs.guitar.swt.launcher.SitarRunner$1.run(SitarRunner.java:51)
+	at java.lang.Thread.run(Thread.java:679)
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DropTarget</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DropTarget} event type 13
+[main] DEBUG Notifying Button {DropTarget} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DropTarget* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Composite</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Allowed Operation(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Transfer Type(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Feedback Type(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Allowed Operation(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Transfer Type(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Feedback Type(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Allowed Operation(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Transfer Type(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Feedback Type(s):}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarText for widget Text {}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 4 children: [ - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Group;  - org.eclipse.swt.widgets.Text; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_MOVE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_COPY}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_LINK}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_DEFAULT}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_MOVE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_COPY}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_LINK}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_DEFAULT}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_MOVE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_COPY}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_LINK}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_DEFAULT}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 5 children: [DND.DROP_MOVE - org.eclipse.swt.widgets.Button; DND.DROP_COPY - org.eclipse.swt.widgets.Button; DND.DROP_LINK - org.eclipse.swt.widgets.Button; DND.DROP_DEFAULT - org.eclipse.swt.widgets.Button;  - org.eclipse.swt.widgets.Composite; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DND.DROP_MOVE</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DND.DROP_MOVE} event type 13
+[main] DEBUG Notifying Button {DND.DROP_MOVE} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DND.DROP_MOVE* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DND.DROP_COPY</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DND.DROP_COPY} event type 13
+[main] DEBUG Notifying Button {DND.DROP_COPY} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DND.DROP_COPY* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DND.DROP_LINK</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DND.DROP_LINK} event type 13
+[main] DEBUG Notifying Button {DND.DROP_LINK} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DND.DROP_LINK* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DND.DROP_DEFAULT</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DND.DROP_DEFAULT} event type 13
+[main] DEBUG Notifying Button {DND.DROP_DEFAULT} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DND.DROP_DEFAULT* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Composite</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Value for default operation is:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_MOVE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_COPY}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_LINK}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_NONE}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Value for default operation is:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_MOVE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_COPY}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_LINK}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_NONE}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Value for default operation is:}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_MOVE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_COPY}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_LINK}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {DND.DROP_NONE}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 5 children: [ - org.eclipse.swt.widgets.Label; DND.DROP_MOVE - org.eclipse.swt.widgets.Button; DND.DROP_COPY - org.eclipse.swt.widgets.Button; DND.DROP_LINK - org.eclipse.swt.widgets.Button; DND.DROP_NONE - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Label</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DND.DROP_MOVE</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DND.DROP_MOVE} event type 13
+[main] DEBUG Notifying Button {DND.DROP_MOVE} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DND.DROP_MOVE* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DND.DROP_COPY</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DND.DROP_COPY} event type 13
+[main] DEBUG Notifying Button {DND.DROP_COPY} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DND.DROP_COPY* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DND.DROP_LINK</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DND.DROP_LINK} event type 13
+[main] DEBUG Notifying Button {DND.DROP_LINK} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DND.DROP_LINK* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>DND.DROP_NONE</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {DND.DROP_NONE} event type 13
+[main] DEBUG Notifying Button {DND.DROP_NONE} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *DND.DROP_NONE* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Text Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {RTF Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {HTML Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {URL Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {File Transfer}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Text Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {RTF Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {HTML Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {URL Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {File Transfer}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Text Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {RTF Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {HTML Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {URL Transfer}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {File Transfer}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 5 children: [Text Transfer - org.eclipse.swt.widgets.Button; RTF Transfer - org.eclipse.swt.widgets.Button; HTML Transfer - org.eclipse.swt.widgets.Button; URL Transfer - org.eclipse.swt.widgets.Button; File Transfer - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Text Transfer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {Text Transfer} event type 13
+[main] DEBUG Notifying Button {Text Transfer} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *Text Transfer* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>RTF Transfer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {RTF Transfer} event type 13
+[main] DEBUG Notifying Button {RTF Transfer} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *RTF Transfer* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>HTML Transfer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {HTML Transfer} event type 13
+[main] DEBUG Notifying Button {HTML Transfer} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *HTML Transfer* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>URL Transfer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {URL Transfer} event type 13
+[main] DEBUG Notifying Button {URL Transfer} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *URL Transfer* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>File Transfer</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {File Transfer} event type 13
+[main] DEBUG Notifying Button {File Transfer} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *File Transfer* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Group</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_SELECT}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_SCROLL}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_INSERT_BEFORE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_INSERT_AFTER}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_EXPAND}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_SELECT}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_SCROLL}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_INSERT_BEFORE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_INSERT_AFTER}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_EXPAND}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_SELECT}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_SCROLL}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_INSERT_BEFORE}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_INSERT_AFTER}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {FEEDBACK_EXPAND}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 5 children: [FEEDBACK_SELECT - org.eclipse.swt.widgets.Button; FEEDBACK_SCROLL - org.eclipse.swt.widgets.Button; FEEDBACK_INSERT_BEFORE - org.eclipse.swt.widgets.Button; FEEDBACK_INSERT_AFTER - org.eclipse.swt.widgets.Button; FEEDBACK_EXPAND - org.eclipse.swt.widgets.Button; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>FEEDBACK_SELECT</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {FEEDBACK_SELECT} event type 13
+[main] DEBUG Notifying Button {FEEDBACK_SELECT} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *FEEDBACK_SELECT* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>FEEDBACK_SCROLL</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {FEEDBACK_SCROLL} event type 13
+[main] DEBUG Notifying Button {FEEDBACK_SCROLL} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *FEEDBACK_SCROLL* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>FEEDBACK_INSERT_BEFORE</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {FEEDBACK_INSERT_BEFORE} event type 13
+[main] DEBUG Notifying Button {FEEDBACK_INSERT_BEFORE} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *FEEDBACK_INSERT_BEFORE* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>FEEDBACK_INSERT_AFTER</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {FEEDBACK_INSERT_AFTER} event type 13
+[main] DEBUG Notifying Button {FEEDBACK_INSERT_AFTER} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *FEEDBACK_INSERT_AFTER* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>FEEDBACK_EXPAND</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying Button {FEEDBACK_EXPAND} event type 13
+[main] DEBUG Notifying Button {FEEDBACK_EXPAND} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[SitarExecutor] DEBUG *FEEDBACK_EXPAND* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Text</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {Clear, Show Event detail}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {Clear, Show Event detail}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {Clear, Show Event detail}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 1 children: [ - org.eclipse.swt.widgets.Menu; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value></Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Menu</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Clear}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Show Event detail}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Clear}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Show Event detail}
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: visible
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Clear}
+[main] DEBUG Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenuItem for widget MenuItem {Show Event detail}
+[SitarExecutor] DEBUG ** in window *Drag and Drop Example* has 2 children: [Clear - org.eclipse.swt.widgets.MenuItem; Show Event detail - org.eclipse.swt.widgets.MenuItem; ]
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Clear</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Clear} event type 13
+[main] DEBUG Notifying MenuItem {Clear} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Clear* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  
+[SitarExecutor] INFO  ----------------------------------
+[SitarExecutor] INFO  Ripping component: 
+[SitarExecutor] INFO  Signature: 
+[SitarExecutor] INFO  
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Drag and Drop Example</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Show Event detail</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.MenuItem</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+[main] DEBUG Notifying MenuItem {Show Event detail} event type 13
+[main] DEBUG Notifying MenuItem {Show Event detail} event type 14
+[main] DEBUG Ignoring duplicate property: enabled
+[main] DEBUG Ignoring duplicate property: enabled
+[SitarExecutor] DEBUG *Show Event detail* in window *Drag and Drop Example* has 0 children: []
+[SitarExecutor] INFO  Display disposed
+[SitarExecutor] INFO  -----------------------------
+[SitarExecutor] INFO  OUTPUT SUMARY: 
+[SitarExecutor] INFO  Number of Windows: 1
+[SitarExecutor] INFO  GUI file:./results/GUITAR-Default.GUI
+[SitarExecutor] INFO  Open Component file:log_widget.xml
+[SitarExecutor] INFO  Time Elapsed: 00 : 00 : 08: 104
