@@ -13,7 +13,6 @@ import org.eclipse.swt.layout.FormLayout;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.*;
-import org.xml.sax.SAXException;
 
 import efg.WidgetId;
 
@@ -238,7 +237,7 @@ public class VisualizationGenerator {
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.ToolBar"))
 		{
 			ToolBar toolbar = new ToolBar((Composite)(widgets.get(parent)), style);
-
+			
 			if(!(x==0&&y==0&&width==0&&height==0))
 				toolbar.setBounds(x, y, width, height);
 			else
@@ -333,9 +332,16 @@ public class VisualizationGenerator {
 			
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.ToolItem"))
-		{
-			((ToolBar)widgets.get(parent)).setSize(1000, 1000);
-			Text item = new Text((ToolBar)widgets.get(parent),SWT.BORDER);
+		{	
+			Composite toolbarParent = ((ToolBar)widgets.get(parent)).getParent();
+			Text item;
+			if(toolbarParent!=null && toolbarParent.getLayout()!=null)
+			{
+				toolbarParent.setLayout(new RowLayout(SWT.HORIZONTAL));
+				item = new Text(toolbarParent,SWT.BORDER);
+			}
+			else
+				item = new Text((ToolBar)widgets.get(parent),SWT.BORDER);
 			item.setBounds(x,y,width,height);
 			if(properties.get("text")!=null)
 				item.setText(properties.get("text"));
@@ -344,6 +350,7 @@ public class VisualizationGenerator {
 			
 			item.setToolTipText(ID);
 			addWidgetToMap(data, properties.get("ID"),item);
+			
 			return item;
 		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.Menu"))
