@@ -1,5 +1,20 @@
 ##
 
+jvm_args=""
+
+#Check the OS
+if [ `uname -s | grep -i cygwin | wc -c` -gt 0 ]
+then
+    osname="windows"	
+elif [ `uname -s` = "Linux" ]
+then
+    osname="linux"
+else
+    osname="mac"
+    jvm_args="-d32 -XstartOnFirstThread"
+fi
+
+
 if [[ "$1" = "" || "$2" = "" ]]; then
 	echo ""
 	echo "For visualization: ./runner.sh <path/fileName.EFG> <path/fileName.GUI>"
@@ -8,9 +23,9 @@ if [[ "$1" = "" || "$2" = "" ]]; then
 	echo ""
 else
 	if ["$3" = ""]; then
-		java -jar Vis.jar $1 $2
+		java $jvm_args -jar Vis.jar $1 $2
 	else
 		cp $3 GUITAR-Default.tst
-		java -jar Vis.jar $1 $2 $3
+		java $jvm_args -jar Vis.jar $1 $2 $3
 	fi
 fi
