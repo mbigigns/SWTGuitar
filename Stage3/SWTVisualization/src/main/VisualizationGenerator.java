@@ -248,6 +248,16 @@ public class VisualizationGenerator {
 			addWidgetToMap(data, properties.get("ID"), toolbar);
 			return toolbar;
 		}
+		else if(properties.get("Class").equals("org.eclipse.swt.widgets.CoolBar"))
+		{
+			Composite comp = new Composite((Composite)widgets.get(parent), SWT.NONE);
+			comp.setLayout(new FillLayout(SWT.HORIZONTAL));
+			
+			comp.setToolTipText(ID);
+
+			addWidgetToMap(data, properties.get("ID"), comp);
+			return comp;
+		}
 		else if(properties.get("Class").equals("org.eclipse.swt.widgets.TreeItem"))
 		{
 			TreeItem item = new TreeItem((Tree)widgets.get(parent),style);

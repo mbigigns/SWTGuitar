@@ -54,27 +54,36 @@ public class EventFlowGraph {
 	
 	//adds specific event to the event flow graph
 	void addEvent(EFGEvent event) {
-		// update events
-		this.events.add(event);
-		
-		// update widgets
-		WidgetId widgetId = event.getWidgetId();
-		
-		List<EFGEvent> eventsAssocWithWidget = this.widgets.get(widgetId);
-		if (eventsAssocWithWidget == null) {
-			eventsAssocWithWidget = new ArrayList<EFGEvent>();
-			this.widgets.put(widgetId, eventsAssocWithWidget);
-		}
-		
-		eventsAssocWithWidget.add(event);
+		if(event == null) { 
+			System.out.println("Trying to add null event to EFG"); 
+			
+		} else { 
+	
+			// update events
+			this.events.add(event);
+			
+			// update widgets
+			WidgetId widgetId = event.getWidgetId();
+			
+			List<EFGEvent> eventsAssocWithWidget = this.widgets.get(widgetId);
+			if (eventsAssocWithWidget == null) {
+				eventsAssocWithWidget = new ArrayList<EFGEvent>();
+				this.widgets.put(widgetId, eventsAssocWithWidget);
+			}
+			
+			eventsAssocWithWidget.add(event);
+		} 
 	}
 	
 	//adds an edge between events to model the flows
 	void addAdjacency(EFGEvent a, EdgeType edge, EFGEvent b) {
-		
+		try { 
 		checkArg(this.events.contains(a), "a is not an event in this graph");
 		checkArg(this.events.contains(b), "b is not an event in this graph");
 		checkNotNull(edge, "edge cannot be null");
+		} catch (Exception e) { 
+			
+		}
 		
 		Adjacency adj = new Adjacency(b, edge);
 		
@@ -110,16 +119,23 @@ public class EventFlowGraph {
 	//returns the widget associated with a specific event
 	public WidgetId getWidgetFromEvent(EventId eventID)
 	{
+		if(eventID != null) { 
 		for(EFGEvent event:events)
 		{
 			if(event.getEventId().equals(eventID))
 				return event.getWidgetId();
 		}
 		return null;
+		} else { 
+			System.out.println("Cannot find event for eventID: " + eventID); 
+			return null; 
+		}
 	}
 	
 	//get the widgets that can be flowed to from a specific widget according to the EFG
 	public Map<EdgeType, Set<WidgetId>> getFollowingWidgets(WidgetId widgetId) {
+		
+		if(widgetId != null) { 
 		
 		EnumMap<EdgeType, Set<WidgetId>> followingWidgets = new EnumMap<EdgeType, Set<WidgetId>>(EdgeType.class);
 				
@@ -139,6 +155,10 @@ public class EventFlowGraph {
 			}
 		}
 		return followingWidgets;
+		} else { 
+			System.out.println("No widget found for widgetID" + widgetId); 
+			return null; 
+		}
 	}
 	
 	//get the widgets that can be flowed to from a specific widget according to the EFG based on a specific type of relationship
@@ -190,7 +210,8 @@ public class EventFlowGraph {
 			case 2:
 				return REACHING;
 			default:
-				throw new IllegalArgumentException(num + " is not a valid edge");
+				System.out.println(num + " is not a valid edge");
+				return null; 
 			}
 		}
 		
@@ -213,8 +234,12 @@ public class EventFlowGraph {
 		EdgeType edgeType;
 		
 		public Adjacency(EFGEvent event, EdgeType edgeType) {
-			checkNotNull(event);
-			checkNotNull(edgeType);
+			try{ 
+				checkNotNull(event);
+				checkNotNull(edgeType);
+			}catch (Exception e) { 
+				
+			}
 			
 			this.event = event;
 			this.edgeType = edgeType;

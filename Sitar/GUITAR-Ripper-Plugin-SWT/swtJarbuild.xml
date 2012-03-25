@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="SWTRipper">
+    <property environment="env"/>
+    <property name="SWTReplayer.location" value="../GUITAR-Replayer-Plugin-SWT"/>
+    <property name="SWTReplayerTest.location" value="../GUITAR-Replayer-Plugin-SWT-Test"/>
+    <property name="SWTRipperTest.location" value="../GUITAR-Ripper-Plugin-SWT-Test"/>
+    <property name="SWTVisualization.location" value="../../Stage3/SWTVisualization"/>
+    <property name="SWTModel.location" value="../GUITAR-Model-Plugin-SWT"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="SWTModel.classpath">
+        <pathelement location="${SWTModel.location}/bin"/>
+        <pathelement location="${SWTModel.location}/lib/GUITARModel-Core.jar"/>
+        <pathelement location="${SWTModel.location}/lib/log4j-1.2.15.jar"/>
+        <pathelement location="${SWTModel.location}/lib/swt-linux.jar"/>
+    </path>
+    <path id="SWTRipper.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/args4j-2.0.12.jar"/>
+        <pathelement location="lib/log4j-1.2.15.jar"/>
+        <pathelement location="lib/GUITARModel-Core.jar"/>
+        <pathelement location="lib/GUIRipper-Core.jar"/>
+        <pathelement location="lib/swt-linux.jar"/>
+        <path refid="SWTModel.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="swtJarbuild.xml" dir="${SWTModel.location}" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="swtJarbuild.xml" dir="${SWTModel.location}" inheritAll="false" target="build-project"/>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="SWTRipper.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects">
+        <ant antfile="swtJarbuild.xml" dir="${SWTReplayer.location}" inheritAll="false" target="clean"/>
+        <ant antfile="swtJarbuild.xml" dir="${SWTReplayer.location}" inheritAll="false" target="build"/>
+        <ant antfile="swtJarbuild.xml" dir="${SWTReplayerTest.location}" inheritAll="false" target="clean"/>
+        <ant antfile="swtJarbuild.xml" dir="${SWTReplayerTest.location}" inheritAll="false" target="build"/>
+        <ant antfile="swtJarbuild.xml" dir="${SWTRipperTest.location}" inheritAll="false" target="clean"/>
+        <ant antfile="swtJarbuild.xml" dir="${SWTRipperTest.location}" inheritAll="false" target="build"/>
+        <ant antfile="swtJarbuild.xml" dir="${SWTVisualization.location}" inheritAll="false" target="clean"/>
+        <ant antfile="swtJarbuild.xml" dir="${SWTVisualization.location}" inheritAll="false" target="build"/>
+    </target>
+</project>

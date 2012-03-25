@@ -59,7 +59,13 @@ public class EFGParser extends DefaultHandler {
 	//creates a new element in the EFG with the given parameters
 	@Override public void startElement(String uri, String localName, String qName, Attributes attributes) {
 		// update the state of parsing
-		ParseState currState = this.currState.push(ParseState.parse(qName));
+		ParseState currState = null; 
+		try { 
+			currState = this.currState.push(ParseState.parse(qName)); 
+		} catch (Exception e) { 
+			System.out.println("Can't set element " + uri + "/" + localName + "/" + qName + " state"); 
+			//try to continue operation 
+		}
 		
 		// business logic
 		switch(currState) {
@@ -194,7 +200,8 @@ public class EFGParser extends DefaultHandler {
 			ParseState retVal = quickLookup.get(s.toLowerCase());
 			
 			if (retVal == null) {
-				throw new IllegalArgumentException(s + " is not a valid parse tag");
+				System.out.println(s + " is not a valid parse tag");
+				//try to continue operation 
 			}
 			
 			return retVal;

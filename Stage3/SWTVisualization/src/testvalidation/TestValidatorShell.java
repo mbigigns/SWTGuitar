@@ -28,6 +28,10 @@ public class TestValidatorShell {
 		step = 0;
 
 		Display display = Display.getCurrent();
+		if(display == null) {
+			System.out.println("Test Validator cannot retrieve current display"); 
+			System.exit(0); 
+		}
 		Shell shell = new Shell(display);
 		shell.setText("Test Validator Controls");
 		shell.setSize(275,70);

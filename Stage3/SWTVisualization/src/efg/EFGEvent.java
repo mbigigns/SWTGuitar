@@ -50,12 +50,15 @@ class EFGEvent {
 		WidgetId wId;
 		EventType eType;
 		boolean init;
-		
+		try { 
 		checkArg(!isNullOrEmpty(eventId), "Event id cannot be null or empty");
 		checkArg(!isNullOrEmpty(widgetId), "Widget id cannot be null or empty");
 		checkArg(!isNullOrEmpty(eventType), "Interaction cannot be null or empty");
 		checkArg(!isNullOrEmpty(isInitial), "isInitial cannot be null or empty");
 		checkArg(!isNullOrEmpty(action), "action cannot be null or empty");
+		} catch (Exception e) { 
+			// try to continue operation 
+		}
 		
 		eId = new EventId(eventId);
 		wId = new WidgetId(widgetId);
@@ -190,7 +193,8 @@ class EFGEvent {
 			EventType parsedInteraction = quickParseTable.get(interaction.toUpperCase());
 			
 			if (parsedInteraction == null) {
-				throw new IllegalArgumentException(interaction + " is not a valid interaction");
+				System.out.println(interaction + " is not a valid interaction");
+				//try to continue operation 
 			}
 			
 			return parsedInteraction;

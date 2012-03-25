@@ -18,6 +18,12 @@ public class TestCaseParser {
 	public static ArrayList<String> parseTst(String file){
 		Document dom = getDom(file);
 		
+		if(dom == null) { 
+			System.out.println("Error in .tst file");
+			//e.printStackTrace();
+			System.exit(0);
+		}
+		
 		ArrayList<String> steps = new ArrayList<String>();
 
 		NodeList stepsXml = dom.getDocumentElement().getElementsByTagName("Step");
@@ -32,7 +38,7 @@ public class TestCaseParser {
 			}
 		} catch (Exception e) {
 			System.out.println("Error in .tst file");
-			e.printStackTrace();
+			//e.printStackTrace();
 			System.exit(0);
 		}
 		
