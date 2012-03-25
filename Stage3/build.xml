@@ -17,7 +17,7 @@
         <delete dir="${bin.dir}"/>
     </target>
 
-    <target name="compile">
+    <target name="compile" depends = "clean">
         <mkdir dir="${bin.dir}"/>
         <javac srcdir="${src.dir}" destdir="${bin.dir}" classpathref="build.classpath" includeantruntime="false"/>
     </target>
