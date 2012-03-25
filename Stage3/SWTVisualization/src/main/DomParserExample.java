@@ -47,7 +47,6 @@ public class DomParserExample {
 	public static EFGRenderListener EFGHighlighted;
 	public static EventFlowGraph parsedGraph;
 	public static String efgPath, guiPath, tstPath; //paths to .efg, .gui, and .tst files
-
 	
 	public static void main(String[] args)
 	{
@@ -87,8 +86,7 @@ public class DomParserExample {
 		try {
 			parsedGraph = EFGParser.parseFile(efgPath);
 		} catch (SAXException e1) {
-			System.out.println("DEBUG: XML Parse Exception in EFG");
-			System.exit(0);
+			System.out.println("DEBUG: XML Parse Exception in EFG, could possibly cause errors during rendering");
 		}
 		
 		//adds in an extra shell window if the user is running a test case
@@ -120,11 +118,11 @@ public class DomParserExample {
 			dom2 = db.newDocument();
 
 		}catch(ParserConfigurationException pce) {
-			System.out.println("DEBUG: XML Parse Exception in GUI");
+			System.out.println("DEBUG: XML Parse Exception in GUI file");
 		}catch(SAXException se) {
-			System.out.println("DEBUG: XML Parse Exception in GUI");
+			System.out.println("DEBUG: XML Parse Exception in GUI file");
 		}catch(IOException ioe) {
-			System.out.println("DEBUG: XML Parse Exception in GUI");
+			System.out.println("DEBUG: XML Parse Exception in GUI file");
 		}
 	}
 
@@ -145,33 +143,39 @@ public class DomParserExample {
 		//loops through the document and extracts all widgets/containers/
 		for(int i = 0; i < attributeList.getLength(); i++)
 		{
-			//reads the XMl for the attributes
-			extractAttributes(i,attributeList,eventMap);		
-			Widget addedWidget = VisualizationGenerator.addWidget(eventMap);
-			//System.out.println(addedWidget);
-/*			if(addedWidget==null)
-				System.out.println(eventMap.get("Class"));*/
-			
-			//if the widget to be added is a TabItem, then the next item will be a Composite that is contained in the tab.  We therefore
-			//add the container as the tab's contents
-			if(addedWidget instanceof TabItem)
+			try
 			{
-				i++;
-				extractAttributes(i,attributeList,eventMap);
-				Widget nextWidget = VisualizationGenerator.addWidget(eventMap);
-				if(nextWidget instanceof Control)
-					((TabItem) addedWidget).setControl((Control)nextWidget);
+				//reads the XMl for the attributes
+				extractAttributes(i,attributeList,eventMap);		
+				Widget addedWidget = VisualizationGenerator.addWidget(eventMap);
+				//System.out.println(addedWidget);
+	/*			if(addedWidget==null)
+					System.out.println(eventMap.get("Class"));*/
+				
+				//if the widget to be added is a TabItem, then the next item will be a Composite that is contained in the tab.  We therefore
+				//add the container as the tab's contents
+				if(addedWidget instanceof TabItem)
+				{
+					i++;
+					extractAttributes(i,attributeList,eventMap);
+					Widget nextWidget = VisualizationGenerator.addWidget(eventMap);
+					if(nextWidget instanceof Control)
+						((TabItem) addedWidget).setControl((Control)nextWidget);
+				}
+				//if the control has a menu, then add it to the correct control
+				if(eventMap.get("menu")!=null)
+				{
+					i++;
+					extractAttributes(i,attributeList,eventMap);
+					Widget nextWidget = VisualizationGenerator.addWidget(eventMap);
+					if(nextWidget instanceof Menu && addedWidget instanceof Control)
+						((Control) addedWidget).setMenu((Menu)nextWidget);
+				}
 			}
-			//if the control has a menu, then add it to the correct control
-			if(eventMap.get("menu")!=null)
+			catch(Exception e)
 			{
-				i++;
-				extractAttributes(i,attributeList,eventMap);
-				Widget nextWidget = VisualizationGenerator.addWidget(eventMap);
-				if(nextWidget instanceof Menu && addedWidget instanceof Control)
-					((Control) addedWidget).setMenu((Menu)nextWidget);
-			}
-			
+				System.out.println("DEBUG: Error adding widget "+eventMap.get("ID"));
+			}			
 		}
 	}
 	
@@ -258,6 +262,11 @@ public class DomParserExample {
 	public static void setEFGVerifiers() 
 	{
 		Display display = Display.getCurrent();
+		if(display==null)
+		{
+			System.out.println("DEBUG: Error where Display is null");
+			System.exit(0);
+		}
 		
 		//assigns blue, red/pink, green as the colors
 		Color blue = new Color(display, 142, 205, 240);
@@ -267,29 +276,38 @@ public class DomParserExample {
 		//iterates through all the widgets
 		for(Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
-			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
-			
-			boolean hasNeighbors = false;
-			
-			//hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NONE).isEmpty();
-			
-			//colors the controls that have Normal or Reaching outgoing events
-			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NORMAL).isEmpty();
-			hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.REACHING).isEmpty();
-			
-			//System.out.println(widget+" "+hasNeighbors);
-			
-			if(widget instanceof Control && hasNeighbors)
+			try
 			{
-				Control control = (Control) widget;
-				//System.out.println("Setting "+widget+" red");
-				control.setBackground(red);
+				Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
+				
+				boolean hasNeighbors = false;
+				
+				//hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NONE).isEmpty();
+				
+				//colors the controls that have Normal or Reaching outgoing events
+				hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.NORMAL).isEmpty();
+				hasNeighbors=hasNeighbors || !neighbors.get(EdgeType.REACHING).isEmpty();
+				
+				//System.out.println(widget+" "+hasNeighbors);
+				
+				if(widget instanceof Control && hasNeighbors)
+				{
+					Control control = (Control) widget;
+					//System.out.println("Setting "+widget+" red");
+					control.setBackground(red);
+				}
+			}
+			catch(Exception e)
+			{
+				System.out.println("DEBUG: Error adding initial coloring");
 			}
 		}
 		
 		//adds requisite listeners to each widget for EFGs
 		for(Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
+			try
+			{
 			Map<EdgeType, Set<WidgetId>> neighbors = parsedGraph.getFollowingWidgets(VisualizationGenerator.widgetList.get(widget));
 			EFGRenderListener colorListener = new EFGRenderListener(widget, neighbors, blue, green);
 			widget.addListener(SWT.MouseDoubleClick, colorListener);
@@ -300,43 +318,53 @@ public class DomParserExample {
 			if(widget instanceof Menu)
 				((Menu)widget).addMenuListener(colorListener);
 			//System.out.println(widget+" "+VisualizationGenerator.widgetList.get(widget)+" "+neighbors);
+			}
+			catch(Exception e)
+			{
+				System.out.println("DEBUG:Error adding color-changing listeners to widget "+VisualizationGenerator.widgetList.get(widget));
+			}
 		}
 		
 		//adds the requisite listeners for opening up new windows 
 		for(final Widget widget:VisualizationGenerator.widgetList.keySet())
 		{
 			WidgetId idz = VisualizationGenerator.widgetList.get(widget);;
-
-			widget.addListener(SWT.Selection, new Listener(){
-				public void handleEvent(Event e)
-				{
-					WidgetId widgetId = VisualizationGenerator.widgetList.get(widget);
-					//System.out.println(widgetId.getId());
-					//checks whether the specified widget opens up a new window and opens the correct window
-					if(parsedGraph.opensWindow(widgetId))
+			try{
+				widget.addListener(SWT.Selection, new Listener(){
+					public void handleEvent(Event e)
 					{
-						//System.out.println("MADE IT HERE");
-						for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL))
+						WidgetId widgetId = VisualizationGenerator.widgetList.get(widget);
+						//System.out.println(widgetId.getId());
+						//checks whether the specified widget opens up a new window and opens the correct window
+						if(parsedGraph.opensWindow(widgetId))
 						{
-							if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)
+							//System.out.println("MADE IT HERE");
+							for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL))
 							{
-								((Control)VisualizationGenerator.widgetIDs.get(widgetId2)).getShell().open();
+								if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)
+								{
+									((Control)VisualizationGenerator.widgetIDs.get(widgetId2)).getShell().open();
+								}
+	
 							}
-
-						}
-						for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.REACHING))
-						{
-							if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)
+							for(WidgetId widgetId2 : parsedGraph.getFollowingWidgets(widgetId, EdgeType.REACHING))
 							{
-								((Control)VisualizationGenerator.widgetIDs.get(widgetId2)).getShell().open();
+								if(VisualizationGenerator.widgetIDs.get(widgetId2) instanceof org.eclipse.swt.widgets.Control)
+								{
+									((Control)VisualizationGenerator.widgetIDs.get(widgetId2)).getShell().open();
+								}
 							}
+	
+							//ArrayList<Widget> neighbors = new ArrayList <Widget>();
+							//neighbors.add(parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL));
 						}
-
-						//ArrayList<Widget> neighbors = new ArrayList <Widget>();
-						//neighbors.add(parsedGraph.getFollowingWidgets(widgetId, EdgeType.NORMAL));
 					}
-				}
-			});
+				});
+			}
+			catch(Exception e)
+			{
+				System.out.println("DEBUG:Error throwing window listener");
+			}
 		}
 	}
 	
