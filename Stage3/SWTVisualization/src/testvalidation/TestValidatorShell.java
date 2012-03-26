@@ -54,16 +54,16 @@ public class TestValidatorShell {
 
 		backButton = new Button(shell, SWT.PUSH);
 		backButton.setText("< Back");
-		backButton.setLayoutData(new RowData(55,20));
+		//backButton.setLayoutData(new RowData(55,20));
 		backButton.setEnabled(false);
 
 		stepLabel = new Label(shell, SWT.LEFT);
 		stepLabel.setText("Event  "+(step+1)+"/"+events.size());
-		stepLabel.setLayoutData(new RowData(60,20));
+		//stepLabel.setLayoutData(new RowData(60,20));
 
 		nextButton = new Button(shell, SWT.PUSH);
 		nextButton.setText("Next >");
-		nextButton.setLayoutData(new RowData(55,20));
+		//nextButton.setLayoutData(new RowData(55,20));
 
 		color(0);
 		if(events.size()<2)
