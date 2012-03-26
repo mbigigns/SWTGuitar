@@ -12,6 +12,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.SWTException;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
@@ -67,15 +68,16 @@ public class DomParserExample {
 			//run test validator
 			runExample(true);
 		}
-		
-		//run efg validator
-		runExample(false);
+		else
+		{
+			//run efg validator
+			runExample(false);
+		}
 	}
 	
 
 	//runs the main visualization window by parsing the EFG and GUI
 	public static void runExample(boolean testValidation) {
-
 		//parse the xml file and get the dom object
 		parseXmlFile();
 
@@ -93,8 +95,9 @@ public class DomParserExample {
 		if(testValidation)
 			VisualizationGenerator.shellList.add(TestValidatorShell.getShell(tstPath));
 		else
+		{
 			setEFGVerifiers();
-	
+		}
 
 		VisualizationGenerator.Show();
 		//generateXML();
@@ -172,8 +175,16 @@ public class DomParserExample {
 						((Control) addedWidget).setMenu((Menu)nextWidget);
 				}
 			}
+			catch(SWTException e)
+			{
+				//if widget is disposed, then don't worry about it
+				if(!e.getMessage().equals("Widget is disposed"))
+					System.out.println("DEBUG: Error adding widget "+eventMap.get("ID"));
+			}
 			catch(Exception e)
 			{
+				System.out.println(e.getMessage());
+				e.printStackTrace();
 				System.out.println("DEBUG: Error adding widget "+eventMap.get("ID"));
 			}			
 		}
@@ -264,8 +275,8 @@ public class DomParserExample {
 		Display display = Display.getCurrent();
 		if(display==null)
 		{
-			System.out.println("DEBUG: Error where Display is null");
-			System.exit(0);
+			//System.out.println("DEBUG: Error where Display is null");
+			//System.exit(0);
 		}
 		
 		//assigns blue, red/pink, green as the colors
@@ -363,7 +374,7 @@ public class DomParserExample {
 			}
 			catch(Exception e)
 			{
-				System.out.println("DEBUG:Error throwing window listener");
+				System.out.println("DEBUG:Error thrown when adding to window listener");
 			}
 		}
 	}

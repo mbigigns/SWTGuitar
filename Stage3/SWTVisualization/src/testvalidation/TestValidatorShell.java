@@ -26,6 +26,11 @@ public class TestValidatorShell {
 	public static Shell getShell(String tstPath) {
 		events = TestCaseParser.parseTst(tstPath);
 		step = 0;
+		
+		if(events.size()<1) {
+			System.out.println("No events in test case");
+			System.exit(0);
+		}
 
 		Display display = Display.getCurrent();
 		if(display == null) {
@@ -61,6 +66,8 @@ public class TestValidatorShell {
 		nextButton.setLayoutData(new RowData(55,20));
 
 		color(0);
+		if(events.size()<2)
+			nextButton.setText("Finish");
 		
 		
 		//Advance step
