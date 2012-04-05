@@ -71,7 +71,7 @@ public class SitarRipperMain {
             	return;
             }
                
-            SitarRipper swtRipper = new SitarRipper(configuration, Thread.currentThread());
+            SitarRipper swtRipper= new SitarRipper(configuration,Thread.currentThread());
             new SitarRunner(swtRipper).run();
         } catch (CmdLineException e) {
             System.err.println(e.getMessage());

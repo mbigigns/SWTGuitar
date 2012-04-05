@@ -41,6 +41,7 @@ import edu.umd.cs.guitar.model.SitarApplication;
 import edu.umd.cs.guitar.model.SitarGUIInteraction;
 import edu.umd.cs.guitar.model.SitarWindow;
 import edu.umd.cs.guitar.model.swtwidgets.SitarWidget;
+import edu.umd.cs.guitar.model.wrapper.EventWrapper;
 import edu.umd.cs.guitar.util.GUITARLog;
 
 /**

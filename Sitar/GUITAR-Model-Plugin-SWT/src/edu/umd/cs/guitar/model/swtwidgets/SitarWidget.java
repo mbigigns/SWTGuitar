@@ -38,6 +38,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -64,7 +65,10 @@ import edu.umd.cs.guitar.model.GUITARConstants;
 import edu.umd.cs.guitar.model.SitarConstants;
 import edu.umd.cs.guitar.model.SitarGUIInteraction;
 import edu.umd.cs.guitar.model.SitarWindow;
+import edu.umd.cs.guitar.model.data.ComponentType;
 import edu.umd.cs.guitar.model.data.PropertyType;
+import edu.umd.cs.guitar.model.data.StepType;
+import edu.umd.cs.guitar.model.wrapper.EventWrapper;
 import edu.umd.cs.guitar.util.GUITARLog;
 
 /**
@@ -97,43 +101,16 @@ public abstract class SitarWidget extends GComponent {
 		this.widget = widget;
 		this.window = window;
 		lastInteraction = null;
-		
-		//if(widgetCounter == 0)
-		//{
-		//	headWidget = widget;
-		//}
-		//updateHead();
+
 		setData();
 	}
-	
-	/*
-	public void updateHead()
-	{	
-		FileOutputStream fos = null;
-		ObjectOutputStream oos = null;
-		
-		try
-		{
-			fos = new FileOutputStream("/root/Sitar/SWTVisualization/source.txt");
-			oos = new ObjectOutputStream(fos);
-		
-			oos.writeObject(headWidget);
-			oos.close();
-			fos.close();
-
-		}
-		catch(IOException ex)
-		{
-			ex.printStackTrace();
-		}
-	}
-	*/
 	
 	
 	public void setData()
 	{
 		widget.getDisplay().syncExec(new Runnable() {
 			public void run() {
+				//handle frame data
 				if(!list.contains(widget)){
 					String data = Integer.toString(widgetCounter);
 					
@@ -157,10 +134,89 @@ public abstract class SitarWidget extends GComponent {
 					widgetCounter++;
 
 					list.add(widget);
-					//getParent().get
 				}
 			}
 		});
+	}
+	
+	public void setRecorderListener(final List<EventWrapper> wEventList, final ComponentType retComp, final Map<EventWrapper, String> eventToIDMap, final List<StepType> stepList)
+	{
+		widget.getDisplay().syncExec(new Runnable() {
+			public void run() {
+				//add listener
+				RecorderListener listen = new RecorderListener(wEventList,retComp,eventToIDMap,stepList);
+				//widget.addListener(SWT.None,listen);
+				//widget.addListener(SWT.KeyDown,listen);
+			    //widget.addListener(SWT.KeyUp,listen);
+			    widget.addListener(SWT.MouseDown,listen);
+			    //widget.addListener(SWT.MouseUp,listen);
+			    //widget.addListener(SWT.MouseMove,listen);
+			    //widget.addListener(SWT.MouseEnter,listen);
+			    //widget.addListener(SWT.MouseExit,listen);
+			    //widget.addListener(SWT.MouseDoubleClick,listen);
+			    //widget.addListener(SWT.Paint,listen);
+			    //widget.addListener(SWT.Move,listen);
+			    //widget.addListener(SWT.Resize,listen);
+				//widget.addListener(SWT.Dispose,listen);
+				//widget.addListener(SWT.Selection,listen);
+				//widget.addListener(SWT.DefaultSelection,listen);
+				//widget.addListener(SWT.FocusIn,listen);
+				//widget.addListener(SWT.FocusOut,listen);
+				//widget.addListener(SWT.Expand,listen);
+				//widget.addListener(SWT.Collapse,listen);
+				//widget.addListener(SWT.Iconify,listen);
+				//widget.addListener(SWT.Deiconify,listen);
+				//widget.addListener(SWT.Close,listen);
+				//widget.addListener(SWT.Show,listen);
+				//widget.addListener(SWT.Hide,listen);
+				//widget.addListener(SWT.Modify,listen);
+				//widget.addListener(SWT.Verify,listen);
+				//widget.addListener(SWT.Activate,listen);
+				//widget.addListener(SWT.Deactivate,listen);
+				//widget.addListener(SWT.Help,listen);
+				//widget.addListener(SWT.DragDetect,listen);
+				widget.addListener(SWT.Arm,listen);
+				//widget.addListener(SWT.Traverse,listen);
+				//widget.addListener(SWT.MouseHover,listen);
+				//widget.addListener(SWT.HardKeyDown,listen);
+				//widget.addListener(SWT.HardKeyUp,listen);
+				//widget.addListener(SWT.MenuDetect,listen);
+			}
+		});
+	}
+	private class RecorderListener implements Listener
+	{
+		List<EventWrapper> eventList;
+		ComponentType widget;
+		Map<EventWrapper, String> event2ID;
+		List<StepType> testCaseSteps;
+		public RecorderListener(List<EventWrapper> wEventList, ComponentType retComp, Map<EventWrapper, String> eventToIDMap, List<StepType> stepList) {
+			eventList=wEventList;
+			widget=retComp;
+			event2ID=eventToIDMap;
+			testCaseSteps=stepList;
+			System.out.println("added listener to "+retComp.getClass());
+		}
+
+		public void handleEvent(Event arg0) {
+			System.out.println("event type "+arg0);
+			String widgetID = IDGenerator.idMap.get(widget);
+			System.out.println(eventList);
+			for(EventWrapper e:eventList)
+			{
+				String eventWidgetID = event2ID.get(e); 
+				if(eventWidgetID.equals(widgetID))
+				{
+					StepType newStep = new StepType();
+					newStep.setEventId(e.getID());
+					//temporarily set to false by default
+					newStep.setReachingStep(false);
+					testCaseSteps.add(newStep);
+					System.out.println(e.getID()+" occured");
+				}
+			}
+		}
+		
 	}
 
 	/**
