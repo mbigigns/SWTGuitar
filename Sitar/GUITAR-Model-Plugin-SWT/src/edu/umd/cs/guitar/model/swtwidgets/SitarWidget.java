@@ -213,6 +213,7 @@ public abstract class SitarWidget extends GComponent {
 					newStep.setReachingStep(false);
 					testCaseSteps.add(newStep);
 					System.out.println(e.getID()+" occured");
+				//	RecorderControlPanel.addEvent();
 				}
 			}
 		}

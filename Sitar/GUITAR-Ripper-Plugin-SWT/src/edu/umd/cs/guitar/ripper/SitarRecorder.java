@@ -104,6 +104,8 @@ public class SitarRecorder extends SitarExecutor {
 	}
 	static ObjectFactory factory = new ObjectFactory();
 	List<StepType> iStepList = new ArrayList<StepType>();
+	
+	
 	// initialize the ripper
 	private Ripper initRipper() {
 		Ripper ripper = new Ripper(GUITARLog.log);
@@ -135,14 +137,7 @@ public class SitarRecorder extends SitarExecutor {
 	 */
 	@Override
 	protected void onAfterExecute() {
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
-		System.out.println(monitor.isWindowClosed());
 		GUIStructure dGUIStructure = ripper.getResult();
 		IO.writeObjToFile(dGUIStructure, config.getGuiFile());
 
@@ -165,14 +160,17 @@ public class SitarRecorder extends SitarExecutor {
 
 		// print time elapsed
 		super.onAfterExecute();
-		
-
+	}
+	
+	
+	//For use by RecorderControlPanel to save manually-recoreded .tst files
+	public void writeTest(String path) {
 		TestCase oTestCase = factory.createTestCase();
 		oTestCase.setStep(iStepList);
-		System.out.println(iStepList.size());
-		IO.writeObjToFile(oTestCase, "C:\\Users\\Eric\\git\\SWTGuitar4\\Stage3\\SWTVisualization\\mytestcase.tst");
+		IO.writeObjToFile(oTestCase, path);
 	}
 
+	
 	/**
 	 * Get the {@code SitarRipperMonitor} used by this {@code SitarRipper}.
 	 * 
@@ -181,6 +179,10 @@ public class SitarRecorder extends SitarExecutor {
 	@Override
 	public SitarRipperMonitor getMonitor() {
 		return monitor;
+	}
+	
+	public int getNumEvents() {
+		return iStepList.size();
 	}
 
 }
