@@ -87,6 +87,8 @@ public abstract class SitarWidget extends GComponent {
 	private final SitarWindow window;
 	static int widgetCounter = 0;
 	static ArrayList<Widget> list = new ArrayList<Widget>();
+	private final SitarWidget me;
+	private static SitarGUIInteraction expansionData = null;
 	//static Widget headWidget = null;
 	
 	private SitarGUIInteraction lastInteraction;
@@ -101,8 +103,9 @@ public abstract class SitarWidget extends GComponent {
 		this.widget = widget;
 		this.window = window;
 		lastInteraction = null;
-
+		
 		setData();
+		me = this;
 	}
 	
 	
@@ -144,7 +147,7 @@ public abstract class SitarWidget extends GComponent {
 		widget.getDisplay().syncExec(new Runnable() {
 			public void run() {
 				//add listener
-				RecorderListener listen = new RecorderListener(wEventList,retComp,eventToIDMap,stepList);
+				RecorderListener listen = new RecorderListener(wEventList,retComp,eventToIDMap,stepList, me);
 				//widget.addListener(SWT.None,listen);
 				//widget.addListener(SWT.KeyDown,listen);
 			    //widget.addListener(SWT.KeyUp,listen);
@@ -166,8 +169,8 @@ public abstract class SitarWidget extends GComponent {
 				//widget.addListener(SWT.Collapse,listen);
 				//widget.addListener(SWT.Iconify,listen);
 				//widget.addListener(SWT.Deiconify,listen);
-				//widget.addListener(SWT.Close,listen);
-				//widget.addListener(SWT.Show,listen);
+				widget.addListener(SWT.Close,listen);
+				widget.addListener(SWT.Show,listen);
 				//widget.addListener(SWT.Hide,listen);
 				//widget.addListener(SWT.Modify,listen);
 				//widget.addListener(SWT.Verify,listen);
@@ -186,20 +189,113 @@ public abstract class SitarWidget extends GComponent {
 	}
 	private class RecorderListener implements Listener
 	{
+		SitarWidget sWidget;
 		List<EventWrapper> eventList;
 		ComponentType widget;
 		Map<EventWrapper, String> event2ID;
 		List<StepType> testCaseSteps;
-		public RecorderListener(List<EventWrapper> wEventList, ComponentType retComp, Map<EventWrapper, String> eventToIDMap, List<StepType> stepList) {
+		public RecorderListener(List<EventWrapper> wEventList, ComponentType retComp, Map<EventWrapper, String> eventToIDMap, List<StepType> stepList, SitarWidget sWidget) {
 			eventList=wEventList;
 			widget=retComp;
 			event2ID=eventToIDMap;
 			testCaseSteps=stepList;
+			this.sWidget =  sWidget;
 			System.out.println("added listener to "+retComp.getClass());
 		}
 
-		public void handleEvent(Event arg0) {
-			System.out.println("event type "+arg0);
+		public void handleEvent(Event uEvent) {
+			
+			//1)Do all necessary ripping
+			SitarGUIInteraction interaction = new SitarGUIInteraction(sWidget);
+			
+			final AtomicReference<Shell> shell = new AtomicReference<Shell>();
+			final List<Shell> closedShells = new ArrayList<Shell>();
+			final AtomicBoolean terminal = new AtomicBoolean(false);
+			final Event userEvent = uEvent;
+			uEvent.widget.getDisplay().syncExec(new Runnable() {
+				@Override
+				public void run() {
+					// add filter for shell open
+					final Listener showListener = new Listener() {
+						@Override
+						public void handleEvent(Event event) {
+							if (event.widget instanceof Shell) {
+								// TODO add to list
+								shell.set((Shell) event.widget);
+							}
+						}
+					};
+					userEvent.widget.getDisplay().addFilter(SWT.Show, showListener);
+					
+					final Shell shell = window.getShell();
+					
+					final List<Shell> allShells = new ArrayList<Shell>();
+					for (Shell s : userEvent.widget.getDisplay().getShells()) {
+						allShells.add(s);
+					}
+					
+					// Remove existing close listeners so they don't get notified.
+					// This may not be necessary on all platforms, but better safe
+					// than sorry
+					Listener[] closeListeners = shell.getListeners(SWT.Close);
+					for (Listener l : closeListeners) {
+						shell.removeListener(SWT.Close, l);
+					}
+					
+					ShellListener listener = new ShellAdapter() {
+						@Override
+						public void shellClosed(ShellEvent e) {
+							synchronized (closedShells) {
+								closedShells.add(shell);
+							}
+							
+							synchronized (allShells) {
+								allShells.remove(shell);
+								if (allShells.isEmpty()) {
+									terminal.set(true);
+								}
+							}
+							
+							e.doit = false; // prevent shell from actually closing
+						}
+					};
+					
+					shell.addShellListener(listener);
+					
+					notifyAllListeners();
+									
+					// remove our close listener
+					shell.removeShellListener(listener);
+					
+					// add back the close listeners we removed
+					for (Listener l : closeListeners) {
+						shell.addListener(SWT.Close, l);
+					}
+					
+					// remove filter for shell open
+					userEvent.widget.getDisplay().removeFilter(SWT.Show, showListener);
+				}
+			});
+			
+			interaction.setTerminal(terminal.get());
+			
+			
+			List<Shell> openedShells = new ArrayList<Shell>();
+			if (shell.get() != null) {
+				openedShells.add(shell.get());
+			}
+			interaction.setOpenedShells(openedShells);
+			
+//			List<Shell> closedShells = new ArrayList<Shell>();
+			// TODO manage closed shells
+			interaction.setClosedShells(closedShells);
+			
+			
+			expansionData = interaction;
+			
+			
+			//2)build efg data
+			System.out.println("event type "+uEvent);
 			String widgetID = IDGenerator.idMap.get(widget);
 			System.out.println(eventList);
 			for(EventWrapper e:eventList)
@@ -216,8 +312,25 @@ public abstract class SitarWidget extends GComponent {
 				//	RecorderControlPanel.addEvent();
 				}
 			}
+			
+			//arg0.item.notifyListeners(arg0.type, arg0);
 		}
 		
+	}
+	/**
+	 * Clear old expansion data
+	 */
+	public static void clearExpansionData(){
+		expansionData = null;
+	}
+	public static SitarGUIInteraction getExpansionData(){
+		return expansionData;
+	}
+	public static  boolean hasExpansionData(){
+		if(expansionData!=null){
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -528,7 +641,7 @@ public abstract class SitarWidget extends GComponent {
 		if (lastInteraction != null) {
 			return lastInteraction;
 		}
-		
+			
 		SitarGUIInteraction interaction = new SitarGUIInteraction(this);
 				
 		final AtomicReference<Shell> shell = new AtomicReference<Shell>();
@@ -615,7 +728,6 @@ public abstract class SitarWidget extends GComponent {
 		
 		// cache result so we only have to interact with GUI once, useful for minimizing side effects
 		lastInteraction = interaction;
-		
 		return interaction;
 	}
 

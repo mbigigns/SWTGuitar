@@ -63,7 +63,7 @@ public class SitarRecorder extends SitarExecutor {
 
 	private final SitarRipperMonitor monitor;
 	private static SitarRipperConfiguration config= new SitarRipperConfiguration();
-	private final Ripper ripper;
+	private final RecorderRipper ripper;
 
 	/**
 	 * Constructs a new <code>SitarRipper</code>. This constructor is equivalent
@@ -107,8 +107,8 @@ public class SitarRecorder extends SitarExecutor {
 	
 	
 	// initialize the ripper
-	private Ripper initRipper() {
-		Ripper ripper = new Ripper(GUITARLog.log);
+	private RecorderRipper initRipper() {
+		RecorderRipper ripper = new RecorderRipper(GUITARLog.log);
 				
 		ripper.setMonitor(monitor);
 		

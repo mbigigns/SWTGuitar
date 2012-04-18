@@ -251,6 +251,14 @@ public class SitarRipperMonitor extends GRipperMonitor {
 		openedWinStack.addAll(expansionData.getOpenedShells());
 		closedWinStack.addAll(expansionData.getClosedShells());
 	}
+	
+	/**
+	 * When user interacts, add data about open and closed windows
+	 */
+	public void addInteractionData(SitarGUIInteraction expansionData){
+		openedWinStack.addAll(expansionData.getOpenedShells());
+		closedWinStack.addAll(expansionData.getClosedShells());
+	}
 
 	/**
 	 * Check if a root window is worth ripping
