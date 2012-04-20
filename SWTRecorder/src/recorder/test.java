@@ -1,8 +1,10 @@
 package recorder;
 
+import java.util.concurrent.Semaphore;
+
 import edu.umd.cs.guitar.ripper.SitarRecorder;
-import edu.umd.cs.guitar.ripper.SitarRipperConfiguration;
-import edu.umd.cs.guitar.ripper.SitarRunner;
+import edu.umd.cs.guitar.swt.launcher.SitarRipperConfiguration;
+import edu.umd.cs.guitar.swt.launcher.SitarRunner;
 
 
 public class test {
@@ -10,7 +12,11 @@ public class test {
 	{
 		SitarRipperConfiguration config = new SitarRipperConfiguration();
 		config.setMainClass(SWTMultiWindowDynamicApp.class.getName());
-		SitarRecorder recorder = new SitarRecorder(config);
+		Semaphore semaphore = new Semaphore(1);
+		SitarRecorder recorder = new SitarRecorder(config,semaphore);
+		recorder.setExit();
 		new SitarRunner(recorder).run();
+		System.out.println("YOOO");
+		recorder.getMonitor().cleanUp();
 	}
 }

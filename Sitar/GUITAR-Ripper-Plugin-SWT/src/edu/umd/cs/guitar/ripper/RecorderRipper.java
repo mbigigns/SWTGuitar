@@ -35,6 +35,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
+import java.util.concurrent.Semaphore;
 
 import org.apache.log4j.Logger;
 import org.eclipse.swt.widgets.Display;
@@ -94,6 +95,8 @@ public class RecorderRipper extends Ripper
 	private SitarWindow newRippedWindow = null;
 
 	private static boolean continueRip = true;
+	
+	private Semaphore controlWaiter;
 	/**
 	 * SECTION: DATA
 	 *
@@ -118,11 +121,13 @@ public class RecorderRipper extends Ripper
 
 	/**
 	 * Constructor without logger
+	 * @param semaphore 
 	 */
-	public RecorderRipper(SitarApplication swtApp)
+	public RecorderRipper(SitarApplication swtApp, Semaphore semaphore)
 	{
 		this(Logger.getLogger("Ripper"));
 		this.swtApp = swtApp;
+		controlWaiter = semaphore;
 	}
 
 
@@ -365,6 +370,8 @@ public class RecorderRipper extends Ripper
 						processWindow(xRootWindow);
 						rippedWindows.add(xRootWindow);
 					}
+					
+					controlWaiter.acquire();
 
 					while (continueRip) {
 						if (this.swtApp != null && this.swtApp.getDisplay() != null) {
@@ -373,7 +380,6 @@ public class RecorderRipper extends Ripper
 									for (Shell shell : RecorderRipper.this.swtApp.getDisplay().getShells()) {
 										boolean shouldNotRip = false;
 										for (GWindow rippedWin : rippedWindows) {
-											//if (((SitarWindow)rippedWin).getShell().equals(shell)){
 											if (((SitarWindow)rippedWin).getShell() == shell){
 												shouldNotRip = true;
 											}
@@ -394,10 +400,8 @@ public class RecorderRipper extends Ripper
 						}
 						Thread.sleep(5);
 					}
+					controlWaiter.release();
 
-
-					// 5. Clean up
-					//monitor.cleanUp();
 				} catch (GException e) {
 					GUITARLog.log.error("GUITAR error while ripping" + e);
 
@@ -413,6 +417,8 @@ public class RecorderRipper extends Ripper
 			IDGenerator myGenerator = new IDGenerator();
 			public void processWindow(GWindow xRootWindow) throws IOException, Exception
 			{
+				if(((SitarWindow)xRootWindow).getShell().equals(controlPanelShell))
+					return;
 				xRootWindow.setRoot(true);
 				monitor.addRippedList(xRootWindow);
 
@@ -849,6 +855,11 @@ public class RecorderRipper extends Ripper
 
 			public static void terminateRipper() {
 				continueRip = false;
+			}
+			
+			Shell controlPanelShell = null;
+			public void setControlShell(Shell s) {
+				controlPanelShell = s;
 			}
 
 } // End of class

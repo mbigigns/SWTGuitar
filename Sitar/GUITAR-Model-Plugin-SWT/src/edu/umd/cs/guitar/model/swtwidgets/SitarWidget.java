@@ -87,9 +87,7 @@ public abstract class SitarWidget extends GComponent {
 	private final SitarWindow window;
 	static int widgetCounter = 0;
 	static ArrayList<Widget> list = new ArrayList<Widget>();
-	private static SitarGUIInteraction expansionData = null;
 	private static boolean terminate = true;
-	//static Widget headWidget = null;
 	
 	private SitarGUIInteraction lastInteraction;
 	
@@ -147,42 +145,9 @@ public abstract class SitarWidget extends GComponent {
 			public void run() {
 				//add listener
 				RecorderListener listen = new RecorderListener(wEventList,retComp,eventToIDMap,stepList, SitarWidget.this);
-				//widget.addListener(SWT.None,listen);
-				//widget.addListener(SWT.KeyDown,listen);
-			    //widget.addListener(SWT.KeyUp,listen);
-			    widget.addListener(SWT.MouseDown,listen);
-			    //widget.addListener(SWT.MouseUp,listen);
-			    //widget.addListener(SWT.MouseMove,listen);
-			    //widget.addListener(SWT.MouseEnter,listen);
-			    //widget.addListener(SWT.MouseExit,listen);
-			    //widget.addListener(SWT.MouseDoubleClick,listen);
-			    //widget.addListener(SWT.Paint,listen);
-			    //widget.addListener(SWT.Move,listen);
-			    //widget.addListener(SWT.Resize,listen);
-				//widget.addListener(SWT.Dispose,listen);
-				//widget.addListener(SWT.Selection,listen);
-				//widget.addListener(SWT.DefaultSelection,listen);
-				//widget.addListener(SWT.FocusIn,listen);
-				//widget.addListener(SWT.FocusOut,listen);
-				//widget.addListener(SWT.Expand,listen);
-				//widget.addListener(SWT.Collapse,listen);
-				//widget.addListener(SWT.Iconify,listen);
-				//widget.addListener(SWT.Deiconify,listen);
-				widget.addListener(SWT.Close,listen);
-				widget.addListener(SWT.Show,listen);
-				//widget.addListener(SWT.Hide,listen);
-				//widget.addListener(SWT.Modify,listen);
-				//widget.addListener(SWT.Verify,listen);
-				//widget.addListener(SWT.Activate,listen);
-				//widget.addListener(SWT.Deactivate,listen);
-				//widget.addListener(SWT.Help,listen);
-				//widget.addListener(SWT.DragDetect,listen);
-				widget.addListener(SWT.Arm,listen);
-				//widget.addListener(SWT.Traverse,listen);
-				//widget.addListener(SWT.MouseHover,listen);
-				//widget.addListener(SWT.HardKeyDown,listen);
-				//widget.addListener(SWT.HardKeyUp,listen);
-				//widget.addListener(SWT.MenuDetect,listen);
+				for (int i : SitarConstants.SWT_EVENT_LIST) {
+					widget.addListener(i,listen);
+				}
 			}
 		});
 	}
@@ -206,9 +171,7 @@ public abstract class SitarWidget extends GComponent {
 			
 			
 			//2)build efg data
-			System.out.println("event type "+uEvent);
 			String widgetID = IDGenerator.idMap.get(widget);
-			System.out.println(eventList);
 			for(EventWrapper e:eventList)
 			{
 				String eventWidgetID = event2ID.get(e); 
@@ -227,21 +190,6 @@ public abstract class SitarWidget extends GComponent {
 			//arg0.item.notifyListeners(arg0.type, arg0);
 		}
 		
-	}
-	/**
-	 * Clear old expansion data
-	 */
-	public static void clearExpansionData(){
-		expansionData = null;
-	}
-	public static SitarGUIInteraction getExpansionData(){
-		return expansionData;
-	}
-	public static  boolean hasExpansionData(){
-		if(expansionData!=null){
-			return true;
-		}
-		return false;
 	}
 
 	/**
@@ -433,10 +381,11 @@ public abstract class SitarWidget extends GComponent {
 									propertyNames.add(sPropertyName);
 								}
 							} catch (IllegalArgumentException e) {
-								GUITARLog.log.error(e);
+								System.out.println(e.getCause());
 							} catch (IllegalAccessException e) {
-								GUITARLog.log.error(e);
+								System.out.println(e.getCause());
 							} catch (InvocationTargetException e) {
+								System.out.println(e.getCause());
 								GUITARLog.log.error(e);
 							}
 						}

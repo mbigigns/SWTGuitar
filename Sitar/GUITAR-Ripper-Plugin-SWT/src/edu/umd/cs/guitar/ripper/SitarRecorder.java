@@ -30,6 +30,9 @@ package edu.umd.cs.guitar.ripper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Semaphore;
+
+import org.eclipse.swt.widgets.Shell;
 
 import edu.umd.cs.guitar.model.GIDGenerator;
 import edu.umd.cs.guitar.model.GUITARConstants;
@@ -97,20 +100,20 @@ public class SitarRecorder extends SitarExecutor {
 	 * 
 	 * @see SitarRunner
 	 */
-	public SitarRecorder(SitarRipperConfiguration config) {
+	public SitarRecorder(SitarRipperConfiguration config, Semaphore semaphore) {
 		super(config);
 		this.config=config;
 		monitor = new SitarRipperMonitor(config, getApplication());
 		SitarWidget.setTerminate(false); 
-		ripper = initRipper();
+		ripper = initRipper(semaphore);
 	}
 	static ObjectFactory factory = new ObjectFactory();
 	List<StepType> iStepList = new ArrayList<StepType>();
 	
 	
 	// initialize the ripper
-	private RecorderRipper initRipper() {
-		RecorderRipper ripper = new RecorderRipper(this.getApplication());
+	private RecorderRipper initRipper(Semaphore semaphore) {
+		RecorderRipper ripper = new RecorderRipper(this.getApplication(),semaphore);
 				
 		ripper.setMonitor(monitor);
 		
@@ -172,6 +175,7 @@ public class SitarRecorder extends SitarExecutor {
 		IO.writeObjToFile(oTestCase, path);
 		IO.writeObjToFile(this.ripper.efg, path.substring(0, path.length()-3)+"EFG");
 		IO.writeObjToFile(this.ripper.dGUIStructure, path.substring(0, path.length()-3)+"GUI");
+		iStepList.clear();
 	}
 
 	
@@ -187,6 +191,10 @@ public class SitarRecorder extends SitarExecutor {
 	
 	public int getNumEvents() {
 		return iStepList.size();
+	}
+
+	public void setControlShell(Shell s) {
+		ripper.setControlShell(s);		
 	}
 
 }

@@ -41,7 +41,6 @@ import edu.umd.cs.guitar.model.SitarApplication;
 import edu.umd.cs.guitar.model.SitarGUIInteraction;
 import edu.umd.cs.guitar.model.SitarWindow;
 import edu.umd.cs.guitar.model.swtwidgets.SitarWidget;
-import edu.umd.cs.guitar.model.wrapper.EventWrapper;
 import edu.umd.cs.guitar.util.GUITARLog;
 
 /**
@@ -252,14 +251,6 @@ public class SitarRipperMonitor extends GRipperMonitor {
 		closedWinStack.addAll(expansionData.getClosedShells());
 	}
 	
-	/**
-	 * When user interacts, add data about open and closed windows
-	 */
-	public void addInteractionData(SitarGUIInteraction expansionData){
-		openedWinStack.addAll(expansionData.getOpenedShells());
-		closedWinStack.addAll(expansionData.getClosedShells());
-	}
-
 	/**
 	 * Check if a root window is worth ripping
 	 * 
