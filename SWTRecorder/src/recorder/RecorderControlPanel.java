@@ -30,100 +30,103 @@ public class RecorderControlPanel {
 		targetApp = null;
 		numTests = 0;
 
-		Display display = d;
+		final Display display = d;
 		if(display == null) {
 			System.out.println("Can not initialize Control Panel display"); 
 			System.exit(0); 
 		}
-		shell = new Shell(display);
-		shell.setText("SITAR Manual Test Recorder");
-		shell.setSize(450,155);
-
-		RowLayout rowLayout = new RowLayout(SWT.HORIZONTAL);
-		rowLayout.marginTop = 5;
-		rowLayout.marginBottom = 5;
-		rowLayout.marginLeft = 5;
-		rowLayout.marginRight = 5;
-		rowLayout.spacing = 5;
-		shell.setLayout(rowLayout);
-
-		RowLayout groupLayout = new RowLayout(SWT.HORIZONTAL);
-		groupLayout.spacing = 30;
-
-		Group g1 = new Group(shell, SWT.PUSH);
-		Group g2 = new Group(shell, SWT.PUSH);
-		g1.setLayout(groupLayout);
-		g2.setLayout(groupLayout);
-		g1.setText("Application Controls");
-		g2.setText("Recording Controls");
-
-		appButton = new Button(g1, SWT.PUSH);
-		appButton.setText("Select App");
-
-		testLabel = new Label(g1, SWT.PUSH);
-		//whitespace present for future sizing when test case text is present
-		testLabel.setText("Target App:                                                                               ");
-
-		startButton = new Button(g2, SWT.PUSH);
-		startButton.setText("Record Test");
-		startButton.setEnabled(false);
-
-		discardButton = new Button(g2, SWT.PUSH);
-		discardButton.setText("Discard Test");
-		discardButton.setEnabled(false);
-
-		saveButton = new Button(g2, SWT.PUSH);
-		saveButton.setText("Save Test");
-		saveButton.setEnabled(false);
-
-		testNumLabel = new Label(g2, SWT.PUSH);
-		testNumLabel.setText("Tests Saved:  0       "); //space for number to be appended later
-
-
-		//When Control Panel is closed, close target app that might beopen
-		shell.addListener(SWT.Close, new Listener() {
-			public void handleEvent(Event event) {
-				if(thread!=null)
-					stopTest();
-			}
-		});
-
-		//Choose target app when button "Select App" button clicked
-		appButton.addSelectionListener(new SelectionAdapter() {
-			public void widgetSelected(SelectionEvent e) {
-				chooseApp();
-			}
-		});
-
-		//Start the target app thread when "start" button clicked
-		startButton.addSelectionListener(new SelectionAdapter() {
-			public void widgetSelected(SelectionEvent e) {
-				startTest();
-			}
-		});
-
-		//stop the target app thread when "discard" button clicked
-		discardButton.addSelectionListener(new SelectionAdapter() {
-			public void widgetSelected(SelectionEvent e) {
-				stopTest();
-			}
-		});
-
-		//open file dialog, save test, and then close target app when "save" clicked
-		saveButton.addSelectionListener(new SelectionAdapter() {
-			public void widgetSelected(SelectionEvent e) {
-				String savePath = saveDialog();
-
-				//Save and then stop target application
-				if(savePath != null) {			
-					RecorderControlPanel.threadRunner.recorder.writeTest(savePath);
-					numTests++;
-					testNumLabel.setText("Tests Saved:  "+numTests);
+		d.syncExec(new Runnable() {
+			public void run() {
+			shell = new Shell(display);
+			shell.setText("SITAR Manual Test Recorder");
+			shell.setSize(450,155);
+	
+			RowLayout rowLayout = new RowLayout(SWT.HORIZONTAL);
+			rowLayout.marginTop = 5;
+			rowLayout.marginBottom = 5;
+			rowLayout.marginLeft = 5;
+			rowLayout.marginRight = 5;
+			rowLayout.spacing = 5;
+			shell.setLayout(rowLayout);
+	
+			RowLayout groupLayout = new RowLayout(SWT.HORIZONTAL);
+			groupLayout.spacing = 30;
+	
+			Group g1 = new Group(shell, SWT.PUSH);
+			Group g2 = new Group(shell, SWT.PUSH);
+			g1.setLayout(groupLayout);
+			g2.setLayout(groupLayout);
+			g1.setText("Application Controls");
+			g2.setText("Recording Controls");
+	
+			appButton = new Button(g1, SWT.PUSH);
+			appButton.setText("Select App");
+	
+			testLabel = new Label(g1, SWT.PUSH);
+			//whitespace present for future sizing when test case text is present
+			testLabel.setText("Target App:                                                                               ");
+	
+			startButton = new Button(g2, SWT.PUSH);
+			startButton.setText("Record Test");
+			startButton.setEnabled(false);
+	
+			discardButton = new Button(g2, SWT.PUSH);
+			discardButton.setText("Discard Test");
+			discardButton.setEnabled(false);
+	
+			saveButton = new Button(g2, SWT.PUSH);
+			saveButton.setText("Save Test");
+			saveButton.setEnabled(false);
+	
+			testNumLabel = new Label(g2, SWT.PUSH);
+			testNumLabel.setText("Tests Saved:  0       "); //space for number to be appended later
+	
+	
+			//When Control Panel is closed, close target app that might beopen
+			shell.addListener(SWT.Close, new Listener() {
+				public void handleEvent(Event event) {
+					if(thread!=null)
+						stopTest();
+				}
+			});
+	
+			//Choose target app when button "Select App" button clicked
+			appButton.addSelectionListener(new SelectionAdapter() {
+				public void widgetSelected(SelectionEvent e) {
+					chooseApp();
+				}
+			});
+	
+			//Start the target app thread when "start" button clicked
+			startButton.addSelectionListener(new SelectionAdapter() {
+				public void widgetSelected(SelectionEvent e) {
+					startTest();
+				}
+			});
+	
+			//stop the target app thread when "discard" button clicked
+			discardButton.addSelectionListener(new SelectionAdapter() {
+				public void widgetSelected(SelectionEvent e) {
 					stopTest();
 				}
+			});
+	
+			//open file dialog, save test, and then close target app when "save" clicked
+			saveButton.addSelectionListener(new SelectionAdapter() {
+				public void widgetSelected(SelectionEvent e) {
+					String savePath = saveDialog();
+	
+					//Save and then stop target application
+					if(savePath != null) {			
+						RecorderControlPanel.threadRunner.recorder.writeTest(savePath);
+						numTests++;
+						testNumLabel.setText("Tests Saved:  "+numTests);
+						stopTest();
+					}
+				}
+			});
 			}
 		});
-
 		return shell;
 	}
 
@@ -153,7 +156,7 @@ public class RecorderControlPanel {
 
 		public void run() {
 			SitarRipperConfiguration config = new SitarRipperConfiguration();
-			config.setMainClass(targetApp);
+			config.setMainClass(SWTMultiWindowDynamicApp.class.getName());
 			recorder = new SitarRecorder(config);
 			runner = new SitarRunner(recorder);
 			runner.run();
@@ -168,11 +171,11 @@ public class RecorderControlPanel {
 		saveButton.setEnabled(true);
 		discardButton.setEnabled(true);
 
-		/*
-		threadRunner =  new ThreadRun();
+		
+/*		threadRunner =  new ThreadRun();
 		thread = new Thread(threadRunner);
-		thread.start();
-		*/
+		thread.start();*/
+		
 	}
 
 	//================================================================================	
@@ -191,11 +194,10 @@ public class RecorderControlPanel {
 
 	//End target application thread
 	public static void stopTest() {
-		thread.stop();
-		Thread.yield();
+/*		Thread.yield();
 		thread = null;
 
-		appButton.setEnabled(true);
+		appButton.setEnabled(true);*/
 		startButton.setEnabled(true);
 		saveButton.setEnabled(false);
 		discardButton.setEnabled(false);
@@ -204,18 +206,11 @@ public class RecorderControlPanel {
 	//================================================================================	
 
 	public static void main(String[] args) {
-		SitarRipperConfiguration config = new SitarRipperConfiguration();
-		config.setMainClass(SWTMultiWindowDynamicApp.class.getName());
-		SitarRecorder recorder = new SitarRecorder(config);
-		final SitarRunner runner = new SitarRunner(recorder);
 		
-		Runnable runnerWrapper = new Runnable() {
-			public void run() {
-				runner.run();
-			}
-		};
-		
-		Thread rippingThread = new Thread(runnerWrapper);
+/*		Runnable runnerWrapper = new Runnable() {
+		};*/
+		threadRunner = new ThreadRun();
+		Thread rippingThread = new Thread(threadRunner);
 		rippingThread.start();
 		
 		try {
@@ -224,11 +219,15 @@ public class RecorderControlPanel {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Display d = recorder.getApplication().getDisplay();
-		
-		Shell s = RecorderControlPanel.getShell(d);
+		Display d = Display.findDisplay(rippingThread);//null;//recorder.getApplication().getDisplay();
+		System.out.println(d);
+		final Shell s = RecorderControlPanel.getShell(d);
 		System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%testing");
-		s.open();
+		d.syncExec(new Runnable() {
+			public void run() {
+				s.open();
+			}
+		});
 
 
 		/*
