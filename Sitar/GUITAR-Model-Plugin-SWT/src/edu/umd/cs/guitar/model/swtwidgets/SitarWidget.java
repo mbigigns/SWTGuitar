@@ -719,5 +719,6 @@ public abstract class SitarWidget extends GComponent {
 
 	public static void setTerminate (boolean terminate) {
 		SitarWidget.terminate = terminate;
+		
 	}
 }

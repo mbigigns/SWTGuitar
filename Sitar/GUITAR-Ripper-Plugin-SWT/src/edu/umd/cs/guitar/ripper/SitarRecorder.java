@@ -101,7 +101,7 @@ public class SitarRecorder extends SitarExecutor {
 		super(config);
 		this.config=config;
 		monitor = new SitarRipperMonitor(config, getApplication());
-		SitarWidget.setTerminate(false);
+		SitarWidget.setTerminate(false); 
 		ripper = initRipper();
 	}
 	static ObjectFactory factory = new ObjectFactory();
