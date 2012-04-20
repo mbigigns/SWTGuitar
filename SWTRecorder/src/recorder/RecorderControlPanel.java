@@ -1,129 +1,79 @@
 package recorder;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.FlowLayout;
-import java.awt.Font;
-import java.awt.LayoutManager;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.File;
-
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.filechooser.FileNameExtensionFilter;
-
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.*;
+import org.eclipse.swt.layout.RowLayout;
+import org.eclipse.swt.widgets.*;
 import edu.umd.cs.guitar.ripper.*;
 
 
-public class RecorderControlPanel extends JPanel {
-
-	private int numTests;
-	private JButton startAppButton, saveTestsButton, discardTestsButton, selectAppButton;
-	private JLabel selectedAppLabel, numTestsLabel;
-
-	private String targetApp;
-	private Thread thread; //holds target application's execution
-	private ThreadRun threadRunner; //holds target application thread
-
+public class RecorderControlPanel {
+	
+	private static int numTests;
+	private static Button startButton, saveButton, discardButton, appButton;
+	private static Label testLabel, testNumLabel;
+	private static Shell shell;
+	private static String targetApp;
+	private static Thread thread; //holds target application's execution
+	private static ThreadRun threadRunner; //holds target application thread
+	
 	//================================================================================	
-
-	public RecorderControlPanel() {
-		super();
-
-		this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
-		initComponents();
-
-		JLabel targetAppIndicator = new JLabel("Target App:");
-		JLabel numTestsIndicator = new JLabel("Tests Saved:");
-
-		JPanel topHalf = new JPanel();
-		topHalf.setLayout(new FlowLayout(FlowLayout.LEFT));
-
-		topHalf.setBorder(BorderFactory.createTitledBorder("Application Controls"));
-
-		topHalf.add(selectAppButton);
-		topHalf.add(targetAppIndicator);
-		topHalf.add(selectedAppLabel);
-
-		JPanel bottomHalf = new JPanel();
-		bottomHalf.setLayout(new FlowLayout());
-		bottomHalf.setBorder(BorderFactory.createTitledBorder("Recording Controls"));
-
-		bottomHalf.add(startAppButton);
-		bottomHalf.add(saveTestsButton);
-		bottomHalf.add(discardTestsButton);
-		bottomHalf.add(numTestsIndicator);
-		bottomHalf.add(numTestsLabel);
-
-		this.add(topHalf);
-		this.add(bottomHalf);
-	}
-
-	private void initComponents() {
-		selectAppButton = new JButton("Select App");
-		selectAppButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				selectedAppLabel.setFont(selectedAppLabel.getFont().deriveFont(Font.PLAIN));
-				chooseApp();
-				startAppButton.setEnabled(true);
-				((JFrame)RecorderControlPanel.this.getRootPane().getParent()).pack();
-			}
-		});
-
-		startAppButton = new JButton("Record Test");
-		startAppButton.setEnabled(false);
-		startAppButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				startTest();
-				saveTestsButton.setEnabled(true);
-				discardTestsButton.setEnabled(true);
-			}
-		});
-
-		saveTestsButton = new JButton("Save Tests");
-		saveTestsButton.setEnabled(false);
-		saveTestsButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				File savePath = saveDialog();
-
-				//Save and then stop target application
-				if(savePath != null) {			
-					threadRunner.recorder.writeTest(savePath.getAbsolutePath());
-					numTests++;
-					numTestsLabel.setText(Integer.toString(numTests));
-					stopTest();
-				}
-			}
-		});
-
-		discardTestsButton = new JButton("Discard Tests");
-		discardTestsButton.setEnabled(false);
-		discardTestsButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				stopTest();
-				saveTestsButton.setEnabled(false);
-			}
-		});
-
-		selectedAppLabel = new JLabel("none selected");
-		selectedAppLabel.setFont(selectedAppLabel.getFont().deriveFont(Font.ITALIC));
-
-		numTestsLabel = new JLabel("0");
-	}
-
-	public void setNumTests(int num) {
-		numTestsLabel.setText(Integer.toString(num));
-	}
-
+	
 	//returns the window of the test case validator
-	/*
-	public static Shell getShell() {		
+	public static Shell getShell() {
+		targetApp = null;
+		numTests = 0;
+
+		Display display = Display.getCurrent();
+		if(display == null) {
+			System.out.println("Can not initialize Control Panel display"); 
+			System.exit(0); 
+		}
+		shell = new Shell(display);
+		shell.setText("SITAR Manual Test Recorder");
+		shell.setSize(450,155);
+	
+		RowLayout rowLayout = new RowLayout(SWT.HORIZONTAL);
+		rowLayout.marginTop = 5;
+		rowLayout.marginBottom = 5;
+		rowLayout.marginLeft = 5;
+		rowLayout.marginRight = 5;
+		rowLayout.spacing = 5;
+		shell.setLayout(rowLayout);
+		
+		RowLayout groupLayout = new RowLayout(SWT.HORIZONTAL);
+		groupLayout.spacing = 30;
+
+		Group g1 = new Group(shell, SWT.PUSH);
+		Group g2 = new Group(shell, SWT.PUSH);
+		g1.setLayout(groupLayout);
+		g2.setLayout(groupLayout);
+		g1.setText("Application Controls");
+		g2.setText("Recording Controls");
+		
+		appButton = new Button(g1, SWT.PUSH);
+		appButton.setText("Select App");
+		
+		testLabel = new Label(g1, SWT.PUSH);
+		//whitespace present for future sizing when test case text is present
+		testLabel.setText("Target App:                                                                               ");
+		
+		startButton = new Button(g2, SWT.PUSH);
+		startButton.setText("Record Test");
+		startButton.setEnabled(false);
+	
+		discardButton = new Button(g2, SWT.PUSH);
+		discardButton.setText("Discard Test");
+		discardButton.setEnabled(false);
+		
+		saveButton = new Button(g2, SWT.PUSH);
+		saveButton.setText("Save Test");
+		saveButton.setEnabled(false);
+		
+		testNumLabel = new Label(g2, SWT.PUSH);
+		testNumLabel.setText("Tests Saved:  0       "); //space for number to be appended later
+		
+		
 		//When Control Panel is closed, close target app that might beopen
 		shell.addListener(SWT.Close, new Listener() {
 			public void handleEvent(Event event) {
@@ -131,33 +81,33 @@ public class RecorderControlPanel extends JPanel {
 					stopTest();
 			}
 		});
-
+		
 		//Choose target app when button "Select App" button clicked
 		appButton.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				chooseApp();
 			}
 		});
-
+		
 		//Start the target app thread when "start" button clicked
 		startButton.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				startTest();
 			}
 		});
-
+		
 		//stop the target app thread when "discard" button clicked
 		discardButton.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				stopTest();
 			}
 		});
-
+	
 		//open file dialog, save test, and then close target app when "save" clicked
 		saveButton.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				String savePath = saveDialog();
-
+			
 				//Save and then stop target application
 				if(savePath != null) {			
 					RecorderControlPanel.threadRunner.recorder.writeTest(savePath);
@@ -167,79 +117,34 @@ public class RecorderControlPanel extends JPanel {
 				}
 			}
 		});
-
+		
 		return shell;
-	}*/
-
+	}
+	
 	//================================================================================	
 
 	//Choose target application to record tests for
-	public void chooseApp() {
-
+	public static void chooseApp() {
+		
 		//If a test is in progress, must discard or save first
-		if(discardTestsButton.isEnabled()) {
-
-
+		if(discardButton.isEnabled()) {
+			
+			
 		} else {
 			targetApp = SWTMultiWindowDynamicApp.class.getName();
-			startAppButton.setEnabled(true);
-			selectedAppLabel.setText(targetApp);
-			numTestsLabel.setText("0");
+			startButton.setEnabled(true);
+			testLabel.setText("Target App:  "+targetApp);
+			testNumLabel.setText("Tests Saved:  0");
 		}
 	}
-
-	//Open target application as separate thread
-	//Separate thread eliminates problems with multiple Display objects
-	public void startTest() {		
-		threadRunner =  new ThreadRun();
-		thread = new Thread(threadRunner);
-		thread.start();
-	}
-
-	//================================================================================	
-
-	//End target application thread
-	public void stopTest() {
-		thread.stop();
-		Thread.yield();
-		thread = null;
-
-		selectAppButton.setEnabled(true);
-		startAppButton.setEnabled(true);
-		saveTestsButton.setEnabled(false);
-		discardTestsButton.setEnabled(false);
-	}
-
-	//================================================================================	
-
-	//Open save dialog and get path/filename where user wants to save test file
-	public File saveDialog() {
-		JFileChooser fd = new JFileChooser(System.getProperty("user.home"));
-
-		fd.setFileFilter(new FileNameExtensionFilter("GUITAR Test File (*.tst)", "tst"));
-		fd.setDialogType(JFileChooser.SAVE_DIALOG);
-
-		while (JFileChooser.APPROVE_OPTION != fd.showSaveDialog(this.getRootPane()));
-
-		return fd.getSelectedFile();
-	}
-
-	//================================================================================	
-
-	public static void main(String[] args) {
-		JFrame mainWindow = new JFrame("SITAR Manual Test Recorder");
-		mainWindow.add(new RecorderControlPanel());
-		mainWindow.pack();
-		mainWindow.setVisible(true);
-	}
-
+	
 	//================================================================================	
 
 	//Contains the target application's recorder and runner for accessibility
-	class ThreadRun implements Runnable {
+	static class ThreadRun implements Runnable {
 		SitarRecorder recorder;
 		SitarRunner runner;
-
+		
 		public void run() {
 			SitarRipperConfiguration config = new SitarRipperConfiguration();
 			config.setMainClass(targetApp);
@@ -248,4 +153,58 @@ public class RecorderControlPanel extends JPanel {
 			runner.run();
 		}
 	}
+	
+	//Open target application as separate thread
+	//Separate thread eliminates problems with multiple Display objects
+	public static void startTest() {
+		appButton.setEnabled(false);
+		startButton.setEnabled(false);
+		saveButton.setEnabled(true);
+		discardButton.setEnabled(true);
+		
+		threadRunner =  new ThreadRun();
+		thread = new Thread(threadRunner);
+		thread.start();
+	}
+	
+	//================================================================================	
+	
+	//Open save dialog and get path/filename where user wants to save test file
+	public static String saveDialog() {
+		FileDialog fd = new FileDialog(shell, SWT.SAVE);
+		fd.setText("Save test as...");
+		fd.setFilterExtensions(new String[]{"*.tst"});
+		String path = fd.open();
+		
+		return path;
+	}
+
+	//================================================================================	
+
+	//End target application thread
+	public static void stopTest() {
+		thread.stop();
+		Thread.yield();
+		thread = null;
+	
+		appButton.setEnabled(true);
+		startButton.setEnabled(true);
+		saveButton.setEnabled(false);
+		discardButton.setEnabled(false);
+	}
+	
+	//================================================================================	
+
+	public static void main(String[] args) {
+		Display d = new Display();
+		Shell s = RecorderControlPanel.getShell();
+		s.open();
+
+		while(!s.isDisposed()) {
+			if(!d.readAndDispatch())
+				d.sleep();
+		}
+		d.dispose();
+	}
+	
 }
