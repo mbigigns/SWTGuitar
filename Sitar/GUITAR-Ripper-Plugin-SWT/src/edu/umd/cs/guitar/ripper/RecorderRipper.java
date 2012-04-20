@@ -59,7 +59,7 @@ import edu.umd.cs.guitar.model.data.GUIStructure;
 import edu.umd.cs.guitar.model.data.GUIType;
 import edu.umd.cs.guitar.model.data.ObjectFactory;
 import edu.umd.cs.guitar.model.data.StepType;
-import edu.umd.cs.guitar.model.swtwidgets.IDGenerator;
+//import edu.umd.cs.guitar.model.swtwidgets.IDGenerator;
 import edu.umd.cs.guitar.model.swtwidgets.SitarWidget;
 import edu.umd.cs.guitar.model.wrapper.ComponentTypeWrapper;
 import edu.umd.cs.guitar.model.wrapper.EventWrapper;
