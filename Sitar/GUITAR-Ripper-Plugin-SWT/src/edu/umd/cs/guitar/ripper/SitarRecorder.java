@@ -45,6 +45,7 @@ import edu.umd.cs.guitar.model.data.LogWidget;
 import edu.umd.cs.guitar.model.data.ObjectFactory;
 import edu.umd.cs.guitar.model.data.StepType;
 import edu.umd.cs.guitar.model.data.TestCase;
+import edu.umd.cs.guitar.model.swtwidgets.SitarWidget;
 import edu.umd.cs.guitar.model.wrapper.AttributesTypeWrapper;
 import edu.umd.cs.guitar.model.wrapper.ComponentTypeWrapper;
 import edu.umd.cs.guitar.ripper.filter.GComponentFilter;
@@ -100,6 +101,7 @@ public class SitarRecorder extends SitarExecutor {
 		super(config);
 		this.config=config;
 		monitor = new SitarRipperMonitor(config, getApplication());
+		SitarWidget.setTerminate(false);
 		ripper = initRipper();
 	}
 	static ObjectFactory factory = new ObjectFactory();
@@ -108,7 +110,7 @@ public class SitarRecorder extends SitarExecutor {
 	
 	// initialize the ripper
 	private RecorderRipper initRipper() {
-		RecorderRipper ripper = new RecorderRipper(GUITARLog.log);
+		RecorderRipper ripper = new RecorderRipper(this.getApplication());
 				
 		ripper.setMonitor(monitor);
 		
@@ -168,6 +170,8 @@ public class SitarRecorder extends SitarExecutor {
 		TestCase oTestCase = factory.createTestCase();
 		oTestCase.setStep(iStepList);
 		IO.writeObjToFile(oTestCase, path);
+		IO.writeObjToFile(this.ripper.efg, path.substring(0, path.length()-3)+"EFG");
+		IO.writeObjToFile(this.ripper.dGUIStructure, path.substring(0, path.length()-3)+"GUI");
 	}
 
 	

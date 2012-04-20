@@ -1,82 +1,203 @@
-0      [main] ERROR - configuration.xml not found!!!
-1      [main] INFO  - No configuration file. Using an empty one...
+1      [main] ERROR - configuration.xml not found!!!
+2      [main] INFO  - No configuration file. Using an empty one...
+17     [main] DEBUG - =============================
+17     [main] DEBUG - Application URLs: 
+18     [main] DEBUG - -----------------------------
+18     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/GUITARModel-Core.jar
+18     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/log4j-1.2.15.jar
+18     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/bin/
+18     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Model-Plugin-SWT/lib/GUITARModel-Core.jar
+18     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/args4j-2.0.12.jar
+18     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/swt-linux.jar
+18     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Model-Plugin-SWT/bin/
+18     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Model-Plugin-SWT/lib/swt-linux.jar
+18     [main] DEBUG - 	/home/mike/SWTGuitar/SWTRecorder/bin/
+19     [main] DEBUG - 	/home/mike/SWTGuitar/SWTRecorder/lib/swt-linux.jar
+19     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Model-Plugin-SWT/lib/log4j-1.2.15.jar
+19     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/GUIRipper-Core.jar
 19     [main] DEBUG - =============================
-19     [main] DEBUG - Application URLs: 
-20     [main] DEBUG - -----------------------------
-20     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/GUITARModel-Core.jar
-20     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/log4j-1.2.15.jar
-20     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/bin/
-20     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Model-Plugin-SWT/lib/GUITARModel-Core.jar
-20     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/args4j-2.0.12.jar
-20     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/swt-linux.jar
-20     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Model-Plugin-SWT/bin/
-20     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Model-Plugin-SWT/lib/swt-linux.jar
-20     [main] DEBUG - 	/home/mike/SWTGuitar/SWTRecorder/bin/
-21     [main] DEBUG - 	/home/mike/SWTGuitar/SWTRecorder/lib/swt-linux.jar
-21     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Model-Plugin-SWT/lib/log4j-1.2.15.jar
-21     [main] DEBUG - 	/home/mike/SWTGuitar/Sitar/GUITAR-Ripper-Plugin-SWT/lib/GUIRipper-Core.jar
-21     [main] DEBUG - =============================
-21     [main] DEBUG - Application Parameters: 
-21     [main] DEBUG - -----------------------------
-180    [SitarExecutor] DEBUG - GUI not ready yet
-180    [SitarExecutor] DEBUG - Waiting for GUI to initialize for: 100ms
-803    [main] DEBUG - Display ready
-838    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {Image Analyzer}
-840    [SitarExecutor] DEBUG - Root window size: 1
-841    [SitarExecutor] DEBUG - Window title: Image Analyzer
-842    [SitarExecutor] INFO  - Number of root windows: 1
-842    [SitarExecutor] INFO  - ------- BEGIN WINDOW -------
-842    [SitarExecutor] INFO  - Ripping window: *Image Analyzer*
-875    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
-875    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Type:}
-875    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
-876    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Size:}
-876    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Depth:}
-876    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Transparent pixel:}
-876    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Time to load:}
-876    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
-877    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Animation size:}
-877    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Background pixel:}
-877    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Image location:}
-877    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Disposal:}
-877    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Delay:}
-877    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Repeats:}
-878    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
-878    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Palette:}
-878    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
-878    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Sash {}
-878    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Pixel data:}
-882    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget StyledText {}
-883    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
-884    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&File, Alpha}
-891    [main] DEBUG - Ignoring duplicate property: enabled
-896    [main] DEBUG - Ignoring duplicate property: visible
-902    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Composite {}
-902    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Type:}
-902    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
-903    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Size:}
-903    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Depth:}
-903    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Transparent pixel:}
-903    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Time to load:}
-903    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
-904    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Animation size:}
-904    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Background pixel:}
-904    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Image location:}
-904    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Disposal:}
-904    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Delay:}
-904    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Repeats:}
-905    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
-905    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Palette:}
-905    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Canvas {}
-905    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Sash {}
-905    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {Pixel data:}
-905    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget StyledText {}
-906    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Label {}
-906    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarMenu for widget Menu {&File, Alpha}
-913    [SitarExecutor] DEBUG - *Image Analyzer* in window *Image Analyzer* has 22 children: [ - org.eclipse.swt.widgets.Composite;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Canvas;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Canvas;  - org.eclipse.swt.widgets.Sash;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.custom.StyledText;  - org.eclipse.swt.widgets.Label;  - org.eclipse.swt.widgets.Menu; ]
-915    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Background}
-915    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {X Scale}
-915    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Y Scale}
-915    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Alpha-K}
-915    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Display}
-915    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarComposite for widget Group {Animation}
+19     [main] DEBUG - Application Parameters: 
+19     [main] DEBUG - -----------------------------
+158    [SitarExecutor] DEBUG - GUI not ready yet
+158    [SitarExecutor] DEBUG - Waiting for GUI to initialize for: 100ms
+381    [main] DEBUG - Display ready
+428    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {Window}
+430    [SitarExecutor] DEBUG - Root window size: 1
+432    [SitarExecutor] DEBUG - Window title: Window
+432    [SitarExecutor] INFO  - Number of root windows: 1
+432    [SitarExecutor] INFO  - ------- BEGIN WINDOW -------
+432    [SitarExecutor] INFO  - Ripping window: *Window*
+486    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Window</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Window</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+489    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Add Window}
+489    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Change Color}
+496    [main] DEBUG - Ignoring duplicate property: enabled
+496    [main] DEBUG - Ignoring duplicate property: visible
+545    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Add Window}
+546    [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarControl for widget Button {Change Color}
+546    [SitarExecutor] DEBUG - *Window* in window *Window* has 2 children: [Add Window - org.eclipse.swt.widgets.Button; Change Color - org.eclipse.swt.widgets.Button; ]
+546    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Window</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Add Window</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+557    [main] DEBUG - Ignoring duplicate property: enabled
+557    [main] DEBUG - Ignoring duplicate property: visible
+608    [SitarExecutor] DEBUG - *Add Window* in window *Window* has 0 children: []
+609    [SitarExecutor] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Window</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Change Color</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Button</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+621    [main] DEBUG - Ignoring duplicate property: enabled
+621    [main] DEBUG - Ignoring duplicate property: visible
+623    [SitarExecutor] DEBUG - *Change Color* in window *Window* has 0 children: []
+628    [SitarExecutor] DEBUG - Parsing window: Window
+2314   [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {Window 1}
+2315   [main] INFO  - ------- BEGIN WINDOW -------
+2315   [main] INFO  - Ripping window: *Window 1*
+2316   [main] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Window 1</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Window 1</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+2317   [main] DEBUG - Ignoring duplicate property: enabled
+2317   [main] DEBUG - Ignoring duplicate property: visible
+2318   [main] DEBUG - *Window 1* in window *Window 1* has 0 children: []
+2318   [main] DEBUG - Parsing window: Window 1
+2318   [main] DEBUG - Parsing window: Window
+6309   [main] DEBUG - Found adapter type class edu.umd.cs.guitar.model.swtwidgets.SitarDecorations for widget Shell {Window 2}
+6309   [main] INFO  - ------- BEGIN WINDOW -------
+6309   [main] INFO  - Ripping window: *Window 2*
+6310   [main] INFO  - 
+<FullComponent>
+	<Window>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Window 2</Value>
+			</Property> 
+		</Attributes>
+	</Window>
+
+	<Component>
+		<Attributes>
+			<Property>
+				<Name>Title</Name>
+				<Value>Window 2</Value>
+			</Property>
+
+			<Property>
+				<Name>Class</Name>
+				<Value>org.eclipse.swt.widgets.Shell</Value>
+			</Property>
+		</Attributes>
+	</Component>
+</FullComponent>
+
+
+6311   [main] DEBUG - Ignoring duplicate property: enabled
+6311   [main] DEBUG - Ignoring duplicate property: visible
+6312   [main] DEBUG - *Window 2* in window *Window 2* has 0 children: []
+6312   [main] DEBUG - Parsing window: Window
+6312   [main] DEBUG - Parsing window: Window 1
+6312   [main] DEBUG - Parsing window: Window 2
+9026   [SitarExecutor] ERROR - Uncaught exception while rippingorg.eclipse.swt.SWTException: Device is disposed
+9026   [SitarExecutor] ERROR - Likely AUT bug. If not, file GUITAR bug
+9804   [SitarExecutor] INFO  - -----------------------------
+9804   [SitarExecutor] INFO  - OUTPUT SUMARY: 
+9804   [SitarExecutor] INFO  - Number of Windows: 3
+9804   [SitarExecutor] INFO  - GUI file:GUITAR-Default.GUI
+9804   [SitarExecutor] INFO  - Open Component file:log_widget.xml
+9844   [SitarExecutor] INFO  - Time Elapsed: 00 : 00 : 09: 817

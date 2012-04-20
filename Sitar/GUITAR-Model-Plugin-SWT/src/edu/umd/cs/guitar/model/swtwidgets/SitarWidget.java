@@ -87,8 +87,8 @@ public abstract class SitarWidget extends GComponent {
 	private final SitarWindow window;
 	static int widgetCounter = 0;
 	static ArrayList<Widget> list = new ArrayList<Widget>();
-	private final SitarWidget me;
 	private static SitarGUIInteraction expansionData = null;
+	private static boolean terminate = true;
 	//static Widget headWidget = null;
 	
 	private SitarGUIInteraction lastInteraction;
@@ -105,7 +105,6 @@ public abstract class SitarWidget extends GComponent {
 		lastInteraction = null;
 		
 		setData();
-		me = this;
 	}
 	
 	
@@ -147,7 +146,7 @@ public abstract class SitarWidget extends GComponent {
 		widget.getDisplay().syncExec(new Runnable() {
 			public void run() {
 				//add listener
-				RecorderListener listen = new RecorderListener(wEventList,retComp,eventToIDMap,stepList, me);
+				RecorderListener listen = new RecorderListener(wEventList,retComp,eventToIDMap,stepList, SitarWidget.this);
 				//widget.addListener(SWT.None,listen);
 				//widget.addListener(SWT.KeyDown,listen);
 			    //widget.addListener(SWT.KeyUp,listen);
@@ -204,94 +203,6 @@ public abstract class SitarWidget extends GComponent {
 		}
 
 		public void handleEvent(Event uEvent) {
-			
-			//1)Do all necessary ripping
-			SitarGUIInteraction interaction = new SitarGUIInteraction(sWidget);
-			
-			final AtomicReference<Shell> shell = new AtomicReference<Shell>();
-			final List<Shell> closedShells = new ArrayList<Shell>();
-			final AtomicBoolean terminal = new AtomicBoolean(false);
-			final Event userEvent = uEvent;
-			uEvent.widget.getDisplay().syncExec(new Runnable() {
-				@Override
-				public void run() {
-					// add filter for shell open
-					final Listener showListener = new Listener() {
-						@Override
-						public void handleEvent(Event event) {
-							if (event.widget instanceof Shell) {
-								// TODO add to list
-								shell.set((Shell) event.widget);
-							}
-						}
-					};
-					userEvent.widget.getDisplay().addFilter(SWT.Show, showListener);
-					
-					final Shell shell = window.getShell();
-					
-					final List<Shell> allShells = new ArrayList<Shell>();
-					for (Shell s : userEvent.widget.getDisplay().getShells()) {
-						allShells.add(s);
-					}
-					
-					// Remove existing close listeners so they don't get notified.
-					// This may not be necessary on all platforms, but better safe
-					// than sorry
-					Listener[] closeListeners = shell.getListeners(SWT.Close);
-					for (Listener l : closeListeners) {
-						shell.removeListener(SWT.Close, l);
-					}
-					
-					ShellListener listener = new ShellAdapter() {
-						@Override
-						public void shellClosed(ShellEvent e) {
-							synchronized (closedShells) {
-								closedShells.add(shell);
-							}
-							
-							synchronized (allShells) {
-								allShells.remove(shell);
-								if (allShells.isEmpty()) {
-									terminal.set(true);
-								}
-							}
-							
-							e.doit = false; // prevent shell from actually closing
-						}
-					};
-					
-					shell.addShellListener(listener);
-					
-					notifyAllListeners();
-									
-					// remove our close listener
-					shell.removeShellListener(listener);
-					
-					// add back the close listeners we removed
-					for (Listener l : closeListeners) {
-						shell.addListener(SWT.Close, l);
-					}
-					
-					// remove filter for shell open
-					userEvent.widget.getDisplay().removeFilter(SWT.Show, showListener);
-				}
-			});
-			
-			interaction.setTerminal(terminal.get());
-			
-			
-			List<Shell> openedShells = new ArrayList<Shell>();
-			if (shell.get() != null) {
-				openedShells.add(shell.get());
-			}
-			interaction.setOpenedShells(openedShells);
-			
-//			List<Shell> closedShells = new ArrayList<Shell>();
-			// TODO manage closed shells
-			interaction.setClosedShells(closedShells);
-			
-			
-			expansionData = interaction;
 			
 			
 			//2)build efg data
@@ -772,7 +683,10 @@ public abstract class SitarWidget extends GComponent {
 	 */
 	@Override
 	public boolean isTerminal() {
-		return interact().isTerminal();		
+		if (terminate)
+			return interact().isTerminal();
+		else
+			return false;
 	}
 
 	/**
@@ -803,4 +717,7 @@ public abstract class SitarWidget extends GComponent {
 	// TODO concrete implementation that returns true?
 	// since if no notion of being enabled, then can't be disabled
 
+	public static void setTerminate (boolean terminate) {
+		SitarWidget.terminate = terminate;
+	}
 }

@@ -9,7 +9,7 @@ public class test {
 	public static void main(String args[])
 	{
 		SitarRipperConfiguration config = new SitarRipperConfiguration();
-		config.setMainClass(ImageAnalyzer.class.getName());
+		config.setMainClass(SWTMultiWindowDynamicApp.class.getName());
 		SitarRecorder recorder = new SitarRecorder(config);
 		new SitarRunner(recorder).run();
 	}
